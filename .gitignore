@@ -1,0 +1,53 @@
+# Python environments and generated files
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+test_tmp*/
+test_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+
+# Local card acquisitions and analysis artifacts
+data/
+uploads/
+card_images/
+local_images/
+.postgres-test/
+*.jpg
+*.jpeg
+*.png
+*.tif
+*.tiff
+*.bmp
+*.webp
+*.heic
+*.raw
+*.dng
+
+# Local logs and editor/OS files
+*.log
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+test_tmp/
+test_cache/

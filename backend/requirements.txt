@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+pydantic-settings
+python-multipart
+sqlalchemy
+psycopg[binary]
+alembic
+numpy
+opencv-python-headless
+Pillow
+pytest
+httpx
