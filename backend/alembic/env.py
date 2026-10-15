@@ -4,6 +4,11 @@ from sqlalchemy import create_engine
 from app.config import get_settings
 from app.database import Base
 from app import models  # noqa: F401
+from app import customer_models  # noqa: F401
+from app import submission_models  # noqa: F401
+from app import pricing_models  # noqa: F401
+from app import checkout_models  # noqa: F401
+from app import intake_models  # noqa: F401
 
 target_metadata = Base.metadata
 url = get_settings().database_url

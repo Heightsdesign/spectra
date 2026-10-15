@@ -1,10 +1,18 @@
 # SPECTRA
 
+Internal receiving and physical inventory (W5.1): see [INTERNAL_OPERATIONS.md](INTERNAL_OPERATIONS.md) for staff bootstrap, migration `0006`, the protected `/admin` workflow, reconciliation rules and validation results.
+
+Customer accounts (W2): see [Authentication and account management](AUTHENTICATION.md) for migrations, bilingual routes, security decisions, private development email and local setup. Customer submissions and payments remain outside the current milestone.
+
+The W1 public Next.js frontend lives in [`frontend/`](frontend/README.md). It runs independently of the backend and contains informational pages only. See its README for local setup, validation status and pending launch details.
+
 SPECTRA is a professional computer-assisted trading card grading and certification system, initially focused on Pokémon cards. Final grades require human validation.
 
 The backend registers Pokémon cards, preserves original front/back images, and returns their metadata. A standalone physical-boundary analysis prototype produces corner estimates and perspective-corrected diagnostics; it does not calculate centering or grades. Final grades always require human validation.
 
 See [Physical boundary detection](backend/BOUNDARY_DETECTION.md) for usage, configurable thresholds, diagnostic storage, and limitations. This prototype is tested on synthetic images and is not production validated.
+
+For the opt-in local review page, saved human labels and real-photo dataset guidance, see [Real-image validation workflow](backend/REAL_IMAGE_VALIDATION.md). This workflow is disabled by default and restricted to loopback access.
 
 ## Windows installation
 
@@ -97,3 +105,7 @@ Invoke-RestMethod "http://127.0.0.1:8000/api/cards/$($card.id)/images"
 ```
 
 Upload success and failure events are logged as JSON using the `spectra.uploads` logger. Database uniqueness reserves each side before disk writes. Ordinary write/commit failures roll back metadata and remove newly created files; existing files are never overwritten. Failed cleanup emits `image_cleanup_failed` for operator attention. Filesystem storage and PostgreSQL cannot share an atomic transaction: a process crash or an ambiguous connection failure during commit can require reconciliation of orphaned files or missing files. Production deployment should add reconciliation and coordinated backups before accepting valuable originals.
+
+## Customer services and pricing (W3.2)
+
+See [PRICING.md](PRICING.md) for configurable processing tiers and upgrades, per-card choices, server-generated quotes, immutable acceptance snapshots, development-only catalog setup and exact validation results. Submission confirmation remains separate from commercial acceptance and payment.

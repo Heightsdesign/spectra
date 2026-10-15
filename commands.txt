@@ -1,0 +1,17 @@
+cd C:\Users\plher\Documents\spetra\backend
+
+$env:AUTH_ORIGIN='http://127.0.0.1:3000'
+
+.\.venv\Scripts\python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload --no-proxy-headers
+
+
+cd C:\Users\plher\Documents\spetra\frontend
+
+$env:SPECTRA_BACKEND_URL='http://127.0.0.1:8000'
+
+npm run dev
+
+
+cd C:\Users\plher\Documents\spetra\backend
+
+.\.venv\Scripts\python.exe -m alembic upgrade head

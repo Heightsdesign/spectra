@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "name": "DEVELOPMENT EXAMPLE - NOT COMMERCIAL RATES",
+  "currency": "EUR",
+  "development_only": true,
+  "approval_reference": null,
+  "base_price_minor": 1000,
+  "tiers": {
+    "standard": {
+      "name": {"FR": "Standard", "EN": "Standard"},
+      "description": {"FR": "Traitement standard.", "EN": "Standard processing."},
+      "price_adjustment_minor": 0,
+      "estimated_turnaround": null,
+      "available": true,
+      "display_order": 10
+    },
+    "express": {
+      "name": {"FR": "Express", "EN": "Express"},
+      "description": {"FR": "Traitement accéléré.", "EN": "Faster processing."},
+      "price_adjustment_minor": 500,
+      "estimated_turnaround": null,
+      "available": true,
+      "display_order": 20
+    },
+    "priority": {
+      "name": {"FR": "Prioritaire", "EN": "Priority"},
+      "description": {"FR": "Traitement prioritaire.", "EN": "Priority processing."},
+      "price_adjustment_minor": 1000,
+      "estimated_turnaround": null,
+      "available": true,
+      "display_order": 30
+    }
+  },
+  "upgrades": {
+    "classic": {
+      "name": {"FR": "Étiquette classique", "EN": "Classic label"},
+      "description": {"FR": "Présentation classique incluse.", "EN": "Classic presentation included."},
+      "price_minor": 0,
+      "group": "label",
+      "available": true,
+      "display_order": 10
+    },
+    "detailed": {
+      "name": {"FR": "Étiquette détaillée", "EN": "Detailed label"},
+      "description": {"FR": "Prévue pour afficher les notes de centrage, coins, bords et surface. Aucune note n’est générée ici.", "EN": "Intended to display centering, corners, edges and surface grades. No grades are generated here."},
+      "price_minor": 300,
+      "group": "label",
+      "available": true,
+      "display_order": 20
+    }
+  },
+  "groups": {"label": {"min_selected": 1, "max_selected": 1}},
+  "discounts": [
+    {"id": "example-bulk-10", "min_quantity": 10, "rate_bps": 500},
+    {"id": "example-bulk-50", "min_quantity": 50, "rate_bps": 1000}
+  ],
+  "discount_scope": "base",
+  "tax_mode": "exempt",
+  "tax_rate_bps": 0,
+  "tax_description": {"FR": "Exemple de développement : aucune taxe appliquée. Traitement commercial à configurer.", "EN": "Development example: no tax applied. Commercial treatment must be configured."},
+  "quote_lifetime_seconds": 3600
+}
