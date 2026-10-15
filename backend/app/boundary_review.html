@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SPECTRA · Local boundary review</title>
+<style>
+body{font:16px system-ui,sans-serif;margin:2rem auto;padding:0 1rem;max-width:1400px;background:#f4f5f7;color:#192330}h1{margin-bottom:.3rem}button,input,select,textarea{font:inherit;padding:.6rem}button{cursor:pointer}input{width:24rem;max-width:90%}select{max-width:95%}textarea{display:block;width:min(95%,700px);margin:.6rem 0}section{background:white;padding:1rem;margin:1rem 0;border-radius:8px}.images{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}figure{margin:0}img{width:100%;max-height:600px;object-fit:contain;image-orientation:none;background:#e6e8ec}pre{white-space:pre-wrap;overflow-wrap:anywhere}#message{white-space:pre-wrap}label{display:inline-block;margin:.4rem 0}
+</style>
+<h1>SPECTRA boundary review</h1>
+<p>Development only · Human validation of physical edges. Artwork orientation is not inferred.</p>
+<section><form id="analyze"><label>Existing image UUID <input id="imageId" required placeholder="Image ID from the card image API"></label> <button>Run analysis</button></form>
+<p><label>Saved analysis <select id="runs"><option value="">Select an analysis</option></select></label> <button id="refresh" type="button">Refresh</button></p></section>
+<p id="message" role="status" aria-live="polite"></p>
+<section id="analysis" hidden>
+<h2 id="status"></h2><p id="identity"></p>
+<div class="images" id="images"></div>
+<h3>Corners (source raster pixels)</h3><pre id="corners"></pre>
+<h3>Geometric and quality metrics</h3><pre id="metrics"></pre>
+<h3>Warnings and failure reason</h3><pre id="warnings"></pre>
+<details><summary>Analysis configuration and provenance</summary><pre id="metadata"></pre></details>
+<h3>Reviewer assessment</h3>
+<p>Correct: the acceptance or rejection is appropriate; accepted corners follow the physical edges and the normalized image is usable. Incorrect: false acceptance, misplaced corners, bad rectification, or rejection of a usable photograph. Uncertain: the photo does not provide enough evidence. Explain rejected cases in notes.</p>
+<form id="review"><label>Label <select id="label" required><option value="">Choose a label</option><option>correct</option><option>incorrect</option><option>uncertain</option></select></label>
+<label for="notes">Optional notes (up to 4,000 characters)</label><textarea id="notes" maxlength="4000" rows="4"></textarea><button>Save review</button></form>
+<h3>Review history</h3><pre id="history"></pre></section>
+<script>
+const $=id=>document.getElementById(id);let current=null;
+async function api(url,options={}){const response=await fetch(url,{...options,headers:{'X-Spectra-Review':'1',...(options.body?{'Content-Type':'application/json'}:{})}});if(!response.ok){let error;try{error=await response.json()}catch{error={detail:response.statusText}}throw new Error(JSON.stringify(error.detail))}return response.json()}
+function message(text){$('message').textContent=text}
+function show(run){current=run;$('analysis').hidden=false;$('status').textContent=run.result.status.toUpperCase();$('identity').textContent=`Image ${run.image_id} · Run ${run.run_id}`;
+ $('images').replaceChildren();for(const [key,title] of [['original','Original raster preview'],['overlay','Boundary overlay'],['normalized','Normalized image']]){const figure=document.createElement('figure'),caption=document.createElement('figcaption');caption.textContent=title;figure.append(caption);if(run.images[key]){const img=document.createElement('img');img.alt=title;img.src=run.images[key];img.onerror=()=>{caption.textContent=title+' — unavailable'};figure.append(img)}else{figure.append(document.createTextNode('Unavailable for this analysis'))}$('images').append(figure)}
+ for(const [id,value] of [['corners',run.result.corners],['metrics',run.result.metrics],['warnings',{warnings:run.result.warnings,failure_reason:run.result.failure_reason}],['history',run.reviews],['metadata',{algorithm:run.algorithm,created_at:run.created_at,source_sha256:run.source_sha256,config:run.config,transform:run.transform,opencv_version:run.opencv_version,numpy_version:run.numpy_version}]])$(id).textContent=JSON.stringify(value,null,2);
+ const latest=run.reviews.at(-1);$('label').value=latest?.label||'';$('notes').value=latest?.notes||'';$('runs').value=run.run_id;location.hash=run.run_id;
+}
+async function refresh(){const runs=await api('/internal/boundary/runs');$('runs').replaceChildren(new Option('Select an analysis',''));for(const run of runs)$('runs').append(new Option(`${run.created_at} · ${run.result.status} · ${run.run_id}`,run.run_id));if(current)$('runs').value=current.run_id;return runs}
+$('analyze').onsubmit=async event=>{event.preventDefault();const button=event.submitter;button.disabled=true;message('Analyzing…');try{const run=await api(`/internal/boundary/images/${encodeURIComponent($('imageId').value.trim())}/analyses`,{method:'POST'});await refresh();show(run);message('Analysis saved. Review the original and diagnostics.')}catch(error){message(error.message)}finally{button.disabled=false}};
+$('runs').onchange=async()=>{if(!$('runs').value)return;try{show(await api('/internal/boundary/runs/'+$('runs').value));message('')}catch(error){message(error.message)}};
+$('refresh').onclick=()=>refresh().catch(error=>message(error.message));
+$('review').onsubmit=async event=>{event.preventDefault();if(!current)return;const runId=current.run_id,button=event.submitter;button.disabled=true;try{await api(`/internal/boundary/runs/${runId}/reviews`,{method:'POST',body:JSON.stringify({label:$('label').value,notes:$('notes').value})});show(await api('/internal/boundary/runs/'+runId));message('Review saved. Previous reviews are retained.')}catch(error){message(error.message)}finally{button.disabled=false}};
+refresh().then(runs=>{const selected=runs.find(run=>run.run_id===location.hash.slice(1));if(selected)show(selected)}).catch(error=>message(error.message));
+</script></html>

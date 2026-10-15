@@ -1,0 +1,9 @@
+node_modules/
+.npm-cache/
+.visual-review/
+.next/
+out/
+*.tsbuildinfo
+.env*
+!.env.example
+!public/brand/*.png

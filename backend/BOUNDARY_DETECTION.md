@@ -25,7 +25,7 @@ with Session(get_engine()) as session:
     print(analysis.result.to_dict())
 ```
 
-There is no new HTTP endpoint. Existing API behavior and database schemas are unchanged.
+The opt-in [local real-image validation workflow](REAL_IMAGE_VALIDATION.md) exposes internal analysis, diagnostic and review endpoints. Existing card API behavior and database schemas are unchanged.
 
 ## Coordinates and diagnostics
 

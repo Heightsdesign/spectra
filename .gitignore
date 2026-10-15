@@ -23,6 +23,8 @@ dist/
 *.pem
 *.key
 .aws/
+.env.example
+commands.*/
 
 # Local card acquisitions and analysis artifacts
 data/
@@ -51,3 +53,4 @@ Desktop.ini
 
 test_tmp/
 test_cache/
+

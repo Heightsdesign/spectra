@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "name": "SPECTRA V1 - TAX VALIDATION REQUIRED BEFORE PUBLICATION",
+  "currency": "EUR",
+  "development_only": false,
+  "approval_reference": "SPECTRA W3.3 approved initial grading amounts",
+  "base_price_minor": 1990,
+  "tiers": {
+    "standard": {
+      "name": {
+        "FR": "Standard",
+        "EN": "Standard"
+      },
+      "description": {
+        "FR": "Traitement standard.",
+        "EN": "Standard processing."
+      },
+      "price_adjustment_minor": 0,
+      "estimated_turnaround": null,
+      "available": true,
+      "display_order": 10
+    },
+    "express": {
+      "name": {
+        "FR": "Express",
+        "EN": "Express"
+      },
+      "description": {
+        "FR": "Traitement accéléré.",
+        "EN": "Faster processing."
+      },
+      "price_adjustment_minor": 990,
+      "estimated_turnaround": null,
+      "available": true,
+      "display_order": 20
+    },
+    "priority": {
+      "name": {
+        "FR": "Prioritaire",
+        "EN": "Priority"
+      },
+      "description": {
+        "FR": "Traitement prioritaire.",
+        "EN": "Priority processing."
+      },
+      "price_adjustment_minor": 1990,
+      "estimated_turnaround": null,
+      "available": true,
+      "display_order": 30
+    }
+  },
+  "upgrades": {
+    "classic": {
+      "name": {
+        "FR": "Étiquette classique",
+        "EN": "Classic label"
+      },
+      "description": {
+        "FR": "Présentation classique incluse.",
+        "EN": "Classic presentation included."
+      },
+      "price_minor": 0,
+      "group": "label",
+      "available": true,
+      "display_order": 10
+    },
+    "detailed": {
+      "name": {
+        "FR": "Étiquette détaillée",
+        "EN": "Detailed label"
+      },
+      "description": {
+        "FR": "Centrage, coins, bords et surface sur la face avant ; note globale clairement visible.",
+        "EN": "Centering, corners, edges and surface on the front label; overall grade clearly visible."
+      },
+      "price_minor": 390,
+      "group": "label",
+      "available": true,
+      "display_order": 20,
+      "label_presentation": {
+        "position": "front",
+        "show_overall_grade": true,
+        "subgrades": [
+          "centering",
+          "corners",
+          "edges",
+          "surface"
+        ]
+      }
+    }
+  },
+  "groups": {
+    "label": {
+      "min_selected": 1,
+      "max_selected": 1
+    }
+  },
+  "discounts": [],
+  "discount_scope": "base",
+  "tax_mode": "pending",
+  "tax_rate_bps": 0,
+  "tax_description": {
+    "FR": "Fiscalité en attente de validation.",
+    "EN": "Tax treatment awaiting validation."
+  },
+  "quote_lifetime_seconds": 3600,
+  "volume_prices": [
+    {
+      "id": "volume-1",
+      "min_quantity": 1,
+      "unit_price_minor": 1990
+    },
+    {
+      "id": "volume-5",
+      "min_quantity": 5,
+      "unit_price_minor": 1790
+    },
+    {
+      "id": "volume-10",
+      "min_quantity": 10,
+      "unit_price_minor": 1690
+    }
+  ],
+  "customer_gross_prices": true,
+  "tax_validation_reference": null
+}
