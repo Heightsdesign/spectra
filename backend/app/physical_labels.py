@@ -23,6 +23,7 @@ from app.auth import write_guard
 from app.cards import Db
 from app.customer_operations import require_staff
 from app.intake_models import Parcel, PhysicalCard
+from app.intake_voids import PhysicalCardVoid
 from app.submission_models import Submission, SubmissionEntry
 from app.physical_identity import normalize_reference, qr_payload
 
@@ -147,6 +148,11 @@ def generate_pdf(records, profile='50x30', calibration=False):
 
 def records_for(db, references, submission_id=None):
     refs = sorted({normalize_reference(r) for r in references})
+    # Same lock order as intake, including concurrent label/void requests.
+    ids = select(PhysicalCard.submission_id).where(PhysicalCard.reference.in_(refs))
+    list(db.scalars(select(Submission).where(Submission.id.in_(ids)).order_by(Submission.id).with_for_update()))
+    if db.scalar(select(PhysicalCardVoid.physical_card_id).join(PhysicalCard, PhysicalCard.id == PhysicalCardVoid.physical_card_id).where(PhysicalCard.reference.in_(refs))):
+        raise HTTPException(409, 'card_voided')
     query = (select(PhysicalCard.reference, PhysicalCard.submission_id, PhysicalCard.entry_id,
                     Parcel.submission_id.label('parcel_submission'), Submission.reference.label('submission_reference'),
                     SubmissionEntry.submission_id.label('entry_submission'), SubmissionEntry.card_name,

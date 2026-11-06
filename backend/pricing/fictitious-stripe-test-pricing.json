@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "name": "FICTIF ? STRIPE TEST",
+  "currency": "EUR",
+  "development_only": true,
+  "approval_reference": null,
+  "base_price_minor": 1000,
+  "tiers": {
+    "standard": {
+      "name": {
+        "FR": "Standard",
+        "EN": "Standard"
+      },
+      "description": {
+        "FR": "FICTIF ? STRIPE TEST : aucun grading r?el.",
+        "EN": "FICTIONAL ? STRIPE TEST: no real grading."
+      },
+      "price_adjustment_minor": 0,
+      "estimated_turnaround": null,
+      "available": true,
+      "display_order": 10
+    }
+  },
+  "upgrades": {
+    "classic": {
+      "name": {
+        "FR": "Étiquette classique",
+        "EN": "Classic label"
+      },
+      "description": {
+        "FR": "Présentation classique incluse.",
+        "EN": "Classic presentation included."
+      },
+      "price_minor": 0,
+      "group": "label",
+      "available": true,
+      "display_order": 10
+    }
+  },
+  "groups": {
+    "label": {
+      "min_selected": 1,
+      "max_selected": 1
+    }
+  },
+  "discounts": [],
+  "discount_scope": "base",
+  "tax_mode": "exempt",
+  "tax_rate_bps": 0,
+  "tax_description": {
+    "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale.",
+    "EN": "Synthetic TEST tax 0%, no legal tax assertion."
+  },
+  "quote_lifetime_seconds": 3600,
+  "stripe_test_only": true,
+  "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+  "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+}

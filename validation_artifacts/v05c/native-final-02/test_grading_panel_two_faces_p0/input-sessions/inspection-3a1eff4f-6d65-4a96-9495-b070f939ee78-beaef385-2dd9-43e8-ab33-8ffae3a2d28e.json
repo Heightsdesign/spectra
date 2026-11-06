@@ -1,0 +1,1375 @@
+{
+  "schema_version": 1,
+  "kind": "selby_inspection_session",
+  "tool_version": "0.4.0",
+  "coordinate_system": "original_image_pixels_xy_right_down_v1",
+  "session_id": "3a1eff4f-6d65-4a96-9495-b070f939ee78",
+  "version_id": "beaef385-2dd9-43e8-ab33-8ffae3a2d28e",
+  "created_at_utc": "2026-11-02T21:21:31.402350+00:00",
+  "parent": null,
+  "image": {
+    "path": "C:\\Users\\plher\\Documents\\spetra\\validation_artifacts\\v05c\\native-final-02\\test_grading_panel_two_faces_p0\\grading-back\\back.bmp",
+    "sha256": "3710f1353ff5d232ea89eec7d3a2c7267ea58bf3ef8b883fbb511afc75974020",
+    "dimensions": [
+      560,
+      720
+    ],
+    "mode": "RGB"
+  },
+  "image_encoding": {
+    "format": "BMP",
+    "frames": [
+      {
+        "width": 560,
+        "height": 720,
+        "mode": "RGB",
+        "bits_per_pixel": 24,
+        "dpi_metadata": [
+          96.01194815354799,
+          96.01194815354799
+        ],
+        "icc_profile_present": false,
+        "uniform_pixel_content": false
+      }
+    ],
+    "frame_count": 1
+  },
+  "operator": "Test reviewer",
+  "notes": "",
+  "sources": [],
+  "prediction_exposure": false,
+  "physical": [
+    {
+      "status": "annotated",
+      "definition": "manual",
+      "candidate_id": null,
+      "basis": null,
+      "endpoints": [
+        [
+          164.4,
+          90.0
+        ],
+        [
+          387.6,
+          90.0
+        ]
+      ],
+      "line_abc": [
+        0.0,
+        1.0,
+        -90.0
+      ],
+      "notes": "",
+      "confirmed_at_utc": "2026-11-02T21:21:31.403155+00:00",
+      "reviewed": {
+        "status": "annotated",
+        "definition": "manual",
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": [
+          [
+            164.4,
+            90.0
+          ],
+          [
+            387.6,
+            90.0
+          ]
+        ],
+        "line_abc": [
+          0.0,
+          1.0,
+          -90.0
+        ],
+        "notes": ""
+      }
+    },
+    {
+      "status": "annotated",
+      "definition": "manual",
+      "candidate_id": null,
+      "basis": null,
+      "endpoints": [
+        [
+          462.0,
+          194.0
+        ],
+        [
+          462.0,
+          506.0
+        ]
+      ],
+      "line_abc": [
+        1.0,
+        -0.0,
+        -462.0
+      ],
+      "notes": "",
+      "confirmed_at_utc": "2026-11-02T21:21:31.403400+00:00",
+      "reviewed": {
+        "status": "annotated",
+        "definition": "manual",
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": [
+          [
+            462.0,
+            194.0
+          ],
+          [
+            462.0,
+            506.0
+          ]
+        ],
+        "line_abc": [
+          1.0,
+          -0.0,
+          -462.0
+        ],
+        "notes": ""
+      }
+    },
+    {
+      "status": "annotated",
+      "definition": "manual",
+      "candidate_id": null,
+      "basis": null,
+      "endpoints": [
+        [
+          387.6,
+          610.0
+        ],
+        [
+          164.39999999999998,
+          610.0
+        ]
+      ],
+      "line_abc": [
+        -0.0,
+        1.0,
+        -609.9999999999999
+      ],
+      "notes": "",
+      "confirmed_at_utc": "2026-11-02T21:21:31.403621+00:00",
+      "reviewed": {
+        "status": "annotated",
+        "definition": "manual",
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": [
+          [
+            387.6,
+            610.0
+          ],
+          [
+            164.39999999999998,
+            610.0
+          ]
+        ],
+        "line_abc": [
+          -0.0,
+          1.0,
+          -609.9999999999999
+        ],
+        "notes": ""
+      }
+    },
+    {
+      "status": "annotated",
+      "definition": "manual",
+      "candidate_id": null,
+      "basis": null,
+      "endpoints": [
+        [
+          90.0,
+          506.0
+        ],
+        [
+          90.0,
+          194.0
+        ]
+      ],
+      "line_abc": [
+        1.0,
+        0.0,
+        -90.0
+      ],
+      "notes": "",
+      "confirmed_at_utc": "2026-11-02T21:21:31.403828+00:00",
+      "reviewed": {
+        "status": "annotated",
+        "definition": "manual",
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": [
+          [
+            90.0,
+            506.0
+          ],
+          [
+            90.0,
+            194.0
+          ]
+        ],
+        "line_abc": [
+          1.0,
+          0.0,
+          -90.0
+        ],
+        "notes": ""
+      }
+    }
+  ],
+  "printed": [
+    {
+      "status": "annotated",
+      "definition": "manual",
+      "candidate_id": null,
+      "basis": null,
+      "endpoints": [
+        [
+          110.0,
+          110.0
+        ],
+        [
+          442.0,
+          110.0
+        ]
+      ],
+      "line_abc": [
+        0.0,
+        1.0,
+        -110.0
+      ],
+      "notes": "",
+      "confirmed_at_utc": "2026-11-02T21:21:31.404990+00:00",
+      "reviewed": {
+        "status": "annotated",
+        "definition": "manual",
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": [
+          [
+            110.0,
+            110.0
+          ],
+          [
+            442.0,
+            110.0
+          ]
+        ],
+        "line_abc": [
+          0.0,
+          1.0,
+          -110.0
+        ],
+        "notes": ""
+      }
+    },
+    {
+      "status": "annotated",
+      "definition": "manual",
+      "candidate_id": null,
+      "basis": null,
+      "endpoints": [
+        [
+          442.0,
+          110.0
+        ],
+        [
+          442.0,
+          590.0
+        ]
+      ],
+      "line_abc": [
+        1.0,
+        -0.0,
+        -442.0
+      ],
+      "notes": "",
+      "confirmed_at_utc": "2026-11-02T21:21:31.405347+00:00",
+      "reviewed": {
+        "status": "annotated",
+        "definition": "manual",
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": [
+          [
+            442.0,
+            110.0
+          ],
+          [
+            442.0,
+            590.0
+          ]
+        ],
+        "line_abc": [
+          1.0,
+          -0.0,
+          -442.0
+        ],
+        "notes": ""
+      }
+    },
+    {
+      "status": "annotated",
+      "definition": "manual",
+      "candidate_id": null,
+      "basis": null,
+      "endpoints": [
+        [
+          442.0,
+          590.0
+        ],
+        [
+          110.0,
+          590.0
+        ]
+      ],
+      "line_abc": [
+        -0.0,
+        1.0,
+        -590.0
+      ],
+      "notes": "",
+      "confirmed_at_utc": "2026-11-02T21:21:31.405611+00:00",
+      "reviewed": {
+        "status": "annotated",
+        "definition": "manual",
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": [
+          [
+            442.0,
+            590.0
+          ],
+          [
+            110.0,
+            590.0
+          ]
+        ],
+        "line_abc": [
+          -0.0,
+          1.0,
+          -590.0
+        ],
+        "notes": ""
+      }
+    },
+    {
+      "status": "annotated",
+      "definition": "manual",
+      "candidate_id": null,
+      "basis": null,
+      "endpoints": [
+        [
+          110.0,
+          590.0
+        ],
+        [
+          110.0,
+          110.0
+        ]
+      ],
+      "line_abc": [
+        1.0,
+        0.0,
+        -110.0
+      ],
+      "notes": "",
+      "confirmed_at_utc": "2026-11-02T21:21:31.405864+00:00",
+      "reviewed": {
+        "status": "annotated",
+        "definition": "manual",
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": [
+          [
+            110.0,
+            590.0
+          ],
+          [
+            110.0,
+            110.0
+          ]
+        ],
+        "line_abc": [
+          1.0,
+          0.0,
+          -110.0
+        ],
+        "notes": ""
+      }
+    }
+  ],
+  "review_status": "review_required",
+  "automatic_acceptance": false,
+  "human_confirmation_is_not_certified_ground_truth": true,
+  "view": {
+    "zoom": 1.0,
+    "center": [
+      280.0,
+      360.0
+    ]
+  },
+  "inspection_face": "back",
+  "boundary_validation": {
+    "physical": {
+      "sides": [
+        {
+          "status": "annotated",
+          "definition": "manual",
+          "candidate_id": null,
+          "basis": null,
+          "endpoints": [
+            [
+              164.4,
+              90.0
+            ],
+            [
+              387.6,
+              90.0
+            ]
+          ],
+          "line_abc": [
+            0.0,
+            1.0,
+            -90.0
+          ],
+          "notes": "",
+          "confirmed_at_utc": "2026-11-02T21:21:31.403155+00:00",
+          "reviewed": {
+            "status": "annotated",
+            "definition": "manual",
+            "candidate_id": null,
+            "basis": null,
+            "endpoints": [
+              [
+                164.4,
+                90.0
+              ],
+              [
+                387.6,
+                90.0
+              ]
+            ],
+            "line_abc": [
+              0.0,
+              1.0,
+              -90.0
+            ],
+            "notes": ""
+          }
+        },
+        {
+          "status": "annotated",
+          "definition": "manual",
+          "candidate_id": null,
+          "basis": null,
+          "endpoints": [
+            [
+              462.0,
+              194.0
+            ],
+            [
+              462.0,
+              506.0
+            ]
+          ],
+          "line_abc": [
+            1.0,
+            -0.0,
+            -462.0
+          ],
+          "notes": "",
+          "confirmed_at_utc": "2026-11-02T21:21:31.403400+00:00",
+          "reviewed": {
+            "status": "annotated",
+            "definition": "manual",
+            "candidate_id": null,
+            "basis": null,
+            "endpoints": [
+              [
+                462.0,
+                194.0
+              ],
+              [
+                462.0,
+                506.0
+              ]
+            ],
+            "line_abc": [
+              1.0,
+              -0.0,
+              -462.0
+            ],
+            "notes": ""
+          }
+        },
+        {
+          "status": "annotated",
+          "definition": "manual",
+          "candidate_id": null,
+          "basis": null,
+          "endpoints": [
+            [
+              387.6,
+              610.0
+            ],
+            [
+              164.39999999999998,
+              610.0
+            ]
+          ],
+          "line_abc": [
+            -0.0,
+            1.0,
+            -609.9999999999999
+          ],
+          "notes": "",
+          "confirmed_at_utc": "2026-11-02T21:21:31.403621+00:00",
+          "reviewed": {
+            "status": "annotated",
+            "definition": "manual",
+            "candidate_id": null,
+            "basis": null,
+            "endpoints": [
+              [
+                387.6,
+                610.0
+              ],
+              [
+                164.39999999999998,
+                610.0
+              ]
+            ],
+            "line_abc": [
+              -0.0,
+              1.0,
+              -609.9999999999999
+            ],
+            "notes": ""
+          }
+        },
+        {
+          "status": "annotated",
+          "definition": "manual",
+          "candidate_id": null,
+          "basis": null,
+          "endpoints": [
+            [
+              90.0,
+              506.0
+            ],
+            [
+              90.0,
+              194.0
+            ]
+          ],
+          "line_abc": [
+            1.0,
+            0.0,
+            -90.0
+          ],
+          "notes": "",
+          "confirmed_at_utc": "2026-11-02T21:21:31.403828+00:00",
+          "reviewed": {
+            "status": "annotated",
+            "definition": "manual",
+            "candidate_id": null,
+            "basis": null,
+            "endpoints": [
+              [
+                90.0,
+                506.0
+              ],
+              [
+                90.0,
+                194.0
+              ]
+            ],
+            "line_abc": [
+              1.0,
+              0.0,
+              -90.0
+            ],
+            "notes": ""
+          }
+        }
+      ],
+      "operator": "Test reviewer",
+      "at_utc": "2026-11-02T21:21:31.406765+00:00"
+    },
+    "printed": {
+      "sides": [
+        {
+          "status": "annotated",
+          "definition": "manual",
+          "candidate_id": null,
+          "basis": null,
+          "endpoints": [
+            [
+              110.0,
+              110.0
+            ],
+            [
+              442.0,
+              110.0
+            ]
+          ],
+          "line_abc": [
+            0.0,
+            1.0,
+            -110.0
+          ],
+          "notes": "",
+          "confirmed_at_utc": "2026-11-02T21:21:31.404990+00:00",
+          "reviewed": {
+            "status": "annotated",
+            "definition": "manual",
+            "candidate_id": null,
+            "basis": null,
+            "endpoints": [
+              [
+                110.0,
+                110.0
+              ],
+              [
+                442.0,
+                110.0
+              ]
+            ],
+            "line_abc": [
+              0.0,
+              1.0,
+              -110.0
+            ],
+            "notes": ""
+          }
+        },
+        {
+          "status": "annotated",
+          "definition": "manual",
+          "candidate_id": null,
+          "basis": null,
+          "endpoints": [
+            [
+              442.0,
+              110.0
+            ],
+            [
+              442.0,
+              590.0
+            ]
+          ],
+          "line_abc": [
+            1.0,
+            -0.0,
+            -442.0
+          ],
+          "notes": "",
+          "confirmed_at_utc": "2026-11-02T21:21:31.405347+00:00",
+          "reviewed": {
+            "status": "annotated",
+            "definition": "manual",
+            "candidate_id": null,
+            "basis": null,
+            "endpoints": [
+              [
+                442.0,
+                110.0
+              ],
+              [
+                442.0,
+                590.0
+              ]
+            ],
+            "line_abc": [
+              1.0,
+              -0.0,
+              -442.0
+            ],
+            "notes": ""
+          }
+        },
+        {
+          "status": "annotated",
+          "definition": "manual",
+          "candidate_id": null,
+          "basis": null,
+          "endpoints": [
+            [
+              442.0,
+              590.0
+            ],
+            [
+              110.0,
+              590.0
+            ]
+          ],
+          "line_abc": [
+            -0.0,
+            1.0,
+            -590.0
+          ],
+          "notes": "",
+          "confirmed_at_utc": "2026-11-02T21:21:31.405611+00:00",
+          "reviewed": {
+            "status": "annotated",
+            "definition": "manual",
+            "candidate_id": null,
+            "basis": null,
+            "endpoints": [
+              [
+                442.0,
+                590.0
+              ],
+              [
+                110.0,
+                590.0
+              ]
+            ],
+            "line_abc": [
+              -0.0,
+              1.0,
+              -590.0
+            ],
+            "notes": ""
+          }
+        },
+        {
+          "status": "annotated",
+          "definition": "manual",
+          "candidate_id": null,
+          "basis": null,
+          "endpoints": [
+            [
+              110.0,
+              590.0
+            ],
+            [
+              110.0,
+              110.0
+            ]
+          ],
+          "line_abc": [
+            1.0,
+            0.0,
+            -110.0
+          ],
+          "notes": "",
+          "confirmed_at_utc": "2026-11-02T21:21:31.405864+00:00",
+          "reviewed": {
+            "status": "annotated",
+            "definition": "manual",
+            "candidate_id": null,
+            "basis": null,
+            "endpoints": [
+              [
+                110.0,
+                590.0
+              ],
+              [
+                110.0,
+                110.0
+              ]
+            ],
+            "line_abc": [
+              1.0,
+              0.0,
+              -110.0
+            ],
+            "notes": ""
+          }
+        }
+      ],
+      "operator": "Test reviewer",
+      "at_utc": "2026-11-02T21:21:31.407534+00:00"
+    }
+  },
+  "condition": {
+    "schema_version": 1,
+    "runs": [],
+    "findings": [],
+    "reviews": {
+      "corners": {
+        "findings": [],
+        "operator": "Test reviewer",
+        "at_utc": "2026-11-02T21:21:31.408182+00:00",
+        "notes": "Synthetic full-category visual review",
+        "physical_validation": {
+          "sides": [
+            {
+              "status": "annotated",
+              "definition": "manual",
+              "candidate_id": null,
+              "basis": null,
+              "endpoints": [
+                [
+                  164.4,
+                  90.0
+                ],
+                [
+                  387.6,
+                  90.0
+                ]
+              ],
+              "line_abc": [
+                0.0,
+                1.0,
+                -90.0
+              ],
+              "notes": "",
+              "confirmed_at_utc": "2026-11-02T21:21:31.403155+00:00",
+              "reviewed": {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    164.4,
+                    90.0
+                  ],
+                  [
+                    387.6,
+                    90.0
+                  ]
+                ],
+                "line_abc": [
+                  0.0,
+                  1.0,
+                  -90.0
+                ],
+                "notes": ""
+              }
+            },
+            {
+              "status": "annotated",
+              "definition": "manual",
+              "candidate_id": null,
+              "basis": null,
+              "endpoints": [
+                [
+                  462.0,
+                  194.0
+                ],
+                [
+                  462.0,
+                  506.0
+                ]
+              ],
+              "line_abc": [
+                1.0,
+                -0.0,
+                -462.0
+              ],
+              "notes": "",
+              "confirmed_at_utc": "2026-11-02T21:21:31.403400+00:00",
+              "reviewed": {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    462.0,
+                    194.0
+                  ],
+                  [
+                    462.0,
+                    506.0
+                  ]
+                ],
+                "line_abc": [
+                  1.0,
+                  -0.0,
+                  -462.0
+                ],
+                "notes": ""
+              }
+            },
+            {
+              "status": "annotated",
+              "definition": "manual",
+              "candidate_id": null,
+              "basis": null,
+              "endpoints": [
+                [
+                  387.6,
+                  610.0
+                ],
+                [
+                  164.39999999999998,
+                  610.0
+                ]
+              ],
+              "line_abc": [
+                -0.0,
+                1.0,
+                -609.9999999999999
+              ],
+              "notes": "",
+              "confirmed_at_utc": "2026-11-02T21:21:31.403621+00:00",
+              "reviewed": {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    387.6,
+                    610.0
+                  ],
+                  [
+                    164.39999999999998,
+                    610.0
+                  ]
+                ],
+                "line_abc": [
+                  -0.0,
+                  1.0,
+                  -609.9999999999999
+                ],
+                "notes": ""
+              }
+            },
+            {
+              "status": "annotated",
+              "definition": "manual",
+              "candidate_id": null,
+              "basis": null,
+              "endpoints": [
+                [
+                  90.0,
+                  506.0
+                ],
+                [
+                  90.0,
+                  194.0
+                ]
+              ],
+              "line_abc": [
+                1.0,
+                0.0,
+                -90.0
+              ],
+              "notes": "",
+              "confirmed_at_utc": "2026-11-02T21:21:31.403828+00:00",
+              "reviewed": {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    90.0,
+                    506.0
+                  ],
+                  [
+                    90.0,
+                    194.0
+                  ]
+                ],
+                "line_abc": [
+                  1.0,
+                  0.0,
+                  -90.0
+                ],
+                "notes": ""
+              }
+            }
+          ],
+          "operator": "Test reviewer",
+          "at_utc": "2026-11-02T21:21:31.406765+00:00"
+        }
+      },
+      "edges": {
+        "findings": [],
+        "operator": "Test reviewer",
+        "at_utc": "2026-11-02T21:21:31.409429+00:00",
+        "notes": "Synthetic full-category visual review",
+        "physical_validation": {
+          "sides": [
+            {
+              "status": "annotated",
+              "definition": "manual",
+              "candidate_id": null,
+              "basis": null,
+              "endpoints": [
+                [
+                  164.4,
+                  90.0
+                ],
+                [
+                  387.6,
+                  90.0
+                ]
+              ],
+              "line_abc": [
+                0.0,
+                1.0,
+                -90.0
+              ],
+              "notes": "",
+              "confirmed_at_utc": "2026-11-02T21:21:31.403155+00:00",
+              "reviewed": {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    164.4,
+                    90.0
+                  ],
+                  [
+                    387.6,
+                    90.0
+                  ]
+                ],
+                "line_abc": [
+                  0.0,
+                  1.0,
+                  -90.0
+                ],
+                "notes": ""
+              }
+            },
+            {
+              "status": "annotated",
+              "definition": "manual",
+              "candidate_id": null,
+              "basis": null,
+              "endpoints": [
+                [
+                  462.0,
+                  194.0
+                ],
+                [
+                  462.0,
+                  506.0
+                ]
+              ],
+              "line_abc": [
+                1.0,
+                -0.0,
+                -462.0
+              ],
+              "notes": "",
+              "confirmed_at_utc": "2026-11-02T21:21:31.403400+00:00",
+              "reviewed": {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    462.0,
+                    194.0
+                  ],
+                  [
+                    462.0,
+                    506.0
+                  ]
+                ],
+                "line_abc": [
+                  1.0,
+                  -0.0,
+                  -462.0
+                ],
+                "notes": ""
+              }
+            },
+            {
+              "status": "annotated",
+              "definition": "manual",
+              "candidate_id": null,
+              "basis": null,
+              "endpoints": [
+                [
+                  387.6,
+                  610.0
+                ],
+                [
+                  164.39999999999998,
+                  610.0
+                ]
+              ],
+              "line_abc": [
+                -0.0,
+                1.0,
+                -609.9999999999999
+              ],
+              "notes": "",
+              "confirmed_at_utc": "2026-11-02T21:21:31.403621+00:00",
+              "reviewed": {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    387.6,
+                    610.0
+                  ],
+                  [
+                    164.39999999999998,
+                    610.0
+                  ]
+                ],
+                "line_abc": [
+                  -0.0,
+                  1.0,
+                  -609.9999999999999
+                ],
+                "notes": ""
+              }
+            },
+            {
+              "status": "annotated",
+              "definition": "manual",
+              "candidate_id": null,
+              "basis": null,
+              "endpoints": [
+                [
+                  90.0,
+                  506.0
+                ],
+                [
+                  90.0,
+                  194.0
+                ]
+              ],
+              "line_abc": [
+                1.0,
+                0.0,
+                -90.0
+              ],
+              "notes": "",
+              "confirmed_at_utc": "2026-11-02T21:21:31.403828+00:00",
+              "reviewed": {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    90.0,
+                    506.0
+                  ],
+                  [
+                    90.0,
+                    194.0
+                  ]
+                ],
+                "line_abc": [
+                  1.0,
+                  0.0,
+                  -90.0
+                ],
+                "notes": ""
+              }
+            }
+          ],
+          "operator": "Test reviewer",
+          "at_utc": "2026-11-02T21:21:31.406765+00:00"
+        }
+      },
+      "surface": {
+        "findings": [],
+        "operator": "Test reviewer",
+        "at_utc": "2026-11-02T21:21:31.409566+00:00",
+        "notes": "Synthetic full-category visual review",
+        "physical_validation": {
+          "sides": [
+            {
+              "status": "annotated",
+              "definition": "manual",
+              "candidate_id": null,
+              "basis": null,
+              "endpoints": [
+                [
+                  164.4,
+                  90.0
+                ],
+                [
+                  387.6,
+                  90.0
+                ]
+              ],
+              "line_abc": [
+                0.0,
+                1.0,
+                -90.0
+              ],
+              "notes": "",
+              "confirmed_at_utc": "2026-11-02T21:21:31.403155+00:00",
+              "reviewed": {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    164.4,
+                    90.0
+                  ],
+                  [
+                    387.6,
+                    90.0
+                  ]
+                ],
+                "line_abc": [
+                  0.0,
+                  1.0,
+                  -90.0
+                ],
+                "notes": ""
+              }
+            },
+            {
+              "status": "annotated",
+              "definition": "manual",
+              "candidate_id": null,
+              "basis": null,
+              "endpoints": [
+                [
+                  462.0,
+                  194.0
+                ],
+                [
+                  462.0,
+                  506.0
+                ]
+              ],
+              "line_abc": [
+                1.0,
+                -0.0,
+                -462.0
+              ],
+              "notes": "",
+              "confirmed_at_utc": "2026-11-02T21:21:31.403400+00:00",
+              "reviewed": {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    462.0,
+                    194.0
+                  ],
+                  [
+                    462.0,
+                    506.0
+                  ]
+                ],
+                "line_abc": [
+                  1.0,
+                  -0.0,
+                  -462.0
+                ],
+                "notes": ""
+              }
+            },
+            {
+              "status": "annotated",
+              "definition": "manual",
+              "candidate_id": null,
+              "basis": null,
+              "endpoints": [
+                [
+                  387.6,
+                  610.0
+                ],
+                [
+                  164.39999999999998,
+                  610.0
+                ]
+              ],
+              "line_abc": [
+                -0.0,
+                1.0,
+                -609.9999999999999
+              ],
+              "notes": "",
+              "confirmed_at_utc": "2026-11-02T21:21:31.403621+00:00",
+              "reviewed": {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    387.6,
+                    610.0
+                  ],
+                  [
+                    164.39999999999998,
+                    610.0
+                  ]
+                ],
+                "line_abc": [
+                  -0.0,
+                  1.0,
+                  -609.9999999999999
+                ],
+                "notes": ""
+              }
+            },
+            {
+              "status": "annotated",
+              "definition": "manual",
+              "candidate_id": null,
+              "basis": null,
+              "endpoints": [
+                [
+                  90.0,
+                  506.0
+                ],
+                [
+                  90.0,
+                  194.0
+                ]
+              ],
+              "line_abc": [
+                1.0,
+                0.0,
+                -90.0
+              ],
+              "notes": "",
+              "confirmed_at_utc": "2026-11-02T21:21:31.403828+00:00",
+              "reviewed": {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    90.0,
+                    506.0
+                  ],
+                  [
+                    90.0,
+                    194.0
+                  ]
+                ],
+                "line_abc": [
+                  1.0,
+                  0.0,
+                  -90.0
+                ],
+                "notes": ""
+              }
+            }
+          ],
+          "operator": "Test reviewer",
+          "at_utc": "2026-11-02T21:21:31.406765+00:00"
+        }
+      }
+    }
+  },
+  "saved_at_utc": "2026-11-02T21:21:31.433556+00:00",
+  "geometry_warnings": []
+}

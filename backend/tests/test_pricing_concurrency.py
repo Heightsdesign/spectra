@@ -7,7 +7,7 @@ from uuid import uuid4
 
 import pytest
 from fastapi.testclient import TestClient
-from sqlalchemy import delete, select
+from sqlalchemy import delete, select, text
 from sqlalchemy.orm import Session
 
 from checkout_fixtures import configure_shipping, prepare_delivery
@@ -65,6 +65,13 @@ def concurrent_api(test_engine, tmp_path):
             shipping_state.current_version = shipping_previous
             db.flush()
             db.execute(delete(ShippingConfiguration).where(ShippingConfiguration.version == shipping_version))
+            # Disposable integration fixture only: financial rows are append-only.
+            # test_engine already rejects every database not ending in _test.
+            assert test_engine.url.database.endswith("_test")
+            for table in ("order_commercial_events", "payment_obligations"):
+                db.execute(text(f"ALTER TABLE {table} DISABLE TRIGGER immutable_commercial"))
+                db.execute(text(f"DELETE FROM {table} WHERE submission_id IN (SELECT id FROM customer_submissions WHERE customer_id=:customer)"), {"customer":customer_id})
+                db.execute(text(f"ALTER TABLE {table} ENABLE TRIGGER immutable_commercial"))
             db.execute(delete(Submission).where(Submission.customer_id == customer_id))
             db.execute(delete(Customer).where(Customer.id == customer_id))
             db.execute(delete(PricingCatalog).where(PricingCatalog.version.in_(versions)))

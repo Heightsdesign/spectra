@@ -1,0 +1,116 @@
+[
+  {
+    "code": "B-P1",
+    "variant": "partial",
+    "route": "POST /api/submissions/{id}/shipment-declarations",
+    "commercial_state_before": "restricted",
+    "restriction_labels": [
+      "partially_refunded"
+    ],
+    "ui_can_declare": false,
+    "checkout_http": 409,
+    "expected_shipment_http": 409,
+    "actual_shipment_http": 409,
+    "declarations_created": 0,
+    "declaration_audit_events_created": 0,
+    "financial_identity_unchanged": true,
+    "transaction_rolled_back_at_teardown": true,
+    "submission_id": "e6e53d27-e3f8-4a17-9d4b-7276784011af",
+    "quote_id": "fe77db1e-36b6-410f-8b5c-318e348cf007"
+  },
+  {
+    "code": "B-P1",
+    "variant": "full",
+    "route": "POST /api/submissions/{id}/shipment-declarations",
+    "commercial_state_before": "restricted",
+    "restriction_labels": [
+      "refunded"
+    ],
+    "ui_can_declare": false,
+    "checkout_http": 409,
+    "expected_shipment_http": 409,
+    "actual_shipment_http": 409,
+    "declarations_created": 0,
+    "declaration_audit_events_created": 0,
+    "financial_identity_unchanged": true,
+    "transaction_rolled_back_at_teardown": true,
+    "submission_id": "fdfbb732-deb6-4f74-a75c-4e3d7c3e17f2",
+    "quote_id": "4b41cd02-f232-40fd-a8cd-567b05a23a79"
+  },
+  {
+    "code": "B-P1",
+    "variant": "dispute",
+    "route": "POST /api/submissions/{id}/shipment-declarations",
+    "commercial_state_before": "restricted",
+    "restriction_labels": [
+      "dispute_review"
+    ],
+    "ui_can_declare": false,
+    "checkout_http": 409,
+    "expected_shipment_http": 409,
+    "actual_shipment_http": 409,
+    "declarations_created": 0,
+    "declaration_audit_events_created": 0,
+    "financial_identity_unchanged": true,
+    "transaction_rolled_back_at_teardown": true,
+    "submission_id": "06122ca1-f70f-47d4-9fde-0af92200c073",
+    "quote_id": "335e2455-986b-4440-9949-90edd55e6118"
+  },
+  {
+    "code": "B-P1",
+    "variant": "refund_failed",
+    "route": "POST /api/submissions/{id}/shipment-declarations",
+    "commercial_state_before": "restricted",
+    "restriction_labels": [
+      "financial_review"
+    ],
+    "ui_can_declare": false,
+    "checkout_http": 409,
+    "expected_shipment_http": 409,
+    "actual_shipment_http": 409,
+    "declarations_created": 0,
+    "declaration_audit_events_created": 0,
+    "financial_identity_unchanged": true,
+    "transaction_rolled_back_at_teardown": true,
+    "submission_id": "32f64bb0-bfd0-4570-8376-ba5d4e06f9f5",
+    "quote_id": "efb22b90-c79b-4ede-bd1a-f30ffb30cd99"
+  },
+  {
+    "code": "B-P1",
+    "variant": "closed_dispute",
+    "route": "POST /api/submissions/{id}/shipment-declarations",
+    "commercial_state_before": "restricted",
+    "restriction_labels": [
+      "dispute_review"
+    ],
+    "ui_can_declare": false,
+    "checkout_http": 409,
+    "expected_shipment_http": 409,
+    "actual_shipment_http": 409,
+    "declarations_created": 0,
+    "declaration_audit_events_created": 0,
+    "financial_identity_unchanged": true,
+    "transaction_rolled_back_at_teardown": true,
+    "submission_id": "da74086e-555f-4eeb-bf8b-88e81c43d0e5",
+    "quote_id": "11d25967-298d-4555-8ad8-09d55eaaf08a"
+  },
+  {
+    "code": "B-P1",
+    "variant": "manual_hold",
+    "route": "POST /api/submissions/{id}/shipment-declarations",
+    "commercial_state_before": "restricted",
+    "restriction_labels": [
+      "commercial_hold"
+    ],
+    "ui_can_declare": false,
+    "checkout_http": 409,
+    "expected_shipment_http": 409,
+    "actual_shipment_http": 409,
+    "declarations_created": 0,
+    "declaration_audit_events_created": 0,
+    "financial_identity_unchanged": true,
+    "transaction_rolled_back_at_teardown": true,
+    "submission_id": "4aad9e57-9e8b-4a60-ac84-25a992348c34",
+    "quote_id": "0142550e-87b7-4498-aa7d-f252c22fb2e5"
+  }
+]

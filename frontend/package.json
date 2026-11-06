@@ -10,7 +10,8 @@
     "lint": "eslint . --max-warnings=0",
     "typecheck": "tsc --noEmit",
     "test": "node --experimental-strip-types --test tests/*.test.mjs",
-    "test:admin-browser": "node tests/admin-browser.mjs"
+    "test:admin-browser": "node tests/admin-browser.mjs",
+    "test:inspection-browser": "node tests/inspection-browser.mjs"
   },
   "dependencies": {"next": "latest", "react": "latest", "react-dom": "latest"},
   "devDependencies": {"@tailwindcss/postcss": "^4", "tailwindcss": "^4", "typescript": "^5", "@types/node": "^22", "@types/react": "^19", "@types/react-dom": "^19", "eslint": "^9", "eslint-config-next": "latest"}

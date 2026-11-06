@@ -1,0 +1,963 @@
+{
+  "run_id": "20261106T092305Z_8e5714a5",
+  "exit_code": 0,
+  "passed": 53,
+  "failed_or_error_phases": 0,
+  "skipped": 0,
+  "results": [
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_replays_both_orders_preserve_single_confirmation_and_dates[payment_intent.succeeded]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.475
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_replays_both_orders_preserve_single_confirmation_and_dates[payment_intent.succeeded]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.1687
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_replays_both_orders_preserve_single_confirmation_and_dates[payment_intent.succeeded]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0017
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_replays_both_orders_preserve_single_confirmation_and_dates[checkout.session.completed]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0081
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_replays_both_orders_preserve_single_confirmation_and_dates[checkout.session.completed]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.1023
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_replays_both_orders_preserve_single_confirmation_and_dates[checkout.session.completed]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0014
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_new_notifications_for_same_payment_do_not_recredit_or_reset_dates",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.009
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_new_notifications_for_same_payment_do_not_recredit_or_reset_dates",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0404
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_new_notifications_for_same_payment_do_not_recredit_or_reset_dates",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0014
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_same_event_identity_with_modified_body_is_rejected",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.008
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_same_event_identity_with_modified_body_is_rejected",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0344
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_same_event_identity_with_modified_body_is_rejected",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0014
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[missing]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0093
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[missing]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0171
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[missing]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0012
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[malformed]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0077
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[malformed]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0167
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[malformed]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0012
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[digest]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0085
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[digest]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0161
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[digest]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0012
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[wrong_secret]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0076
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[wrong_secret]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0162
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[wrong_secret]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0014
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[tampered_body]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0092
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[tampered_body]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0159
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[tampered_body]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0011
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[expired]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.008
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[expired]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0153
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[expired]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0015
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[duplicate_timestamp]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0074
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[duplicate_timestamp]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0153
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_invalid_signatures_rejected_before_provider_lookup[duplicate_timestamp]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0012
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[session-amount_total-2499]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0079
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[session-amount_total-2499]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0197
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[session-amount_total-2499]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0013
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[session-amount_total-2501]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0083
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[session-amount_total-2501]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0186
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[session-amount_total-2501]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0016
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[session-currency-usd]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.008
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[session-currency-usd]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.019
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[session-currency-usd]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0014
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[session-livemode-True]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0085
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[session-livemode-True]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0194
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[session-livemode-True]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0012
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[session-mode-subscription]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0077
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[session-mode-subscription]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0184
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[session-mode-subscription]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0013
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[session-client_reference_id-WRONG]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.007
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[session-client_reference_id-WRONG]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0172
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[session-client_reference_id-WRONG]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0011
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[pi-amount-2499]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0077
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[pi-amount-2499]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0178
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[pi-amount-2499]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0012
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[pi-amount-2501]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0072
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[pi-amount-2501]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0192
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[pi-amount-2501]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0012
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[pi-currency-usd]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0075
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[pi-currency-usd]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0176
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[pi-currency-usd]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0011
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[pi-livemode-True]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0079
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[pi-livemode-True]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0181
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[pi-livemode-True]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0012
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[charge-amount-2499]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0072
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[charge-amount-2499]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0181
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[charge-amount-2499]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0014
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[charge-currency-usd]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0071
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[charge-currency-usd]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0188
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[charge-currency-usd]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0013
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[charge-livemode-True]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0081
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[charge-livemode-True]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0186
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[charge-livemode-True]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0011
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[charge-payment_intent-pi_WRONG]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0069
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[charge-payment_intent-pi_WRONG]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0169
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_canonical_provider_mismatches_rejected[charge-payment_intent-pi_WRONG]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0013
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_quote_or_linkage_metadata_rejected[session-quote_id]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0078
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_quote_or_linkage_metadata_rejected[session-quote_id]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.019
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_quote_or_linkage_metadata_rejected[session-quote_id]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0012
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_quote_or_linkage_metadata_rejected[pi-quote_id]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0076
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_quote_or_linkage_metadata_rejected[pi-quote_id]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0177
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_quote_or_linkage_metadata_rejected[pi-quote_id]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0011
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_quote_or_linkage_metadata_rejected[pi-obligation_id]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0069
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_quote_or_linkage_metadata_rejected[pi-obligation_id]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0178
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_quote_or_linkage_metadata_rejected[pi-obligation_id]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0012
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_quote_or_linkage_metadata_rejected[session-submission_id]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0075
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_quote_or_linkage_metadata_rejected[session-submission_id]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0176
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_quote_or_linkage_metadata_rejected[session-submission_id]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0012
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_quote_or_linkage_metadata_rejected[pi-customer_id]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0074
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_quote_or_linkage_metadata_rejected[pi-customer_id]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0182
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_quote_or_linkage_metadata_rejected[pi-customer_id]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0012
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_account_environment_or_attempt_rejected[envelope_account]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.007
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_account_environment_or_attempt_rejected[envelope_account]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0135
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_account_environment_or_attempt_rejected[envelope_account]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0012
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_account_environment_or_attempt_rejected[api_account]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0074
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_account_environment_or_attempt_rejected[api_account]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0141
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_account_environment_or_attempt_rejected[api_account]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0011
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_account_environment_or_attempt_rejected[envelope_live]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.007
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_account_environment_or_attempt_rejected[envelope_live]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0128
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_account_environment_or_attempt_rejected[envelope_live]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0013
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_account_environment_or_attempt_rejected[unknown_attempt]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0076
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_account_environment_or_attempt_rejected[unknown_attempt]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0153
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_account_environment_or_attempt_rejected[unknown_attempt]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0011
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_account_environment_or_attempt_rejected[missing_attempt]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0069
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_account_environment_or_attempt_rejected[missing_attempt]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0158
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_account_environment_or_attempt_rejected[missing_attempt]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0011
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_account_environment_or_attempt_rejected[cross_session]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0074
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_account_environment_or_attempt_rejected[cross_session]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0181
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_wrong_account_environment_or_attempt_rejected[cross_session]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0011
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_unsettled_payment_acknowledged_but_never_credited[pi-amount_received-2499]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0075
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_unsettled_payment_acknowledged_but_never_credited[pi-amount_received-2499]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0218
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_unsettled_payment_acknowledged_but_never_credited[pi-amount_received-2499]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0012
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_unsettled_payment_acknowledged_but_never_credited[pi-status-processing]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0072
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_unsettled_payment_acknowledged_but_never_credited[pi-status-processing]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0222
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_unsettled_payment_acknowledged_but_never_credited[pi-status-processing]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0012
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_unsettled_payment_acknowledged_but_never_credited[session-payment_status-unpaid]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0074
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_unsettled_payment_acknowledged_but_never_credited[session-payment_status-unpaid]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0198
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_unsettled_payment_acknowledged_but_never_credited[session-payment_status-unpaid]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0014
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_unsettled_payment_acknowledged_but_never_credited[charge-paid-False]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0079
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_unsettled_payment_acknowledged_but_never_credited[charge-paid-False]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0209
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_unsettled_payment_acknowledged_but_never_credited[charge-paid-False]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0011
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_unsettled_payment_acknowledged_but_never_credited[charge-captured-False]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0084
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_unsettled_payment_acknowledged_but_never_credited[charge-captured-False]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0216
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_unsettled_payment_acknowledged_but_never_credited[charge-captured-False]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0011
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_live_or_production_settings_refused[change0]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0002
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_live_or_production_settings_refused[change0]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0008
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_live_or_production_settings_refused[change0]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0001
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_live_or_production_settings_refused[change1]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0002
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_live_or_production_settings_refused[change1]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0007
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_live_or_production_settings_refused[change1]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0001
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_live_or_production_settings_refused[change2]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0002
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_live_or_production_settings_refused[change2]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0006
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_live_or_production_settings_refused[change2]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0001
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_runtime_gate_blocks_checkout_and_signed_webhook[stripe_mode-live]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0086
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_runtime_gate_blocks_checkout_and_signed_webhook[stripe_mode-live]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0073
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_runtime_gate_blocks_checkout_and_signed_webhook[stripe_mode-live]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0011
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_runtime_gate_blocks_checkout_and_signed_webhook[stripe_secret_key-sk_live_SYNTHETIC]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0078
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_runtime_gate_blocks_checkout_and_signed_webhook[stripe_secret_key-sk_live_SYNTHETIC]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0068
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_runtime_gate_blocks_checkout_and_signed_webhook[stripe_secret_key-sk_live_SYNTHETIC]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0014
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_runtime_gate_blocks_checkout_and_signed_webhook[auth_environment-production]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0083
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_runtime_gate_blocks_checkout_and_signed_webhook[auth_environment-production]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0088
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_runtime_gate_blocks_checkout_and_signed_webhook[auth_environment-production]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0013
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_runtime_gate_blocks_checkout_and_signed_webhook[stripe_enabled-False]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.008
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_runtime_gate_blocks_checkout_and_signed_webhook[stripe_enabled-False]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0083
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_runtime_gate_blocks_checkout_and_signed_webhook[stripe_enabled-False]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0012
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_other_customer_cannot_read_or_pay_obligation",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0077
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_other_customer_cannot_read_or_pay_obligation",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.054
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_other_customer_cannot_read_or_pay_obligation",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0023
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_payload_tampering_and_csrf_rejected",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0142
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_payload_tampering_and_csrf_rejected",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0245
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_payload_tampering_and_csrf_rejected",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0022
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_double_click_reuses_single_attempt_without_credit",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0149
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_double_click_reuses_single_attempt_without_credit",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0363
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_double_click_reuses_single_attempt_without_credit",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0023
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_lost_provider_response_reuses_same_idempotency_key",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0126
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_lost_provider_response_reuses_same_idempotency_key",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0342
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_lost_provider_response_reuses_same_idempotency_key",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0027
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_concurrent_checkout_and_webhook_http_requests",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0151
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_concurrent_checkout_and_webhook_http_requests",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.3729
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_batch_a.py::test_concurrent_checkout_and_webhook_http_requests",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0391
+    }
+  ]
+}

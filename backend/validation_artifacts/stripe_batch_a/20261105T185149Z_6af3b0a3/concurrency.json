@@ -1,0 +1,31 @@
+{
+  "concurrent_checkout_requests": 6,
+  "checkout_http_codes": [
+    200,
+    200,
+    200,
+    200,
+    200,
+    200
+  ],
+  "simulated_sessions": 1,
+  "attempts": 1,
+  "concurrent_webhook_requests": 8,
+  "webhook_http_codes": [
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200
+  ],
+  "unique_webhook_events": 2,
+  "confirmations": 1,
+  "deadlines": 1,
+  "initial_dates_preserved": true,
+  "snapshot_sha256": "a3cfa2fcf2f7037724754a076f4057878a7d7ad7f7941c181692fd799c84b11f",
+  "submission_id": "80424d24-dd87-419a-84a2-5cb777b8421f",
+  "quote_id": "fdbac55d-86dc-45a0-850a-ee4fc50ef2f6"
+}

@@ -1,0 +1,19 @@
+{
+  "device_model": "Epson Perfection V39 II",
+  "manual_profile": "SPECTRA_CARD_600DPI",
+  "dpi": 600,
+  "gamma": 1.0,
+  "contrast": 0.0,
+  "color_mode": "RGB",
+  "bits_per_pixel": 24,
+  "preferred_format": "PNG",
+  "enhancement": false,
+  "deskew": false,
+  "automatic_crop": false,
+  "automatic_rotation": false,
+  "scan_region": null,
+  "expected_dimensions": null,
+  "dimension_tolerance_pixels": 2,
+  "dpi_tolerance": 1.0,
+  "safety_margin_mm": 2.0
+}

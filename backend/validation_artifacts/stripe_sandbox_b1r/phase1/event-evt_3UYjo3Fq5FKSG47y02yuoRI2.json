@@ -1,0 +1,186 @@
+{
+  "id": "evt_3UYjo3Fq5FKSG47y02yuoRI2",
+  "object": "event",
+  "api_version": "2026-10-28.endive",
+  "created": 1793958696,
+  "data": {
+    "object": {
+      "id": "pi_3UYjo3Fq5FKSG47y05NDxyiB",
+      "object": "payment_intent",
+      "allowed_payment_method_types": [
+        "card",
+        "bancontact",
+        "eps",
+        "klarna",
+        "link",
+        "mb_way",
+        "amazon_pay",
+        "satispay"
+      ],
+      "amount": 2500,
+      "amount_capturable": 0,
+      "amount_details": {
+        "shipping": {
+          "amount": 0,
+          "from_postal_code": null,
+          "to_postal_code": null
+        },
+        "tax": {
+          "total_tax_amount": 0
+        },
+        "tip": {}
+      },
+      "amount_received": 0,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null,
+      "cancellation_reason": null,
+      "capture_method": "automatic_async",
+      "confirmation_method": "automatic",
+      "created": 1793958695,
+      "currency": "eur",
+      "customer": null,
+      "customer_account": null,
+      "description": null,
+      "excluded_payment_method_types": null,
+      "last_payment_error": {
+        "advice_code": "try_again_later",
+        "charge": "ch_3UYjo3Fq5FKSG47y0beGGVQA",
+        "code": "card_declined",
+        "decline_code": "generic_decline",
+        "doc_url": "https://stripe.com/docs/error-codes/card-declined",
+        "message": "Your card was declined.",
+        "network_decline_code": "01",
+        "payment_method": {
+          "id": "pm_1UYjo3Fq5FKSG47y9IGnw86E",
+          "object": "payment_method",
+          "allow_redisplay": "limited",
+          "billing_details": {
+            "address": {
+              "city": null,
+              "country": "FR",
+              "line1": null,
+              "line2": null,
+              "postal_code": null,
+              "state": null
+            },
+            "email": "qa-decline@example.invalid",
+            "name": "QA B DECLINE",
+            "phone": null,
+            "tax_id": null
+          },
+          "card": {
+            "brand": "visa",
+            "checks": {
+              "address_line1_check": null,
+              "address_postal_code_check": null,
+              "cvc_check": "pass"
+            },
+            "country": "US",
+            "display_brand": "visa",
+            "exp_month": 12,
+            "exp_year": 2034,
+            "fingerprint": "NxeSZDBeXL0lv7rD",
+            "funding": "credit",
+            "generated_from": null,
+            "last4": "0002",
+            "networks": {
+              "available": [
+                "visa"
+              ],
+              "preferred": null
+            },
+            "regulated_status": "unregulated",
+            "three_d_secure_usage": {
+              "supported": true
+            },
+            "wallet": null
+          },
+          "created": 1793958695,
+          "customer": null,
+          "customer_account": null,
+          "livemode": false,
+          "metadata": {},
+          "shared_payment_granted_token": null,
+          "type": "card"
+        },
+        "payment_method_type": "card",
+        "type": "card_error"
+      },
+      "latest_charge": "ch_3UYjo3Fq5FKSG47y0beGGVQA",
+      "livemode": false,
+      "managed_payments": {
+        "enabled": false
+      },
+      "metadata": {
+        "attempt_id": "650fdf27-4d2d-4b86-9af9-d1095b1840a9",
+        "quote_id": "fee46f77-1c01-46b2-aa62-14dd1d58b8f7",
+        "obligation_id": "fee46f77-1c01-46b2-aa62-14dd1d58b8f7",
+        "customer_id": "03fccd81-ecd2-4391-a8d7-896a144366ff",
+        "submission_id": "72b147f5-3105-49a3-97f9-a3cccb246508"
+      },
+      "next_action": null,
+      "on_behalf_of": null,
+      "payment_details": {
+        "customer_reference": null,
+        "order_reference": "cs_test_a1IRqUhmuM7h8wTrTVMuqMOVK1D4zdCwXgQUTHSIPgcdiHNWyEJIPxePtC"
+      },
+      "payment_method": null,
+      "payment_method_configuration_details": null,
+      "payment_method_options": {
+        "amazon_pay": {
+          "express_checkout_element_session_id": null
+        },
+        "bancontact": {
+          "preferred_language": "en"
+        },
+        "card": {
+          "installments": null,
+          "mandate_options": null,
+          "network": null,
+          "request_three_d_secure": "automatic"
+        },
+        "eps": {},
+        "klarna": {
+          "preferred_locale": null
+        },
+        "link": {
+          "persistent_token": null
+        },
+        "mb_way": {},
+        "satispay": {}
+      },
+      "payment_method_types": [
+        "card",
+        "bancontact",
+        "eps",
+        "klarna",
+        "link",
+        "mb_way",
+        "amazon_pay",
+        "satispay"
+      ],
+      "payment_record": null,
+      "processing": null,
+      "receipt_email": null,
+      "review": null,
+      "setup_future_usage": null,
+      "shared_payment_granted_token": null,
+      "shipping": null,
+      "source": null,
+      "statement_descriptor": null,
+      "statement_descriptor_suffix": null,
+      "status": "requires_payment_method",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 2,
+  "request": {
+    "id": null,
+    "idempotency_key": "acae05a3-11e4-4c4c-92c2-620cfb0f46b4"
+  },
+  "type": "payment_intent.payment_failed"
+}

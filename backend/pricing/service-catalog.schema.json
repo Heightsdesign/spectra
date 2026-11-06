@@ -1,0 +1,526 @@
+{
+  "$defs": {
+    "Discount": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[a-z][a-z0-9-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "min_quantity": {
+          "maximum": 10000,
+          "minimum": 1,
+          "title": "Min Quantity",
+          "type": "integer"
+        },
+        "rate_bps": {
+          "maximum": 10000,
+          "minimum": 0,
+          "title": "Rate Bps",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "min_quantity",
+        "rate_bps"
+      ],
+      "title": "Discount",
+      "type": "object"
+    },
+    "LabelPresentation": {
+      "additionalProperties": false,
+      "properties": {
+        "position": {
+          "const": "front",
+          "title": "Position",
+          "type": "string"
+        },
+        "show_overall_grade": {
+          "const": true,
+          "title": "Show Overall Grade",
+          "type": "boolean"
+        },
+        "subgrades": {
+          "items": {
+            "enum": [
+              "centering",
+              "corners",
+              "edges",
+              "surface"
+            ],
+            "type": "string"
+          },
+          "maxItems": 4,
+          "minItems": 4,
+          "title": "Subgrades",
+          "type": "array"
+        }
+      },
+      "required": [
+        "position",
+        "show_overall_grade",
+        "subgrades"
+      ],
+      "title": "LabelPresentation",
+      "type": "object"
+    },
+    "Localized": {
+      "additionalProperties": false,
+      "properties": {
+        "FR": {
+          "maxLength": 2000,
+          "pattern": "^[^\\x00-\\x08\\x0b\\x0c\\x0e-\\x1f\\x7f]*$",
+          "title": "Fr",
+          "type": "string"
+        },
+        "EN": {
+          "maxLength": 2000,
+          "pattern": "^[^\\x00-\\x08\\x0b\\x0c\\x0e-\\x1f\\x7f]*$",
+          "title": "En",
+          "type": "string"
+        }
+      },
+      "required": [
+        "FR",
+        "EN"
+      ],
+      "title": "Localized",
+      "type": "object"
+    },
+    "OptionGroup": {
+      "additionalProperties": false,
+      "properties": {
+        "min_selected": {
+          "maximum": 16,
+          "minimum": 0,
+          "title": "Min Selected",
+          "type": "integer"
+        },
+        "max_selected": {
+          "maximum": 16,
+          "minimum": 1,
+          "title": "Max Selected",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "min_selected",
+        "max_selected"
+      ],
+      "title": "OptionGroup",
+      "type": "object"
+    },
+    "TaxTreatment": {
+      "additionalProperties": false,
+      "properties": {
+        "mode": {
+          "enum": [
+            "exclusive",
+            "inclusive",
+            "exempt",
+            "pending"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "rate_bps": {
+          "maximum": 10000,
+          "minimum": 0,
+          "title": "Rate Bps",
+          "type": "integer"
+        },
+        "validation_reference": {
+          "anyOf": [
+            {
+              "maxLength": 64,
+              "minLength": 1,
+              "pattern": "^[^\\x00-\\x1f\\x7f]+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Validation Reference"
+        }
+      },
+      "required": [
+        "mode",
+        "rate_bps"
+      ],
+      "title": "TaxTreatment",
+      "type": "object"
+    },
+    "Tier": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/Localized"
+        },
+        "description": {
+          "$ref": "#/$defs/Localized"
+        },
+        "price_adjustment_minor": {
+          "maximum": 100000000,
+          "minimum": 0,
+          "title": "Price Adjustment Minor",
+          "type": "integer"
+        },
+        "estimated_turnaround": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Localized"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "available": {
+          "title": "Available",
+          "type": "boolean"
+        },
+        "display_order": {
+          "maximum": 10000,
+          "minimum": 0,
+          "title": "Display Order",
+          "type": "integer"
+        },
+        "price_minor": {
+          "anyOf": [
+            {
+              "maximum": 100000000,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Price Minor"
+        },
+        "tax": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/TaxTreatment"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "name",
+        "description",
+        "price_adjustment_minor",
+        "available",
+        "display_order"
+      ],
+      "title": "Tier",
+      "type": "object"
+    },
+    "Upgrade": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/Localized"
+        },
+        "description": {
+          "$ref": "#/$defs/Localized"
+        },
+        "price_minor": {
+          "maximum": 100000000,
+          "minimum": 0,
+          "title": "Price Minor",
+          "type": "integer"
+        },
+        "group": {
+          "pattern": "^[a-z][a-z0-9-]{0,63}$",
+          "title": "Group",
+          "type": "string"
+        },
+        "available": {
+          "title": "Available",
+          "type": "boolean"
+        },
+        "display_order": {
+          "maximum": 10000,
+          "minimum": 0,
+          "title": "Display Order",
+          "type": "integer"
+        },
+        "incompatible_with": {
+          "items": {
+            "pattern": "^[a-z][a-z0-9-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Incompatible With",
+          "type": "array"
+        },
+        "allowed_tiers": {
+          "anyOf": [
+            {
+              "items": {
+                "pattern": "^[a-z][a-z0-9-]{0,63}$",
+                "type": "string"
+              },
+              "maxItems": 64,
+              "minItems": 1,
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Allowed Tiers"
+        },
+        "label_presentation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/LabelPresentation"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "name",
+        "description",
+        "price_minor",
+        "group",
+        "available",
+        "display_order"
+      ],
+      "title": "Upgrade",
+      "type": "object"
+    },
+    "VolumePrice": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[a-z][a-z0-9-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "min_quantity": {
+          "maximum": 10000,
+          "minimum": 1,
+          "title": "Min Quantity",
+          "type": "integer"
+        },
+        "unit_price_minor": {
+          "maximum": 100000000,
+          "minimum": 0,
+          "title": "Unit Price Minor",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "min_quantity",
+        "unit_price_minor"
+      ],
+      "title": "VolumePrice",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": 1,
+      "enum": [
+        1,
+        2
+      ],
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "name": {
+      "maxLength": 64,
+      "minLength": 1,
+      "pattern": "^[^\\x00-\\x1f\\x7f]+$",
+      "title": "Name",
+      "type": "string"
+    },
+    "currency": {
+      "const": "EUR",
+      "default": "EUR",
+      "title": "Currency",
+      "type": "string"
+    },
+    "development_only": {
+      "default": true,
+      "title": "Development Only",
+      "type": "boolean"
+    },
+    "stripe_test_only": {
+      "default": false,
+      "title": "Stripe Test Only",
+      "type": "boolean"
+    },
+    "approval_reference": {
+      "anyOf": [
+        {
+          "maxLength": 64,
+          "minLength": 1,
+          "pattern": "^[^\\x00-\\x1f\\x7f]+$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Approval Reference"
+    },
+    "base_price_minor": {
+      "maximum": 100000000,
+      "minimum": 0,
+      "title": "Base Price Minor",
+      "type": "integer"
+    },
+    "tiers": {
+      "maxProperties": 64,
+      "minProperties": 1,
+      "patternProperties": {
+        "^[a-z][a-z0-9-]{0,63}$": {
+          "$ref": "#/$defs/Tier"
+        }
+      },
+      "title": "Tiers",
+      "type": "object"
+    },
+    "upgrades": {
+      "maxProperties": 64,
+      "minProperties": 1,
+      "patternProperties": {
+        "^[a-z][a-z0-9-]{0,63}$": {
+          "$ref": "#/$defs/Upgrade"
+        }
+      },
+      "title": "Upgrades",
+      "type": "object"
+    },
+    "groups": {
+      "maxProperties": 64,
+      "minProperties": 1,
+      "patternProperties": {
+        "^[a-z][a-z0-9-]{0,63}$": {
+          "$ref": "#/$defs/OptionGroup"
+        }
+      },
+      "title": "Groups",
+      "type": "object"
+    },
+    "discounts": {
+      "items": {
+        "$ref": "#/$defs/Discount"
+      },
+      "maxItems": 100,
+      "title": "Discounts",
+      "type": "array"
+    },
+    "volume_prices": {
+      "items": {
+        "$ref": "#/$defs/VolumePrice"
+      },
+      "maxItems": 100,
+      "title": "Volume Prices",
+      "type": "array"
+    },
+    "customer_gross_prices": {
+      "default": false,
+      "title": "Customer Gross Prices",
+      "type": "boolean"
+    },
+    "tax_validation_reference": {
+      "anyOf": [
+        {
+          "maxLength": 64,
+          "minLength": 1,
+          "pattern": "^[^\\x00-\\x1f\\x7f]+$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Tax Validation Reference"
+    },
+    "discount_scope": {
+      "default": "base",
+      "enum": [
+        "base",
+        "all"
+      ],
+      "title": "Discount Scope",
+      "type": "string"
+    },
+    "tax_mode": {
+      "enum": [
+        "exclusive",
+        "inclusive",
+        "exempt",
+        "pending"
+      ],
+      "title": "Tax Mode",
+      "type": "string"
+    },
+    "tax_rate_bps": {
+      "maximum": 10000,
+      "minimum": 0,
+      "title": "Tax Rate Bps",
+      "type": "integer"
+    },
+    "tax_description": {
+      "$ref": "#/$defs/Localized"
+    },
+    "quote_lifetime_seconds": {
+      "maximum": 604800,
+      "minimum": 60,
+      "title": "Quote Lifetime Seconds",
+      "type": "integer"
+    },
+    "commercial_terms_version": {
+      "anyOf": [
+        {
+          "maxLength": 64,
+          "minLength": 1,
+          "pattern": "^[^\\x00-\\x1f\\x7f]+$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Commercial Terms Version"
+    }
+  },
+  "required": [
+    "name",
+    "base_price_minor",
+    "tiers",
+    "upgrades",
+    "groups",
+    "tax_mode",
+    "tax_rate_bps",
+    "tax_description",
+    "quote_lifetime_seconds"
+  ],
+  "title": "Catalog",
+  "type": "object"
+}

@@ -1,0 +1,17 @@
+{
+  "checkout": {
+    "http": 409,
+    "body": {
+      "detail": "payment_already_verified_or_restricted"
+    }
+  },
+  "shipment": {
+    "http": 409,
+    "body": {
+      "detail": "payment_financial_restriction"
+    }
+  },
+  "declarations_before": 0,
+  "declarations_after": 0,
+  "attempts": 1
+}

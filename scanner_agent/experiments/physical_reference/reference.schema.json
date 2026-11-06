@@ -1,0 +1,380 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:spectra:physical-boundary-reference:1",
+  "title": "Reviewed physical material boundaries (R&D only)",
+  "description": "Unconfirmed editor drafts are deliberately invalid against this reference schema. Python validation additionally verifies image identity, ordering, endpoint/line equivalence, unchanged confirmations and intersections.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "kind",
+    "tool_version",
+    "annotation_id",
+    "annotation_version",
+    "created_at_utc",
+    "previous_annotation_sha256",
+    "coordinate_system",
+    "image",
+    "reviewer",
+    "independent_review_declared",
+    "candidate_overlays_seen",
+    "source_reports",
+    "sides"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "kind": {
+      "const": "physical_boundary_reference"
+    },
+    "tool_version": {
+      "const": "0.1.0"
+    },
+    "annotation_id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "annotation_version": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "created_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "previous_annotation_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "coordinate_system": {
+      "const": "original_image_pixels_xy_right_down_v1"
+    },
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sha256",
+        "dimensions",
+        "mode"
+      ],
+      "properties": {
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "dimensions": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "mode": {
+          "const": "RGB"
+        }
+      }
+    },
+    "reviewer": {
+      "type": "string",
+      "minLength": 1
+    },
+    "independent_review_declared": {
+      "const": true
+    },
+    "candidate_overlays_seen": {
+      "type": "boolean"
+    },
+    "source_reports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        }
+      }
+    },
+    "sides": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "index",
+          "name",
+          "status",
+          "endpoints",
+          "line_abc",
+          "uncertainty_pixels",
+          "notes",
+          "origin",
+          "confirmed",
+          "confirmed_at_utc",
+          "reviewed"
+        ],
+        "properties": {
+          "index": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 3
+          },
+          "name": {
+            "enum": [
+              "top",
+              "right",
+              "bottom",
+              "left"
+            ]
+          },
+          "status": {
+            "enum": [
+              "certain",
+              "uncertain",
+              "indeterminate"
+            ]
+          },
+          "endpoints": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "items": {
+                    "type": "number",
+                    "minimum": 0
+                  }
+                }
+              }
+            ]
+          },
+          "line_abc": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "array",
+                "minItems": 3,
+                "maxItems": 3,
+                "items": {
+                  "type": "number"
+                }
+              }
+            ]
+          },
+          "uncertainty_pixels": {
+            "oneOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "number",
+                "exclusiveMinimum": 0
+              }
+            ]
+          },
+          "notes": {
+            "type": "string"
+          },
+          "origin": {
+            "enum": [
+              "manual",
+              "detector_seed"
+            ]
+          },
+          "confirmed": {
+            "const": true
+          },
+          "confirmed_at_utc": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "reviewed": {
+            "type": "object",
+            "required": [
+              "status",
+              "endpoints",
+              "line_abc",
+              "uncertainty_pixels",
+              "notes",
+              "origin"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "certain",
+                  "uncertain",
+                  "indeterminate"
+                ]
+              },
+              "endpoints": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 2,
+                    "items": {
+                      "type": "array",
+                      "minItems": 2,
+                      "maxItems": 2,
+                      "items": {
+                        "type": "number",
+                        "minimum": 0
+                      }
+                    }
+                  }
+                ]
+              },
+              "line_abc": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "minItems": 3,
+                    "maxItems": 3,
+                    "items": {
+                      "type": "number"
+                    }
+                  }
+                ]
+              },
+              "uncertainty_pixels": {
+                "oneOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "number",
+                    "exclusiveMinimum": 0
+                  }
+                ]
+              },
+              "notes": {
+                "type": "string"
+              },
+              "origin": {
+                "enum": [
+                  "manual",
+                  "detector_seed"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "indeterminate"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "endpoints": {
+                  "type": "null"
+                },
+                "line_abc": {
+                  "type": "null"
+                },
+                "uncertainty_pixels": {
+                  "type": "null"
+                },
+                "notes": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "endpoints": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "items": {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 2,
+                    "items": {
+                      "type": "number",
+                      "minimum": 0
+                    }
+                  }
+                },
+                "line_abc": {
+                  "type": "array",
+                  "minItems": 3,
+                  "maxItems": 3,
+                  "items": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "uncertain"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "uncertainty_pixels": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "notes": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "else": {
+              "properties": {
+                "uncertainty_pixels": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

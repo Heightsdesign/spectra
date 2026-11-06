@@ -1,0 +1,7 @@
+{
+  "invalid_signature_rejected": true,
+  "raw_body_reencoded": false,
+  "all_event_types_held": true,
+  "dedicated_forward_port": 18011,
+  "backend_requires_QA_delivery_nonce": true
+}

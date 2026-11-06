@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Blind physical-boundary review</title>
+<style>
+body{font:16px system-ui;background:#18212b;color:#fff;margin:20px}button,input,select,textarea{font:inherit;margin:5px;padding:5px}label{display:inline-block}canvas{background:#333;max-width:100%;touch-action:none;border:1px solid #aaa}fieldset{margin:10px 0}#message{white-space:pre-wrap;color:#ffe08a}.coordinates input{width:100px}textarea{width:350px}button:focus,input:focus{outline:3px solid #ffdf00}
+</style>
+<h1>Blind physical-boundary review — R&D only</h1>
+<p>Place each physical material edge manually. No previous geometry is provided. Drag a line body to translate it; drag either circular handle to adjust an endpoint. Hover highlights the target. Wheel to zoom; drag empty image to pan (Shift-drag or middle-drag pans over lines). Select “Place two points”, then click two original-image positions. Editing clears confirmation. Straight-line intersections extrapolate rounded corners.</p>
+<p id="identity"></p>
+<fieldset id="review-controls"><legend>Reviewer and exposure declaration</legend>
+<label>Reviewer identity <input id="reviewer" autocomplete="off"></label>
+<label>Prior exposure to detector results for this image <select id="exposure"><option value="">Select explicitly</option><option value="none">None</option><option value="exposed">Exposed</option><option value="unknown">Unknown</option></select></label>
+<label><input id="declaration" type="checkbox">I reviewed these physical boundaries manually without comparison material during this pass.</label>
+<p>Prior exposure cannot be undone. Exposed or unknown reviews are retained as such and are ineligible for a blind declaration.</p>
+</fieldset>
+<fieldset id="side-controls"><legend>Manual side review</legend>
+<select id="side"><option>top</option><option>right</option><option>bottom</option><option>left</option></select>
+<button id="place">Place two points</button><button id="clear">Clear geometry</button><button id="fit">Fit image</button>
+<label>Zoom <input id="zoom" type="number" min="0.1" max="64" step="0.25" value="1"></label>
+<div class="coordinates"><label>x1 <input id="x1" type="number" step="0.05"></label><label>y1 <input id="y1" type="number" step="0.05"></label><label>x2 <input id="x2" type="number" step="0.05"></label><label>y2 <input id="y2" type="number" step="0.05"></label><button id="apply">Apply coordinates</button></div>
+<label>Status <select id="status"><option value="unreviewed">Unreviewed</option><option value="certain">Certain</option><option value="uncertain">Uncertain</option><option value="indeterminate">Visually indeterminate (no line)</option></select></label>
+<label>Uncertainty ± pixels <input id="uncertainty" type="number" min="0.01" step="0.05"></label>
+<label>Reviewer notes <textarea id="notes"></textarea></label><button id="confirm">Confirm this side explicitly</button>
+<p id="confirmations"></p></fieldset>
+<canvas id="view" width="1100" height="650" aria-label="Original scan and manually drawn reference lines"></canvas>
+<p><button id="export">Export and lock first pass</button> Export locks this page. Freeze the downloaded bundle using the coordinator command before any comparison. Revisions require a separate session/artifact.</p>
+<p id="message" role="status"></p>
+<script id="blind-data" type="application/json">__DATA__</script>
+<script>__CORE__</script><script>__MODEL__</script><script>__EDITOR__</script></html>

@@ -1,0 +1,16 @@
+{
+  "platform": "windows",
+  "printers": [
+    "Munbyn ITPP941",
+    "Microsoft Print to PDF"
+  ],
+  "physical_jobs_submitted": 0,
+  "selected": "Munbyn ITPP941",
+  "width_mm": 50.09,
+  "height_mm": 29.99,
+  "dpi": 203,
+  "orientation": "Orientation.Portrait",
+  "full_page": true,
+  "copies": 1,
+  "result": "configured_without_submission"
+}

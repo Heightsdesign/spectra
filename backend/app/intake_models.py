@@ -57,7 +57,7 @@ class PhysicalCard(Base):
     notes: Mapped[str] = mapped_column(String(2000), default='')
     received_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
-    __table_args__ = (UniqueConstraint('submission_id','request_key'), CheckConstraint("status IN ('unidentified','matched','questionable')", name='ck_physical_status'))
+    __table_args__ = (UniqueConstraint('submission_id','request_key'), UniqueConstraint('id','submission_id', name='uq_pc_submission'), CheckConstraint("status IN ('unidentified','matched','questionable')", name='ck_physical_status'))
 
 
 class Discrepancy(Base):

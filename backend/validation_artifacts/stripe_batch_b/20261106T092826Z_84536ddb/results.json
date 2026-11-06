@@ -1,0 +1,118 @@
+{
+  "run_id": "20261106T092826Z_84536ddb",
+  "priority_only": false,
+  "exit_code": 0,
+  "passed": 6,
+  "failed_or_error_phases": 0,
+  "skipped": 0,
+  "results": [
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_historical_shipment_replay_after_restriction[partial]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.5085
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_historical_shipment_replay_after_restriction[partial]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.1193
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_historical_shipment_replay_after_restriction[partial]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0015
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_historical_shipment_replay_after_restriction[full]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0094
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_historical_shipment_replay_after_restriction[full]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0524
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_historical_shipment_replay_after_restriction[full]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0012
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_historical_shipment_replay_after_restriction[dispute]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0081
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_historical_shipment_replay_after_restriction[dispute]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0555
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_historical_shipment_replay_after_restriction[dispute]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0011
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_historical_shipment_replay_after_restriction[refund_failed]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0354
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_historical_shipment_replay_after_restriction[refund_failed]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0524
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_historical_shipment_replay_after_restriction[refund_failed]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0014
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_historical_shipment_replay_after_restriction[closed_dispute]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0068
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_historical_shipment_replay_after_restriction[closed_dispute]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0511
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_historical_shipment_replay_after_restriction[closed_dispute]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0013
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_historical_shipment_replay_after_restriction[manual_hold]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0084
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_historical_shipment_replay_after_restriction[manual_hold]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0539
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_historical_shipment_replay_after_restriction[manual_hold]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0654
+    }
+  ]
+}

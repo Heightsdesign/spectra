@@ -6,9 +6,19 @@ from app.database import Base
 from app import models  # noqa: F401
 from app import customer_models  # noqa: F401
 from app import submission_models  # noqa: F401
+from app import stripe_models  # noqa: F401
+from app import logistics_models  # noqa: F401
+from app import commercial_models  # noqa: F401
 from app import pricing_models  # noqa: F401
 from app import checkout_models  # noqa: F401
 from app import intake_models  # noqa: F401
+
+from app import inspection_models  # noqa: F401
+
+from app import tcg_models  # noqa: F401
+from app import library_models  # noqa: F401
+from app import production_models  # noqa: F401
+from app import intake_voids  # noqa: F401
 
 target_metadata = Base.metadata
 url = get_settings().database_url

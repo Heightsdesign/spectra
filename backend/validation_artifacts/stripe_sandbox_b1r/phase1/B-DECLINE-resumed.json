@@ -1,0 +1,356 @@
+{
+  "at": "2026-11-06T09:52:11.758613+00:00",
+  "identity": {
+    "account_id": "acct_1UXDxRFq5FKSG47y",
+    "business_name": "Selby sandbox",
+    "test_key": true,
+    "database": "spectra_test",
+    "api_version": "2025-02-24.acacia"
+  },
+  "case": "B-DECLINE",
+  "label": "resumed",
+  "commercial": {
+    "charging_enabled": true,
+    "accepted_quote_id": "fee46f77-1c01-46b2-aa62-14dd1d58b8f7",
+    "financial_restrictions": [],
+    "payment_status": "pending",
+    "verified_payment_at": null,
+    "dispatch_deadline": null,
+    "dispatch_policy": {
+      "calendar_days_after_verified_payment": 30,
+      "timezone": "UTC",
+      "automatic_forfeiture": false
+    },
+    "indicators": [
+      "awaiting_verified_payment"
+    ],
+    "shipment_declarations": [],
+    "parcel_receipts": [],
+    "audit": [
+      {
+        "id": "fa94ef9c-9063-4f6f-96e3-d4d8e9c7dbf5",
+        "kind": "quote_accepted_awaiting_payment",
+        "data": {
+          "quote_id": "fee46f77-1c01-46b2-aa62-14dd1d58b8f7",
+          "amount_minor": 2500
+        },
+        "reason": null,
+        "created_at": "2026-11-06T10:46:34.169433+01:00"
+      }
+    ]
+  },
+  "objects": [
+    {
+      "attempt_id": "650fdf27-4d2d-4b86-9af9-d1095b1840a9",
+      "attempt_status": "pending",
+      "session": {
+        "id": "cs_test_a1IRqUhmuM7h8wTrTVMuqMOVK1D4zdCwXgQUTHSIPgcdiHNWyEJIPxePtC",
+        "object": "checkout.session",
+        "adaptive_pricing": {
+          "enabled": true
+        },
+        "after_expiration": null,
+        "allow_promotion_codes": null,
+        "allowed_payment_method_types": null,
+        "amount_subtotal": 2500,
+        "amount_total": 2500,
+        "automatic_tax": {
+          "address_collection_precision": null,
+          "enabled": false,
+          "liability": null,
+          "provider": null,
+          "status": null
+        },
+        "billing_address_collection": null,
+        "branding_settings": {
+          "background_color": "#ffffff",
+          "border_style": "rounded",
+          "button_color": "#0074d4",
+          "display_name": "Selby sandbox",
+          "font_family": "default",
+          "icon": null,
+          "logo": null
+        },
+        "cancel_url": "http://127.0.0.1:13010/account/submissions/72b147f5-3105-49a3-97f9-a3cccb246508?stripe_return=1",
+        "client_reference_id": "650fdf27-4d2d-4b86-9af9-d1095b1840a9",
+        "collected_information": null,
+        "consent": null,
+        "consent_collection": null,
+        "created": 1793958583,
+        "currency": "eur",
+        "currency_conversion": null,
+        "custom_fields": [],
+        "custom_text": {
+          "after_submit": null,
+          "shipping_address": null,
+          "submit": null,
+          "terms_of_service_acceptance": null
+        },
+        "customer": null,
+        "customer_account": null,
+        "customer_creation": "if_required",
+        "customer_details": {
+          "address": null,
+          "business_name": null,
+          "email": "qa-decline@example.invalid",
+          "individual_name": null,
+          "name": null,
+          "phone": null,
+          "tax_exempt": "none",
+          "tax_ids": null
+        },
+        "customer_email": null,
+        "discounts": [],
+        "expires_at": 1794044983,
+        "integration_identifier": null,
+        "invoice": null,
+        "invoice_creation": {
+          "enabled": false,
+          "invoice_data": {
+            "account_tax_ids": null,
+            "custom_fields": null,
+            "description": null,
+            "footer": null,
+            "issuer": null,
+            "metadata": {},
+            "rendering_options": null
+          }
+        },
+        "livemode": false,
+        "locale": null,
+        "managed_payments": {
+          "enabled": false
+        },
+        "marketing_attributions": null,
+        "metadata": {
+          "attempt_id": "650fdf27-4d2d-4b86-9af9-d1095b1840a9",
+          "customer_id": "03fccd81-ecd2-4391-a8d7-896a144366ff",
+          "obligation_id": "fee46f77-1c01-46b2-aa62-14dd1d58b8f7",
+          "quote_id": "fee46f77-1c01-46b2-aa62-14dd1d58b8f7",
+          "submission_id": "72b147f5-3105-49a3-97f9-a3cccb246508"
+        },
+        "mode": "payment",
+        "origin_context": null,
+        "payment_intent": "pi_3UYjo3Fq5FKSG47y05NDxyiB",
+        "payment_link": null,
+        "payment_method_collection": "if_required",
+        "payment_method_configuration_details": {
+          "id": "pmc_1UXDy6Fq5FKSG47yeL59kkcp",
+          "parent": null
+        },
+        "payment_method_options": {
+          "card": {
+            "request_three_d_secure": "automatic"
+          }
+        },
+        "payment_method_types": [
+          "card",
+          "bancontact",
+          "eps",
+          "klarna",
+          "link",
+          "mb_way",
+          "amazon_pay",
+          "satispay"
+        ],
+        "payment_status": "unpaid",
+        "permissions": null,
+        "phone_number_collection": {
+          "enabled": false
+        },
+        "recovered_from": null,
+        "saved_payment_method_options": null,
+        "setup_intent": null,
+        "shipping_address_collection": null,
+        "shipping_cost": null,
+        "shipping_details": null,
+        "shipping_options": [],
+        "status": "open",
+        "submit_type": null,
+        "subscription": null,
+        "success_url": "http://127.0.0.1:13010/account/submissions/72b147f5-3105-49a3-97f9-a3cccb246508?stripe_return=1",
+        "total_details": {
+          "amount_discount": 0,
+          "amount_shipping": 0,
+          "amount_tax": 0
+        },
+        "ui_mode": "hosted",
+        "wallet_options": null
+      },
+      "payment_intent": {
+        "id": "pi_3UYjo3Fq5FKSG47y05NDxyiB",
+        "object": "payment_intent",
+        "allowed_payment_method_types": [
+          "card",
+          "bancontact",
+          "eps",
+          "klarna",
+          "link",
+          "mb_way",
+          "amazon_pay",
+          "satispay"
+        ],
+        "amount": 2500,
+        "amount_capturable": 0,
+        "amount_details": {
+          "shipping": {
+            "amount": 0,
+            "from_postal_code": null,
+            "to_postal_code": null
+          },
+          "tax": {
+            "total_tax_amount": 0
+          },
+          "tip": {}
+        },
+        "amount_received": 0,
+        "application": null,
+        "application_fee_amount": null,
+        "automatic_payment_methods": null,
+        "canceled_at": null,
+        "cancellation_reason": null,
+        "capture_method": "automatic_async",
+        "confirmation_method": "automatic",
+        "created": 1793958695,
+        "currency": "eur",
+        "customer": null,
+        "customer_account": null,
+        "description": null,
+        "excluded_payment_method_types": null,
+        "invoice": null,
+        "last_payment_error": {
+          "advice_code": "try_again_later",
+          "charge": "ch_3UYjo3Fq5FKSG47y0beGGVQA",
+          "code": "card_declined",
+          "decline_code": "generic_decline",
+          "doc_url": "https://stripe.com/docs/error-codes/card-declined",
+          "message": "Your card was declined.",
+          "network_decline_code": "01",
+          "payment_method": {
+            "id": "pm_1UYjo3Fq5FKSG47y9IGnw86E",
+            "object": "payment_method",
+            "allow_redisplay": "limited",
+            "billing_details": {
+              "address": {
+                "city": null,
+                "country": "FR",
+                "line1": null,
+                "line2": null,
+                "postal_code": null,
+                "state": null
+              },
+              "email": "qa-decline@example.invalid",
+              "name": "QA B DECLINE",
+              "phone": null,
+              "tax_id": null
+            },
+            "card": {
+              "brand": "visa",
+              "checks": {
+                "address_line1_check": null,
+                "address_postal_code_check": null,
+                "cvc_check": "pass"
+              },
+              "country": "US",
+              "display_brand": "visa",
+              "exp_month": 12,
+              "exp_year": 2034,
+              "fingerprint": "NxeSZDBeXL0lv7rD",
+              "funding": "credit",
+              "generated_from": null,
+              "last4": "0002",
+              "networks": {
+                "available": [
+                  "visa"
+                ],
+                "preferred": null
+              },
+              "regulated_status": "unregulated",
+              "three_d_secure_usage": {
+                "supported": true
+              },
+              "wallet": null
+            },
+            "created": 1793958695,
+            "customer": null,
+            "customer_account": null,
+            "livemode": false,
+            "metadata": {},
+            "shared_payment_granted_token": null,
+            "type": "card"
+          },
+          "payment_method_type": "card",
+          "type": "card_error"
+        },
+        "latest_charge": "ch_3UYjo3Fq5FKSG47y0beGGVQA",
+        "livemode": false,
+        "managed_payments": {
+          "enabled": false
+        },
+        "metadata": {
+          "attempt_id": "650fdf27-4d2d-4b86-9af9-d1095b1840a9",
+          "customer_id": "03fccd81-ecd2-4391-a8d7-896a144366ff",
+          "obligation_id": "fee46f77-1c01-46b2-aa62-14dd1d58b8f7",
+          "quote_id": "fee46f77-1c01-46b2-aa62-14dd1d58b8f7",
+          "submission_id": "72b147f5-3105-49a3-97f9-a3cccb246508"
+        },
+        "next_action": null,
+        "on_behalf_of": null,
+        "payment_details": {
+          "customer_reference": null,
+          "order_reference": "cs_test_a1IRqUhmuM7h8wTrTVMuqMOVK1D4zdCwXgQUTHSIPgcdiHNWyEJIPxePtC"
+        },
+        "payment_method": null,
+        "payment_method_configuration_details": null,
+        "payment_method_options": {
+          "amazon_pay": {
+            "express_checkout_element_session_id": null
+          },
+          "bancontact": {
+            "preferred_language": "en"
+          },
+          "card": {
+            "installments": null,
+            "mandate_options": null,
+            "network": null,
+            "request_three_d_secure": "automatic"
+          },
+          "eps": {},
+          "klarna": {
+            "preferred_locale": null
+          },
+          "link": {
+            "persistent_token": null
+          },
+          "mb_way": {},
+          "satispay": {}
+        },
+        "payment_method_types": [
+          "card",
+          "bancontact",
+          "eps",
+          "klarna",
+          "link",
+          "mb_way",
+          "amazon_pay",
+          "satispay"
+        ],
+        "payment_record": null,
+        "processing": null,
+        "receipt_email": null,
+        "review": null,
+        "setup_future_usage": null,
+        "shared_payment_granted_token": null,
+        "shipping": null,
+        "source": null,
+        "statement_descriptor": null,
+        "statement_descriptor_suffix": null,
+        "status": "requires_payment_method",
+        "transfer_data": null,
+        "transfer_group": null
+      }
+    }
+  ],
+  "database_payment": null,
+  "deadlines": []
+}

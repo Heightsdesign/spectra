@@ -1,0 +1,9 @@
+{
+  "QA_ports_closed": {
+    "13010": true,
+    "18010": true,
+    "19313": true,
+    "19314": true
+  },
+  "generated_next_env_unchanged": true
+}

@@ -1,0 +1,40 @@
+{
+  "stripe_test_only": true,
+  "currency": "EUR",
+  "supported_destinations": [
+    "FR"
+  ],
+  "receiving_address": null,
+  "services": {
+    "fictitious-test-return-fr": {
+      "name": {
+        "FR": "FICTIF ? STRIPE TEST : retour France",
+        "EN": "FICTIONAL ? STRIPE TEST: France return"
+      },
+      "available": true,
+      "countries": [
+        "FR"
+      ],
+      "charge_minor": 500,
+      "tracked": true,
+      "trading_cards_coverage_verified": true,
+      "coverage_reference": "SYNTHETIC-TEST-ONLY-NO-REAL-INSURANCE",
+      "coverage_minor": 100000,
+      "coverage": {
+        "FR": "Simulation uniquement : aucune couverture r?elle.",
+        "EN": "Simulation only: no real coverage."
+      },
+      "exclusions": {
+        "FR": "Aucun transport ni remboursement r?el. Ne pas envoyer de cartes.",
+        "EN": "No real transport or compensation. Do not ship cards."
+      },
+      "phone_required": false,
+      "tax_mode": "exempt",
+      "tax_rate_bps": 0,
+      "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION",
+      "zone": "FICTITIOUS-FR",
+      "min_cards": 1,
+      "max_cards": 100
+    }
+  }
+}

@@ -2,7 +2,7 @@
 from datetime import datetime
 from uuid import UUID, uuid4
 
-from sqlalchemy import CheckConstraint, DateTime, ForeignKey, func
+from sqlalchemy import CheckConstraint, DateTime, ForeignKey, ForeignKeyConstraint, func
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Mapped, mapped_column
 
@@ -25,9 +25,10 @@ class PricingState(Base):
 
 class SubmissionQuote(Base):
     __tablename__ = "submission_quotes"
-    __table_args__ = (CheckConstraint("expires_at > created_at", name="ck_quote_expiry"),)
+    __table_args__ = (CheckConstraint("expires_at > created_at", name="ck_quote_expiry"), ForeignKeyConstraint(["physical_card_id", "submission_id"], ["physical_cards.id", "physical_cards.submission_id"], name="fk_supplement_quote_pc"))
     id: Mapped[UUID] = mapped_column(primary_key=True, default=uuid4)
     submission_id: Mapped[UUID] = mapped_column(ForeignKey("customer_submissions.id", ondelete="CASCADE"), index=True)
+    physical_card_id: Mapped[UUID | None] = mapped_column()
     pricing_revision: Mapped[int]
     catalog_version: Mapped[UUID] = mapped_column(ForeignKey("pricing_catalogs.version"))
     snapshot: Mapped[dict] = mapped_column(JSONB)

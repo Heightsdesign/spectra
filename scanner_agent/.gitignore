@@ -1,0 +1,9 @@
+.venv/
+.venv-analysis/
+local_data/
+export_inbox/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+__pycache__/
+test_tmp*/

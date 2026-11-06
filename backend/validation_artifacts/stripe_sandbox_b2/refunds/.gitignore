@@ -1,0 +1,3 @@
+# Original signed envelopes, QA cookies, generated-file backup and profile stay local.
+private-*
+browser-command.json

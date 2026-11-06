@@ -1,0 +1,2 @@
+{"at": "2026-11-06T12:01:41.207183+00:00", "path": "/api/submissions/4506971d-4a51-416c-8ef2-ffda7a5698b7/stripe-checkout", "http": 200, "body": {"status": "pending"}, "url_present": true}
+{"at": "2026-11-06T12:02:46.976496+00:00", "path": "/api/submissions/540416f9-569f-4bad-ac9f-88b2b08e0fdd/stripe-checkout", "http": 200, "body": {"status": "pending"}, "url_present": true}

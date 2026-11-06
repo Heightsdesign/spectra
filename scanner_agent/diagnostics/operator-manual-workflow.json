@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "evidence_source": "operator_report_supplied_in_S1_revision_request",
+  "independently_verified_by_agent": false,
+  "device_model": "Epson Perfection V39 II",
+  "profile": "SPECTRA_CARD_600DPI",
+  "reported_settings": {
+    "dpi": 600,
+    "color": "RGB",
+    "format": "PNG",
+    "deskew": false,
+    "selection": "custom selection around trading card; coordinates not supplied"
+  },
+  "observations": {
+    "consecutive_scans": 3,
+    "intentional_card_movement": false,
+    "all_four_edges_and_rounded_corners_visible": true,
+    "white_surround_visible": true
+  },
+  "pixel_repeatability_verified": false,
+  "programmatic_twain_acquisition_verified": false,
+  "profile_region_reload_persistence_verified": false,
+  "source_images_inspected_by_agent": false,
+  "calibration_verified": false
+}

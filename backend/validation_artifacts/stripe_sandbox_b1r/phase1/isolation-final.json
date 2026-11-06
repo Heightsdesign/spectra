@@ -1,0 +1,40 @@
+{
+  "development_unchanged": true,
+  "test_schema_unchanged": true,
+  "revision": [
+    "0015"
+  ],
+  "identity": {
+    "account_id": "acct_1UXDxRFq5FKSG47y",
+    "business_name": "Selby sandbox",
+    "test_key": true,
+    "database": "spectra_test",
+    "api_version": "2025-02-24.acacia"
+  },
+  "cases": {
+    "B-DECLINE": {
+      "attempts": 1,
+      "verified_payments": 1,
+      "deadlines": 1,
+      "payment_audits": 1,
+      "snapshot_unchanged": true
+    },
+    "B-3DS": {
+      "attempts": 1,
+      "verified_payments": 1,
+      "deadlines": 1,
+      "payment_audits": 1,
+      "snapshot_unchanged": true
+    },
+    "B-ABANDON": {
+      "attempts": 1,
+      "verified_payments": 0,
+      "deadlines": 0,
+      "payment_audits": 0,
+      "snapshot_unchanged": true
+    }
+  },
+  "successful_test_payments": 2,
+  "total_received_minor": 5000,
+  "checkout_sessions": 3
+}

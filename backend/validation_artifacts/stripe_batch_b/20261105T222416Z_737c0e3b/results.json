@@ -1,0 +1,118 @@
+{
+  "run_id": "20261105T222416Z_737c0e3b",
+  "priority_only": true,
+  "exit_code": 1,
+  "passed": 0,
+  "failed_or_error_phases": 6,
+  "skipped": 0,
+  "results": [
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[partial-partially_refunded]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 1.0296
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[partial-partially_refunded]",
+      "phase": "call",
+      "outcome": "failed",
+      "duration_seconds": 0.3345
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[partial-partially_refunded]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0018
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[full-refunded]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0097
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[full-refunded]",
+      "phase": "call",
+      "outcome": "failed",
+      "duration_seconds": 0.2355
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[full-refunded]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0014
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[dispute-dispute_review]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0084
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[dispute-dispute_review]",
+      "phase": "call",
+      "outcome": "failed",
+      "duration_seconds": 0.2261
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[dispute-dispute_review]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0013
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[refund_failed-financial_review]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0078
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[refund_failed-financial_review]",
+      "phase": "call",
+      "outcome": "failed",
+      "duration_seconds": 0.2268
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[refund_failed-financial_review]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0015
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[closed_dispute-dispute_review]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.009
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[closed_dispute-dispute_review]",
+      "phase": "call",
+      "outcome": "failed",
+      "duration_seconds": 0.2267
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[closed_dispute-dispute_review]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0015
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[manual_hold-commercial_hold]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0081
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[manual_hold-commercial_hold]",
+      "phase": "call",
+      "outcome": "failed",
+      "duration_seconds": 0.2396
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[manual_hold-commercial_hold]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.068
+    }
+  ]
+}

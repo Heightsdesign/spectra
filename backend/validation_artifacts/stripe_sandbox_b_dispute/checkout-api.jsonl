@@ -1,0 +1,2 @@
+{"at": "2026-11-06T14:53:00.206057+00:00", "path": "/api/submissions/3063e697-2332-4b5b-b39f-8c962f069d6c/stripe-checkout", "http": 200, "body": {"status": "pending"}, "url_present": true}
+{"at": "2026-11-06T14:55:15.530818+00:00", "path": "/api/submissions/3063e697-2332-4b5b-b39f-8c962f069d6c/stripe-checkout", "http": 409, "body": {"detail": "payment_already_verified_or_restricted"}, "url_present": false}

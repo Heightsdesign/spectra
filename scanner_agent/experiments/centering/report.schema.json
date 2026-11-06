@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SPECTRA S2.2a printed frame diagnostic schema 1",
+  "type": "object",
+  "required": ["schema_version", "kind", "algorithm_version", "configuration_version", "configuration", "inputs", "created_at_utc", "status", "automatic_acceptance", "physical_scan_performed", "quality_flags", "measurements", "artifacts", "input_hashes_verified_after_analysis", "uncertainty"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "kind": {"const": "printed_frame_analysis"},
+    "algorithm_version": {"const": "0.1.0"},
+    "configuration_version": {"const": 1},
+    "configuration": {"type": "object", "required": ["mode"], "properties": {"mode": {"const": "traditional_frame"}}},
+    "inputs": {"type": "object", "required": ["image_path", "boundary_report_path"], "properties": {"image_sha256": {"$ref": "#/$defs/hash"}, "boundary_report_sha256": {"$ref": "#/$defs/hash"}}},
+    "created_at_utc": {"type": "string"},
+    "status": {"enum": ["review_required", "not_applicable", "analysis_failed"]},
+    "frame_evidence_status": {"enum": ["supported", "ambiguous", "insufficient"]},
+    "automatic_acceptance": {"const": false},
+    "physical_scan_performed": {"const": false},
+    "input_hashes_verified_after_analysis": {"type": "boolean"},
+    "quality_flags": {"type": "array", "items": {"type": "string"}},
+    "uncertainty": {"type": "string"},
+    "artifacts": {"type": "array", "items": {"type": "string"}},
+    "sides": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "object", "required": ["index", "name", "candidates", "selected_candidate_id", "ambiguous", "profile"], "properties": {"candidates": {"type": "array", "items": {"type": "object", "required": ["id", "line_abc", "support_fraction", "fit_rms_pixels", "eligible", "rejection_reasons", "support_points_pixels"]}}}}},
+    "measurements": {"oneOf": [{"type": "null"}, {"type": "object", "required": ["printed_corners_pixels", "margins", "centering_percent", "measurement_basis"], "properties": {"margins": {"type": "object", "required": ["left", "right", "top", "bottom"], "additionalProperties": {"type": "object", "required": ["distances_pixels", "mean_pixels", "min_pixels", "max_pixels", "std_pixels", "mean_mm_from_reported_dpi"]}}, "centering_percent": {"type": "object", "required": ["left", "right", "top", "bottom"], "additionalProperties": {"type": "number", "minimum": 0, "maximum": 100}}}}]}
+  },
+  "allOf": [
+    {"if": {"properties": {"status": {"const": "analysis_failed"}}}, "then": {"required": ["error"], "properties": {"measurements": {"type": "null"}, "input_hashes_verified_after_analysis": {"const": false}}}},
+    {"if": {"properties": {"measurements": {"type": "object"}}}, "then": {"required": ["sides", "boundary_report", "source"], "properties": {"status": {"const": "review_required"}, "frame_evidence_status": {"const": "supported"}, "input_hashes_verified_after_analysis": {"const": true}}}}
+  ],
+  "$defs": {"hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}
+}

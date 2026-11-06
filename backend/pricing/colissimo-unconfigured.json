@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "carrier": "colissimo",
+  "currency": "EUR",
+  "provenance": "provisional",
+  "period": null,
+  "contract_reference": null,
+  "documents": [],
+  "validation_reference": null,
+  "future_cost_commitment_reference": null,
+  "return_minimum_minor": null,
+  "return_minimum_validation_reference": null,
+  "selby_address": null,
+  "zones": {},
+  "products": {},
+  "coverages": {},
+  "packing_profiles": {}
+}

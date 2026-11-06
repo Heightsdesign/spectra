@@ -1,0 +1,51 @@
+<!doctype html><html lang="en"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; base-uri 'none'">
+<title>SPECTRA physical-boundary R&D reference</title>
+<style>
+body{font:15px system-ui;background:#181818;color:#eee;margin:20px}button,input,select,textarea{font:inherit;margin:4px;padding:7px}button{cursor:pointer}fieldset{margin:12px 0}input[type=number]{width:105px}canvas{max-width:100%;border:1px solid #888;touch-action:none}#view{display:block;width:1100px;cursor:crosshair}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:10px}.grid canvas{width:100%}.warning,#error{color:#ffd270}pre{white-space:pre-wrap;overflow-wrap:anywhere}button:focus-visible,canvas:focus-visible{outline:3px solid white}
+.candidate-entry{display:block;text-align:left;background:#222;color:#fff;border:1px solid #666}.candidate-entry[aria-pressed=true]{border:2px solid white;background:#3b3b3b}.candidate-swatch{display:inline-block;width:32px;border-top:3px dashed;margin-right:8px}#candidateInfo{border-left:3px solid #aaa;padding:10px}#candidateLegend{max-height:230px;overflow:auto}
+</style>
+<h1>S2.1 physical card boundary reference</h1>
+<p class="warning">R&D dataset review only. Review the physical material edge, not the printed frame. Detector candidates and provisional fits are not human references. Blur/shadow ambiguity may be indeterminate. This editor is never a required production processing step.</p>
+<p>Review all four edges and corners, adjust each line, choose its certainty, then explicitly confirm each side. Export creates a new annotation version. All coordinates remain in original-image pixels; display zoom does not change the original.</p>
+<label>Reviewer <input id="reviewer" autocomplete="off"></label>
+<label><input id="independent" type="checkbox">I independently inspected the original material boundaries</label>
+<fieldset><legend>Original scan and independent lines</legend>
+<label>Side <select id="side"><option>top</option><option>right</option><option>bottom</option><option>left</option></select></label>
+<label>Zoom <input id="zoom" type="number" min="0.25" max="16" step="0.25" value="1"></label>
+<button id="fit">Fit image</button><button id="focus">Focus side</button>
+<label><input id="candidates" type="checkbox">Show detector candidates (hidden initially)</label>
+<label><input id="showFrozen" type="checkbox" checked>Frozen 0.2.0 — dashed</label>
+<label><input id="showExperimental" type="checkbox" checked>Experimental 0.3.0-exp1 — dotted</label>
+<label><input id="fine" type="checkbox">Fine drag (0.1×)</label><label><input id="pan" type="checkbox">Pan</label>
+<canvas id="view" width="1100" height="650" tabindex="0" aria-label="Original scan. Place or drag a physical boundary line. Empty-space drag pans; wheel zooms."></canvas>
+<p>Place two points to create a line. Drag either handle independently or drag the line to translate it. Empty-space drag pans. Wheel zooms at the pointer. Arrow keys nudge the active line by 1 original pixel, or 0.1 with Shift. Thick outlined REF lines: green confirmed, yellow unconfirmed, orange uncertain. Thin colored patterned lines: detector candidates, never human confirmations.</p>
+<button id="place">Place manual line: two clicks</button><button id="clear">Clear line</button><button id="undo">Undo edit</button><button id="redo">Redo edit</button>
+<label>Optional seed <select id="candidate"><option value="">None</option></select></label><button id="seed">Use as unconfirmed starting line</button>
+<button id="showSelected" disabled>Show selected candidate</button>
+<p>F/E prefixes identify frozen/experimental reports; the number identifies the input report. IDs such as F1:L0 match the menu and line labels. Colors repeat across reports; IDs are report-local and do not imply correspondence. The main view shows candidates for the active side, edge panes show their own side, and corner panes show the outgoing side. Labels occupy a separate gutter so they do not cover the scan. Overlapping fits can share pixels; selection draws the chosen candidate last and dims the rest. Visibility controls never alter reference geometry.</p>
+<pre id="candidateInfo" role="status" aria-live="polite"></pre>
+<details><summary>Candidate key — select by labeled swatch</summary><div id="candidateLegend" aria-label="Automatic candidates for active side"></div></details>
+</fieldset>
+<fieldset><legend>Review active side</legend>
+<label>Status <select id="status"><option value="unreviewed">Unreviewed</option><option value="certain">Visually determinate</option><option value="uncertain">Uncertain position</option><option value="indeterminate">Visually indeterminate</option></select></label>
+<label>Uncertainty ± original px <input id="uncertainty" type="number" min="0.01" step="0.05"></label>
+<label>Notes <input id="notes" size="55"></label><br>
+<label>X1 <input id="x0" type="number" step="0.01"></label><label>Y1 <input id="y0" type="number" step="0.01"></label>
+<label>X2 <input id="x1" type="number" step="0.01"></label><label>Y2 <input id="y1" type="number" step="0.01"></label>
+<button id="apply">Apply endpoints</button><label>Nudge original px <input id="step" type="number" value="0.05" min="0.001" step="0.01"></label><button id="inward">Nudge inward</button><button id="outward">Nudge outward</button>
+<button id="confirm">Explicitly confirm this side</button>
+<p>Any endpoint, certainty, uncertainty or note edit invalidates that side’s confirmation. Indeterminate sides have no line. Candidate selection never confirms a reference.</p>
+<p id="progress" role="status"></p><p id="error" role="alert"></p>
+</fieldset>
+<fieldset><legend>Four edge and four corner views — original pixels</legend>
+<label>Magnification <select id="detailZoom"><option>4</option><option selected>8</option><option>16</option><option>32</option></select></label>
+<label>Position along edges <input id="along" type="range" min="0.05" max="0.95" step="0.01" value="0.5"></label>
+<label><input id="detailLines" type="checkbox">Show reviewed/provisional lines in detail views</label>
+<p>Detail images use nearest-neighbor display. Click a detail view to focus the main editor there. Slide along each straight edge; the four corner panes remain available independently.</p><div id="details" class="grid"></div>
+</fieldset>
+<button id="download">Export new physical-reference JSON version</button>
+<p>No reference is exported until all four sides are explicitly reviewed, including uncertain or indeterminate sides. Use the Python save command for authoritative identity/geometry validation and immutable storage.</p>
+<details><summary>Identity and annotation state</summary><pre id="identity"></pre><pre id="state"></pre></details>
+<script id="payload" type="application/json">__DATA__</script><script>__CORE__</script><script>__MODEL__</script><script>__EDITOR__</script></html>

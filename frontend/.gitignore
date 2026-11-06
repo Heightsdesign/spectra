@@ -6,3 +6,6 @@ out/
 *.tsbuildinfo
 .env*
 !public/brand/*.png
+
+# Isolated UI validation builds
+.next-order-ux-*/

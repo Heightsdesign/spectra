@@ -1,0 +1,11 @@
+{
+  "candidate_generation": {},
+  "evaluation": {
+    "minimum_transition_p10_rgb": 12.0,
+    "maximum_transition_coefficient_of_variation": 0.75,
+    "minimum_transition_direction_fraction": 0.8,
+    "maximum_opposite_angle_degrees": 6.0,
+    "maximum_adjacent_deviation_degrees": 6.0,
+    "maximum_hypotheses": 256
+  }
+}

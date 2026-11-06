@@ -1,0 +1,75 @@
+{
+  "published_at": "2026-11-05T14:52:58.091999+00:00",
+  "environment": "development",
+  "stripe_mode": "test",
+  "migration": "0015",
+  "versions": {
+    "pricing": "6003c3db-ff40-470b-b549-c7e978b0e202",
+    "shipping": "49890d41-f2fc-4846-af2f-7ec5b03f70e0"
+  },
+  "previous_versions": {
+    "pricing_state": "c3032c2c-b9b0-47c9-9fa6-e6bcb9e2c8fb",
+    "shipping_state": null
+  },
+  "expected_two_card_total_minor": 2500,
+  "existing_records_unchanged": true,
+  "fingerprints": {
+    "customer_submissions": {
+      "rows": 13,
+      "sha256": "b76573953bff8d7d2f1488cb2a7c1e825e71b422c026054441a17f4e33e7bc93"
+    },
+    "customer_submission_entries": {
+      "rows": 13,
+      "sha256": "f8ebe993f0157af5505399559948b251d2065e91ce20e15f80124776c2815c17"
+    },
+    "submission_quotes": {
+      "rows": 8,
+      "sha256": "be36a0a9e8a221d5e8e50ab9407faf347681b76274fac1033e10d9a8cc207233"
+    },
+    "quote_acceptances": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "customer_addresses": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "submission_deliveries": {
+      "rows": 7,
+      "sha256": "9c5b5a3011a7e73259e7b6942f9d14b30fbb8b38607e272546b18f9ea88c9947"
+    },
+    "payment_obligations": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verified_payments": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stripe_attempts": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stripe_evidence": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dispatch_expectations": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "order_commercial_events": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "validation": {
+    "backend_tests_passed": 113,
+    "frontend_tests_passed": 80,
+    "typescript": "passed",
+    "changed_files_eslint": "passed",
+    "global_eslint": "two warnings in unchanged browser scripts"
+  },
+  "stripe_checkout_created": false,
+  "payment_executed": false
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "spectra:rd-pipeline:manifest:1",
+  "title": "SPECTRA isolated R&D pipeline execution/checkpoint",
+  "type": "object",
+  "required": ["schema_version", "kind", "orchestrator_version", "run_id", "card_id", "batch_id", "operation", "created_at_utc", "status", "execution_status", "automatic_acceptance", "physical_scan_performed_this_execution", "image", "stages", "protected_files", "finalized", "dashboard"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "kind": {"const": "rd_pipeline_run"},
+    "orchestrator_version": {"const": "0.1.0"},
+    "run_id": {"type": "string"},
+    "card_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,63}$"},
+    "batch_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,63}$"},
+    "operation": {"enum": ["scan-and-analyze", "analyze-existing", "resume"]},
+    "created_at_utc": {"type": "string"},
+    "status": {"$ref": "#/$defs/status"},
+    "execution_status": {"enum": ["running", "completed", "failed"]},
+    "automatic_acceptance": {"const": false},
+    "physical_scan_performed_this_execution": {"type": "boolean"},
+    "image": {
+      "oneOf": [
+        {"type": "null"},
+        {"type": "object", "required": ["path", "sha256", "image"], "properties": {"path": {"type": "string"}, "sha256": {"$ref": "#/$defs/sha256"}, "image": {"type": "object"}}}
+      ]
+    },
+    "stages": {
+      "type": "object",
+      "required": ["acquisition", "s2_1", "s2_2a", "s2_2b", "s2_2c"],
+      "additionalProperties": false,
+      "properties": {
+        "acquisition": {"$ref": "#/$defs/stage"},
+        "s2_1": {"$ref": "#/$defs/stage"},
+        "s2_2a": {"$ref": "#/$defs/stage"},
+        "s2_2b": {"$ref": "#/$defs/stage"},
+        "s2_2c": {"$ref": "#/$defs/stage"}
+      }
+    },
+    "protected_files": {"type": "object", "additionalProperties": {"$ref": "#/$defs/sha256"}},
+    "finalized": {"type": "boolean"},
+    "dashboard": {"type": "string"}
+  },
+  "$defs": {
+    "status": {"enum": ["completed", "review_required", "blocked_upstream", "analysis_failed", "not_run"]},
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "stage": {
+      "type": "object",
+      "required": ["status", "execution_status", "analytical_status", "reused"],
+      "properties": {
+        "status": {"$ref": "#/$defs/status"},
+        "execution_status": {"enum": ["not_run", "running", "completed", "failed"]},
+        "analytical_status": {"type": ["string", "null"]},
+        "reused": {"type": "boolean"},
+        "report": {"type": "string"},
+        "report_sha256": {"$ref": "#/$defs/sha256"},
+        "reason": {"type": "string"},
+        "interface": {"type": "string"},
+        "command": {"type": "array", "items": {"type": "string"}},
+        "artifacts": {"type": "array", "items": {"type": "string"}},
+        "physical_diagnostics": {"type": "object"}
+      }
+    }
+  }
+}

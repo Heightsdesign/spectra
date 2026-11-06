@@ -10,6 +10,7 @@ from app.checkout_models import CustomerAddress, SubmissionDelivery
 from app.customer_models import Customer
 from app.intake import encoded, staff
 from app.intake_models import Intake, Parcel, PhysicalCard
+from app.intake_voids import PhysicalCardVoid
 from app.pricing_models import QuoteAcceptance, SubmissionQuote
 from app.submission_models import Submission, SubmissionEntry
 from app.physical_identity import parse_scan
@@ -135,7 +136,7 @@ def physical_card(reference: str, db: Db):
             (card.entry_id and (not entry or entry.submission_id != submission.id))):
         raise HTTPException(409, 'trace_inconsistent')
     customer = get_customer(db, str(submission.customer_id))
-    return {'card': encoded(card, 'id reference status'),
+    return {'card': {**encoded(card, 'id reference status'), 'status': 'voided' if db.get(PhysicalCardVoid, card.id) else card.status},
             'declared_entry': encoded(entry, 'id card_name game expansion card_number language') if entry else None,
             'parcel': encoded(parcel, 'id reference'),
             'submission': encoded(submission, 'id reference status'),

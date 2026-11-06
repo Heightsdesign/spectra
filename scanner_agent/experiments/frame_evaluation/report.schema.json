@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SPECTRA S2.2b frame candidate evaluation schema 1",
+  "type": "object",
+  "required": ["schema_version", "kind", "algorithm_version", "candidate_generator_version", "configuration_version", "configuration", "status", "automatic_acceptance", "measurements", "inputs", "quality_flags", "artifacts", "input_hashes_verified_after_analysis"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "kind": {"const": "printed_frame_candidate_evaluation"},
+    "algorithm_version": {"const": "0.1.0"},
+    "candidate_generator_version": {"const": "spectra_centering 0.1.0"},
+    "configuration_version": {"const": 1},
+    "configuration": {"type": "object"},
+    "status": {"enum": ["review_required", "not_applicable", "analysis_failed"]},
+    "automatic_acceptance": {"const": false},
+    "measurements": {"type": "null"},
+    "inputs": {"type": "object"},
+    "quality_flags": {"type": "array", "items": {"type": "string"}},
+    "artifacts": {"type": "array", "items": {"type": "string"}},
+    "input_hashes_verified_after_analysis": {"type": "boolean"},
+    "sides": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "object", "required": ["index", "name", "candidates", "candidate_limit_reached"], "properties": {"candidates": {"type": "array", "items": {"type": "object", "required": ["id", "retention", "rejection_reasons", "additional_rejection_reasons", "transition_evidence", "support_fraction", "fit_rms_pixels", "angle_difference_degrees", "transition_rgb_rms", "outer_band_deviation_rgb", "distance_pixels"], "properties": {"retention": {"enum": ["retained", "provisional", "rejected"]}}}}}}},
+    "frame_evaluation": {"type": "object", "required": ["possible_combinations", "evaluated_count", "search_truncated", "hypotheses", "valid_count", "selected_geometric_hypothesis_id", "comparisons"], "properties": {"hypotheses": {"type": "array", "items": {"type": "object", "required": ["id", "candidate_ids", "contains_provisional_candidates", "geometrically_valid", "rejection_reasons", "opposite_angle_degrees", "adjacent_deviation_degrees"]}}}},
+    "explanation": {"type": "string"}
+  },
+  "allOf": [
+    {"if": {"properties": {"status": {"const": "analysis_failed"}}}, "then": {"required": ["error"], "properties": {"input_hashes_verified_after_analysis": {"const": false}}}, "else": {"required": ["sides", "frame_evaluation", "source", "boundary_report", "explanation"], "properties": {"input_hashes_verified_after_analysis": {"const": true}}}}
+  ]
+}

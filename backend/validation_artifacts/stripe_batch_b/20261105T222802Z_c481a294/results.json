@@ -1,0 +1,604 @@
+{
+  "run_id": "20261105T222802Z_c481a294",
+  "priority_only": false,
+  "exit_code": 1,
+  "passed": 25,
+  "failed_or_error_phases": 8,
+  "skipped": 0,
+  "results": [
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[partial-partially_refunded]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.5471
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[partial-partially_refunded]",
+      "phase": "call",
+      "outcome": "failed",
+      "duration_seconds": 0.326
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[partial-partially_refunded]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0017
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[full-refunded]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0075
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[full-refunded]",
+      "phase": "call",
+      "outcome": "failed",
+      "duration_seconds": 0.2402
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[full-refunded]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0015
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[dispute-dispute_review]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0084
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[dispute-dispute_review]",
+      "phase": "call",
+      "outcome": "failed",
+      "duration_seconds": 0.3144
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[dispute-dispute_review]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0024
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[refund_failed-financial_review]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0112
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[refund_failed-financial_review]",
+      "phase": "call",
+      "outcome": "failed",
+      "duration_seconds": 0.3105
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[refund_failed-financial_review]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0024
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[closed_dispute-dispute_review]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.014
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[closed_dispute-dispute_review]",
+      "phase": "call",
+      "outcome": "failed",
+      "duration_seconds": 0.3237
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[closed_dispute-dispute_review]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0026
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[manual_hold-commercial_hold]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0117
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[manual_hold-commercial_hold]",
+      "phase": "call",
+      "outcome": "failed",
+      "duration_seconds": 0.3129
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_api_must_reject_new_shipment[manual_hold-commercial_hold]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0023
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_unpaid_order_cannot_declare_shipment",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0113
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_unpaid_order_cannot_declare_shipment",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.1334
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_unpaid_order_cannot_declare_shipment",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0019
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_paid_unrestricted_shipment_remains_idempotent",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0115
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_paid_unrestricted_shipment_remains_idempotent",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.2028
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_paid_unrestricted_shipment_remains_idempotent",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0021
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_declined_card_resumes_same_open_checkout_then_settles",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0121
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_declined_card_resumes_same_open_checkout_then_settles",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.247
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_declined_card_resumes_same_open_checkout_then_settles",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0019
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_3ds_open_session_challenge_abandon_then_success",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0111
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_3ds_open_session_challenge_abandon_then_success",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.2294
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_3ds_open_session_challenge_abandon_then_success",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0029
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_completed_3ds_session_resume_must_not_be_a_dead_end",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0111
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_completed_3ds_session_resume_must_not_be_a_dead_end",
+      "phase": "call",
+      "outcome": "failed",
+      "duration_seconds": 0.1661
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_completed_3ds_session_resume_must_not_be_a_dead_end",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0024
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_failed_completed_checkout_cancels_old_pi_before_replacement[False]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0113
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_failed_completed_checkout_cancels_old_pi_before_replacement[False]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.1819
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_failed_completed_checkout_cancels_old_pi_before_replacement[False]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0012
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_failed_completed_checkout_cancels_old_pi_before_replacement[True]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.007
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_failed_completed_checkout_cancels_old_pi_before_replacement[True]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.3295
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_failed_completed_checkout_cancels_old_pi_before_replacement[True]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0026
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_abandoned_checkout_and_browser_return_never_credit",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.04
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_abandoned_checkout_and_browser_return_never_credit",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.2471
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_abandoned_checkout_and_browser_return_never_credit",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0022
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_expired_checkout_without_pi_can_be_replaced",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.012
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_expired_checkout_without_pi_can_be_replaced",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.2544
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_expired_checkout_without_pi_can_be_replaced",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0021
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_expiration_without_webhook_requires_observation_then_replacement",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.011
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_expiration_without_webhook_requires_observation_then_replacement",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0616
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_expiration_without_webhook_requires_observation_then_replacement",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0021
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_expiration_with_pi_uses_canonical_pi_state[requires_payment_method-failed]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0106
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_expiration_with_pi_uses_canonical_pi_state[requires_payment_method-failed]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.1616
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_expiration_with_pi_uses_canonical_pi_state[requires_payment_method-failed]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0024
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_expiration_with_pi_uses_canonical_pi_state[canceled-cancelled]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0336
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_expiration_with_pi_uses_canonical_pi_state[canceled-cancelled]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.1545
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_expiration_with_pi_uses_canonical_pi_state[canceled-cancelled]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0024
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_cancelled_french_message_is_not_corrupted",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0003
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_cancelled_french_message_is_not_corrupted",
+      "phase": "call",
+      "outcome": "failed",
+      "duration_seconds": 0.0897
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_cancelled_french_message_is_not_corrupted",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0003
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_delayed_webhook_and_browser_return_preserve_settlement_clock[payment_intent.succeeded]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0199
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_delayed_webhook_and_browser_return_preserve_settlement_clock[payment_intent.succeeded]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.4223
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_delayed_webhook_and_browser_return_preserve_settlement_clock[payment_intent.succeeded]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0014
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_delayed_webhook_and_browser_return_preserve_settlement_clock[checkout.session.completed]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.007
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_delayed_webhook_and_browser_return_preserve_settlement_clock[checkout.session.completed]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.2524
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_delayed_webhook_and_browser_return_preserve_settlement_clock[checkout.session.completed]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0023
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restrictions_preserve_historical_payment_dates_and_snapshot[partial-partially_refunded]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0109
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restrictions_preserve_historical_payment_dates_and_snapshot[partial-partially_refunded]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.2157
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restrictions_preserve_historical_payment_dates_and_snapshot[partial-partially_refunded]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0019
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restrictions_preserve_historical_payment_dates_and_snapshot[full-refunded]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0121
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restrictions_preserve_historical_payment_dates_and_snapshot[full-refunded]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.2165
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restrictions_preserve_historical_payment_dates_and_snapshot[full-refunded]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0021
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restrictions_preserve_historical_payment_dates_and_snapshot[dispute-dispute_review]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0118
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restrictions_preserve_historical_payment_dates_and_snapshot[dispute-dispute_review]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.2349
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restrictions_preserve_historical_payment_dates_and_snapshot[dispute-dispute_review]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0021
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restrictions_preserve_historical_payment_dates_and_snapshot[refund_failed-financial_review]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0127
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restrictions_preserve_historical_payment_dates_and_snapshot[refund_failed-financial_review]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.2245
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restrictions_preserve_historical_payment_dates_and_snapshot[refund_failed-financial_review]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0028
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restrictions_preserve_historical_payment_dates_and_snapshot[closed_dispute-dispute_review]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0122
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restrictions_preserve_historical_payment_dates_and_snapshot[closed_dispute-dispute_review]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.2296
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restrictions_preserve_historical_payment_dates_and_snapshot[closed_dispute-dispute_review]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0023
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_full_refund_supersedes_partial_label_without_summing_snapshots",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.012
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_full_refund_supersedes_partial_label_without_summing_snapshots",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.2197
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_full_refund_supersedes_partial_label_without_summing_snapshots",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0022
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_dispute_closed_never_implicitly_removes_restriction[won]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0124
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_dispute_closed_never_implicitly_removes_restriction[won]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.2084
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_dispute_closed_never_implicitly_removes_restriction[won]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0019
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_dispute_closed_never_implicitly_removes_restriction[lost]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0138
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_dispute_closed_never_implicitly_removes_restriction[lost]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.209
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_dispute_closed_never_implicitly_removes_restriction[lost]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0029
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_before_success_delivery_never_creates_late_credit[partial]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0146
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_before_success_delivery_never_creates_late_credit[partial]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.2037
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_before_success_delivery_never_creates_late_credit[partial]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0031
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_before_success_delivery_never_creates_late_credit[full]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0127
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_before_success_delivery_never_creates_late_credit[full]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.1896
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_before_success_delivery_never_creates_late_credit[full]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0021
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_before_success_delivery_never_creates_late_credit[dispute]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0123
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_before_success_delivery_never_creates_late_credit[dispute]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.1835
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_restriction_before_success_delivery_never_creates_late_credit[dispute]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0025
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_commercial_card_restriction_does_not_unlock_custody",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0382
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_commercial_card_restriction_does_not_unlock_custody",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0768
+    },
+    {
+      "test": "validation_tests/stripe_batch_b/test_batch_b.py::test_commercial_card_restriction_does_not_unlock_custody",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.1293
+    }
+  ]
+}

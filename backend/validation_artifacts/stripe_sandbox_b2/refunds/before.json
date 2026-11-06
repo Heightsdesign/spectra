@@ -1,0 +1,975 @@
+{
+  "development": {
+    "alembic_version": {
+      "count": 1,
+      "sha256": "8378b4d10fea7514315e6baa4311bd320b1880277ccf544e1b1a2c82aa07688e"
+    },
+    "auth_rate_buckets": {
+      "count": 60,
+      "sha256": "850be9f666cb6beb9bf3491c83f079b7541367b21ce4135ad66718d210c0137b"
+    },
+    "card_images": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "cards": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "commercial_entitlement_assignments": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "customer_addresses": {
+      "count": 1,
+      "sha256": "913b993346f16b9ea6a8cbf4d7bd4de9c76f68e227fed6bde5b71fe88aed52f1"
+    },
+    "customer_auth_tokens": {
+      "count": 2,
+      "sha256": "248313e51f800e0ff3a2a592c990589a490d2ea79abac622a74793a6443e1794"
+    },
+    "customer_card_copies": {
+      "count": 11,
+      "sha256": "2f7248d0cf1ae9e177f86e149367e69b77889d031bf7fc1a6a288caf1f42340f"
+    },
+    "customer_copy_assignments": {
+      "count": 12,
+      "sha256": "dcdc4436dd5a8cda22706e81b8f67696aaf1368c7e49503cd5d7c93c886d3f75"
+    },
+    "customer_sessions": {
+      "count": 33,
+      "sha256": "742d23f1510373d45ca03529a22a864c710bf955ade0d10aa14e7e50c81c6d2a"
+    },
+    "customer_shipment_declarations": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "customer_submission_entries": {
+      "count": 17,
+      "sha256": "b6a35960bf35a238d9383124e328d6d792ec28a9740ec57063e1a0a8a1c2fc0f"
+    },
+    "customer_submission_photos": {
+      "count": 1,
+      "sha256": "a39005a5fb1c1da3ecba7e468ae56e3fd47d67c7357b5b07a8a472c8c5674d6c"
+    },
+    "customer_submissions": {
+      "count": 15,
+      "sha256": "c7c171f7a7ca542d665749e59583ca5ae68670db3f1066ddac38200d27f2b9a3"
+    },
+    "customers": {
+      "count": 7,
+      "sha256": "eb70d8530c84a145a140e4870d3e79cf502e54078c4f85bec1bc5fe751ecdad6"
+    },
+    "dispatch_expectations": {
+      "count": 2,
+      "sha256": "65527a7a5f501de3d9d511faa95fb6eabcdb331753b4bdf5580cb86e73c748e0"
+    },
+    "inspection_custody_events": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "inspection_images": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "inspections": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "intake_audit_events": {
+      "count": 28,
+      "sha256": "60f4300eca244b393f7dd9e6181b282a84944e192da8dee10ca6d2415c2bd01c"
+    },
+    "intake_discrepancies": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "intake_parcels": {
+      "count": 2,
+      "sha256": "7bb43770021391143625779b3d6c47c3dc05201e9faa035c28dbb66d629ff339"
+    },
+    "order_commercial_events": {
+      "count": 4,
+      "sha256": "682eb8f95202da1b0854afdd31b0f785f8116cc91a703b918751f68509ca6303"
+    },
+    "payment_obligations": {
+      "count": 2,
+      "sha256": "434d0c0a7942033926e1fd713f94810dbbaa821ec435cb3a5a65e4fabb9f62bb"
+    },
+    "physical_card_voids": {
+      "count": 1,
+      "sha256": "ebc5fe48a5a97d4b6f884c9d89956f0f82ed9dce875f6a0e5b9b86be603c82a0"
+    },
+    "physical_cards": {
+      "count": 4,
+      "sha256": "b84d434d69ea5ebb9300e82ae30773de18ec18d941a42abc3bfea091c93100bf"
+    },
+    "pricing_catalogs": {
+      "count": 2,
+      "sha256": "35ce85541fef1badd8849cb3f59fbe05f8c9f0ea08a3876c7bf0d4899475d18d"
+    },
+    "pricing_state": {
+      "count": 1,
+      "sha256": "1ac461bec4d5a1735d0cdbed19e0239c8b2f98877ebec948a25491efe56e7177"
+    },
+    "production_cards": {
+      "count": 2,
+      "sha256": "f7ce1ee6bce853f5beb1476d32a59e6fdf16c8328163a293d4d0cb23912d1dd7"
+    },
+    "production_orders": {
+      "count": 1,
+      "sha256": "b813df6f1a1e01f0d1f5e36e7f8580e6b3707da1169c9f0e1b98134a1aefa73e"
+    },
+    "quote_acceptances": {
+      "count": 2,
+      "sha256": "d074976d6aef8923d20438868b19227724affe3144019ddf765a34c440da9f1c"
+    },
+    "shipping_configurations": {
+      "count": 1,
+      "sha256": "7ebc681a7979c5ae409d27b9183137c7787d64cad15306c2d14e3dfa0603890c"
+    },
+    "shipping_state": {
+      "count": 1,
+      "sha256": "9d95458d83cdc943ee2d32d743ae3a0e0617efd6a5517165b8cd8bf0bcf3467d"
+    },
+    "staff_memberships": {
+      "count": 3,
+      "sha256": "35159d0a3fbffce68413f844acf79369a7796e96bc9e32b3210a19f6075d0d47"
+    },
+    "stripe_attempts": {
+      "count": 2,
+      "sha256": "25617ae23d4582e535413d3b585fdbfc5ca9fc5c83ec8f1b34b8441961b95353"
+    },
+    "stripe_evidence": {
+      "count": 4,
+      "sha256": "0a7d5505f84694d12e1f95122c5f3ed54d52e65e13db4f45f546b04fc3ca0f10"
+    },
+    "submission_deliveries": {
+      "count": 9,
+      "sha256": "fd6f90bebc1f5a6e5be384bcddae6245b0fff737b443d9e92e25cdf3e272956f"
+    },
+    "submission_intakes": {
+      "count": 2,
+      "sha256": "b5897e3465c9ce480cc8655b62e9522eac6a6d17a25a213d8914cde00d9fa245"
+    },
+    "submission_quotes": {
+      "count": 11,
+      "sha256": "1e1892317d7426577ebf84ad940ba4d44f0daf2ac905ca9998341898ec3df1db"
+    },
+    "supplementary_acceptances": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "tcg_cards": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "tcg_expansions": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "tcg_games": {
+      "count": 4,
+      "sha256": "64954a906a9280e5267b251f1589cedd37fb380f45f98944335f47106217cf5a"
+    },
+    "verified_payments": {
+      "count": 2,
+      "sha256": "d2a4f84327a0e168375a14504c8b8055879065ce4d15f416a2f72ed3bb8310fb"
+    },
+    "_schema": "cdb276dd4ae0e3952549dbc35de544324b5dc099c6d7eeb606ff498eeb071bf4",
+    "_revision": [
+      "0015"
+    ]
+  },
+  "test": {
+    "alembic_version": {
+      "count": 1,
+      "sha256": "8378b4d10fea7514315e6baa4311bd320b1880277ccf544e1b1a2c82aa07688e"
+    },
+    "auth_rate_buckets": {
+      "count": 68,
+      "sha256": "f69ea7148d59bd9e83cc172d4bec6b92bea67374474d47407bdc903b8ad7524c"
+    },
+    "card_images": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "cards": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "commercial_entitlement_assignments": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "customer_addresses": {
+      "count": 6,
+      "sha256": "408b0bb2d8ef6909ac5d6b7d6417216a3fb993380abb641c3760f873c7d7a0d1"
+    },
+    "customer_auth_tokens": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "customer_card_copies": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "customer_copy_assignments": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "customer_sessions": {
+      "count": 18,
+      "sha256": "2f5bc96ae7e2016d17bba188428c5bd229c5b8199a8c1454e61909a506cf8904"
+    },
+    "customer_shipment_declarations": {
+      "count": 4,
+      "sha256": "9dca44181f92d4181700e878b5687e5b6ed9ef5b79d5fe2f7466bb2692763c05"
+    },
+    "customer_submission_entries": {
+      "count": 23,
+      "sha256": "8cfb8cb16e2463bbc2df49cf3dd4e9f7114ee775280289646e58972f4c9938e0"
+    },
+    "customer_submission_photos": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "customer_submissions": {
+      "count": 17,
+      "sha256": "e4e4ddc482c32f41ae25bbc037c80296d7b42e988fd9f286f969daa52bf702ad"
+    },
+    "customers": {
+      "count": 17,
+      "sha256": "6abd2ef67d9a738c9720d3325c4fba3cbe231cb658fef1f5d96769efe0225787"
+    },
+    "dispatch_expectations": {
+      "count": 15,
+      "sha256": "e85a3ca8b846cd650bae7923fd748c67047617f806129a7223f127aa5a8ab2b7"
+    },
+    "inspection_custody_events": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "inspection_images": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "inspections": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "intake_audit_events": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "intake_discrepancies": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "intake_parcels": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "order_commercial_events": {
+      "count": 36,
+      "sha256": "91e3061d0bb0faf99fddf129e0ef8b0680f402af0b778d67a1b483ec6a35ec08"
+    },
+    "payment_obligations": {
+      "count": 17,
+      "sha256": "6e18c1d7218cdc20b083d7fb6f99e2d03f00bd272e9080824d4892a48b81303a"
+    },
+    "physical_card_voids": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "physical_cards": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "pricing_catalogs": {
+      "count": 12,
+      "sha256": "18c3ed930f511ab5bbe23afad3f34e7ffe35e9d7deb7472536b0f3e966bbf174"
+    },
+    "pricing_state": {
+      "count": 1,
+      "sha256": "deb0a9fd9e7c637187faacfe517bc4c58bb9ae98302ef6f86c9b167cbf1d5636"
+    },
+    "production_cards": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "production_orders": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "quote_acceptances": {
+      "count": 17,
+      "sha256": "01b325054331b84e1ead26e26933a52a9d4e415c3561262addf06b664074daa7"
+    },
+    "shipping_configurations": {
+      "count": 1,
+      "sha256": "ce9a00b66f6ae176cba845d63f85540e4cfd3f394b167214567c50b34e842d34"
+    },
+    "shipping_state": {
+      "count": 1,
+      "sha256": "cb1935c5e65d57097504a7163310070ef5f6172546e8e5e008fc1e8b8be68cea"
+    },
+    "staff_memberships": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "stripe_attempts": {
+      "count": 17,
+      "sha256": "12a23a1ee6bceb92738f1c502ec1773f8afdeb152b90bb30ac84a90e96bb70c0"
+    },
+    "stripe_evidence": {
+      "count": 32,
+      "sha256": "1e4a070b2d00aaf17eda39145a776f8efdde33b9f3d22898a4ad3f6191381e4e"
+    },
+    "submission_deliveries": {
+      "count": 6,
+      "sha256": "537771d919e59a2308db2aea3aea250e52e107924c3f5e2eec75f0104d48f0eb"
+    },
+    "submission_intakes": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "submission_quotes": {
+      "count": 17,
+      "sha256": "48d37bcaed74e5ce1be1abfd2ac0e5830968da855f204618380c57a9fc8e005e"
+    },
+    "supplementary_acceptances": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "tcg_cards": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "tcg_expansions": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "tcg_games": {
+      "count": 4,
+      "sha256": "64954a906a9280e5267b251f1589cedd37fb380f45f98944335f47106217cf5a"
+    },
+    "verified_payments": {
+      "count": 15,
+      "sha256": "5e277e30f96fb9ec6c39b804fa0018ecbf3ba501fa4d68111221c4f1ef7e9fc5"
+    },
+    "_schema": "cdb276dd4ae0e3952549dbc35de544324b5dc099c6d7eeb606ff498eeb071bf4",
+    "_revision": [
+      "0015"
+    ]
+  },
+  "sources": {
+    "backend\\app\\access_privacy.py": "4aca33cb31b5574fb4a9d2b89c867272f7b9376942477b0931e6f19a07ed8bbe",
+    "backend\\app\\auth.py": "4123284d538a6c59bb94151973f5d819008987d215bb0ebcbed74248fca44454",
+    "backend\\app\\auth_email.py": "c1fe682f7d42296afe2e838a145206a1b449566a6e1b1f64bdd67ac773775d64",
+    "backend\\app\\auth_schemas.py": "19c4ed79290dda3a2aad43f91b01d426abb5084127eca0f6ad20e19f6fe62bf5",
+    "backend\\app\\boundary.py": "c80f9a2bf13a3c1a7e76421b4abe16490fef0aaf252fb082b3ce9af302c810f4",
+    "backend\\app\\boundary_review.py": "288c58895ab63bdcbd0df1d7b6fb9bc680fb54bc2681c4a881dd5f336973c518",
+    "backend\\app\\boundary_storage.py": "ef419798f96cc7df2f0dce625f44b1c7c1519d53f54e2bb2de1d0f717841104a",
+    "backend\\app\\cards.py": "48b6071ec9a64e1603ec8fbf5cab73c2b9cbc1790f184788c2fc9ecc87c650e9",
+    "backend\\app\\checkout.py": "6fdde87640ac42ebb0d266b0622cb745230c15e6f5b05ad3646fd49bbae131cc",
+    "backend\\app\\checkout_api.py": "de9932094e886389b2db0b3d37d392c53a65d4db6021e1d6cb2702ca1232ea69",
+    "backend\\app\\checkout_models.py": "b13be39d1febe1be28fe99a12638066deba000652a09755fe3194cb5eab1897e",
+    "backend\\app\\checkout_schemas.py": "3939cebaa91590c50d8f989f19d13862d68d856e2a6620b56428e981aa486c56",
+    "backend\\app\\commercial.py": "4ee3ef4c225d575c6d7fc9fe89aecc72b6045e7d32e8facfa3fa9a42adff64b1",
+    "backend\\app\\commercial_api.py": "2a206cc9d7406609d1ef3b8ae0068b04e3cd369d960185d23bf8e7c423b0faf2",
+    "backend\\app\\commercial_models.py": "4ec510829f831795511941caec2fae8dd1a4fbffc6b861feaf93ddd4c808731a",
+    "backend\\app\\config.py": "125c38e391e4bde8fb53c56cc643ea8f20d0b70fac984bf88e438571bf95144b",
+    "backend\\app\\customer_models.py": "76130df881c48c9d9fa016d6c06bfba7830004bde4b1e5a82b23b9340e0513d1",
+    "backend\\app\\customer_operations.py": "7fbacc1e790ee6daed306e6f032620269a4c1dff057d6f1cb764f7316d4c1b1b",
+    "backend\\app\\database.py": "2d6387ccb869d0b3cf7af8b25804946d07c3e2409a5beac74d13b767fc9ed07c",
+    "backend\\app\\fictitious_checkout.py": "550aba091da8eea206141ab24f941b9adcf562c5f87d6501883141cd66d64eaf",
+    "backend\\app\\inspection.py": "26f350435f4677a5c0e0cb15254a8190a64cdd2c637f1083331f99e3cd0353af",
+    "backend\\app\\inspection_commercial.py": "6bde605a8176d5f4c7d9eb1cff427ebb924b9c6cd64d6ba78bdaafaf635a8e22",
+    "backend\\app\\inspection_eligibility.py": "7053acf30085937146f380270b2b893af516b1980d5dd3ad6ad18bd777acabe6",
+    "backend\\app\\inspection_models.py": "4dd8c813fd5ece78f9dd3493f8a189007cf018a1b06c205bdc9305019169e849",
+    "backend\\app\\intake.py": "1a11a014fd1fdf71b90d80b1235fcc04bd460ac4aaeb56a1cef68dcf5561f565",
+    "backend\\app\\intake_models.py": "b2450d987cfa7848c52785df624a05e126e62b3322e2e3850e51aeaf6dc6028a",
+    "backend\\app\\intake_voids.py": "c08d2bc32e82e0404d2341c8950caf6b84a6463231e4567d3fc6d9b73bc63c51",
+    "backend\\app\\library.py": "c754f06107ce4d53bcbeeb9d4596c6811f54654694606eb72b9a9fea25248907",
+    "backend\\app\\library_models.py": "5eb81840406a095b8bc319cfb4710bfea2d571a9f6bf226ceb200a34da103750",
+    "backend\\app\\local_test_accounts.py": "3be75e8a46492bddd1e84ac9a050c9e777a0eea3c820d421ffb321858d7553b4",
+    "backend\\app\\main.py": "c42d8e27a8595abd845ee35d8d64d10c6089aa5accd1622d43c5bce15b1a7d24",
+    "backend\\app\\models.py": "0a15ad630788ab34a00e726c361fdf1a646f3c510f7fb186498ae78e979db28e",
+    "backend\\app\\passwords.py": "8b98b7fb996b6cabdcb306e54152eaae3fa6bae91810942eeb565b34316a2168",
+    "backend\\app\\physical_identity.py": "1871f29c65d53250041e7f5be1a73c95969abe91af9303a6b409b2f332705e2c",
+    "backend\\app\\physical_labels.py": "3f2d610881117814dd3b9186049d6cba8053855a8aa1dcfc18309c3b5c1d17db",
+    "backend\\app\\pricing.py": "e3d1bc3e9b8faeddd2345f76a6422eb029cfc9e27add3647be4ad4336e3b9325",
+    "backend\\app\\pricing_api.py": "5278fc2cdb0d637e3c200988dda97121d770d353b18ffd93800bec836a113b9f",
+    "backend\\app\\pricing_catalog.py": "8be7ef4a3227539c11e026381b35b317edcce75739e2a8483ff308a52601f9ee",
+    "backend\\app\\pricing_models.py": "9502b7da15ed796cba99b163f58cfafdb8b5f0633c6ac1e7a96d5a7ebc78e332",
+    "backend\\app\\pricing_schemas.py": "6dd95d70a9f8aec813a05107ac099ebaf998f8948febf93655a653013f626cf3",
+    "backend\\app\\production.py": "98eb5946b0fa8380a73a39eac1cf1ec7ec1d5e76585385cab252e94901490bb5",
+    "backend\\app\\production_models.py": "b8b569e25ed39ec9302ee4ca17094d3041ce4abe7fff491ae4aeba73ca247b02",
+    "backend\\app\\schemas.py": "fe266a421d1016190ebf811e262621d231b3ae3a0dcfa7f7068e8090f230b4e2",
+    "backend\\app\\shipping_catalog.py": "40ef58f60df2aaac20ae2c5e1c4495b0939caaab70b18c7ac8a2356124cd3239",
+    "backend\\app\\staff_bootstrap.py": "7536dd92331a0124ef97390c863d5b23474668a37679092c5fe39e096c71c1e1",
+    "backend\\app\\stripe_api.py": "b64ea4f9da8a8598f8cbc2a78a7783f65a8b6eecfc7351866ce694c8112af712",
+    "backend\\app\\stripe_checkout.py": "4460e329a60921a219c1cd65973668afd754b459e2420581e666355ae3613939",
+    "backend\\app\\stripe_models.py": "22e95e37df5d0b8c8f1072fbf4d1f8accf93e6c4f24a01f6d77509b3fbcb3506",
+    "backend\\app\\submissions.py": "f1e99d69ad8e1a8404f50d58249d149c9417c540feabec3b661184967a441994",
+    "backend\\app\\submission_models.py": "68450200ab99c70f65e545742f6cb9f06189fbcf64c0c121f4653992ce052fee",
+    "backend\\app\\submission_photos.py": "26dc1eb79e0ffbf2f53d3b635d0b5fc4955e7f5a30aa1b86c2b96870f522f202",
+    "backend\\app\\submission_schemas.py": "4f12f2fdaf3faa39aa7b4ee643ca71c54847e816aedfcc189b419ae2bffc3fd9",
+    "backend\\app\\tcg_api.py": "50b263cf2f20118dcf529d54c75b0acbf8d8a09f79218404bad6586c078e28fc",
+    "backend\\app\\tcg_import.py": "9296501ad4f1641655f78f1477224df65e13a21d55ad37e7647a41186aa4515b",
+    "backend\\app\\tcg_models.py": "5414f278a040087bc3484f287263f9baed2617aec8cf2220476cb3b6ee2dde84",
+    "backend\\app\\thermal_labels.py": "d239f0a989e53324d4728b04a1e23c481b222af20980ad6ebf8c1f444fbb18a9",
+    "backend\\app\\__init__.py": "0f3eb2508bcd2f2d686f056a5508b8c9a97d9573f9ec67760b8efd9c6ef935fc",
+    "frontend\\src\\app\\globals.css": "c0f4dfd01d64743cf742b44097851c2333d4860988817316c68996a27eaf8867",
+    "frontend\\src\\app\\layout.tsx": "f725a82d2581ecbabf031609e88f8f142beecf292a684962b3ac466c48445972",
+    "frontend\\src\\app\\not-found.tsx": "07f94c89b4f5e0a5462ae8c404f00142b3a373d9f4a636a6047116e6f4c2a3d1",
+    "frontend\\src\\app\\order-workspace.css": "553487a2996e03a0ea9abd5eb9d409ff9af834f36b081e2724b5f9472c99a6bd",
+    "frontend\\src\\app\\page.tsx": "4b7c29d29a9f2c320d2b958240f9214d08750b4133afa67428e0095a3c54c98b",
+    "frontend\\src\\app\\robots.ts": "e5702b20c52d9d83b6cc1453228dba03012a72f9cea8eb2013171970e8b49e2a",
+    "frontend\\src\\components\\account-area.tsx": "0b63abc6955e81a70218f6f94ab92259fee25bbf2a04186232687a9298ef8990",
+    "frontend\\src\\components\\admin-language.tsx": "bb5798fcfeb539d4806754dd99b849913b99415e8f02ffd4b8a844fb482ed920",
+    "frontend\\src\\components\\admin-navigation.tsx": "00214944dc278dd7eaff8c8702680c8634e5f9aba840b0ec1b692f01de0e19d1",
+    "frontend\\src\\components\\auth-page.tsx": "f33667dc6b55a1bf5e3a25c5250aaa41b843bc8993c874ea1ff6b22502b8b131",
+    "frontend\\src\\components\\auth-ui.tsx": "017a8e0c155d99004eb1e8cee1055c515093dd7053bd14d77b4c4b678b357ad6",
+    "frontend\\src\\components\\brand-logo.tsx": "04c0d1a10c0c97a93c204a5afcacffe79a5734ea022a39b9515d026d3eede65f",
+    "frontend\\src\\components\\card-library.tsx": "34f105940f289ea197a91e1e237ba5c4e348ae32578c1cd13c62f86b98c5a3da",
+    "frontend\\src\\components\\catalog-combobox.tsx": "36e41630a5332cbf3d4945088bb37cefda5d6df084ede0a0dd5c82d8844b4218",
+    "frontend\\src\\components\\catalog-fields.tsx": "f799781719aadcb08a7808d93cd49b391b375fbac004aebaf790b052cc598e7a",
+    "frontend\\src\\components\\checkout-panel.tsx": "30552508b8a32f827d7af72b71faf8e9d8ff28f93d378bd2cef6ba445389b08d",
+    "frontend\\src\\components\\collector-composition.tsx": "b30ca167dacea04cae4876c9e86e3face147ef2c28ca89dc3520c06bd2673474",
+    "frontend\\src\\components\\customer-operations.tsx": "70c9bdb4aabed37be720273b1204955e0358fa6ac6a8453226379c74f01bca83",
+    "frontend\\src\\components\\footer.tsx": "75a076ab99a15304fd7d58638ecf26be41e55b4cf1a6731d7e120f00b222febf",
+    "frontend\\src\\components\\header.tsx": "772c1add81b233b3422e6a2031fcfc7a39e2d501e4b0912714ee16843fde9b16",
+    "frontend\\src\\components\\inspection-workstation.tsx": "b2aaeb33f6c6d2d3895b9fd67032801702893b80908739014d490494142529d6",
+    "frontend\\src\\components\\intake-workspace.tsx": "1771edf4d77e87ed79ae4d1a9153068ba7e81e5550a3b4f0f7964af4eae89d2c",
+    "frontend\\src\\components\\order-dialog.tsx": "940bbc3950371696f9b5032efa758bc7449a071a84f7b7faf5c0639a3c2f44c9",
+    "frontend\\src\\components\\order-workspace.tsx": "9580b139e9dc86e791b1f2b9a585569efe94b72bda08db3d202591a05cb87141",
+    "frontend\\src\\components\\paid-order-panel.tsx": "2a49b55a863ece14816bded89e265dd8b83ba9fceefadb85b398fb98df2ea39b",
+    "frontend\\src\\components\\physical-labels.tsx": "3e1a23fb46fc5b63355a067294e9b50bc32aed391ff1b495ef5dbcde42a8b0f4",
+    "frontend\\src\\components\\pricing-panel.tsx": "831004c317b667cf3d43208efc2449c0d515ad1d0a0272f667c33ebebddcc2ff",
+    "frontend\\src\\components\\return-parcel-panel.tsx": "a10815ed9a02bba3a97f4bd633c756050ef237afa1ccc2ab4db519c661959521",
+    "frontend\\src\\components\\submission-photos.tsx": "f15beb271a700da1d21ca9445ad345b19f60f09f8e95ca5b339edb6634a65ccc",
+    "frontend\\src\\components\\submissions.tsx": "056acb731af0915709083fd5418eba3e98ba2c02549bf4281213e250c009a934",
+    "frontend\\src\\components\\ui.tsx": "f119039f7f852ced6b2e926ed2daa00eee1436c9ffef5ff1338a528b609a91d2",
+    "frontend\\src\\lib\\auth-validation.ts": "fa5947451de3d0df9bdbfa999767639c3e99e9c12679905b9f4c04f8496f2d25",
+    "frontend\\src\\lib\\catalog.ts": "d7e447911ad0dda117ffdc811ba8f8d7e1300a5aa3326611cc7ef85ab3065795",
+    "frontend\\src\\lib\\checkout.ts": "b5a679e62517da00f689fb9894b9b553f4b217dafc952d7629798a145ef5ee65",
+    "frontend\\src\\lib\\commercial-display.ts": "98e969e6b5683356a2f32efbbb62dcad3708809502cb44092c0a801ab7fe0160",
+    "frontend\\src\\lib\\commercial.ts": "d41467eb1788ca49e66c6026b2a761d0ba71b5865f63b4565e92f9ac07fea09a",
+    "frontend\\src\\lib\\content.ts": "8eb8028683840368aafc7a3fc2ea9decfee234e94fc1ad01765c506f22a89adc",
+    "frontend\\src\\lib\\customer-operations.ts": "e5f9dba75b5f0edb71bc3af5c3fcc9b3d53d19f47117d5ba4a2d88e2e861ae0d",
+    "frontend\\src\\lib\\customer.ts": "a6ed21f55348889d84ccf6299f894ab66f713383dd0f66c638b594cf300cb7f0",
+    "frontend\\src\\lib\\i18n.ts": "48f61ccc145481b3aae6b66a52d8dd9a4187ffe1b949658ee5753ee26ebcd4a1",
+    "frontend\\src\\lib\\inspection.ts": "d7f951b15bc85b4548b147b1aafe01ecb978ddcc91552c94be87945603ba1b60",
+    "frontend\\src\\lib\\intake.ts": "c173a164346d729b81b5cfe31fb0f10ee396c134f8c24afdabbd28a446505345",
+    "frontend\\src\\lib\\library.ts": "e75de20560ff6729ea90a2df4c8b4c316a306ad9ad5a3f8f3be33c47c73c138c",
+    "frontend\\src\\lib\\order-flow.ts": "68f3524e4e6cb983b19f4f9907fdc6491706d067f2f337603bb1968414a5a22d",
+    "frontend\\src\\lib\\physical-labels.ts": "7ed86f264fff5937fabd386b6db78d352041c0e5da52bede608cf9d7ca688f15",
+    "frontend\\src\\lib\\pricing.ts": "bae700707d927dcf80da5944c85c0466d922a89e2bbdce3773056b078cc1e3d9",
+    "frontend\\src\\lib\\server-customer.ts": "96490bcdb44247da5a13d189bd5ac33a54b2d9254f5a2d3857b0d08145725b3b",
+    "frontend\\src\\lib\\server-staff.ts": "34644883b6b62deb7d5a252482c6c948473b99ff3a24a8d481bbc1b2c59ef3f7",
+    "frontend\\src\\lib\\submission-photos.ts": "adb2c3d30972dc858672e5b6c22c1016a4738afa7172bf5fbeb2082f60ec1a1c",
+    "frontend\\src\\lib\\submissions.ts": "8ca618df0d675fe291a5dbb8e039879d9ab62d6661960e993c5b94f22274fa17",
+    "frontend\\src\\app\\account\\layout.tsx": "83385f13713101ba2cad4d9cd33e29ca360c6c5ce7652176bfc6660674100175",
+    "frontend\\src\\app\\account\\page.tsx": "a9bdaef1c6eac73728a874d873fe39a9b723f7c2a9064f3a94288f80a122c829",
+    "frontend\\src\\app\\admin\\layout.tsx": "8ed7febaf6d6db3c4428c9eec8e119413246fd916e3c67817d0da98d244bd5a5",
+    "frontend\\src\\app\\admin\\page.tsx": "d42148b575f4b3f8a22f6d0627624051adc7c717cf61553b497b39e49dc0c367",
+    "frontend\\src\\app\\contact\\page.tsx": "153df6a37c24c7e1debcc3ed30a6a69797baaab775e820fdd5fcaa0c488e1cb9",
+    "frontend\\src\\app\\forgot-password\\page.tsx": "985dfd7ffb8a10702a949ed772f6c17b41b0ec0d2d3729d4e817e621211e50f2",
+    "frontend\\src\\app\\how-it-works\\page.tsx": "b3f743565f8bac0bda4a70aedcbac5ab370194855e8f3bb3a020c278c1dec69c",
+    "frontend\\src\\app\\login\\page.tsx": "b6067191b8252921c6aef4e7b2de482de575aa96c536dc89299a22ecbd5155e1",
+    "frontend\\src\\app\\register\\page.tsx": "14b364777d5b5f19c0b9b9d2f7c200659c06880a4e9035ab528bd36cce924706",
+    "frontend\\src\\app\\reset-password\\page.tsx": "ab8f7135d496d69c9b82ce69c4b40a73771cf8312de9ff51c1b5ffbf017ab6e9",
+    "frontend\\src\\app\\services\\page.tsx": "4b58eeb7bcbca7b2205a92de6f18b79dae3078dadac3f6580a6fe447efcb4a00",
+    "frontend\\src\\app\\standards\\page.tsx": "35d3a7a96945bed307abd61e7446a7dd1bad044217806449b3a873f5b314f8fb",
+    "frontend\\src\\app\\verify\\page.tsx": "a1707d32aff968fb100b8260246f82d9580c3549135f291d3601835d8fea3745",
+    "frontend\\src\\app\\verify-email\\page.tsx": "3a208da8b9afa6724d8463d6cfed0abde4cdce98eb2ffb5cd697b560bee6e9ce",
+    "frontend\\src\\app\\admin\\cards\\page.tsx": "e489467eea330385c657f6e9ecaf3f141c48d2383dab7ac875365ce9fbb08cb8",
+    "frontend\\src\\app\\admin\\customers\\page.tsx": "16f6e576303718256d491135ec1a6110e7d03a9789894a6e92e7bd74a152d191",
+    "frontend\\src\\app\\admin\\inspection\\page.tsx": "008eac5361e435cfff4dea121501bd2d1fcca205f85088bf02f1add8388801ad",
+    "frontend\\src\\app\\admin\\submissions\\[submissionId]\\page.tsx": "377d472d251f028a07614816e75cbe2cf5ed40b263858e5949da6974a7fa866e",
+    "frontend\\src\\app\\admin\\customers\\[customerId]\\page.tsx": "3b6fb22cb40037fd5e593cfb5fd625d71630acd6eca2841039ae5fae78d3345d",
+    "frontend\\src\\app\\account\\settings\\page.tsx": "23f3c5728b56dcbf8b071df2ffe36dc18c1da0ec301e43d9344a23d0f26d47b7",
+    "frontend\\src\\app\\account\\submissions\\[id]\\page.tsx": "e18c0a89d137ef22f7b1b3073d280fb312203f0b4671447dcc73de975e3340a1",
+    "backend\\.env": "4ebc34c6b8f512108a7600ae8384470454eef521a73e6a75382f8d41fef45153"
+  },
+  "rows": {
+    "rows": {
+      "alembic_version": {
+        "ed249b73ae19caccc07a9a44d1552c5f95080b43986b05a5a10a77b82e5c56ff": 1
+      },
+      "auth_rate_buckets": {
+        "e8391d6036f54865051b0d381fbd35a43928738b0bb788813dfc7d6c043de5b4": 1,
+        "e399ff3fb6c3196bd3599360b2ac0f29de663a20e40267c4350036098798af6b": 1,
+        "ca1dff65bfde48de584b31f861680b669a290fea2aceec79eacfdd5224662cad": 1,
+        "73464d5587f38e47548ec5c03e526f94f17f99d16869bd5eb74d8eac212cf634": 1,
+        "8e07c958d798916c3c5dfebcf89eed952fe5f38d3645003183b43e5b7e9351c6": 1,
+        "09efc0655166359426b349375a52eb1eee9592e115be0cc147afa6400da568da": 1,
+        "9ef28d44bff4d14f89e3432b4a96ae661063b9a1418d5b5c194200fab9a8ff9d": 1,
+        "b88ae9ab90a7165133f7d7f855dcbf0581188f62b4a466b70a5c3d14759cfaa1": 1,
+        "86cdb712d8ce1585fae29f28fa9ea18fc57a266631f36705098fa334689f293e": 1,
+        "02a3bab5116d1aaae5876131e8e452751965ed8c86cc55f9ab0977169465059c": 1,
+        "d0e984d5b07a19352acd2d672fa0c017a45ee5b9f88d7dd97f704a9ee9947f20": 1,
+        "9a87b99a1c5e1e29e1178206812cb58eb00ac8b1f672816473c19e7bbfae08a0": 1,
+        "aeb1a917c8076c2695b6e613dd46955f7a341735d9ac944c1184e5ff26002420": 1,
+        "48bb5ac4620971775dc0fdafbfbcbcadf20693bc98e800ffd3d79dc9a5855685": 1,
+        "0eba93c66afd1ac79c2da38d150893d95cc0a8198c52672a57fa78270deff398": 1,
+        "d3892f0b5e0ab08c93a7a1b389cb840ab7fc727b4d120b63a7057dcb48f637f9": 1,
+        "5f07b5efba30bab0765eb41af43ae4cf57a1ed0a9f815e48aa910e6a775c2f72": 1,
+        "3566df4ae3cb85e8c3b80f54e3bd55c8e447672d5d7ee1022dc9bc17452175a4": 1,
+        "395454c87f6b3ba0b95888a111f022cdf7cab19ef54ecccc571bba5cab6afe3e": 1,
+        "8fffa93428746302f0185a2ce4d9949453f87f4cc32c1f3e6d6aae2113dce005": 1,
+        "668290f6cdfd4e76877d249422b93c8516c2f1cd5296443659c43709eae0bfb7": 1,
+        "04dc0f1fb6204311a7b529707a2a8187e226a77854b0dcad15000d74b850745e": 1,
+        "b5808979fedc1baf31bc1b44dfed90c88725170010231ccab4bd0430ec071d66": 1,
+        "7ddc0b08ee9785b2149f96cd2d2bd047155a9bd61c1c0408560cbd9387567dda": 1,
+        "853f540838eb31646abb4bd2d7a70935ae62340a6eb918792b414a534c2c8cd3": 1,
+        "d7e2f2d8dbd1a8b91e03512232500ccf2057cd327d995e209ebe0ac6900f542d": 1,
+        "91aeff8101d449eaf9d1481a8fcec620c4aa560fa943822bcd1b5c347a80b689": 1,
+        "86c4ac5a86e0adc8f27a14e4a8babd6e0acfe5e933d5e56da951f193909d5de0": 1,
+        "125eb05a758f688f5261bb4b44162660949b6a8228bc24c4ade36c9237ab6f83": 1,
+        "a008edc27699ecbdfed5e928222006fa216dacf30c0963c816c101f04ee39673": 1,
+        "0526a83cbfa31550b189cbf4dade79b7b38aa541d6be0cbd0cddd11dfa06f305": 1,
+        "c7131849ca946425a9041336e90f2c6abbc9b0b1a9d4b353b625ee36ae47e34b": 1,
+        "e7358b1dec2d3b917f617566d6e70a7e21f47b2adf5271b4d73f2dc95a25a693": 1,
+        "1e3b56d329c1319df6be1706488c7e503f23b6016021bf5f9731c635aedc5268": 1,
+        "92b264e9421f1768b9980e8eb126ac369660eb8adbc2c9069df0e3cc0f7c4b9d": 1,
+        "6eefc72d563aeeb31c4d55ed1810990c27265268e0511766bb34b857490c51fd": 1,
+        "d14c576f44c5f65504489a80eece2f3e21513985f0532b553664526c13e9856b": 1,
+        "21d09d35b8072788d053926671d9300acaf7ff16c7c25d8472b16ff04ca2a625": 1,
+        "59a2e861f55f538eded01b8fcaab577b36615f36a94878d2d30166f626ba6c2b": 1,
+        "c5d8555c183ddc7d40a3ef967060be3d0bcae0f633a0b016f99deb6094bce5d6": 1,
+        "1f80566c0c950b083d92a919a7f3efb31ead8960ae53ff44939c46219b322f69": 1,
+        "aca327b6699d841fdfd26c9da87b50dddcae5e82323fafbb437196e3c19733a2": 1,
+        "48b8680793c0f95a34eb7542bf45f32601a9383eeff3302ba0ba1fcb74980f1b": 1,
+        "65c912417241bf13ea6b69eeca122ab8eeb1b8cffa87d481f6468537c07f6e12": 1,
+        "511ed96865959b9e745fbcb79e43fdbf7551344c5756c4a1fe2a15419ebef57b": 1,
+        "565767fd9be9d3fa2e9fed8a4cfc28ad10a828ef19f5f1693dbbc0349e066095": 1,
+        "2e995bbab9cab8c76eb17ec31f68777b7f3cb83ac0ee1d17773be2b785a3df0c": 1,
+        "19ddde2ae69930bb741f436ac5acc76618ff41598f1526cee563622fd03b6608": 1,
+        "50c2291e6282273f43d990565915601f251fe323d51b286b878c4fc29cced7c6": 1,
+        "b8fb0f197d98326d2289db852244f0e5c91e9bc8298fca46f63ec71db5dbb164": 1,
+        "ac06d8e493773ba8405087367f889020e4dba2a69c9a5c1c760345f0f02f6938": 1,
+        "cf43d5397d032ab7fdbb93b9667166599efbd28270332b46d1f8a41d850c1cde": 1,
+        "afbe631429ab480cb03eae987e106471c82b58bf689280221ab5c6bf3ba20b86": 1,
+        "bcab2d3a72445bc17dcf1e8c51110c2994b7991687f6b6fbe2416f30e192b0e2": 1,
+        "6ca563a81715286205bc679befab50912989688c54acbdc842ce3d27c978b69b": 1,
+        "6f02e3538af296de28a6e0a648fc8b12bdc229aea85bfb6376c16c6fe7e646b1": 1,
+        "69a491be7bee9fad4d3d6c994089ed4cee9f1806004340753b800ceb7d35f6e8": 1,
+        "33e53d2f92d23b7407f1070d6945d2afc2c304d0712be8e3d865fac592777449": 1,
+        "0ec4559ff21e2525b3547f870707789ffea4d3db7372bd54ba0efd946bbf7a06": 1,
+        "1b43ba26dc09eeab556eb310304c61fd3f88acb9e97d976fa6799ec9a479e2d6": 1,
+        "83124a92a4989bc7b9309dd8c4671ff07abe612986593105a343004cba8e692d": 1,
+        "6271be9e0b97da7e80bc19b0cbd1998668d702f8d25c53325f1c2a04bad1d041": 1,
+        "b7c42eab8d55ec544de0656a5cf295c35f798a750da6a2335618d27803076e36": 1,
+        "f0b69c0f709a942503eaf6fd112979ed637ce01bdb0bf13d0dea5c487bea6835": 1,
+        "6b6a1605c0f5eff0c63d2f26784c89122a41d897425b69e3f2c147dfefedafe2": 1,
+        "07073466e124f87e72cc6c0df33a48f6d4cc80cb2c72574961986bb73a7e9de5": 1,
+        "f12579737be6f857cc020547e65a51ae2e9423559a1e0677f36534f728b0bf7c": 1,
+        "903bba107bce19fb14428bd2f95050b648988690edec1a0075d0e4b06522a7a2": 1
+      },
+      "card_images": {},
+      "cards": {},
+      "commercial_entitlement_assignments": {},
+      "customer_addresses": {
+        "79093f54efec906ca4e5180390f5fcc041eb9ba39ea81cf7c10d822f5428220f": 1,
+        "a5406b63b336c0103da489a7e2ecd4d1c691ae64eef20c9a5c4ce3d4012c1ccf": 1,
+        "6605ee4eecac73cfed5dc570036638b1c29b1cdf01906fef793b5aa256286d57": 1,
+        "2d87d705c3c15685e9457c84290508451c01c395c46cfaa7e613953e5dfa6977": 1,
+        "449274b79be1bf0299c63b249b1ccbd4c0a62a8a2b6ce4f8aeac9e01224ce06f": 1,
+        "583c655d58a48a03edda8f321ad08cada7af8352519a7ca4d6538d5481267c73": 1
+      },
+      "customer_auth_tokens": {},
+      "customer_card_copies": {},
+      "customer_copy_assignments": {},
+      "customer_sessions": {
+        "971b2a180c89b531afb62dc98425039062cc852d8e9363cb452e85bd0e1b95ef": 1,
+        "872e5fd79d2e1d4ff7f4da05dc56ecae80a3fcfd0fade06f64279c39fefcc1fa": 1,
+        "b2e01ea12b58d8a848e59526a139df12399c7becee842b05adc76de5375d95bd": 1,
+        "71994c885694d0e8aee5521f251c033d57700087659f218036300e90ddaab522": 1,
+        "0ae01fd744cc82a835a6a64c1547a2b35514e88981460504816fbeb35226f804": 1,
+        "00e5d96581e098e0377b42b8b3d1aa5f5060d9753550a91edcc0c5faed523bd6": 1,
+        "d66e3a616419415b29ae00fce31bc576e500d20ab7095a3dbde5fe05a4b9f5e9": 1,
+        "89195fb593d52a7c7db094ef654dee80391c35e4a77225c610d974c3780eda65": 1,
+        "e450d702599693c564d233e604656f7c7b51ef0e6c12fa57327431a895f620f6": 1,
+        "dccab7d940503910dd9e244a8c5225477d964bbc9c21423a15fde205769bf473": 1,
+        "415bac28b5a9daa5e404f30c3592aa2ca9c9bcd54db8d900ec90090d676e85cf": 1,
+        "47acbef5afe56c032e2e07140a7bb9a07cf0fce8ebfe358ebdf4746df0ea4c91": 1,
+        "13a4f4a2c0e4fdc1e019588d719c0b4cf64163d66d57dedd5d29ddf60b97b02a": 1,
+        "0d72712c9480f2450530d7bfd7151c090ffa86b006ef56d4bed1fbc999efd102": 1,
+        "c4dcb6510518153fbc345741030e900b3c51ae3482e54438e3d30f5dd091222b": 1,
+        "f713fabf6a5c9773fa1b5e6ad33c9917e0868495293d28497c951e15a07bcc29": 1,
+        "b9487e33fb36755ad9d727aedff28164d925086d4629a7411edbe1a4e6bef4be": 1,
+        "d1f1da56c996d4dc510e0551e036990032aeba5a04a13d51a8b3815145fc1699": 1
+      },
+      "customer_shipment_declarations": {
+        "6d29a7734ed4484d4541baea1cd31d1625b480b8af55341e57af7fea4df3d9fb": 1,
+        "397a55dc54b2b33f5e6b0bb8a98389e15dcf12a3ec00cff7b429719cb821ef09": 1,
+        "0b7087936e82e8a1c65af73f20d80f63e2864155c43eb2693f82f943d98c24bd": 1,
+        "f9806e8d96dc7f6949c4517f4e78177bea61323eb2b4bbab518938e8568c3836": 1
+      },
+      "customer_submission_entries": {
+        "681955e398c5d776c3911e1891993955f8840234792d263ddb3d8fec6cf64a90": 1,
+        "0a6107a4487b3fee3259a29deb6d1d2625ceba24b277ddb2a76c8bc5f4b3fc6c": 1,
+        "e35b7d598e8a6f580408d8439b2e294c4c996dbf70b1be48ea3b8b0b632b0caf": 1,
+        "3d3b7406640af9ea9db1da35175f01c88ae3310617c7f8fcd73c46a1bbb3b766": 1,
+        "ecf622a1a8b31f03e9cdf522a50dcc0e6a7a231698c42c02084e4f288b7a9d6c": 1,
+        "2ebe30ab3936741948893d6c51d183c64f69cfa98c7c1910328f4ef11e804392": 1,
+        "8b081fecfc0c278fbddb6a37b1e26cb37390f656855352b9433c6b352fe9c3a6": 1,
+        "df40d3c3eeb9180e719596be765e557a60331f12a2ffed96d123c1f972c92c1a": 1,
+        "1951d226bdce70063e70a1ea805d44c664edbdc35d5074d83bff798b6a557914": 1,
+        "1a87a984882a7450b8882dbbad2bf2d54d134e98b09c4e570ffb5ecf39d78e83": 1,
+        "840cd12e42b6ecba87e7080ff58a7b06cec4cfa48a7daf1212f0e76b96641607": 1,
+        "3360ef220641ab4222208fb10e1a89148533a76513e0fbb74e805d622183384d": 1,
+        "8674d41659e1fa934841bd9cbd77ab324c98d735056b7e2298bfb3cd7068cac5": 1,
+        "ca1c5c5667c5826b0e16599cb42f1610d46dc72abc24ff7219437a9affe4aad3": 1,
+        "d85e3498faa8d7ecabfa3a381866dd66e70dcf55c6f813468a1c0951f555495b": 1,
+        "fa14bcfb6ebf231102389cc115fd2986da8117265c13527008d845c7390e5a2c": 1,
+        "e64c1b2867105658117b8b045643f28962f1581252cc1b219a55468b17cd8319": 1,
+        "de954493a2505dbb5c4c4a1d97bd8903300d2c48ae2733f3383453cb28ce4a34": 1,
+        "5c29cc3478e89bcd3010486b3366c382066b2e9d93f79010cbfbe67268765cee": 1,
+        "aa8145b947c8bc93c5853264ff6db601bbc90e79e39426add726a31cd211b708": 1,
+        "7a1c14592550006ff4f05845d1625d70534f3dfbaaa9812634167a99c5af163a": 1,
+        "725dcc82d127ed7ed8d30781e68c618df29af8cdcee5b8efc894776e0459bf95": 1,
+        "fcd82144e88479707084cc9a57701ceeb2cba766af01601b5e6c9e98f51beb17": 1
+      },
+      "customer_submission_photos": {},
+      "customer_submissions": {
+        "7cb8529ac5514597e9e3ebf686a9bd6b3deffc565ae9f0c57723948e6ee3f80c": 1,
+        "478f5f866266b769b514b7ab92ac3a15a8b8137d81a30c6db49c67f0a80a52c2": 1,
+        "3debc9f42e47ef447afaf75de1a24b09fd5c8b9d11653929d98519cdd6261d44": 1,
+        "b6262e5dcfa4def00f54d904ccc4f52a502b7a479e4dd318258507fb4f4e2ee2": 1,
+        "62601a1b6bce157ae8788f3f8b908b17a4727317d172f83ea462f92a0212cc8d": 1,
+        "6fae6f324868b616b499187fd55508d310ae8ea07ae0729aed9eab7d7e52833a": 1,
+        "3b3564ac923fd514e23040e430f4171dd2966e4074d9aa268a43622e8d1ba0db": 1,
+        "3ff8afc206171f786901d4e51453806d8ba60bf17427697b9ab1230a5390b247": 1,
+        "e89a80af6e753373b97461aaa89228607421c7579f93b0865e4ff1a05b4e812f": 1,
+        "3c2a577df339dba14ca8aaa72e4314549a30550c4e32d1526707fdba712df27d": 1,
+        "4d7080c66daeb87a19a4d87bf3e8815949e967b380930807144c75d1013eef72": 1,
+        "172e61b1dac464e8c01ad20d075a644ef814a00cef7c9a55e1728cdf2f565f61": 1,
+        "f5496ee02930a8f53a83a64233ae52cec546a233fc0e5988f74f7554fd4c4477": 1,
+        "f554a7368eae5f874c89b017da81f5adde149a33e324c5d950fd81c0b784b947": 1,
+        "7ee30c6fa25a57504826384e3a94568517f700bf3aa7d2298204af6d7c607922": 1,
+        "cfcbf82087d8400d082ea095d04b4d1d8738e085a8085105ec509cfaa45ce5f9": 1,
+        "243ed0e926c8814f5edf9bc8d80ce71922b9b99966657ddb35d9ddbc14db0d5e": 1
+      },
+      "customers": {
+        "e635fcd1013d72cd36443207f4060989e452f1d16ebbd5a791492cc7ff9f0bb7": 1,
+        "91ad8d1f085fe1841178a890d859c318fdd4b6d36054905215ca5a3044243faf": 1,
+        "2656eb26e600146f88340a4b0c4e9f92a06cdff70134874198cff980f97a1dce": 1,
+        "03c293f89a79dfea99d662e529b58c246dd045c0c9ee71b286551e7593de6454": 1,
+        "9a57d6a74124bd8973b3292947659b5d2acdc8d796749ff8563ff8466706244d": 1,
+        "f3f570d410909120430b843f6f81f330811dc4edb56dddd3b389b43777422f43": 1,
+        "517bd6c6a0de5af3d31d1498e9f5b67689bb24f689d6a404346e3dc3bbb99406": 1,
+        "7096bff537b40c94e1317015f1d214c04a3b657229d331d94c815418ccc6588e": 1,
+        "fe128dc5d3f08eaa29b5786c02acce2c646a40c9c90703037766ef825cc27fd6": 1,
+        "87631e2e9ea3a9c358a4cc6a3cd197bb1c3e52781e81c7968aa432e7bf815eef": 1,
+        "7327dedf6401aa074ed8e09fc3e000b57217213a9c5d3b22bb024874c2bec3c9": 1,
+        "b5b5d39bc33a76e2a1d7a0b56c7dc755185eff59f45288e7ecb55ea6c66ea66b": 1,
+        "6a8b7ea8af593fc6315a63409d2f272939b2e8b34c8b73e8e80360c651b7280a": 1,
+        "9aeb46c70748b92ed832f75b91113c8e17fbb1af92eb0cf05f2678ea5fe038c9": 1,
+        "53232172ea1309e636c0bd855272a0aaf3fea0dd3ccb3025b91992a52ceef686": 1,
+        "96516d919e38eb6b6df971fe094f34a91aa41ff0645374f980d7f2dbc64f8a16": 1,
+        "359620d2e95584f0a9b0ce93e01d304e0c853f7778f76a09f0c24c428d9fc7eb": 1
+      },
+      "dispatch_expectations": {
+        "34d65df76382a4c28b62a3fe617887812b27487793d99c565e2acb1def9e0977": 1,
+        "c2841070dd518b45614d3c24c96492370a01ccadc2a3466c35dc06bd295ffaa8": 1,
+        "d685477b3a28eb19631dbe78de507cf220ae2db82053f15e209b3f338cc433f9": 1,
+        "94e8f647eb09d473b55285a2f1fa3aa24c56d510f527bb70983212953976ccf2": 1,
+        "0b2bf66f8b59d5406bac16e1b41656ac442bc27cb0e874e8de7d9fb9d003e7c8": 1,
+        "88b8ffd9674dbdfba78324e6f51df11bc9a9e72f7d49bbc2af8d0a03615eadcb": 1,
+        "3ee99e2c280e2c34d37643c936a8dda24c0e2d93c6ec0ff89c9fbb08a01a1098": 1,
+        "342f44a51c218ba41de8cdf902c37eab34a3e1f18be0cd9e8e7a4dd34069d16a": 1,
+        "de2d8b91bfe4896b447bd40306f55bea9bf760f076816794068ef80a359ac131": 1,
+        "3eb1d3e64802b1df852002b421cd78b7ebe0aea627464d8c5419687cabf37675": 1,
+        "35c25d29f185d4b9f1de0d76b87faaf5b95632ead9476490d773f1c332413fae": 1,
+        "3f474e73ef52fd7845e398a45cce4911fbff920a5447d32eca123b1def53e76b": 1,
+        "dca984f9d649e40865617e66d597cb72a8d627d049fcb882ff283c5beede556c": 1,
+        "f8360341c829a67f9cbb9c84d657daed6c870e4f24744249e709305e82bc0f0f": 1,
+        "1a5204794282d219c7037ef5d17945e1ee0d8c3de6a5bb5a1e128321cd9c588d": 1
+      },
+      "inspection_custody_events": {},
+      "inspection_images": {},
+      "inspections": {},
+      "intake_audit_events": {},
+      "intake_discrepancies": {},
+      "intake_parcels": {},
+      "order_commercial_events": {
+        "b350cba24a1f67d3d91ba0ded233379847966820edaa67537ce670e0670cde09": 1,
+        "acdfa5b7047bbe0957bc19a0d4b3f11ae785759090eb6070504c65557a5683f4": 1,
+        "ccc96cb091c402af5aa4f66b43da9712600b18085f41d8ce0171b9518553b158": 1,
+        "7595cd74df229669c87080b60e0012700e6adbca545fd7f901505491f6cc2bd7": 1,
+        "9efcc91ee966f84d241f7ca673deb8b228b2d56b3f523dab96a4d24a9191ea49": 1,
+        "0a309438a42023ff5134806e4e48f71dcd0314e9de967d25a1da5d789d36ad65": 1,
+        "3325d6b53a1b1d4106290c6d5cd8d6a4dc38a5cc457215d943df5f2ad1e1effd": 1,
+        "45a522e91b1ecaad1b3dceadce5a7a2415666a87636783e8fb439f60fc60c753": 1,
+        "4f52b9cc611385919c929d96b3cb23e0f560630d5cdfa5f70085d488aa231ae8": 1,
+        "faea40a8b9ec5a90034a583de38f4f3a9b895e14d3be655d12dda2687e2968de": 1,
+        "459b823c81379e0559b4254743302b32181eebbbd4614ef663256fbbea1202f9": 1,
+        "bd99755dac779eebb5bf2e5b0fe666b8370a9def4bec4eeb0b84c8d6456a978b": 1,
+        "0a2367346037c2cd14cfb8828dda6bf9c316b452972c43c3bf0180d039e8c579": 1,
+        "75fe61f572a27965c933256d1a064edf7030800e754fe44ac0d910b88dd14bbd": 1,
+        "189aa4ed1b486949f627a7d1f98c4184c8bed4efdbb98cbdd9fe823e6fc03f89": 1,
+        "aa29f2b30ac88692919c086cef437673e4c114220702673e6c0078472889070f": 1,
+        "57016a9e7112486d7ebc468c311db6434985063428f3b964ceefc95e35a26a50": 1,
+        "80ac0c69eff2b9999f55cbcc6fe31f72ae295005511a896b3371850da1eb5760": 1,
+        "741104e7437a4e6c6274c5b22d09704b0d5073e9da4c6473868bf0ec42974d84": 1,
+        "9cc5ea4d201c96e7cb90ad54e0ea4ea3a621221bd57666a679c9f7644dc65d1a": 1,
+        "e3c75b029d3d4da59d4114756f967f5c30c5a643bb16bf96b9485191e9ff76d7": 1,
+        "9892746c7f8e2eb26eaeb0b09ae399abb6c4f53bed7737c262049761b4c01658": 1,
+        "b74af2709c9f95bcf4dde2378cf72300686a357516e3c0ebda4ff22e997914b0": 1,
+        "b12052dd7d292a8909e5f231d530cc70850342f090232d77efd31a1d4d4f3276": 1,
+        "66163a7f8f1bf4404e0078ae712e2c160e1ab9661a10c19f8f9932939ad1468a": 1,
+        "784f528ded8c513625b5dd6b0ee290c4f2cb8ee4685ca72ca3e3b41fd459efde": 1,
+        "17d50386545fa68e4345ed64bde2753152bd27da60e8227cf5abc425bc8910ec": 1,
+        "344bd5eb718b1f9f153ad92825a70312bfa0d6076bbd141a7f352852c4b3e5f0": 1,
+        "3b4e10588bc81679d7712919896f548078b70bb754ac717698894e3b598050f9": 1,
+        "b5750c5e677f2d809b4223669a8d04fc910cee80878ae86119bafc2272df72a7": 1,
+        "cb23441c46ebefef948e0888f361073f19791be16e2fca1e17874f63d23c2d1f": 1,
+        "5626c887cc8bd6266cb7ec8d6eb2a9ccf6d392b55c7ebb57fff56a3ea4e83b9c": 1,
+        "d32710b5b55060804ded82d9f3e6d18ca175ebbec561ad7ea71d58564d8df29e": 1,
+        "948794a4189349eb6587eeaabb84611c33f9d6827eca4577e9077acdec416b14": 1,
+        "72246a82396913d2488c8bf726ee4c9a6b6236142ee3a8768bcbd28a4e1c2e97": 1,
+        "9bab84cd3f5a5e050049b365cd28ebd4603bac351ea88d1577bdd9188d641173": 1
+      },
+      "payment_obligations": {
+        "98007b75132cb17165181f10f071c0ea2482406f03c7688c4fd3caaaa5c18cee": 1,
+        "3ff89ad0cd0ee2f3dd18c46111f118a9e4aae075a7e6b25fe5c592997a2f246c": 1,
+        "c9c797d8259f75960aedfe956a32ccd98dd3b92ebc8bedd2dbf7495fe4dfcc84": 1,
+        "e5cf3ccbcef6ea7977274823bba18d18e651ebbaa88d59eb2d465b779bf0f0a4": 1,
+        "1a146073b689762f9ecf01712605e1057d6eddcf420cc464334eca090e3bcdb6": 1,
+        "61f6539408357372ae987ff327fdec3f2be2bb0bbf6e66b6f4627c0c4c31f3d9": 1,
+        "1a8c3fad69a10ed2f8ea54cb2334fabed9bf2f6b9556f519aae3ecba40c26d19": 1,
+        "e90226e07952b8ba40a6fd3ddc9a50570e90fb84eb407689f7a3605d59d4144d": 1,
+        "86ebee87c29b9d978493082a9fb111130cb7331fc9fcb26af55fc4b28d1a5ba8": 1,
+        "b4526bb31603481707a89fc5f83fa426fa98ca287b1cd25ac981042a1752d210": 1,
+        "c16ae3167ab792a34dcf36833b865b97ab0c1643202ed3cd753d6812febbc149": 1,
+        "5a33609460c38aae466b0babb3861cf025cea4049b7faab06d517adbd550536f": 1,
+        "ef43779c5735cbff137a0e6a645da7bf32b9463213b49165ca60d81e9c593aa5": 1,
+        "c7c1e6d39cb3c1ffde6f580157f4c069bcad5bbe857f62b8fe8b252c7128434f": 1,
+        "176ee3149285a9f8fe73b58161c45899ce83f720f9bc96b35499fe8b7a8c09da": 1,
+        "868f45d27df249129e4b59cd3579127aa1a6a979e9b3f975a14b949e6a5c833c": 1,
+        "75de0d9fdf1bcd532bdcd9b7c870d92a4bc66a9c7a2b33bef2b120a898d1f85d": 1
+      },
+      "physical_card_voids": {},
+      "physical_cards": {},
+      "pricing_catalogs": {
+        "76e26b285b23810470e328270fcd81c3012e36ec418b718edc0b3de9b3033769": 1,
+        "733200b0f4da8c9bcbb1f1774e75d8962f920d97f8e412704d63490c555b87a3": 1,
+        "410c8f0e2eae93e5ba0d1777ea98742e70fdca9461ce5fdb4a652e997c48f923": 1,
+        "6bd58b14d61be092511ebef15c4e59399706c65711bcda316cd3eda851aa81b3": 1,
+        "5edc0f78bbc6425fdbda0752fc16877fa4a585b614a97650e286d5b90fa0c011": 1,
+        "b3a943f95184c452699a6d1d542af598a7650a72649a4fb900cb04e5a634078d": 1,
+        "6311167ee2205af6bbc8c8e0d24c036c997e4cafcb311ec63f937b8fcba43bdd": 1,
+        "4cf7a70932c6ecc78c1757cdd663b136345e2d2369a0e6b6ba8fdbc490719c98": 1,
+        "ec993ee4f1b98456f9d940b9242787a74e8126cfd421e606575ed35bd5c05c5e": 1,
+        "bea977b24262edceab69b83f61e7128635d26b2dc614d333b64391af683119ca": 1,
+        "54fa3d26daea27f80fe68859d9ca9706b0106a4d1a7c0703e0c03d1634ade8a5": 1,
+        "e81fb30fd102449a7f5746e6272bdb3c57b29750558014ad68b431422182d070": 1
+      },
+      "pricing_state": {
+        "36598482e12e4679a241dea555247588c46ba74c55e86c191b69e0b10b7780c5": 1
+      },
+      "production_cards": {},
+      "production_orders": {},
+      "quote_acceptances": {
+        "b5e9c479ff62943754905cf92e04ca3e063209592b18965a947a19c35d276a57": 1,
+        "d37dbfc1d9800041413f2f3be0b590e4b0ed46de902e3442899d23f22159da8d": 1,
+        "52bc171da786b994c74c7ae48d814b0cbb6d32aad35c7a15b4d9138d37af52d9": 1,
+        "a366ba87754481d8585d3f75850a5ffcad84a7506615f365b3a373815f496f27": 1,
+        "f8789e4f30b546e2eacbc2b2033047e506d01cd7ed37c088a636dddd68cabdf0": 1,
+        "33dbd96b221e8652907141c7c24ce1e5010ca23460f311a714f9acf9f7661ec5": 1,
+        "9cf5caedbbdbafaf7189f45776818f58cbcacbb54b3f6f19a415c8ad68219d98": 1,
+        "e06c543c26161984606d7e3b92d31b53dc47e63d8f30c772592d4b056cbf9d07": 1,
+        "129ae037ebff08fa271c68e3927a52897d0c09224edaedeb3987946603ccc090": 1,
+        "9a0bfe3ef7eabab50172cdcf083463bc08e78dd7b27a827ae97b554f67b22a65": 1,
+        "793e7dab50c76356f6c6c809a02743f2aa1fa450c0ca3b2e55dbd385cca0a623": 1,
+        "0a2e39c0e598d0ac6429f62d8fbade5e20a0fc9e7fa9f8e7bd68a5fe41933424": 1,
+        "e14e0de4289f90788541dc9cb3fa81e553b44c83ae3892b8346212974264afec": 1,
+        "bf7f10d15f327a2e5a1af289812d6bbc2a17dcef6836f303b0e238f442d579c5": 1,
+        "923baec1fd3054dcba07b3119154ff6396b7af347c54259954f38c63c3874e28": 1,
+        "81d5792c8b1c39af1cd384589558c7649c82e9579b65b066cf65c0a70e64871e": 1,
+        "c7bbcb94e5b93a7d6c0e8403e4e8117365277d44ae60a02472469c562c971c62": 1
+      },
+      "shipping_configurations": {
+        "68af418ccad6995bac05d9594d5df5b91a0b702ba73b469d3f9501661d85b1e1": 1
+      },
+      "shipping_state": {
+        "8eb11fd2e36746b8f865da36a06d90a30b27cf75f55fd66e7ff1973a2e539c1e": 1
+      },
+      "staff_memberships": {},
+      "stripe_attempts": {
+        "899a6fdbcd30a70d9003aee4e6d001eace51455ff65d31c9fc1df62a8056c22c": 1,
+        "7075dfb8b56d2818c67dd963c42b7b37ea6fbfe1232ae50f70f53103319b6b7e": 1,
+        "e9018ba0ad0a94204e831c46574d86b1d424db35d8c0132f91e2cb3135c42b3e": 1,
+        "99af1b86a2b6dba9790371a6c4613169dc13d8bdba034aafc9ec36a114d8313f": 1,
+        "5a27c1032e82aee6c20bf1a40fd0fc6e7bf8473a82ee2e644f2a4b933db6ded7": 1,
+        "a2f3b0e4ca69ef13007d30bab9788089bf361333360dd98911de2e9da77d2c1c": 1,
+        "0e5d9e1b657310faa063ef53cf5a56eea50645aa6ab29391abd1d5716491611c": 1,
+        "7c2ba8808cfee32112513ff394fbb2282f22ece03f969998a3e037ff53d13506": 1,
+        "7ad38391130fdc4a7ed842b5e665f27643a98f0aa6589817f0e37142d04c15a8": 1,
+        "951ace80a9d420dd5b5f476c74d3945f839d7a2e0ce59b939dcfdb049c8636cf": 1,
+        "e5f03500cdbe7576161ff0e7c7b28a0aa7e6e9649a24c37a6b7ffcef7720b56f": 1,
+        "9dbc20379762bfb99739f66a28e55cf04980e082e6c211dedb1ccdfb88ef4482": 1,
+        "92511a5a6f7a1f01b3642bf0c6cd6a211b867064008d659162f3e602ec3ffe8b": 1,
+        "15396eb412e99dfdf9477b0c40f0e6fdfccab46fcbec40a93f9c462a89bc9866": 1,
+        "e3e84381d5ced0e3e1786ff1bc533c38e6ab79f06075e06e553333fc0d5bbf7f": 1,
+        "454a36d9b4d25b4907773ad0090230153663af850ee9b9a4003f4567335cca39": 1,
+        "bc9b98e6c45b70b0d51165577ef07c13c11b70490fc553cff05e47fb46f9f562": 1
+      },
+      "stripe_evidence": {
+        "b3e1ee158ceead3f98c7a60c0641abca81789023b6a29d54eb62d47d615b3c23": 1,
+        "40e717f37a956443fe07ff155f6c9f93c8c1fa07eed8eecb620c4f8bd4543224": 1,
+        "b3fdc6bae8ede24d21b5fb55783da68d1599c3661955ff7b3396333bfc89e2ae": 1,
+        "041882740b41e6001db1f2c693eda5911a3f4184af2aa5cfa15778ad2b56eecc": 1,
+        "8c401ced3ef678ca14aacf0887349a022b9120a91bebcdb6111abf0967290af6": 1,
+        "d7307e92e9062de699a90b08b0de66711767f0883d12d7b202761de706fbc957": 1,
+        "a994424cef6107a17ad0ea28f26758eb4a8f7b4c1584b59ef8d7fd6f949ff334": 1,
+        "0abb6162a6975818dcaff6bd9d389dc60fd3d23a5240ece329acc176f33b9c19": 1,
+        "522fa835706e6787c709c765d7049fd2bfb5aa3c0b08c650107c03c2ea2b1280": 1,
+        "bbc7d7483c9492105320279df892564664aad35b4d7c891996be92edafba5a1d": 1,
+        "4447de0e087697ee9894900703baf4e9d6c112163686a369c618a392757815e8": 1,
+        "21a9128e3113ef1b3c9bb741f7e50784c643d2a4120ecdcb69af9400ad422779": 1,
+        "5adf6da22f024d525d67f35f55edd5b24661aedef849b1d22f53ec76db028f58": 1,
+        "2d20e6983d5cc0b983b82982ee474da33fed8fdb0ec67e7246ce0a7fe575e9c3": 1,
+        "a37c385ebf32f22ff174113ea5a59104ce89b7d20da132414234434a6a41f506": 1,
+        "9bd8dba554b53ef702814f56246e5de9b364fd96f774f8f2452894523ae0a2f2": 1,
+        "f6a9458e57c1e1468c059396ec9e28c27ecdb6ed3efa2b4fb8b561b1dffb1f48": 1,
+        "9e4f147fc89dca21aab0a7400178032009aed0fdeb95ca4dae92eb0b4b217d06": 1,
+        "d543d5eb3dd720666af9e41e4dd50aa090178c73c477473514d3a4d0b6b55fc8": 1,
+        "5ef593f7e7e2bc2ee01d1dd2c519926897350e152e503dbbf0490badbd330e10": 1,
+        "dc743306a84b9d5defcc51d020eaa38edcffd3bfccd39552a7036c414c4aff1c": 1,
+        "d853578597c01eca72e011fc35b828798b8d461a09fd5a1f6c37db232774fa22": 1,
+        "e54f4257e4568064ede5b2c9aea837ac9a0cdd6109f91a29b84e6023a488fcbc": 1,
+        "f479732557ce9c7606fd3022b3817ecf1df5341e18823738c0148150474a35f2": 1,
+        "0bd23e03b971ea3f8fb75183eee41e9c02e0c2491f27bc383aab256190e258be": 1,
+        "ec34ea055bc84b0ee5f1a55c0cad9cc1d966aedb342e7ab7b25e7f4219f8b5a2": 1,
+        "d33d7f15769fc7676bce07cd4d899234eea7c31d24d89f3450c935a3ca6cdfc6": 1,
+        "bfb6f23d377a4d661657987c4bd98631f3a03ee858725df5fd92018d4f294578": 1,
+        "771f5adc3f58c7c0d95cad2cfa6c33c9ecbb45b8ae2a18d5cd2cd266a1ccee99": 1,
+        "867ffd1dc27248827a9b30c8dd79b237b3eb577107c8ab7ce6d34db44bc3f360": 1,
+        "5bc2d0434c3a0e646c8bec95fdd4683e42d5065e3ab07d28f11e0633eb02d5c7": 1,
+        "11dfc0c48b2a89465f4a72a1f797ad7a0ac87ed58c3fbf41c70262e02f403a64": 1
+      },
+      "submission_deliveries": {
+        "a3a749e6f1def8c73ae93cf11093084fcd99f2ee82d660565bea9234a30fc37b": 1,
+        "344f869925d4d8b3ac8057d3004bfb5bbeb7895346854295f6a109a7651ba6ac": 1,
+        "f36ffc4c784e3a046c5923bffa95263d40a69c58121fa41cde697b5ef7329bd8": 1,
+        "9bc7295ed4b292a0806acbe68e397add83734594a8f70d2bb0105d6e4e7b8d18": 1,
+        "d49a9b84fc3aa056f82b79121d8522daa94cdb8354e46806501a9d58a45c50db": 1,
+        "d3bbfac98eecef5558cd9196118b6ededdc15a62b6f3a42f168791093272a2ed": 1
+      },
+      "submission_intakes": {},
+      "submission_quotes": {
+        "be45d29d61f046a8a5583fca1ffcf01bd656717cdd7b80ef1036d2159f69ac0e": 1,
+        "6c23ba5fe2c5fb3371a377ce0616b798ea43ebdacf7983104efa037f3becc73c": 1,
+        "2d881b7429b2fe8261e9b306413f520ca0e388d605caaae01b04a79e32b7ad26": 1,
+        "e55fd9487d2ca5c5fbbe22b58357f2009137fa7d2329913d532061e3b94acca9": 1,
+        "69fb0dbb8a50bb01a720ea02686a2bdfa42c40506aa57f1bd3b1ac23362dc629": 1,
+        "b5a7ca5df473b5d5e34337add961326ebcb0fc3cf3149696f17e0f35f51c697e": 1,
+        "ca84069c0c516ee82ff201347572c1ffc39dfa878c93a6c5cb7283868f78c0b3": 1,
+        "7a63ed1a32d3fc33e259c33b9cb1bf5134641cf36cc4a7f64f4121a3ecf5f5c6": 1,
+        "f529098fd963c622bcd1b021452f0dec1d0ab0879b21ffdac10b41ceacb6647c": 1,
+        "b87182e284d7d88a9a864c7f40fde414b2313ffdd93a5e15504ab390ff6f37a0": 1,
+        "5785ea3e4788ca0d761f51f960100d5812d310370e20954e2e76327910fc5200": 1,
+        "454cafeb8ced0ce87aaa88f578278f7379ada189187d8d80a0203a30db1be043": 1,
+        "ab718c75c556fe19d37e8e4cfd248710156005f1e57998b59370e5186cda20f8": 1,
+        "d132acfd956bca9501639b58ae10fa6c73943d31f4d82355a701fb2f852261ec": 1,
+        "e946747b85eac4816df043075a9da3791d36c08365c95c300b4d3b0c4cbfbf2e": 1,
+        "636f2e248374315f2c62ca3c09a51fe4105817b7b6ba4aa893d3062ae2d9caab": 1,
+        "555bbfd6ba1271674a1a25a57283ec630c603087c6730ce6c5f9acd30d91044f": 1
+      },
+      "supplementary_acceptances": {},
+      "tcg_cards": {},
+      "tcg_expansions": {},
+      "tcg_games": {
+        "e4e1efd405fa5cc2d36c267ba8b44be8d7864dd3234643515d2f8c71706c6c4c": 1,
+        "f0d18c4cffed25ce7750a48c6b09c682a3a717ee69b4637e509f40975f5f686a": 1,
+        "ccebac9c597081ac1ca0ef24a3d8223555dfe389b9d43d9f01a92cb98bb7208d": 1,
+        "8fcf3f7e1a2310ebe349e5ebec8590cfdc09b15cfcf9d7c21c159759134dd1bd": 1
+      },
+      "verified_payments": {
+        "6b9b6152d4eb20c6e7fada273e8526e4737929bd6be0c2e2f2bc04f2b52c0045": 1,
+        "ec913a9b9ea55e559bf3c1f0316004938a2c813d76f29eb37ac2884b6daf9c8a": 1,
+        "1a532c2445a7d7f0d380761b41beff86ec8c609fcaff185e989906703feda48a": 1,
+        "21a6fb28790ade8e076ee9cf4d507f280326c64001a247583bfa29dbf2ca546c": 1,
+        "e7ad114a1676b1a82c37f86f67ac6865297007d3fcdff53956ba546bbd117732": 1,
+        "3eef7814c01a9cfac8253882442d063f6807068c646ee2ca4bc319483dea129c": 1,
+        "48170cca05735e513e1fad8a25654f56f3d53e6824d657291148fc81a64dd1eb": 1,
+        "5c69c4506ee65e52bc77385c1d09106c9c2fd5ec4d1208ce3d3d77b5057ce2eb": 1,
+        "bd565699300a0d1210125ddf039700995c0d8075490e796b8f3c88a1c5a0ba74": 1,
+        "44ca6dc4e6aeb280cac56e9a50f03c1dfd7cfde14a5add71ddaecb5146ac23cf": 1,
+        "86a64dc78275a16dc057f752a094267de6512e0467e49a2a80cb11fae8ba4b90": 1,
+        "44ab49a7d913d1a0f20e829dd51ccc132de6e3a75379cfc4857393705824e66c": 1,
+        "5b12795ddb0844f165a6054edc3fbe71c337663770a5ba045349e045f6ccb667": 1,
+        "8fac9d882954725ec48e482162b13975069597d9f58567ed969f828219771a14": 1,
+        "9b4796886aba44233204ba82c1bca5c513f04b1ff4f8333dba71226fd5577efd": 1
+      }
+    },
+    "schema_definitions_sha256": "386f9fc77f6595fc134d4aaae528956ac26b11e990ffac2b110940969dcd8a16"
+  },
+  "historical": {
+    "B-REFUND-PARTIAL": {
+      "payment": {
+        "quote_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+        "provider": "stripe_test",
+        "provider_event_id": "evt_3UYlqMFq5FKSG47y0Dfu0Vfc",
+        "provider_payment_id": "pi_3UYlqMFq5FKSG47y0qC0NxuR",
+        "amount_minor": 2500,
+        "currency": "EUR",
+        "verified_at": "2026-11-06 13:02:07+01:00",
+        "recorded_at": "2026-11-06 13:02:12.530817+01:00"
+      },
+      "deadlines": [
+        {
+          "submission_id": "4506971d-4a51-416c-8ef2-ffda7a5698b7",
+          "quote_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+          "verified_payment_at": "2026-11-06 13:02:07+01:00",
+          "dispatch_deadline": "2026-12-06 13:02:07+01:00",
+          "policy": {
+            "timezone": "UTC",
+            "automatic_forfeiture": false,
+            "calendar_days_after_verified_payment": 30
+          }
+        }
+      ],
+      "snapshot_sha256": "7dd6756eff71bfb198edff7f2926d1bdeec4a71a2f6bc99161151202e9be6a09",
+      "payment_audits": 1,
+      "attempt_static_sha256": "f280ecb64efeebefb6e5cb5a4e59e8a16caca7c77ae1d1e2974f43ce3e5d96bc"
+    },
+    "B-REFUND-FULL": {
+      "payment": {
+        "quote_id": "73135787-893b-4658-8a62-1837a0e4f17c",
+        "provider": "stripe_test",
+        "provider_event_id": "evt_3UYlrMFq5FKSG47y0lqQlmcb",
+        "provider_payment_id": "pi_3UYlrMFq5FKSG47y0PEDXeRN",
+        "amount_minor": 2500,
+        "currency": "EUR",
+        "verified_at": "2026-11-06 13:03:09+01:00",
+        "recorded_at": "2026-11-06 13:03:14.755556+01:00"
+      },
+      "deadlines": [
+        {
+          "submission_id": "540416f9-569f-4bad-ac9f-88b2b08e0fdd",
+          "quote_id": "73135787-893b-4658-8a62-1837a0e4f17c",
+          "verified_payment_at": "2026-11-06 13:03:09+01:00",
+          "dispatch_deadline": "2026-12-06 13:03:09+01:00",
+          "policy": {
+            "timezone": "UTC",
+            "automatic_forfeiture": false,
+            "calendar_days_after_verified_payment": 30
+          }
+        }
+      ],
+      "snapshot_sha256": "74db54cb2d9581fc9129e767df23c1a12aa2b975de5c683389bc41eee12bfabb",
+      "payment_audits": 1,
+      "attempt_static_sha256": "bb6851daee985d80821257dcfc9f0aa2266fbfc31f99111ea2b06ed0a0c6346a"
+    }
+  },
+  "mutable_attempt_row_hashes": [
+    "454a36d9b4d25b4907773ad0090230153663af850ee9b9a4003f4567335cca39",
+    "bc9b98e6c45b70b0d51165577ef07c13c11b70490fc553cff05e47fb46f9f562"
+  ]
+}

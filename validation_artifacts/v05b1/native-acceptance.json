@@ -1,0 +1,55 @@
+{
+  "physical_jobs_submitted": 0,
+  "backend_business_posts": 0,
+  "entrypoint": "scanner_agent/selby_desktop.pyw",
+  "platform": "windows",
+  "order": "ORD-000001",
+  "sp": "SP-BB8D2B9652094E5DA785C08723BF042E",
+  "cards": [
+    {
+      "pc_id": "2577d23c-f15c-43c9-a350-149b3755ed77",
+      "pc": "PC-2577D23CF15C43C9A350149B3755ED77",
+      "card_id": "SLB-C-000001"
+    },
+    {
+      "pc_id": "d1c6766c-89b5-488d-b515-3ecc0890d45a",
+      "pc": "PC-D1C6766C89B5488DB5153ECC0890D45A",
+      "card_id": "SLB-C-000002"
+    }
+  ],
+  "production_printer_before": "",
+  "calibration": {
+    "payload": "SELBY:TEST:V1:CALIBRATION",
+    "width_pixels": 400,
+    "height_pixels": 240,
+    "selected": "Munbyn ITPP941",
+    "width_mm": 50.09,
+    "height_mm": 29.99,
+    "dpi": 203,
+    "diagnostic_jobs_created": 0,
+    "print_button_activated": false
+  },
+  "production_printer_after": "",
+  "authentication": "Existing local operator fixture; temporary in-memory session; revoked on exit",
+  "decoded_payloads": [
+    "SP:ORDER:1:SP-BB8D2B9652094E5DA785C08723BF042E",
+    "SP:PC:1:PC-2577D23CF15C43C9A350149B3755ED77",
+    "SP:PC:1:PC-D1C6766C89B5488DB5153ECC0890D45A"
+  ],
+  "previews": 3,
+  "blockers": [
+    "commercial_restriction",
+    "payment_unverified",
+    "quote_not_accepted"
+  ],
+  "print_buttons_disabled": true,
+  "backend_order_unchanged": true,
+  "label_payloads": [
+    "SP:ORDER:1:SP-BB8D2B9652094E5DA785C08723BF042E",
+    "SP:PC:1:PC-2577D23CF15C43C9A350149B3755ED77",
+    "SP:PC:1:PC-D1C6766C89B5488DB5153ECC0890D45A"
+  ],
+  "registry_before": "5e2d5c6225ad9919c7823d82e0a549912be040dd90d0c4ef7bb323c5450cd7ea",
+  "registry_after": "5e2d5c6225ad9919c7823d82e0a549912be040dd90d0c4ef7bb323c5450cd7ea",
+  "registry_unchanged": true
+}

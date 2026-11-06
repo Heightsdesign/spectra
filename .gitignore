@@ -17,6 +17,7 @@ dist/
 *.egg-info/
 
 # Local configuration and secrets
+/SELBY_LOCAL_TEST_CREDENTIALS.md
 .env
 .env.*
 *.pem
@@ -53,6 +54,7 @@ Desktop.ini
 test_tmp/
 test_cache/
 
+SELBY_LOCAL_TEST_CREDENTIALS
 **/.env
 **/.env.*
 .local-security-backups/

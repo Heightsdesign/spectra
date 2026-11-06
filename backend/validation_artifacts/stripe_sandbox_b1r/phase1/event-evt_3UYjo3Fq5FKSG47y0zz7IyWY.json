@@ -1,0 +1,123 @@
+{
+  "id": "evt_3UYjo3Fq5FKSG47y0zz7IyWY",
+  "object": "event",
+  "api_version": "2026-10-28.endive",
+  "created": 1793958765,
+  "data": {
+    "object": {
+      "id": "pi_3UYjo3Fq5FKSG47y05NDxyiB",
+      "object": "payment_intent",
+      "allowed_payment_method_types": [
+        "card",
+        "bancontact",
+        "eps",
+        "klarna",
+        "link",
+        "mb_way",
+        "amazon_pay",
+        "satispay"
+      ],
+      "amount": 2500,
+      "amount_capturable": 0,
+      "amount_details": {
+        "shipping": {
+          "amount": 0,
+          "from_postal_code": null,
+          "to_postal_code": null
+        },
+        "tax": {
+          "total_tax_amount": 0
+        },
+        "tip": {}
+      },
+      "amount_received": 2500,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null,
+      "cancellation_reason": null,
+      "capture_method": "automatic_async",
+      "confirmation_method": "automatic",
+      "created": 1793958695,
+      "currency": "eur",
+      "customer": null,
+      "customer_account": null,
+      "description": null,
+      "excluded_payment_method_types": null,
+      "last_payment_error": null,
+      "latest_charge": "ch_3UYjo3Fq5FKSG47y0di5T9MU",
+      "livemode": false,
+      "managed_payments": {
+        "enabled": false
+      },
+      "metadata": {
+        "attempt_id": "650fdf27-4d2d-4b86-9af9-d1095b1840a9",
+        "quote_id": "fee46f77-1c01-46b2-aa62-14dd1d58b8f7",
+        "obligation_id": "fee46f77-1c01-46b2-aa62-14dd1d58b8f7",
+        "customer_id": "03fccd81-ecd2-4391-a8d7-896a144366ff",
+        "submission_id": "72b147f5-3105-49a3-97f9-a3cccb246508"
+      },
+      "next_action": null,
+      "on_behalf_of": null,
+      "payment_details": {
+        "customer_reference": null,
+        "order_reference": "cs_test_a1IRqUhmuM7h8wTrTVMuqMOVK1D4zdCwXgQUTHSIPgcdiHNWyEJIPxePtC"
+      },
+      "payment_method": "pm_1UYjpAFq5FKSG47y7vSsDu82",
+      "payment_method_configuration_details": null,
+      "payment_method_options": {
+        "amazon_pay": {
+          "express_checkout_element_session_id": null
+        },
+        "bancontact": {
+          "preferred_language": "en"
+        },
+        "card": {
+          "installments": null,
+          "mandate_options": null,
+          "network": null,
+          "request_three_d_secure": "automatic"
+        },
+        "eps": {},
+        "klarna": {
+          "preferred_locale": null
+        },
+        "link": {
+          "persistent_token": null
+        },
+        "mb_way": {},
+        "satispay": {}
+      },
+      "payment_method_types": [
+        "card",
+        "bancontact",
+        "eps",
+        "klarna",
+        "link",
+        "mb_way",
+        "amazon_pay",
+        "satispay"
+      ],
+      "payment_record": null,
+      "processing": null,
+      "receipt_email": null,
+      "review": null,
+      "setup_future_usage": null,
+      "shared_payment_granted_token": null,
+      "shipping": null,
+      "source": null,
+      "statement_descriptor": null,
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 2,
+  "request": {
+    "id": null,
+    "idempotency_key": "569b5e37-52d2-40f0-bf7a-b5b6c98a9696"
+  },
+  "type": "payment_intent.succeeded"
+}

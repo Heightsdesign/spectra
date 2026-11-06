@@ -1,0 +1,27 @@
+{
+  "payment": {
+    "quote_id": "1bd0a3e9-a4f1-4930-ba42-575c665c5452",
+    "provider": "stripe_test",
+    "provider_event_id": "evt_3UYoWfFq5FKSG47y183HAmWj",
+    "provider_payment_id": "pi_3UYoWfFq5FKSG47y1oRIu6yn",
+    "amount_minor": 2500,
+    "currency": "EUR",
+    "verified_at": "2026-11-06 15:53:58+01:00",
+    "recorded_at": "2026-11-06 15:54:04.482100+01:00"
+  },
+  "deadlines": [
+    {
+      "submission_id": "3063e697-2332-4b5b-b39f-8c962f069d6c",
+      "quote_id": "1bd0a3e9-a4f1-4930-ba42-575c665c5452",
+      "verified_payment_at": "2026-11-06 15:53:58+01:00",
+      "dispatch_deadline": "2026-12-06 15:53:58+01:00",
+      "policy": {
+        "timezone": "UTC",
+        "automatic_forfeiture": false,
+        "calendar_days_after_verified_payment": 30
+      }
+    }
+  ],
+  "payment_audits": 1,
+  "snapshot_sha256": "abea9a531852af78965fac79caeb1240ace749a1e68943f00391b952ba099a19"
+}

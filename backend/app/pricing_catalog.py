@@ -12,9 +12,17 @@ from app.pricing_models import PricingCatalog, PricingState
 from app.pricing_schemas import Catalog
 
 
+def tax_ready(config):
+    if config.schema_version == 2:
+        return all(t.tax and t.tax.mode != "pending" and t.tax.validation_reference for t in config.tiers.values())
+    return config.tax_mode != "pending" and (config.development_only or bool(config.tax_validation_reference))
+
+
 def publish(db, document, settings):
     config = Catalog.model_validate(document)
-    if config.tax_mode == "pending" or (not config.development_only and not config.tax_validation_reference):
+    from app.fictitious_checkout import require_scope
+    require_scope(config.model_dump(), settings)
+    if not tax_ready(config):
         raise ValueError("Tax treatment must be configured and validated before commercial publication")
     if config.development_only and settings.auth_environment == "production":
         raise ValueError("Development example catalogs cannot be published in production")
@@ -38,8 +46,10 @@ def main():
         parser.error("Catalog exceeds 1 MB")
     document = json.loads(args.file.read_text(encoding="utf-8-sig"))
     config = Catalog.model_validate(document)
+    from app.fictitious_checkout import require_scope
+    require_scope(config.model_dump(), get_settings())
     if args.action == "validate":
-        if config.tax_mode == "pending" or (not config.development_only and not config.tax_validation_reference):
+        if not tax_ready(config):
             print("Valid document; TAX VALIDATION PENDING - PUBLICATION BLOCKED")
             return
         print("Valid catalog; DEVELOPMENT EXAMPLES ONLY" if config.development_only else "Valid catalog; operator approval reference recorded")

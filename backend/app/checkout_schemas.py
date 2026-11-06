@@ -73,12 +73,18 @@ class ShippingService(Payload):
     max_length_mm: int | None = Field(default=None, strict=True, ge=1, le=5000)
     max_width_mm: int | None = Field(default=None, strict=True, ge=1, le=5000)
     max_height_mm: int | None = Field(default=None, strict=True, ge=1, le=5000)
-    tax_mode: Literal["inclusive", "exempt"]
+    tax_mode: Literal["inclusive", "exclusive", "exempt"]
     tax_rate_bps: BasisPoints
     tax_validation_reference: ShortText
+    zone: ShortText | None = None
+    min_cards: int = Field(default=1, strict=True, ge=1, le=10000)
+    max_cards: int | None = Field(default=None, strict=True, ge=1, le=10000)
+    additional_card_charge_minor: Minor | None = None
 
     @model_validator(mode="after")
     def valid_coverage(self):
+        if self.max_cards is not None and self.max_cards < self.min_cards:
+            raise ValueError("Invalid shipping card-count limits")
         if self.tax_mode == "exempt" and self.tax_rate_bps:
             raise ValueError("Exempt shipping requires a zero rate")
         if self.trading_cards_coverage_verified and not self.coverage_reference:
@@ -87,6 +93,7 @@ class ShippingService(Payload):
 
 
 class ShippingCatalog(Payload):
+    stripe_test_only: bool = Field(default=False, strict=True)
     currency: Literal["EUR"] = "EUR"
     supported_destinations: list[Country] = Field(default_factory=list, max_length=249)
     receiving_address: OptionalText | None = None

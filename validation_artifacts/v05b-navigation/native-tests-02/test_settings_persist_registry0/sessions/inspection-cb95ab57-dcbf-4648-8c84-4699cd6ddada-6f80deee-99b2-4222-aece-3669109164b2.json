@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "kind": "selby_inspection_session",
+  "tool_version": "0.4.0",
+  "coordinate_system": "original_image_pixels_xy_right_down_v1",
+  "session_id": "cb95ab57-dcbf-4648-8c84-4699cd6ddada",
+  "version_id": "6f80deee-99b2-4222-aece-3669109164b2",
+  "created_at_utc": "2026-11-01T14:05:27.858930+00:00",
+  "parent": null,
+  "image": {
+    "path": "C:\\Users\\plher\\Documents\\spetra\\validation_artifacts\\v05b-navigation\\native-tests-02\\test_settings_persist_registry0\\inputs\\source.bmp",
+    "sha256": "378460c2b25ee6edaec4739fe9805aa478b58764fff5236c98d91e8ff2db4e44",
+    "dimensions": [
+      560,
+      720
+    ],
+    "mode": "RGB"
+  },
+  "image_encoding": {
+    "format": "BMP",
+    "frames": [
+      {
+        "width": 560,
+        "height": 720,
+        "mode": "RGB",
+        "bits_per_pixel": 24,
+        "dpi_metadata": [
+          150.01231899334775,
+          150.01231899334775
+        ],
+        "icc_profile_present": false,
+        "uniform_pixel_content": false
+      }
+    ],
+    "frame_count": 1
+  },
+  "operator": "Test reviewer",
+  "notes": "",
+  "sources": [
+    {
+      "path": "C:\\Users\\plher\\Documents\\spetra\\validation_artifacts\\v05b-navigation\\native-tests-02\\test_settings_persist_registry0\\inputs\\boundary.json",
+      "sha256": "48df71e443463bbeeaec44a6b5ce47ce034fb70a4abc00e33eaded2129dc1251",
+      "kind": "single_image",
+      "algorithm_version": "0.2.0",
+      "status": "review_required",
+      "baseline_status": "review_required",
+      "flags": []
+    }
+  ],
+  "prediction_exposure": false,
+  "physical": [
+    {
+      "status": "unannotated",
+      "definition": null,
+      "candidate_id": null,
+      "basis": null,
+      "endpoints": null,
+      "line_abc": null,
+      "notes": "",
+      "confirmed_at_utc": null,
+      "reviewed": null
+    },
+    {
+      "status": "unannotated",
+      "definition": null,
+      "candidate_id": null,
+      "basis": null,
+      "endpoints": null,
+      "line_abc": null,
+      "notes": "",
+      "confirmed_at_utc": null,
+      "reviewed": null
+    },
+    {
+      "status": "unannotated",
+      "definition": null,
+      "candidate_id": null,
+      "basis": null,
+      "endpoints": null,
+      "line_abc": null,
+      "notes": "",
+      "confirmed_at_utc": null,
+      "reviewed": null
+    },
+    {
+      "status": "unannotated",
+      "definition": null,
+      "candidate_id": null,
+      "basis": null,
+      "endpoints": null,
+      "line_abc": null,
+      "notes": "",
+      "confirmed_at_utc": null,
+      "reviewed": null
+    }
+  ],
+  "printed": [
+    {
+      "status": "unannotated",
+      "definition": null,
+      "candidate_id": null,
+      "basis": null,
+      "endpoints": null,
+      "line_abc": null,
+      "notes": "",
+      "confirmed_at_utc": null,
+      "reviewed": null
+    },
+    {
+      "status": "unannotated",
+      "definition": null,
+      "candidate_id": null,
+      "basis": null,
+      "endpoints": null,
+      "line_abc": null,
+      "notes": "",
+      "confirmed_at_utc": null,
+      "reviewed": null
+    },
+    {
+      "status": "unannotated",
+      "definition": null,
+      "candidate_id": null,
+      "basis": null,
+      "endpoints": null,
+      "line_abc": null,
+      "notes": "",
+      "confirmed_at_utc": null,
+      "reviewed": null
+    },
+    {
+      "status": "unannotated",
+      "definition": null,
+      "candidate_id": null,
+      "basis": null,
+      "endpoints": null,
+      "line_abc": null,
+      "notes": "",
+      "confirmed_at_utc": null,
+      "reviewed": null
+    }
+  ],
+  "review_status": "review_required",
+  "automatic_acceptance": false,
+  "human_confirmation_is_not_certified_ground_truth": true,
+  "view": {
+    "zoom": 1.0,
+    "center": [
+      280.0,
+      360.0
+    ]
+  },
+  "grading": {
+    "schema_version": 1,
+    "policy": {
+      "id": "selby-human-supervised-draft",
+      "version": "0.4.0",
+      "draft": true,
+      "front_centering_thresholds": [
+        [
+          10,
+          55
+        ],
+        [
+          9.5,
+          57
+        ],
+        [
+          9,
+          60
+        ],
+        [
+          8.5,
+          62
+        ],
+        [
+          8,
+          65
+        ],
+        [
+          7,
+          70
+        ],
+        [
+          6,
+          75
+        ],
+        [
+          5,
+          80
+        ]
+      ],
+      "back_centering_thresholds": null,
+      "centering_consolidation": "minimum",
+      "condition_consolidation": "sum_penalties_across_faces",
+      "condition_baseline": 10,
+      "weakest_plus": 1,
+      "structural_caps": {
+        "severely_crushed_corner": 6,
+        "minor_localized_crease": 6,
+        "pronounced_crease": 4,
+        "tear": 3,
+        "significant_delamination": 3,
+        "severe_overall_alteration": 2
+      }
+    },
+    "policy_sha256": "5f1324be9ace2c6f343528979d35512177c000ccff8b55dc40995f3c9d7a3eb8",
+    "working": {
+      "card_id": "LEGACY-DESKTOP-CARD",
+      "faces": {},
+      "penalties": {},
+      "centering_reviews": {}
+    },
+    "events": [
+      {
+        "id": "1e9d1b1c-7c34-4bb0-87da-eb0f5669243e",
+        "action": "initialize",
+        "notes": "LEGACY-DESKTOP-CARD",
+        "operator": "Test reviewer",
+        "at_utc": "2026-11-01T14:05:27.861382+00:00",
+        "policy_version": "0.4.0",
+        "working": {
+          "card_id": "LEGACY-DESKTOP-CARD",
+          "faces": {},
+          "penalties": {},
+          "centering_reviews": {}
+        },
+        "overrides": [],
+        "decisions": [],
+        "previous": null,
+        "sha256": "872cbd18bc8d1d6e599d2dfdf1552690bbb3aab06d9d9951fad84acbe0f1c637"
+      }
+    ],
+    "overrides": [],
+    "decisions": []
+  },
+  "saved_grading_diagnostic": {
+    "state": "Draft",
+    "input_sha256": "087f56d6f1e2a6a4c49a16c56473e673c03b105e6f53b6a84dddb0a7685f80d5",
+    "policy_id": "selby-human-supervised-draft",
+    "policy_version": "0.4.0",
+    "completion": {
+      "front": "missing",
+      "back": "missing"
+    },
+    "centering": {},
+    "penalty_totals": {
+      "corners": 0.0,
+      "edges": 0.0,
+      "surface": 0.0
+    },
+    "calculated_grade": null,
+    "final_grade": null,
+    "warnings": [
+      "Draft policy; human validation is not commercial certification.",
+      "Upstream review/blocked statuses remain unchanged; no release authorization."
+    ],
+    "unresolved": [
+      "front inspection missing",
+      "back inspection missing"
+    ],
+    "applicable_caps": [],
+    "subgrades": {
+      "centering": null,
+      "corners": null,
+      "edges": null,
+      "surface": null
+    },
+    "source_provenance": {},
+    "commercial_release_authorized": false,
+    "automatic_acceptance": false
+  },
+  "saved_at_utc": "2026-11-01T14:05:27.864706+00:00",
+  "geometry_warnings": []
+}

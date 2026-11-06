@@ -1,0 +1,282 @@
+{
+  "kind": "selby_recovery_draft",
+  "schema_version": 1,
+  "at_utc": "2026-11-02T22:10:03.779072+00:00",
+  "session": {
+    "schema_version": 1,
+    "kind": "selby_inspection_session",
+    "tool_version": "0.4.0",
+    "coordinate_system": "original_image_pixels_xy_right_down_v1",
+    "session_id": "cb05dfd7-7db9-4398-9227-50d1e5c93c96",
+    "version_id": "c11a5592-bdd0-494f-8730-d9f0a1e44b6a",
+    "created_at_utc": "2026-11-02T22:10:01.710317+00:00",
+    "parent": null,
+    "image": {
+      "path": "C:\\Users\\plher\\Documents\\spetra\\validation_artifacts\\v05c1\\native-final\\test_real_saved_session_resume0\\source.bmp",
+      "sha256": "378460c2b25ee6edaec4739fe9805aa478b58764fff5236c98d91e8ff2db4e44",
+      "dimensions": [
+        560,
+        720
+      ],
+      "mode": "RGB"
+    },
+    "image_encoding": {
+      "format": "BMP",
+      "frames": [
+        {
+          "width": 560,
+          "height": 720,
+          "mode": "RGB",
+          "bits_per_pixel": 24,
+          "dpi_metadata": [
+            150.01231899334775,
+            150.01231899334775
+          ],
+          "icc_profile_present": false,
+          "uniform_pixel_content": false
+        }
+      ],
+      "frame_count": 1
+    },
+    "operator": "Test reviewer",
+    "notes": "",
+    "sources": [
+      {
+        "path": "C:\\Users\\plher\\Documents\\spetra\\validation_artifacts\\v05c1\\native-final\\test_real_saved_session_resume0\\boundary.json",
+        "sha256": "48df71e443463bbeeaec44a6b5ce47ce034fb70a4abc00e33eaded2129dc1251",
+        "kind": "single_image",
+        "algorithm_version": "0.2.0",
+        "status": "review_required",
+        "baseline_status": "review_required",
+        "flags": []
+      }
+    ],
+    "prediction_exposure": true,
+    "physical": [
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      },
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      },
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      },
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      }
+    ],
+    "printed": [
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      },
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      },
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      },
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      }
+    ],
+    "review_status": "review_required",
+    "automatic_acceptance": false,
+    "human_confirmation_is_not_certified_ground_truth": true,
+    "view": {
+      "zoom": 1.0,
+      "center": [
+        280.0,
+        360.5
+      ]
+    },
+    "grading": {
+      "schema_version": 1,
+      "policy": {
+        "id": "selby-human-supervised-draft",
+        "version": "0.4.0",
+        "draft": true,
+        "front_centering_thresholds": [
+          [
+            10,
+            55
+          ],
+          [
+            9.5,
+            57
+          ],
+          [
+            9,
+            60
+          ],
+          [
+            8.5,
+            62
+          ],
+          [
+            8,
+            65
+          ],
+          [
+            7,
+            70
+          ],
+          [
+            6,
+            75
+          ],
+          [
+            5,
+            80
+          ]
+        ],
+        "back_centering_thresholds": null,
+        "centering_consolidation": "minimum",
+        "condition_consolidation": "sum_penalties_across_faces",
+        "condition_baseline": 10,
+        "weakest_plus": 1,
+        "structural_caps": {
+          "severely_crushed_corner": 6,
+          "minor_localized_crease": 6,
+          "pronounced_crease": 4,
+          "tear": 3,
+          "significant_delamination": 3,
+          "severe_overall_alteration": 2
+        }
+      },
+      "policy_sha256": "5f1324be9ace2c6f343528979d35512177c000ccff8b55dc40995f3c9d7a3eb8",
+      "working": {
+        "card_id": "SLB-C-000001",
+        "faces": {},
+        "penalties": {},
+        "centering_reviews": {}
+      },
+      "events": [
+        {
+          "id": "02d844b5-d365-4fbd-9c2e-f4cca6e7efab",
+          "action": "initialize",
+          "notes": "SLB-C-000001",
+          "operator": "Test reviewer",
+          "at_utc": "2026-11-02T22:10:01.714781+00:00",
+          "policy_version": "0.4.0",
+          "working": {
+            "card_id": "SLB-C-000001",
+            "faces": {},
+            "penalties": {},
+            "centering_reviews": {}
+          },
+          "overrides": [],
+          "decisions": [],
+          "previous": null,
+          "sha256": "72e2010178a9d13b41a5d0a5fdc19de1da2f645e5c32f21bf4afda832b878a17"
+        }
+      ],
+      "overrides": [],
+      "decisions": []
+    },
+    "saved_grading_diagnostic": {
+      "state": "Draft",
+      "input_sha256": "cbb1d2bfe06dd807583d7c57e0543086c70805e5b2001831b272f511b9aa0e96",
+      "policy_id": "selby-human-supervised-draft",
+      "policy_version": "0.4.0",
+      "completion": {
+        "front": "missing",
+        "back": "missing"
+      },
+      "centering": {},
+      "penalty_totals": {
+        "corners": 0.0,
+        "edges": 0.0,
+        "surface": 0.0
+      },
+      "calculated_grade": null,
+      "final_grade": null,
+      "warnings": [
+        "Draft policy; human validation is not commercial certification.",
+        "Upstream review/blocked statuses remain unchanged; no release authorization."
+      ],
+      "unresolved": [
+        "front inspection missing",
+        "back inspection missing"
+      ],
+      "applicable_caps": [],
+      "subgrades": {
+        "centering": null,
+        "corners": null,
+        "edges": null,
+        "surface": null
+      },
+      "source_provenance": {},
+      "commercial_release_authorized": false,
+      "automatic_acceptance": false
+    },
+    "saved_at_utc": "2026-11-02T22:10:01.718757+00:00",
+    "geometry_warnings": []
+  },
+  "saved_path": "C:\\Users\\plher\\Documents\\spetra\\validation_artifacts\\v05c1\\native-final\\test_real_saved_session_resume0\\sessions\\inspection-cb05dfd7-7db9-4398-9227-50d1e5c93c96-c11a5592-bdd0-494f-8730-d9f0a1e44b6a.json",
+  "saved_sha": "fdb928029d84a8442c97ecf29bc2e18833b5e5be02e2fcd10ab8b4d906d20de5"
+}

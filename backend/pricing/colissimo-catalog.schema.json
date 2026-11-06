@@ -1,0 +1,949 @@
+{
+  "$defs": {
+    "Address": {
+      "additionalProperties": false,
+      "properties": {
+        "recipient": {
+          "maxLength": 200,
+          "minLength": 1,
+          "pattern": "^[^\\x00-\\x1f\\x7f]+$",
+          "title": "Recipient",
+          "type": "string"
+        },
+        "line1": {
+          "maxLength": 200,
+          "minLength": 1,
+          "pattern": "^[^\\x00-\\x1f\\x7f]+$",
+          "title": "Line1",
+          "type": "string"
+        },
+        "line2": {
+          "default": "",
+          "maxLength": 200,
+          "pattern": "^[^\\x00-\\x1f\\x7f]*$",
+          "title": "Line2",
+          "type": "string"
+        },
+        "postal_code": {
+          "default": "",
+          "maxLength": 32,
+          "pattern": "^[^\\x00-\\x1f\\x7f]*$",
+          "title": "Postal Code",
+          "type": "string"
+        },
+        "city": {
+          "maxLength": 100,
+          "minLength": 1,
+          "pattern": "^[^\\x00-\\x1f\\x7f]+$",
+          "title": "City",
+          "type": "string"
+        },
+        "country": {
+          "pattern": "^[A-Z]{2}$",
+          "title": "Country",
+          "type": "string"
+        },
+        "phone": {
+          "default": "",
+          "maxLength": 32,
+          "pattern": "^[+0-9 ().-]*$",
+          "title": "Phone",
+          "type": "string"
+        },
+        "instructions": {
+          "default": "",
+          "maxLength": 1000,
+          "pattern": "^[^\\x00-\\x1f\\x7f]*$",
+          "title": "Instructions",
+          "type": "string"
+        }
+      },
+      "required": [
+        "recipient",
+        "line1",
+        "city",
+        "country"
+      ],
+      "title": "Address",
+      "type": "object"
+    },
+    "Charge": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/Localized"
+        },
+        "amount_minor": {
+          "anyOf": [
+            {
+              "maximum": 100000000,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Amount Minor"
+        },
+        "tax": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Tax"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "source_reference": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Reference"
+        },
+        "cost_basis_reference": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cost Basis Reference"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "title": "Charge",
+      "type": "object"
+    },
+    "Coverage": {
+      "additionalProperties": false,
+      "properties": {
+        "direction": {
+          "enum": [
+            "inbound",
+            "return"
+          ],
+          "title": "Direction",
+          "type": "string"
+        },
+        "level": {
+          "enum": [
+            "minimum",
+            "extra"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "total_limit_minor": {
+          "anyOf": [
+            {
+              "maximum": 100000000,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Total Limit Minor"
+        },
+        "per_item_limit_minor": {
+          "anyOf": [
+            {
+              "maximum": 100000000,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Per Item Limit Minor"
+        },
+        "eligible_categories": {
+          "items": {
+            "pattern": "^[a-z][a-z0-9-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Eligible Categories",
+          "type": "array"
+        },
+        "eligibility_reference": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Eligibility Reference"
+        },
+        "conditions_reference": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Conditions Reference"
+        },
+        "included_in_transport": {
+          "default": false,
+          "title": "Included In Transport",
+          "type": "boolean"
+        },
+        "premium": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Charge"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "incremental_premium_reference": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Incremental Premium Reference"
+        }
+      },
+      "required": [
+        "direction",
+        "level"
+      ],
+      "title": "Coverage",
+      "type": "object"
+    },
+    "Evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "reference": {
+          "maxLength": 500,
+          "minLength": 1,
+          "title": "Reference",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        }
+      },
+      "required": [
+        "reference",
+        "sha256"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "Localized": {
+      "additionalProperties": false,
+      "properties": {
+        "FR": {
+          "maxLength": 2000,
+          "pattern": "^[^\\x00-\\x08\\x0b\\x0c\\x0e-\\x1f\\x7f]*$",
+          "title": "Fr",
+          "type": "string"
+        },
+        "EN": {
+          "maxLength": 2000,
+          "pattern": "^[^\\x00-\\x08\\x0b\\x0c\\x0e-\\x1f\\x7f]*$",
+          "title": "En",
+          "type": "string"
+        }
+      },
+      "required": [
+        "FR",
+        "EN"
+      ],
+      "title": "Localized",
+      "type": "object"
+    },
+    "PackingProfile": {
+      "additionalProperties": false,
+      "properties": {
+        "reference": {
+          "maxLength": 500,
+          "minLength": 1,
+          "title": "Reference",
+          "type": "string"
+        },
+        "direction": {
+          "enum": [
+            "inbound",
+            "return"
+          ],
+          "title": "Direction",
+          "type": "string"
+        },
+        "parcel": {
+          "$ref": "#/$defs/Parcel"
+        },
+        "card_count": {
+          "maximum": 100000000,
+          "minimum": 1,
+          "title": "Card Count",
+          "type": "integer"
+        },
+        "eligible_categories": {
+          "items": {
+            "pattern": "^[a-z][a-z0-9-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "minItems": 1,
+          "title": "Eligible Categories",
+          "type": "array"
+        },
+        "validation_reference": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Validation Reference"
+        }
+      },
+      "required": [
+        "reference",
+        "direction",
+        "parcel",
+        "card_count",
+        "eligible_categories"
+      ],
+      "title": "PackingProfile",
+      "type": "object"
+    },
+    "Parcel": {
+      "additionalProperties": false,
+      "properties": {
+        "weight_g": {
+          "anyOf": [
+            {
+              "maximum": 100000,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Weight G"
+        },
+        "length_mm": {
+          "anyOf": [
+            {
+              "maximum": 5000,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Length Mm"
+        },
+        "width_mm": {
+          "anyOf": [
+            {
+              "maximum": 5000,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Width Mm"
+        },
+        "height_mm": {
+          "anyOf": [
+            {
+              "maximum": 5000,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Height Mm"
+        }
+      },
+      "title": "Parcel",
+      "type": "object"
+    },
+    "Period": {
+      "additionalProperties": false,
+      "properties": {
+        "start": {
+          "format": "date-time",
+          "title": "Start",
+          "type": "string"
+        },
+        "end": {
+          "format": "date-time",
+          "title": "End",
+          "type": "string"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ],
+      "title": "Period",
+      "type": "object"
+    },
+    "Product": {
+      "additionalProperties": false,
+      "properties": {
+        "direction": {
+          "enum": [
+            "inbound",
+            "return"
+          ],
+          "title": "Direction",
+          "type": "string"
+        },
+        "name": {
+          "$ref": "#/$defs/Localized"
+        },
+        "carrier_product_code": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Carrier Product Code"
+        },
+        "signature": {
+          "title": "Signature",
+          "type": "boolean"
+        },
+        "delivery_mode": {
+          "enum": [
+            "domicile",
+            "contractual_inbound"
+          ],
+          "title": "Delivery Mode",
+          "type": "string"
+        },
+        "eligible_categories": {
+          "items": {
+            "pattern": "^[a-z][a-z0-9-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Eligible Categories",
+          "type": "array"
+        },
+        "eligibility_reference": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Eligibility Reference"
+        },
+        "weight_rule": {
+          "const": "exact_grams",
+          "default": "exact_grams",
+          "title": "Weight Rule",
+          "type": "string"
+        },
+        "weight_rule_reference": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Weight Rule Reference"
+        },
+        "max_length_mm": {
+          "anyOf": [
+            {
+              "maximum": 100000000,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Length Mm"
+        },
+        "max_width_mm": {
+          "anyOf": [
+            {
+              "maximum": 100000000,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Width Mm"
+        },
+        "max_height_mm": {
+          "anyOf": [
+            {
+              "maximum": 100000000,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Height Mm"
+        },
+        "dimension_reference": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Dimension Reference"
+        },
+        "bands": {
+          "items": {
+            "$ref": "#/$defs/WeightBand"
+          },
+          "maxItems": 256,
+          "title": "Bands",
+          "type": "array"
+        },
+        "coverage_ids": {
+          "items": {
+            "pattern": "^[a-z][a-z0-9-]{0,63}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "title": "Coverage Ids",
+          "type": "array"
+        },
+        "uninsured_allowed": {
+          "default": false,
+          "title": "Uninsured Allowed",
+          "type": "boolean"
+        },
+        "uninsured_reference": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Uninsured Reference"
+        }
+      },
+      "required": [
+        "direction",
+        "name",
+        "signature",
+        "delivery_mode"
+      ],
+      "title": "Product",
+      "type": "object"
+    },
+    "Tax": {
+      "additionalProperties": false,
+      "properties": {
+        "mode": {
+          "enum": [
+            "inclusive",
+            "exclusive",
+            "exempt"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "rate_bps": {
+          "maximum": 10000,
+          "minimum": 0,
+          "title": "Rate Bps",
+          "type": "integer"
+        },
+        "validation_reference": {
+          "maxLength": 500,
+          "minLength": 1,
+          "title": "Validation Reference",
+          "type": "string"
+        }
+      },
+      "required": [
+        "mode",
+        "rate_bps",
+        "validation_reference"
+      ],
+      "title": "Tax",
+      "type": "object"
+    },
+    "WeightBand": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[a-z][a-z0-9-]{0,63}$",
+          "title": "Id",
+          "type": "string"
+        },
+        "origin_zone": {
+          "pattern": "^[a-z][a-z0-9-]{0,63}$",
+          "title": "Origin Zone",
+          "type": "string"
+        },
+        "destination_zone": {
+          "pattern": "^[a-z][a-z0-9-]{0,63}$",
+          "title": "Destination Zone",
+          "type": "string"
+        },
+        "min_weight_g": {
+          "maximum": 100000000,
+          "minimum": 1,
+          "title": "Min Weight G",
+          "type": "integer"
+        },
+        "max_weight_g": {
+          "maximum": 100000000,
+          "minimum": 1,
+          "title": "Max Weight G",
+          "type": "integer"
+        },
+        "transport": {
+          "$ref": "#/$defs/Charge"
+        },
+        "supplements": {
+          "maxProperties": 32,
+          "patternProperties": {
+            "^[a-z][a-z0-9-]{0,63}$": {
+              "$ref": "#/$defs/Charge"
+            }
+          },
+          "title": "Supplements",
+          "type": "object"
+        },
+        "source_reference": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Source Reference"
+        }
+      },
+      "required": [
+        "id",
+        "origin_zone",
+        "destination_zone",
+        "min_weight_g",
+        "max_weight_g",
+        "transport"
+      ],
+      "title": "WeightBand",
+      "type": "object"
+    },
+    "Zone": {
+      "additionalProperties": false,
+      "properties": {
+        "territory": {
+          "const": "FR_METROPOLITAN",
+          "default": "FR_METROPOLITAN",
+          "title": "Territory",
+          "type": "string"
+        },
+        "postal_codes": {
+          "items": {
+            "pattern": "^[0-9]{5}$",
+            "type": "string"
+          },
+          "maxItems": 10000,
+          "minItems": 1,
+          "title": "Postal Codes",
+          "type": "array"
+        },
+        "validation_reference": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Validation Reference"
+        }
+      },
+      "required": [
+        "postal_codes"
+      ],
+      "title": "Zone",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "carrier": {
+      "const": "colissimo",
+      "default": "colissimo",
+      "title": "Carrier",
+      "type": "string"
+    },
+    "currency": {
+      "const": "EUR",
+      "default": "EUR",
+      "title": "Currency",
+      "type": "string"
+    },
+    "provenance": {
+      "default": "provisional",
+      "enum": [
+        "provisional",
+        "synthetic_test",
+        "contractual"
+      ],
+      "title": "Provenance",
+      "type": "string"
+    },
+    "period": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Period"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "contract_reference": {
+      "anyOf": [
+        {
+          "maxLength": 500,
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Contract Reference"
+    },
+    "documents": {
+      "items": {
+        "$ref": "#/$defs/Evidence"
+      },
+      "maxItems": 64,
+      "title": "Documents",
+      "type": "array"
+    },
+    "validation_reference": {
+      "anyOf": [
+        {
+          "maxLength": 500,
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Validation Reference"
+    },
+    "future_cost_commitment_reference": {
+      "anyOf": [
+        {
+          "maxLength": 500,
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Future Cost Commitment Reference"
+    },
+    "return_minimum_minor": {
+      "anyOf": [
+        {
+          "maximum": 100000000,
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Return Minimum Minor"
+    },
+    "return_minimum_validation_reference": {
+      "anyOf": [
+        {
+          "maxLength": 500,
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Return Minimum Validation Reference"
+    },
+    "selby_address": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/Address"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "zones": {
+      "maxProperties": 64,
+      "patternProperties": {
+        "^[a-z][a-z0-9-]{0,63}$": {
+          "$ref": "#/$defs/Zone"
+        }
+      },
+      "title": "Zones",
+      "type": "object"
+    },
+    "products": {
+      "maxProperties": 32,
+      "patternProperties": {
+        "^[a-z][a-z0-9-]{0,63}$": {
+          "$ref": "#/$defs/Product"
+        }
+      },
+      "title": "Products",
+      "type": "object"
+    },
+    "coverages": {
+      "maxProperties": 64,
+      "patternProperties": {
+        "^[a-z][a-z0-9-]{0,63}$": {
+          "$ref": "#/$defs/Coverage"
+        }
+      },
+      "title": "Coverages",
+      "type": "object"
+    },
+    "packing_profiles": {
+      "maxProperties": 128,
+      "patternProperties": {
+        "^[a-z][a-z0-9-]{0,63}$": {
+          "$ref": "#/$defs/PackingProfile"
+        }
+      },
+      "title": "Packing Profiles",
+      "type": "object"
+    }
+  },
+  "title": "ColissimoCatalog",
+  "type": "object"
+}

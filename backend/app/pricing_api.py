@@ -11,7 +11,7 @@ from app.cards import Db, Config
 from app.pricing import calculate, current_catalog, validate_selection
 from app.pricing_models import PricingState, QuoteAcceptance, SubmissionQuote
 from app.pricing_schemas import Configuration
-from app.submission_schemas import Version
+from app.submission_schemas import Version, Notes
 from app.submissions import editable, entries, entry_for, owned, owner, save
 
 router = APIRouter(prefix="/api/submissions", dependencies=[Depends(write_guard)])
@@ -37,14 +37,20 @@ def catalog(request: Request, db: Db, settings: Config):
     return {"version": record.version, **document}
 
 
+class OrderConfiguration(Configuration):
+    notes: Notes = ''
+
+
 @router.patch("/{identifier}/configuration")
-def apply_all(identifier: UUID, payload: Configuration, request: Request, db: Db, settings: Config):
+def apply_all(identifier: UUID, payload: OrderConfiguration, request: Request, db: Db, settings: Config):
     item = owned(identifier, request, db, settings)
     editable(item, payload.version)
     validate_selection(db, settings, payload.processing_tier, payload.upgrade_ids)
     cards = entries(item, db)
     if not cards:
         raise HTTPException(422, "submission_empty")
+    if 'notes' in payload.model_fields_set:
+        item.notes = payload.notes
     for card in cards:
         card.processing_tier = payload.processing_tier
         card.upgrade_ids = sorted(payload.upgrade_ids)
@@ -67,6 +73,8 @@ def acceptance_for(item, db):
 
 
 def quote_status(quote, item, db, settings):
+    from app.fictitious_checkout import require_snapshot
+    require_snapshot(quote.snapshot, settings)
     accepted = acceptance_for(item, db)
     if accepted and accepted.quote_id == quote.id:
         return "accepted"
@@ -81,7 +89,7 @@ def quote_status(quote, item, db, settings):
         return "catalog_changed"
     if settings.auth_environment == "production" and quote.snapshot["development_only"]:
         return "unavailable"
-    if quote.snapshot.get("checkout", {}).get("context") != checkout_context(item, db):
+    if quote.snapshot.get("checkout", {}).get("context") != checkout_context(item, db, settings):
         return "invalidated"
     return "valid"
 
@@ -97,7 +105,7 @@ def public_quote(quote, item, db, settings):
 
 
 def owned_quote(item, quote_id, db):
-    quote = db.scalar(select(SubmissionQuote).where(SubmissionQuote.id == quote_id, SubmissionQuote.submission_id == item.id))
+    quote = db.scalar(select(SubmissionQuote).where(SubmissionQuote.id == quote_id, SubmissionQuote.submission_id == item.id, SubmissionQuote.physical_card_id.is_(None)))
     if quote is None:
         raise HTTPException(404, "quote_not_found")
     return quote
@@ -115,7 +123,7 @@ def create_quote(identifier: UUID, payload: Version, request: Request, db: Db, s
     if not cards:
         raise HTTPException(422, "submission_empty")
     # Simultaneous requests return the same unexpired quote for this revision.
-    existing = db.scalar(select(SubmissionQuote).where(SubmissionQuote.submission_id == item.id,
+    existing = db.scalar(select(SubmissionQuote).where(SubmissionQuote.submission_id == item.id, SubmissionQuote.physical_card_id.is_(None),
                          SubmissionQuote.pricing_revision == item.pricing_revision,
                          SubmissionQuote.catalog_version == record.version,
                          SubmissionQuote.expires_at > now()).order_by(SubmissionQuote.created_at.desc()).limit(1))
@@ -123,8 +131,12 @@ def create_quote(identifier: UUID, payload: Version, request: Request, db: Db, s
         return public_quote(existing, item, db, settings)
     timestamp = now()
     snapshot = calculate(config, cards)
+    snapshot["pricing_version"] = str(record.version)
     snapshot["submission_notes"] = item.notes
     snapshot["checkout"] = checkout_summary(item, db, settings, (record, config))
+    if snapshot["checkout"].get("logistics_schema_version"):
+        snapshot["quote_schema_version"] = 3
+    snapshot["order_total_minor"] = snapshot["checkout"]["final_payable_minor"]
     quote = SubmissionQuote(submission_id=item.id, pricing_revision=item.pricing_revision,
                             catalog_version=record.version, snapshot=snapshot, created_at=timestamp,
                             expires_at=timestamp + timedelta(seconds=config.quote_lifetime_seconds))
@@ -140,7 +152,7 @@ def list_quotes(identifier: UUID, request: Request, db: Db, settings: Config, of
     item = owned(identifier, request, db, settings)
     if offset < 0 or not 1 <= limit <= 100:
         raise HTTPException(422, "invalid_input")
-    quotes = db.scalars(select(SubmissionQuote).where(SubmissionQuote.submission_id == item.id).order_by(SubmissionQuote.created_at.desc(), SubmissionQuote.id).offset(offset).limit(limit)).all()
+    quotes = db.scalars(select(SubmissionQuote).where(SubmissionQuote.submission_id == item.id, SubmissionQuote.physical_card_id.is_(None)).order_by(SubmissionQuote.created_at.desc(), SubmissionQuote.id).offset(offset).limit(limit)).all()
     return [public_quote(q, item, db, settings) for q in quotes]
 
 
@@ -166,7 +178,9 @@ def accept_quote(identifier: UUID, quote_id: UUID, payload: Acceptance, request:
     current_catalog(db, settings)  # Shared lock against publication until commit.
     if quote_status(quote, item, db, settings) != "valid":
         raise HTTPException(409, "quote_stale")
-    if quote.snapshot["development_only"]:
+    from app.fictitious_checkout import require_snapshot
+    require_snapshot(quote.snapshot, settings)
+    if quote.snapshot["development_only"] and not quote.snapshot.get("stripe_test_only"):
         raise HTTPException(409, "example_terms_not_acceptable")
     if not quote.snapshot.get("checkout", {}).get("readiness", {}).get("ready"):
         raise HTTPException(409, "checkout_not_ready")
@@ -174,6 +188,8 @@ def accept_quote(identifier: UUID, quote_id: UUID, payload: Acceptance, request:
     if quote.expires_at <= accepted_at:
         raise HTTPException(409, "quote_stale")
     db.add(QuoteAcceptance(submission_id=item.id, quote_id=quote.id, accepted_at=accepted_at))
+    from app.commercial import obligation_for
+    obligation_for(db, quote, accepted_at)
     db.flush()
     result = public_quote(quote, item, db, settings)
     db.commit()

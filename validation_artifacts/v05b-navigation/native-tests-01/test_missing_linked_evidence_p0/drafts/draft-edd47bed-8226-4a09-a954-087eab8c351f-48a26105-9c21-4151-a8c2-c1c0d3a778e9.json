@@ -1,0 +1,152 @@
+{
+  "kind": "selby_recovery_draft",
+  "schema_version": 1,
+  "at_utc": "2026-11-01T13:25:44.464433+00:00",
+  "session": {
+    "schema_version": 1,
+    "kind": "selby_inspection_session",
+    "tool_version": "0.4.0",
+    "coordinate_system": "original_image_pixels_xy_right_down_v1",
+    "session_id": "edd47bed-8226-4a09-a954-087eab8c351f",
+    "version_id": "bd7695a2-eff0-4de6-a60e-e35ba48e5a95",
+    "created_at_utc": "2026-11-01T13:25:44.354033+00:00",
+    "parent": null,
+    "image": {
+      "path": "C:\\Users\\plher\\Documents\\spetra\\validation_artifacts\\v05b-navigation\\native-tests-01\\test_missing_linked_evidence_p0\\other\\source.bmp",
+      "sha256": "378460c2b25ee6edaec4739fe9805aa478b58764fff5236c98d91e8ff2db4e44",
+      "dimensions": [
+        560,
+        720
+      ],
+      "mode": "RGB"
+    },
+    "image_encoding": {
+      "format": "BMP",
+      "frames": [
+        {
+          "width": 560,
+          "height": 720,
+          "mode": "RGB",
+          "bits_per_pixel": 24,
+          "dpi_metadata": [
+            150.01231899334775,
+            150.01231899334775
+          ],
+          "icc_profile_present": false,
+          "uniform_pixel_content": false
+        }
+      ],
+      "frame_count": 1
+    },
+    "operator": "Test reviewer",
+    "notes": "",
+    "sources": [],
+    "prediction_exposure": false,
+    "physical": [
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      },
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      },
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      },
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      }
+    ],
+    "printed": [
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      },
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      },
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      },
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      }
+    ],
+    "review_status": "review_required",
+    "automatic_acceptance": false,
+    "human_confirmation_is_not_certified_ground_truth": true,
+    "view": {
+      "zoom": 1.0,
+      "center": [
+        280.0,
+        360.5
+      ]
+    },
+    "saved_at_utc": "2026-11-01T13:25:44.359217+00:00",
+    "geometry_warnings": []
+  },
+  "saved_path": "C:\\Users\\plher\\Documents\\spetra\\validation_artifacts\\v05b-navigation\\native-tests-01\\test_missing_linked_evidence_p0\\other-sessions\\inspection-edd47bed-8226-4a09-a954-087eab8c351f-bd7695a2-eff0-4de6-a60e-e35ba48e5a95.json",
+  "saved_sha": "d58b752272b58429419af35af63232cf97a4bae8bdae10cac7e0a0ae2ea0afc4"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "evt_3UYlqMFq5FKSG47y0RVMEbdG",
+  "object": "event",
+  "api_version": "2026-10-28.endive",
+  "created": 1793969111,
+  "data": {
+    "object": {
+      "id": "re_3UYlqMFq5FKSG47y04wJRJAg",
+      "object": "refund",
+      "amount": 500,
+      "balance_transaction": "txn_3UYlqMFq5FKSG47y0gMoSZ26",
+      "charge": "ch_3UYlqMFq5FKSG47y0hSlv6os",
+      "created": 1793969111,
+      "currency": "eur",
+      "customer": null,
+      "customer_account": null,
+      "destination_details": {
+        "card": {
+          "reference_status": "pending",
+          "reference_type": "acquirer_reference_number",
+          "type": "refund"
+        },
+        "type": "card"
+      },
+      "metadata": {
+        "quote_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+        "qa_case": "B-REFUND-PARTIAL",
+        "submission_id": "4506971d-4a51-416c-8ef2-ffda7a5698b7"
+      },
+      "payment_intent": "pi_3UYlqMFq5FKSG47y0qC0NxuR",
+      "payment_method": "pm_1UYlqMFq5FKSG47yOGY09oGo",
+      "presentment_details": {
+        "presentment_amount": 475,
+        "presentment_currency": "chf"
+      },
+      "reason": null,
+      "receipt_number": null,
+      "source_transfer_reversal": null,
+      "status": "succeeded",
+      "transfer_reversal": null
+    },
+    "previous_attributes": {}
+  },
+  "livemode": false,
+  "pending_webhooks": 2,
+  "request": {
+    "id": "req_BlCuaMUYlE32Ol",
+    "idempotency_key": "selby-b2-b-refund-partial-500-ch_3UYlqMFq5FKSG47y0hSlv6os"
+  },
+  "type": "refund.created"
+}

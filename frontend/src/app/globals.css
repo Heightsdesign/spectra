@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./order-workspace.css";
 
 @theme {
   --color-ink: #141414;
@@ -295,6 +296,16 @@
 .submissions textarea { min-height: 6rem; }
 .submission-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1rem; }
 .submissions button { margin: .25rem; }
+.order-reference { overflow-wrap: anywhere; }
+.order-builder-summary { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1rem; margin-block:1rem; }
+.order-card-count { font-size:1.35rem; font-weight:600; }
+.order-builder-actions { display:flex; flex-wrap:wrap; gap:.5rem; margin-block:1.5rem 2rem; }
+.order-empty-state { border:1px dashed #bbb; padding:2rem; margin-block:1rem 2rem; }
+.order-builder [tabindex="-1"] { scroll-margin-top:2rem; }
+.order-builder #order-card-form, #order-configuration { scroll-margin-top:2rem; }
+.order-selected-cards { grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr)); }
+.order-selected-cards .info-card { min-width:0; }
+.order-selected-cards p { overflow-wrap:anywhere; }
 
 .pricing-panel { margin-block: 2rem; padding: clamp(1rem, 3vw, 2rem); border: 1px solid #c8c8c8; border-top: 3px solid var(--color-accent-purple); background: var(--color-paper); }
 .pricing-example { padding: .8rem 1rem; border-left: 3px solid var(--color-accent-yellow); background: var(--color-paper); }
@@ -420,3 +431,37 @@
   .intake-audit-list summary span { display: block; }
   .intake-workspace .intake-form .button { width: 100%; }
 }
+
+/* Customer catalog dropdowns reuse the portal's monochrome form controls. */
+.submissions .catalog-assistance { display: flex; align-items: center; }
+.submissions .catalog-assistance input { width: auto; }
+.submission-photos { margin-block: 1rem; }
+.submission-photos summary { cursor: pointer; font-weight: 600; }
+.submission-photo-slot { border: 1px solid #ccc; padding: .8rem; min-width: 0; }
+.submission-photo-slot img { display: block; max-width: 100%; max-height: 20rem; object-fit: contain; }
+.submission-photo-slot p { overflow-wrap: anywhere; }
+.submission-photo-slot button { margin: .3rem; padding: .6rem; border: 1px solid #777; }
+.submission-photo-slot input[type=file] { max-width: 100%; padding: .4rem; }
+.catalog-combobox { position: relative; min-width: 0; margin-block: 1rem; }
+.catalog-combobox-control { display: flex; align-items: center; gap: .5rem; }
+.catalog-combobox-control input { min-width: 0; flex: 1; margin: 0; }
+.catalog-combobox-control button, .catalog-combobox-popup button { padding: .6rem .8rem; border: 1px solid #777; background: #fff; color: #171717; cursor: pointer; }
+.catalog-combobox-popup { position: absolute; z-index: 20; inset-inline: 0; top: 100%; background: #fff; color: #171717; border: 1px solid #777; box-shadow: 0 .5rem 1rem #0002; padding: .4rem; }
+.catalog-combobox-popup ul { list-style: none; padding: 0; margin: 0; max-height: 17rem; overflow-y: auto; overscroll-behavior: contain; }
+.catalog-combobox-popup li { padding: .8rem; border-bottom: 1px solid #ddd; cursor: pointer; overflow-wrap: anywhere; }
+.catalog-combobox-popup li:hover, .catalog-combobox-popup li.is-active { background: #eee; outline: 2px solid #555; outline-offset: -2px; }
+.catalog-combobox-popup p { font-size: .9rem; margin: .5rem; }
+.catalog-combobox button:focus-visible, .catalog-combobox input:focus-visible { outline: 2px solid #171717; outline-offset: 2px; }
+.catalog-combobox button:disabled { opacity: .5; cursor: default; }
+/* Inspection reuses the staff workspace controls and monochrome records. */
+.inspection-workstation .inspection-search { display: grid; gap: .75rem; margin-block: 1.5rem; }
+.inspection-workstation .inspection-search label { grid-column: 1 / -1; }
+.inspection-workstation .inspection-search input { margin: 0; }
+.inspection-identity, .inspection-history { margin-block: 1.5rem; }
+.inspection-workstation h2 { font-size: 1.1rem; margin-block: .5rem 1rem; }
+.inspection-workstation li, .inspection-identity, .inspection-image-history code { overflow-wrap: anywhere; }
+.inspection-workstation li { margin-block: .7rem; }
+.inspection-workstation ul, .inspection-workstation ol { padding-inline-start: 1.25rem; }
+.inspection-workstation input[type=file] { max-width: 100%; padding: .5rem; }
+.inspection-workstation input[type=file]::file-selector-button { max-width: 100%; }
+@media (min-width: 48rem) { .inspection-workstation .inspection-search { grid-template-columns: minmax(0, 1fr) auto; align-items: end; } }

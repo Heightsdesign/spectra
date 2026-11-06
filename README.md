@@ -109,3 +109,11 @@ Upload success and failure events are logged as JSON using the `spectra.uploads`
 ## Customer services and pricing (W3.2)
 
 See [PRICING.md](PRICING.md) for configurable processing tiers and upgrades, per-card choices, server-generated quotes, immutable acceptance snapshots, development-only catalog setup and exact validation results. Submission confirmation remains separate from commercial acceptance and payment.
+
+## Staff inspection (W5.2a)
+
+The protected `/admin/inspection` workstation identifies physical PC references, explains inspection eligibility, records explicit custody handovers and associates versioned front/back originals. [INSPECTION_OPERATIONS.md](INSPECTION_OPERATIONS.md) describes the migration, commercial boundary, procedures and validation. With W4 absent, payment authorization remains unavailable and production inspection mutations fail closed, including for administrators with intake overrides.
+
+## Local scanner experiment (S1)
+
+The isolated [scanner-agent prototype](scanner_agent/README.md) defaults to the operator's `SPECTRA_CARD_600DPI` manual workflow, with exact-byte PNG import, SHA-256 diagnostics, acquisition quality checks, and configurable driver-validated regions for experimental TWAIN acquisition. Hardware readbacks remain separate from requested settings; physical margin checks are pending S2.1. It has no backend/API/database integration or grading/centering algorithm. Live hardware validation remains separate from automated tests.

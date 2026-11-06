@@ -9,10 +9,20 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=Path(__file__).resolve().parents[1] / ".env", extra="ignore")
 
+    stripe_enabled: bool = False
+    stripe_fictitious_enabled: bool = False
+    stripe_mode: Literal["test", "live"] = "test"
+    stripe_secret_key: str = Field(default="", repr=False)
+    stripe_webhook_secret: str = Field(default="", repr=False)
+    stripe_account_id: str = ""
+    stripe_api_version: str = "2025-02-24.acacia"
+    logistics_enabled: bool = False  # Foundation/preview only; no C1-B Checkout activation.
+
     database_url: str = "postgresql+psycopg://localhost:5432/spectra"
     card_image_dir: Path = Path(__file__).resolve().parents[1] / "data" / "card_images"
     boundary_output_dir: Path = Path(__file__).resolve().parents[1] / "data" / "boundary_diagnostics"
     boundary_review_enabled: bool = False
+    dispatch_reminder_lead_days: int | None = Field(default=None, ge=1, le=30)
     max_image_size_bytes: int = Field(default=25 * 1024 * 1024, gt=0)
     auth_origin: str = "http://127.0.0.1:3000"
     auth_environment: Literal["development", "production"] = "development"
@@ -25,6 +35,16 @@ class Settings(BaseSettings):
 
     @model_validator(mode="after")
     def auth_settings(self):
+        if self.stripe_enabled and (
+            self.stripe_mode != "test"
+            or self.auth_environment == "production"
+            or not self.stripe_secret_key.startswith("sk_test_")
+            or not self.stripe_webhook_secret.startswith("whsec_")
+            or not self.stripe_account_id.startswith("acct_")
+        ):
+            raise ValueError("Stripe requires TEST credentials in a non-production environment; live release is gated")
+        if self.stripe_fictitious_enabled and (self.auth_environment != "development" or not self.stripe_enabled or self.stripe_mode != "test"):
+            raise ValueError("Fictitious checkout requires development and enabled Stripe TEST")
         from urllib.parse import urlsplit
         url = urlsplit(self.auth_origin)
         if url.scheme not in {"http", "https"} or not url.hostname or url.username or url.password or url.path or url.query or url.fragment:

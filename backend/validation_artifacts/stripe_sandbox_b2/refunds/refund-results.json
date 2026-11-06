@@ -1,0 +1,52 @@
+{
+  "actual_refunded_total_minor": 3000,
+  "new_payments": 0,
+  "cases": {
+    "B-REFUND-PARTIAL": {
+      "account_id": "acct_1UXDxRFq5FKSG47y",
+      "test_only": true,
+      "submission_id": "4506971d-4a51-416c-8ef2-ffda7a5698b7",
+      "quote_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+      "payment_intent_id": "pi_3UYlqMFq5FKSG47y0qC0NxuR",
+      "charge_id": "ch_3UYlqMFq5FKSG47y0hSlv6os",
+      "refund_id": "re_3UYlqMFq5FKSG47y04wJRJAg",
+      "status": "succeeded",
+      "currency": "eur",
+      "actual_refunded_minor": 500,
+      "charge_cumulative_refunded_minor": 500,
+      "charge_refunded": false,
+      "refund_created_at_UTC": "2026-11-06T12:45:11+00:00",
+      "SELBY": "restricted",
+      "restriction_labels": [
+        "partially_refunded"
+      ],
+      "historical_payment_minor": 2500,
+      "payment_count": 1,
+      "deadline_count": 1,
+      "evidence_count": 5
+    },
+    "B-REFUND-FULL": {
+      "account_id": "acct_1UXDxRFq5FKSG47y",
+      "test_only": true,
+      "submission_id": "540416f9-569f-4bad-ac9f-88b2b08e0fdd",
+      "quote_id": "73135787-893b-4658-8a62-1837a0e4f17c",
+      "payment_intent_id": "pi_3UYlrMFq5FKSG47y0PEDXeRN",
+      "charge_id": "ch_3UYlrMFq5FKSG47y0Hu4sdnL",
+      "refund_id": "re_3UYlrMFq5FKSG47y0ebIhM87",
+      "status": "succeeded",
+      "currency": "eur",
+      "actual_refunded_minor": 2500,
+      "charge_cumulative_refunded_minor": 2500,
+      "charge_refunded": true,
+      "refund_created_at_UTC": "2026-11-06T12:47:27+00:00",
+      "SELBY": "restricted",
+      "restriction_labels": [
+        "refunded"
+      ],
+      "historical_payment_minor": 2500,
+      "payment_count": 1,
+      "deadline_count": 1,
+      "evidence_count": 5
+    }
+  }
+}

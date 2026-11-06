@@ -9,6 +9,16 @@ from app.pricing_models import PricingCatalog, PricingState
 from app.pricing_schemas import Catalog
 
 
+def common_configuration(cards):
+    """No persisted defaults or implicit normalization of historical exceptions."""
+    if not cards:
+        return None
+    first = cards[0]
+    if any(card.processing_tier != first.processing_tier or sorted(card.upgrade_ids) != sorted(first.upgrade_ids) for card in cards):
+        return None
+    return {'processing_tier': first.processing_tier, 'upgrade_ids': list(first.upgrade_ids)}
+
+
 def current_catalog(db, settings, required=True):
     # Publisher takes FOR UPDATE on this singleton. Keep a shared lock through
     # calculation/acceptance so a price publication cannot interleave with it.
@@ -24,6 +34,8 @@ def current_catalog(db, settings, required=True):
         raise HTTPException(503, "pricing_unavailable") from None
     if settings.auth_environment == "production" and catalog.development_only:
         raise HTTPException(503, "pricing_unavailable")
+    from app.fictitious_checkout import require_scope
+    require_scope(catalog.model_dump(), settings)
     return record, catalog
 
 
@@ -48,6 +60,8 @@ def validate_options(catalog, tier_id, upgrade_ids):
 def validate_selection(db, settings, tier_id, upgrade_ids, required=True):
     configured = current_catalog(db, settings, required=required)
     if configured:
+        if not required and tier_id == "":
+            return  # Internal draft placeholder; explicit identifiers are validated by schemas.
         validate_options(configured[1], tier_id, upgrade_ids)
     elif tier_id != "standard" or upgrade_ids != ["classic"]:
         raise HTTPException(503, "pricing_unavailable")
@@ -76,17 +90,21 @@ def calculate(catalog: Catalog, cards):
                      "description": catalog.upgrades[key].description.model_dump(),
                      "unit_minor": catalog.upgrades[key].price_minor,
                      "label_presentation": catalog.upgrades[key].label_presentation.model_dump() if catalog.upgrades[key].label_presentation else None} for key in sorted(card.upgrade_ids)]
-        unit = catalog.base_price_minor + tier.price_adjustment_minor + sum(u["unit_minor"] for u in upgrades)
+        service_price = tier.price_minor if tier.price_minor is not None else catalog.base_price_minor
+        speed_price = 0 if tier.price_minor is not None else tier.price_adjustment_minor
+        unit = service_price + speed_price + sum(u["unit_minor"] for u in upgrades)
         subtotal = unit * card.quantity
         basis = (catalog.base_price_minor if catalog.discount_scope == "base" else unit) * card.quantity
         discount = ((catalog.base_price_minor - bracket.unit_price_minor) * card.quantity if bracket else
                     rounded_ratio(basis, rule.rate_bps) if rule else 0)
         discounted = subtotal - discount
-        if catalog.tax_mode == "inclusive":
-            tax = rounded_ratio(discounted, catalog.tax_rate_bps, 10_000 + catalog.tax_rate_bps)
+        tax_mode = tier.tax.mode if tier.tax else catalog.tax_mode
+        tax_rate = tier.tax.rate_bps if tier.tax else catalog.tax_rate_bps
+        if tax_mode == "inclusive":
+            tax = rounded_ratio(discounted, tax_rate, 10_000 + tax_rate)
             net, total = discounted - tax, discounted
         else:
-            tax = rounded_ratio(discounted, catalog.tax_rate_bps) if catalog.tax_mode == "exclusive" else 0
+            tax = rounded_ratio(discounted, tax_rate) if tax_mode == "exclusive" else 0
             net, total = discounted, discounted + tax
         lines.append({
             "entry_id": str(card.id), "card_name": card.card_name,
@@ -94,17 +112,25 @@ def calculate(catalog: Catalog, cards):
             "quantity": card.quantity, "processing_tier": card.processing_tier,
             "tier_name": tier.name.model_dump(), "tier_description": tier.description.model_dump(),
             "estimated_turnaround": tier.estimated_turnaround.model_dump() if tier.estimated_turnaround else None,
-            "base_unit_minor": catalog.base_price_minor,
-            "base_minor": catalog.base_price_minor * card.quantity,
-            "speed_minor": tier.price_adjustment_minor * card.quantity,
+            "service_id": card.processing_tier, "service": tier.model_dump(),
+            "service_unit_minor": service_price, "tax_mode": tax_mode, "tax_rate_bps": tax_rate,
+            "tax_validation_reference": tier.tax.validation_reference if tier.tax else catalog.tax_validation_reference,
+            "card_keys": [f"{card.id}:{i}" for i in range(1, card.quantity + 1)],
+            "base_unit_minor": service_price,
+            "base_minor": service_price * card.quantity,
+            "speed_minor": speed_price * card.quantity,
             "upgrades_minor": sum(u["unit_minor"] for u in upgrades) * card.quantity,
             "volume_base_unit_minor": bracket.unit_price_minor if bracket else catalog.base_price_minor,
-            "speed_unit_minor": tier.price_adjustment_minor, "upgrades": upgrades,
+            "speed_unit_minor": speed_price, "upgrades": upgrades,
             "unit_minor": unit, "subtotal_minor": subtotal, "discount_basis_minor": basis,
             "discount_minor": discount, "net_minor": net, "tax_minor": tax, "total_minor": total,
         })
     return {
         "currency": catalog.currency, "development_only": catalog.development_only,
+        "stripe_test_only": catalog.stripe_test_only,
+        "commercial_terms_version": catalog.commercial_terms_version,
+        "quote_schema_version": 2, "per_service_tax": catalog.schema_version == 2,
+        "tax_breakdown": [dict(entry_id=line["entry_id"], mode=line["tax_mode"], rate_bps=line["tax_rate_bps"], net_minor=line["net_minor"], tax_minor=line["tax_minor"], total_minor=line["total_minor"]) for line in lines],
         "configuration": catalog.model_dump(), "quantity": quantity, "lines": lines,
         "discount": rule.model_dump() if rule else None, "discount_scope": catalog.discount_scope,
         "volume_bracket": bracket.model_dump() if bracket else None,

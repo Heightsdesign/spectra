@@ -1,0 +1,19 @@
+{
+  "id": "selby-human-supervised-draft",
+  "version": "0.4.0",
+  "draft": true,
+  "front_centering_thresholds": [[10, 55], [9.5, 57], [9, 60], [8.5, 62], [8, 65], [7, 70], [6, 75], [5, 80]],
+  "back_centering_thresholds": null,
+  "centering_consolidation": "minimum",
+  "condition_consolidation": "sum_penalties_across_faces",
+  "condition_baseline": 10,
+  "weakest_plus": 1,
+  "structural_caps": {
+    "severely_crushed_corner": 6,
+    "minor_localized_crease": 6,
+    "pronounced_crease": 4,
+    "tear": 3,
+    "significant_delamination": 3,
+    "severe_overall_alteration": 2
+  }
+}

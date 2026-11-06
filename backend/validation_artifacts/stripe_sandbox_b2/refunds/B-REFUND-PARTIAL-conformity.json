@@ -1,0 +1,19 @@
+{
+  "case": "B-REFUND-PARTIAL",
+  "passed": true,
+  "refund_id": "re_3UYlqMFq5FKSG47y04wJRJAg",
+  "refunded_minor": 500,
+  "SELBY": "restricted",
+  "restrictions": [
+    "partially_refunded"
+  ],
+  "historical_unchanged": true,
+  "checkout_http": 409,
+  "shipment_http": 409,
+  "replayed_events": 3,
+  "evidence_count_stable": true,
+  "unique_refunds": 1,
+  "payment_count": 1,
+  "deadline_count": 1,
+  "max_cumulative_refund_evidence_minor": 500
+}

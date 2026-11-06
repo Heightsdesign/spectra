@@ -22,6 +22,18 @@ class Localized(Payload):
         return self
 
 
+class TaxTreatment(Payload):
+    mode: Literal["exclusive", "inclusive", "exempt", "pending"]
+    rate_bps: BasisPoints
+    validation_reference: ShortText | None = None
+
+    @model_validator(mode="after")
+    def valid(self):
+        if self.mode == "exempt" and self.rate_bps:
+            raise ValueError("Exempt services require zero tax")
+        return self
+
+
 class Tier(Payload):
     name: Localized
     description: Localized
@@ -29,6 +41,8 @@ class Tier(Payload):
     estimated_turnaround: Localized | None = None
     available: bool = Field(strict=True)
     display_order: int = Field(strict=True, ge=0, le=10_000)
+    price_minor: Minor | None = None
+    tax: TaxTreatment | None = None
 
 
 class LabelPresentation(Payload):
@@ -73,10 +87,11 @@ class VolumePrice(Payload):
 
 
 class Catalog(Payload):
-    schema_version: Literal[1] = 1
+    schema_version: Literal[1, 2] = 1
     name: ShortText
     currency: Literal["EUR"] = "EUR"
     development_only: bool = Field(default=True, strict=True)
+    stripe_test_only: bool = Field(default=False, strict=True)
     approval_reference: ShortText | None = None
     base_price_minor: Minor
     tiers: dict[Identifier, Tier] = Field(min_length=1, max_length=64)
@@ -91,9 +106,19 @@ class Catalog(Payload):
     tax_rate_bps: BasisPoints
     tax_description: Localized
     quote_lifetime_seconds: int = Field(strict=True, ge=60, le=604_800)
+    commercial_terms_version: ShortText | None = None
 
     @model_validator(mode="after")
     def consistent(self):
+        if self.stripe_test_only and not self.development_only:
+            raise ValueError("Fictitious Stripe TEST catalogs must remain development_only")
+        if self.schema_version == 2:
+            if any(t.price_minor is None or t.tax is None for t in self.tiers.values()):
+                raise ValueError("V2 services require an absolute price and explicit tax treatment")
+            if self.discounts or self.volume_prices:
+                raise ValueError("V2 service prices cannot inherit legacy volume discounts")
+        elif any(t.price_minor is not None or t.tax is not None for t in self.tiers.values()):
+            raise ValueError("Absolute service prices require catalog schema 2")
         if self.customer_gross_prices and self.tax_mode == "exclusive":
             raise ValueError("Customer-facing amounts require inclusive or explicitly exempt treatment")
         if self.volume_prices:

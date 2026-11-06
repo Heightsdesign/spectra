@@ -10,6 +10,8 @@ from app.cards import Db, Config
 from app.submission_models import Submission, SubmissionEntry
 from app.pricing_models import QuoteAcceptance
 from app.intake_models import StaffMembership, Intake, Parcel, PhysicalCard, Discrepancy, IntakeAudit
+from app.customer_models import Customer
+from app.intake_voids import PhysicalCardVoid, active_card, void_blockers
 
 router = APIRouter(prefix='/internal/intake', dependencies=[Depends(write_guard)], include_in_schema=False)
 STATES = {'awaiting_receipt', 'partially_received', 'reconciliation_pending', 'reconciled', 'on_hold'}
@@ -38,38 +40,71 @@ def encoded(row, fields):
 
 def summary(db, item):
     state = db.get(Intake, item.id)
+    customer = db.get(Customer, item.customer_id)
     return dict(id=item.id, reference=item.reference, customer_reference=item.customer_id,
+                customer_name=f'{customer.first_name} {customer.last_name}'.strip() if customer else '',
                 declared_quantity=db.scalar(select(func.coalesce(func.sum(SubmissionEntry.quantity), 0)).where(SubmissionEntry.submission_id == item.id)),
-                received_quantity=db.scalar(select(func.count()).select_from(PhysicalCard).where(PhysicalCard.submission_id == item.id)),
+                received_quantity=db.scalar(select(func.count()).select_from(PhysicalCard).where(PhysicalCard.submission_id == item.id, active_card())),
                 status=state.status if state else 'awaiting_receipt', submitted_at=item.confirmed_at,
                 commercially_accepted=db.get(QuoteAcceptance, item.id) is not None,
                 operational_override=bool(state and state.override_reason), payment_status='not_implemented')
 
 
 def detail(db, item):
+    from app.submission_photos import photo_list
     return {**summary(db, item),
-        'entries': [encoded(e, 'id card_name game expansion card_number language quantity') for e in rows(db, SubmissionEntry, item.id)],
+        'entries': [{**encoded(e, 'id card_name game expansion card_number language quantity'), 'pre_shipment_photos': photo_list(db, e.id)} for e in rows(db, SubmissionEntry, item.id)],
         'parcels': [encoded(p, 'id reference carrier tracking notes status received_by received_at updated_at') for p in rows(db, Parcel, item.id)],
-        'cards': [encoded(c, 'id reference parcel_id entry_id notes status received_by received_at updated_at grading_card_id') for c in rows(db, PhysicalCard, item.id)],
+        'cards': [card_detail(db, c, summary_status(db, item.id)) for c in rows(db, PhysicalCard, item.id)],
         'discrepancies': [encoded(d, 'id card_id entry_id kind quantity notes status resolution created_by resolved_by created_at updated_at') for d in rows(db, Discrepancy, item.id)],
         'events': [encoded(e, 'id actor_id action entity_id data reason created_at') for e in rows(db, IntakeAudit, item.id)]}
+
+
+def summary_status(db, sid):
+    state = db.get(Intake, sid)
+    return state.status if state else 'awaiting_receipt'
+
+
+def card_detail(db, card, state):
+    data = encoded(card, 'id reference parcel_id entry_id notes status received_by received_at updated_at grading_card_id')
+    void = db.get(PhysicalCardVoid, card.id)
+    blockers = ['card_voided'] if void else void_blockers(db, card, state)
+    return {**data, 'registration_status': card.status, 'status': 'voided' if void else card.status,
+            'void': encoded(void, 'actor_id reason created_at') if void else None,
+            'void_eligible': not blockers, 'void_blockers': blockers}
 
 
 @router.get('/me')
 def me(request: Request, db: Db, settings: Config):
     actor = staff(request, db, settings)
-    return {'id': actor.id, 'role': db.get(StaffMembership, actor.id).role, 'language': actor.preferred_language}
+    return {'id': actor.id, 'role': db.get(StaffMembership, actor.id).role, 'language': actor.preferred_language,
+            'display_name': f'{actor.first_name} {actor.last_name}'.strip()}
+
+
+@router.get('/submissions/{sid}/pre-shipment-photos/{photo_id}')
+def customer_photo(sid: UUID, photo_id: UUID, request: Request, db: Db, settings: Config):
+    from app.submission_models import SubmissionPhoto
+    from app.submission_photos import scoped_photo, photo_content
+    staff(request, db, settings)
+    item = submission(db, sid)
+    photo = db.get(SubmissionPhoto, photo_id)
+    entry = db.get(SubmissionEntry, photo.entry_id) if photo else None
+    if entry is None or entry.submission_id != item.id:
+        raise HTTPException(404, 'photo_not_found')
+    return photo_content(scoped_photo(db, entry.id, photo_id), settings)
 
 
 @router.get('/submissions')
-def listing(request: Request, db: Db, settings: Config, search: str = Query('', max_length=40), status: str | None = None,
+def listing(request: Request, db: Db, settings: Config, search: str = Query('', max_length=200), status: str | None = None,
             limit: int = Query(50, ge=1, le=100), offset: int = Query(0, ge=0)):
     staff(request, db, settings)
     if status and status not in STATES:
         raise HTTPException(422, 'invalid_status')
-    statement = select(Submission).outerjoin(Intake, Intake.submission_id == Submission.id).where(Submission.status == 'submitted')
-    if search:
-        statement = statement.where(Submission.reference.contains(search.upper(), autoescape=True))
+    statement = select(Submission).join(Customer, Customer.id == Submission.customer_id).outerjoin(Intake, Intake.submission_id == Submission.id).where(Submission.status == 'submitted')
+    if search.strip():
+        term = search.strip()
+        statement = statement.where(Submission.reference.icontains(term, autoescape=True)
+            | (Customer.first_name + ' ' + Customer.last_name).icontains(term, autoescape=True))
     if status:
         statement = statement.where(func.coalesce(Intake.status, 'awaiting_receipt') == status)
     return [summary(db, item) for item in db.scalars(statement.order_by(Submission.confirmed_at.desc(), Submission.id).offset(offset).limit(limit))]
@@ -213,14 +248,39 @@ def reconciling(state):
         raise HTTPException(409, 'begin_reconciliation_required')
 
 
+class VoidInput(Payload):
+    reason: str = Field(min_length=1, max_length=1000)
+
+
+@router.post('/submissions/{sid}/cards/{cid}/void')
+def void_registration(sid: UUID, cid: UUID, payload: VoidInput, request: Request, db: Db, settings: Config):
+    actor, item, state = context(sid, request, db, settings)
+    card = scoped(db, PhysicalCard, sid, cid)
+    # Submission locking is shared with match, reconciliation and production.
+    # Lock/refresh the card too, so stale ORM state cannot authorize a void.
+    db.refresh(card, with_for_update=True)
+    if db.get(PhysicalCardVoid, cid):
+        return detail(db, item)  # A safe replay, even after later reconciliation.
+    blockers = void_blockers(db, card, state.status)
+    if blockers:
+        raise HTTPException(409, {'code': 'void_not_permitted', 'reasons': blockers})
+    db.add(PhysicalCardVoid(physical_card_id=cid, actor_id=actor.id, reason=payload.reason))
+    audit(db, actor, sid, 'physical_card_voided', cid,
+          {'reference': card.reference, 'before': card.status, 'after': 'voided'}, payload.reason)
+    db.commit()
+    return detail(db, item)
+
+
 @router.post('/submissions/{sid}/cards/{cid}/match')
 def match(sid: UUID, cid: UUID, payload: MatchInput, request: Request, db: Db, settings: Config):
     actor, item, state = context(sid, request, db, settings)
     reconciling(state)
     card = scoped(db, PhysicalCard, sid, cid)
+    if db.get(PhysicalCardVoid, cid):
+        raise HTTPException(409, 'card_voided')
     if payload.entry_id:
         entry = scoped(db, SubmissionEntry, sid, payload.entry_id)
-        count = db.scalar(select(func.count()).select_from(PhysicalCard).where(PhysicalCard.entry_id == entry.id, PhysicalCard.id != cid))
+        count = db.scalar(select(func.count()).select_from(PhysicalCard).where(PhysicalCard.entry_id == entry.id, PhysicalCard.id != cid, active_card()))
         if count >= entry.quantity:
             raise HTTPException(409, 'declared_quantity_exceeded')
     before = str(card.entry_id) if card.entry_id else None
@@ -239,6 +299,8 @@ def discrepancy(sid: UUID, payload: IssueInput, request: Request, db: Db, settin
         scoped(db, SubmissionEntry, sid, payload.entry_id)
     if payload.card_id:
         scoped(db, PhysicalCard, sid, payload.card_id)
+        if db.get(PhysicalCardVoid, payload.card_id):
+            raise HTTPException(409, 'card_voided')
     if payload.kind == 'missing' and (not payload.entry_id or payload.card_id):
         raise HTTPException(422, 'missing_requires_entry')
     if payload.kind != 'missing' and (not payload.card_id or payload.quantity != 1):
@@ -265,7 +327,8 @@ def resolve(sid: UUID, did: UUID, payload: Resolution, request: Request, db: Db,
 
 
 def validate_complete(db, sid):
-    cards, entries, issues = rows(db, PhysicalCard, sid), rows(db, SubmissionEntry, sid), rows(db, Discrepancy, sid)
+    cards = list(db.scalars(select(PhysicalCard).where(PhysicalCard.submission_id == sid, active_card())))
+    entries, issues = rows(db, SubmissionEntry, sid), rows(db, Discrepancy, sid)
     if any(d.status == 'open' for d in issues):
         raise HTTPException(409, 'open_discrepancies')
     for entry in entries:

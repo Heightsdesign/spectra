@@ -1,10 +1,21 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { compatible, money, ordered, pricingMessages } from '../src/lib/pricing.ts';
+import { compatible, money, ordered, pricingMessages, commonConfiguration, hasMixedConfiguration } from '../src/lib/pricing.ts';
 import { submissionRequest } from '../src/lib/submissions.ts';
 
 const catalog=JSON.parse(await readFile(new URL('../../backend/pricing/development-example.json',import.meta.url),'utf8'));
+test('one shared configuration is inferred without normalizing legacy exceptions',()=>{
+ const first={id:'a',processing_tier:'express',upgrade_ids:['classic','extra']};
+ const second={id:'b',processing_tier:'express',upgrade_ids:['extra','classic']};
+ assert.equal(commonConfiguration([first,second]),first);
+ assert.equal(hasMixedConfiguration([first,second]),false);
+ assert.equal(hasMixedConfiguration([]),false);
+ const mixed={...second,processing_tier:'priority'};
+ assert.equal(commonConfiguration([first,mixed]),undefined);
+ assert.equal(hasMixedConfiguration([first,mixed]),true);
+ assert.deepEqual(second.upgrade_ids,['extra','classic']);
+});
 for(const lang of ['FR','EN']) {
  test(`${lang} pricing messages cover quote lifecycle and payment exclusion`,()=>{
   assert.deepEqual(Object.keys(pricingMessages[lang]).sort(),Object.keys(pricingMessages.EN).sort());

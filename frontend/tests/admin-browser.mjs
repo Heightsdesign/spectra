@@ -68,6 +68,8 @@ try {
   const mutations = [];
   const labelRequests=[];
   let failCreation = false;
+  let returnParcel={version:0,parcel:{},terms_accepted:false};
+  const returnParcelWrites=[];
   function send(method, params = {}) {
     const id = ++sequence;
     return new Promise((resolve, reject) => {
@@ -92,7 +94,13 @@ try {
       }
       let responseCode = 200;
       let body;
-      if (url.pathname.startsWith('/internal/customer-operations')) {
+      if(url.pathname.endsWith('/return-parcel')){
+        if(request.method==='PUT'){
+          const payload=JSON.parse(request.postData);returnParcelWrites.push({payload,headers:request.headers});
+          returnParcel={version:returnParcel.version+1,parcel:payload.parcel,terms_accepted:false};
+        }
+        body=returnParcel;
+      } else if (url.pathname.startsWith('/internal/customer-operations')) {
         if (operationsFailure) { responseCode=503;body={detail:'service_unavailable'}; }
         else if (url.pathname.endsWith('/customers')) {
           const search=(url.searchParams.get('search')??'').toLowerCase();
@@ -157,6 +165,17 @@ try {
     await screenshot(name + '-list');
     await click('tbody button');
     await waitFor(() => evaluate('!!document.querySelector("#intake-inventory")'), 'detail loaded');
+    await waitFor(()=>evaluate('document.querySelectorAll(".return-parcel-panel input[type=number]").length===4'),'operator parcel measurements');
+    const previousParcelWrites=returnParcelWrites.length;
+    await input('.return-parcel-panel [name=weight_g]','650');
+    await input('.return-parcel-panel [name=length_mm]','240');
+    await input('.return-parcel-panel [name=width_mm]','160');
+    await input('.return-parcel-panel [name=height_mm]','80');
+    await input('.return-parcel-panel [name=reason]','SYNTHETIC TEST preparation');
+    await evaluate('document.querySelector(".return-parcel-panel form").requestSubmit()');
+    await waitFor(()=>returnParcelWrites.length===previousParcelWrites+1,'operator parcel save');
+    assert.deepEqual(returnParcelWrites.at(-1).payload.parcel,{weight_g:650,length_mm:240,width_mm:160,height_mm:80});
+    assert.equal(returnParcelWrites.at(-1).headers['X-Csrf-Token']??returnParcelWrites.at(-1).headers['X-CSRF-Token'],'fixture-csrf');
     await checkLayout();
     assert.equal(await evaluate('document.querySelectorAll("#intake-inventory article").length'), 36);
     assert.equal(await evaluate('document.querySelectorAll("#intake-inventory details[open]").length'), 0, 'Inventory forms start compact');

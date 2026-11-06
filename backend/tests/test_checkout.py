@@ -24,7 +24,7 @@ from test_submissions import BASE, add, draft, submissions_api  # noqa: F401
 
 def official(**changes):
     data = json.loads((Path(__file__).parents[1] / "pricing/spectra-v1.json").read_text(encoding="utf-8"))
-    return {**data, **changes}
+    return {**data, "commercial_terms_version": "TEST-ONLY-TERMS-V06A", **changes}
 
 
 @pytest.mark.parametrize("quantity,unit", [(1,1990),(4,1990),(5,1790),(9,1790),(10,1690),(11,1690),(20,1690)])

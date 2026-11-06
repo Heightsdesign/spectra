@@ -1,0 +1,4502 @@
+[
+  {
+    "name": "restriction_partial",
+    "commercial": {
+      "charging_enabled": false,
+      "accepted_quote_id": "0e9229e9-89e6-48ea-b33a-b92e227c0241",
+      "financial_restrictions": [
+        "partially_refunded"
+      ],
+      "payment_status": "restricted",
+      "verified_payment_at": "2026-11-05T23:24:19+01:00",
+      "dispatch_deadline": "2026-12-05T23:24:19+01:00",
+      "dispatch_policy": {
+        "calendar_days_after_verified_payment": 30,
+        "timezone": "UTC",
+        "automatic_forfeiture": false
+      },
+      "indicators": [
+        "awaiting_customer_dispatch"
+      ],
+      "shipment_declarations": [],
+      "parcel_receipts": [],
+      "audit": [
+        {
+          "id": "f2651aa6-07f7-424d-aa06-674b39a3ed26",
+          "kind": "quote_accepted_awaiting_payment",
+          "data": {
+            "quote_id": "0e9229e9-89e6-48ea-b33a-b92e227c0241",
+            "amount_minor": 2500
+          },
+          "reason": null,
+          "created_at": "2026-11-05T23:24:19.727822+01:00"
+        },
+        {
+          "id": "627ee52e-e814-4547-b444-f06c129830c7",
+          "kind": "provider_payment_verified",
+          "data": {
+            "quote_id": "0e9229e9-89e6-48ea-b33a-b92e227c0241",
+            "verified_at": "2026-11-05T22:24:19+00:00",
+            "dispatch_policy": {
+              "timezone": "UTC",
+              "automatic_forfeiture": false,
+              "calendar_days_after_verified_payment": 30
+            },
+            "dispatch_deadline": "2026-12-05T22:24:19+00:00"
+          },
+          "reason": null,
+          "created_at": "2026-11-05T23:24:19.855628+01:00"
+        }
+      ]
+    },
+    "item": {
+      "id": "0a8b5266-50d7-48a4-8ade-296c02aa2459",
+      "reference": "SP-0D936D6B204040438F1B3D238745C5C8",
+      "status": "submitted",
+      "notes": "SYNTHETIC BATCH B 20261105T222416Z_737c0e3b",
+      "version": 1,
+      "created_at": "2026-11-05T23:24:19.666188+01:00",
+      "updated_at": "2026-11-05T23:24:19.666188+01:00",
+      "confirmed_at": "2026-11-05T23:21:19.687259+01:00",
+      "card_count": 2,
+      "library_enabled": true,
+      "entries": [
+        {
+          "id": "c1d69171-699f-4ae0-b96b-3ee9ec32b1d8",
+          "catalog_card_id": null,
+          "game": "pokemon",
+          "card_name": "SYNTHETIC BATCH B",
+          "expansion": "TEST",
+          "card_number": "TEST",
+          "language": "FR",
+          "quantity": 2,
+          "notes": "",
+          "processing_tier": "standard",
+          "upgrade_ids": [
+            "classic"
+          ],
+          "pre_shipment_photos": []
+        }
+      ]
+    },
+    "order": {
+      "grading": {
+        "lines": [
+          {
+            "entry": {
+              "game": "pokemon",
+              "notes": "",
+              "language": "FR",
+              "quantity": 2,
+              "card_name": "SYNTHETIC BATCH B",
+              "expansion": "TEST",
+              "card_number": "TEST"
+            },
+            "service": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            },
+            "entry_id": "c1d69171-699f-4ae0-b96b-3ee9ec32b1d8",
+            "quantity": 2,
+            "tax_mode": "exempt",
+            "upgrades": [
+              {
+                "id": "classic",
+                "name": {
+                  "EN": "Classic label",
+                  "FR": "Étiquette classique"
+                },
+                "unit_minor": 0,
+                "description": {
+                  "EN": "Classic presentation included.",
+                  "FR": "Présentation classique incluse."
+                },
+                "label_presentation": null
+              }
+            ],
+            "card_keys": [
+              "c1d69171-699f-4ae0-b96b-3ee9ec32b1d8:1",
+              "c1d69171-699f-4ae0-b96b-3ee9ec32b1d8:2"
+            ],
+            "card_name": "SYNTHETIC BATCH B",
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "tier_name": {
+              "EN": "Standard",
+              "FR": "Standard"
+            },
+            "base_minor": 2000,
+            "service_id": "standard",
+            "unit_minor": 1000,
+            "speed_minor": 0,
+            "total_minor": 2000,
+            "tax_rate_bps": 0,
+            "discount_minor": 0,
+            "subtotal_minor": 2000,
+            "upgrades_minor": 0,
+            "base_unit_minor": 1000,
+            "processing_tier": "standard",
+            "speed_unit_minor": 0,
+            "tier_description": {
+              "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+              "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+            },
+            "service_unit_minor": 1000,
+            "discount_basis_minor": 2000,
+            "estimated_turnaround": null,
+            "volume_base_unit_minor": 1000,
+            "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+          }
+        ],
+        "currency": "EUR",
+        "discount": null,
+        "quantity": 2,
+        "tax_mode": "exempt",
+        "net_minor": 2000,
+        "tax_minor": 0,
+        "base_minor": 2000,
+        "speed_minor": 0,
+        "total_minor": 2000,
+        "tax_rate_bps": 0,
+        "configuration": {
+          "name": "FICTIF ? STRIPE TEST",
+          "tiers": {
+            "standard": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            }
+          },
+          "groups": {
+            "label": {
+              "max_selected": 1,
+              "min_selected": 1
+            }
+          },
+          "currency": "EUR",
+          "tax_mode": "exempt",
+          "upgrades": {
+            "classic": {
+              "name": {
+                "EN": "Classic label",
+                "FR": "Étiquette classique"
+              },
+              "group": "label",
+              "available": true,
+              "description": {
+                "EN": "Classic presentation included.",
+                "FR": "Présentation classique incluse."
+              },
+              "price_minor": 0,
+              "allowed_tiers": null,
+              "display_order": 10,
+              "incompatible_with": [],
+              "label_presentation": null
+            }
+          },
+          "discounts": [],
+          "tax_rate_bps": 0,
+          "volume_prices": [],
+          "discount_scope": "base",
+          "schema_version": 1,
+          "tax_description": {
+            "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+            "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+          },
+          "base_price_minor": 1000,
+          "development_only": true,
+          "stripe_test_only": true,
+          "approval_reference": null,
+          "customer_gross_prices": false,
+          "quote_lifetime_seconds": 3600,
+          "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+          "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+        },
+        "tax_breakdown": [
+          {
+            "mode": "exempt",
+            "entry_id": "c1d69171-699f-4ae0-b96b-3ee9ec32b1d8",
+            "rate_bps": 0,
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "total_minor": 2000
+          }
+        ],
+        "discount_minor": 0,
+        "discount_scope": "base",
+        "subtotal_minor": 2000,
+        "upgrades_minor": 0,
+        "volume_bracket": null,
+        "per_service_tax": false,
+        "tax_description": {
+          "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+          "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+        },
+        "development_only": true,
+        "stripe_test_only": true,
+        "quote_schema_version": 2,
+        "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE"
+      },
+      "currency": "EUR",
+      "delivery": {
+        "parcel": {},
+        "version": 1,
+        "address_id": "f9ccd440-0c18-4843-a73c-f8a597d80114",
+        "service_id": "test-return",
+        "declared_value_minor": 10000
+      },
+      "quantity": 2,
+      "shipping": {
+        "status": "configured",
+        "service": {
+          "name": {
+            "EN": "TEST return",
+            "FR": "Retour TEST"
+          },
+          "coverage": {
+            "EN": "Simulation",
+            "FR": "Simulation"
+          },
+          "exclusions": {
+            "EN": "No transport",
+            "FR": "Aucun transport"
+          }
+        },
+        "charge_minor": 500
+      },
+      "readiness": {
+        "ready": true,
+        "states": [
+          "ready_for_checkout"
+        ]
+      },
+      "return_address": {
+        "id": "f9ccd440-0c18-4843-a73c-f8a597d80114",
+        "city": "TEST",
+        "line1": "TEST",
+        "line2": "",
+        "phone": "",
+        "country": "FR",
+        "version": 1,
+        "recipient": "TEST",
+        "postal_code": "75001",
+        "instructions": ""
+      },
+      "net_total_minor": 2500,
+      "tax_total_minor": 0,
+      "stripe_test_only": true,
+      "available_services": [],
+      "final_payable_minor": 2500,
+      "submission_reference": "SP-0D936D6B204040438F1B3D238745C5C8",
+      "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+      "inbound_receiving_address": null,
+      "terms_accepted": true
+    },
+    "quote": {
+      "id": "0e9229e9-89e6-48ea-b33a-b92e227c0241",
+      "submission_id": "0a8b5266-50d7-48a4-8ade-296c02aa2459",
+      "pricing_revision": 1,
+      "pricing_configuration_version": "468f7df4-f27e-422c-99b4-c949655436e6",
+      "created_at": "2026-11-05T22:21:19.704297+00:00",
+      "expires_at": "2026-11-05T23:24:19.704302+00:00",
+      "status": "accepted",
+      "accepted_at": "2026-11-05T22:22:19.719586+00:00",
+      "snapshot": {
+        "lines": [
+          {
+            "entry": {
+              "game": "pokemon",
+              "notes": "",
+              "language": "FR",
+              "quantity": 2,
+              "card_name": "SYNTHETIC BATCH B",
+              "expansion": "TEST",
+              "card_number": "TEST"
+            },
+            "service": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            },
+            "entry_id": "c1d69171-699f-4ae0-b96b-3ee9ec32b1d8",
+            "quantity": 2,
+            "tax_mode": "exempt",
+            "upgrades": [
+              {
+                "id": "classic",
+                "name": {
+                  "EN": "Classic label",
+                  "FR": "Étiquette classique"
+                },
+                "unit_minor": 0,
+                "description": {
+                  "EN": "Classic presentation included.",
+                  "FR": "Présentation classique incluse."
+                },
+                "label_presentation": null
+              }
+            ],
+            "card_keys": [
+              "c1d69171-699f-4ae0-b96b-3ee9ec32b1d8:1",
+              "c1d69171-699f-4ae0-b96b-3ee9ec32b1d8:2"
+            ],
+            "card_name": "SYNTHETIC BATCH B",
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "tier_name": {
+              "EN": "Standard",
+              "FR": "Standard"
+            },
+            "base_minor": 2000,
+            "service_id": "standard",
+            "unit_minor": 1000,
+            "speed_minor": 0,
+            "total_minor": 2000,
+            "tax_rate_bps": 0,
+            "discount_minor": 0,
+            "subtotal_minor": 2000,
+            "upgrades_minor": 0,
+            "base_unit_minor": 1000,
+            "processing_tier": "standard",
+            "speed_unit_minor": 0,
+            "tier_description": {
+              "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+              "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+            },
+            "service_unit_minor": 1000,
+            "discount_basis_minor": 2000,
+            "estimated_turnaround": null,
+            "volume_base_unit_minor": 1000,
+            "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+          }
+        ],
+        "checkout": {
+          "grading": {
+            "lines": [
+              {
+                "entry": {
+                  "game": "pokemon",
+                  "notes": "",
+                  "language": "FR",
+                  "quantity": 2,
+                  "card_name": "SYNTHETIC BATCH B",
+                  "expansion": "TEST",
+                  "card_number": "TEST"
+                },
+                "service": {
+                  "tax": null,
+                  "name": {
+                    "EN": "Standard",
+                    "FR": "Standard"
+                  },
+                  "available": true,
+                  "description": {
+                    "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                    "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+                  },
+                  "price_minor": null,
+                  "display_order": 10,
+                  "estimated_turnaround": null,
+                  "price_adjustment_minor": 0
+                },
+                "entry_id": "c1d69171-699f-4ae0-b96b-3ee9ec32b1d8",
+                "quantity": 2,
+                "tax_mode": "exempt",
+                "upgrades": [
+                  {
+                    "id": "classic",
+                    "name": {
+                      "EN": "Classic label",
+                      "FR": "Étiquette classique"
+                    },
+                    "unit_minor": 0,
+                    "description": {
+                      "EN": "Classic presentation included.",
+                      "FR": "Présentation classique incluse."
+                    },
+                    "label_presentation": null
+                  }
+                ],
+                "card_keys": [
+                  "c1d69171-699f-4ae0-b96b-3ee9ec32b1d8:1",
+                  "c1d69171-699f-4ae0-b96b-3ee9ec32b1d8:2"
+                ],
+                "card_name": "SYNTHETIC BATCH B",
+                "net_minor": 2000,
+                "tax_minor": 0,
+                "tier_name": {
+                  "EN": "Standard",
+                  "FR": "Standard"
+                },
+                "base_minor": 2000,
+                "service_id": "standard",
+                "unit_minor": 1000,
+                "speed_minor": 0,
+                "total_minor": 2000,
+                "tax_rate_bps": 0,
+                "discount_minor": 0,
+                "subtotal_minor": 2000,
+                "upgrades_minor": 0,
+                "base_unit_minor": 1000,
+                "processing_tier": "standard",
+                "speed_unit_minor": 0,
+                "tier_description": {
+                  "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                  "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+                },
+                "service_unit_minor": 1000,
+                "discount_basis_minor": 2000,
+                "estimated_turnaround": null,
+                "volume_base_unit_minor": 1000,
+                "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+              }
+            ],
+            "currency": "EUR",
+            "discount": null,
+            "quantity": 2,
+            "tax_mode": "exempt",
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "base_minor": 2000,
+            "speed_minor": 0,
+            "total_minor": 2000,
+            "tax_rate_bps": 0,
+            "configuration": {
+              "name": "FICTIF ? STRIPE TEST",
+              "tiers": {
+                "standard": {
+                  "tax": null,
+                  "name": {
+                    "EN": "Standard",
+                    "FR": "Standard"
+                  },
+                  "available": true,
+                  "description": {
+                    "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                    "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+                  },
+                  "price_minor": null,
+                  "display_order": 10,
+                  "estimated_turnaround": null,
+                  "price_adjustment_minor": 0
+                }
+              },
+              "groups": {
+                "label": {
+                  "max_selected": 1,
+                  "min_selected": 1
+                }
+              },
+              "currency": "EUR",
+              "tax_mode": "exempt",
+              "upgrades": {
+                "classic": {
+                  "name": {
+                    "EN": "Classic label",
+                    "FR": "Étiquette classique"
+                  },
+                  "group": "label",
+                  "available": true,
+                  "description": {
+                    "EN": "Classic presentation included.",
+                    "FR": "Présentation classique incluse."
+                  },
+                  "price_minor": 0,
+                  "allowed_tiers": null,
+                  "display_order": 10,
+                  "incompatible_with": [],
+                  "label_presentation": null
+                }
+              },
+              "discounts": [],
+              "tax_rate_bps": 0,
+              "volume_prices": [],
+              "discount_scope": "base",
+              "schema_version": 1,
+              "tax_description": {
+                "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+                "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+              },
+              "base_price_minor": 1000,
+              "development_only": true,
+              "stripe_test_only": true,
+              "approval_reference": null,
+              "customer_gross_prices": false,
+              "quote_lifetime_seconds": 3600,
+              "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+              "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+            },
+            "tax_breakdown": [
+              {
+                "mode": "exempt",
+                "entry_id": "c1d69171-699f-4ae0-b96b-3ee9ec32b1d8",
+                "rate_bps": 0,
+                "net_minor": 2000,
+                "tax_minor": 0,
+                "total_minor": 2000
+              }
+            ],
+            "discount_minor": 0,
+            "discount_scope": "base",
+            "subtotal_minor": 2000,
+            "upgrades_minor": 0,
+            "volume_bracket": null,
+            "per_service_tax": false,
+            "tax_description": {
+              "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+              "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+            },
+            "development_only": true,
+            "stripe_test_only": true,
+            "quote_schema_version": 2,
+            "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE"
+          },
+          "currency": "EUR",
+          "delivery": {
+            "parcel": {},
+            "version": 1,
+            "address_id": "f9ccd440-0c18-4843-a73c-f8a597d80114",
+            "service_id": "test-return",
+            "declared_value_minor": 10000
+          },
+          "quantity": 2,
+          "shipping": {
+            "status": "configured",
+            "service": {
+              "name": {
+                "EN": "TEST return",
+                "FR": "Retour TEST"
+              },
+              "coverage": {
+                "EN": "Simulation",
+                "FR": "Simulation"
+              },
+              "exclusions": {
+                "EN": "No transport",
+                "FR": "Aucun transport"
+              }
+            },
+            "charge_minor": 500
+          },
+          "readiness": {
+            "ready": true,
+            "states": [
+              "ready_for_checkout"
+            ]
+          },
+          "return_address": {
+            "id": "f9ccd440-0c18-4843-a73c-f8a597d80114",
+            "city": "TEST",
+            "line1": "TEST",
+            "line2": "",
+            "phone": "",
+            "country": "FR",
+            "version": 1,
+            "recipient": "TEST",
+            "postal_code": "75001",
+            "instructions": ""
+          },
+          "net_total_minor": 2500,
+          "tax_total_minor": 0,
+          "stripe_test_only": true,
+          "available_services": [],
+          "final_payable_minor": 2500,
+          "submission_reference": "SP-0D936D6B204040438F1B3D238745C5C8",
+          "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+          "inbound_receiving_address": null
+        },
+        "currency": "EUR",
+        "discount": null,
+        "quantity": 2,
+        "tax_mode": "exempt",
+        "net_minor": 2000,
+        "tax_minor": 0,
+        "base_minor": 2000,
+        "speed_minor": 0,
+        "total_minor": 2000,
+        "tax_rate_bps": 0,
+        "configuration": {
+          "name": "FICTIF ? STRIPE TEST",
+          "tiers": {
+            "standard": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            }
+          },
+          "groups": {
+            "label": {
+              "max_selected": 1,
+              "min_selected": 1
+            }
+          },
+          "currency": "EUR",
+          "tax_mode": "exempt",
+          "upgrades": {
+            "classic": {
+              "name": {
+                "EN": "Classic label",
+                "FR": "Étiquette classique"
+              },
+              "group": "label",
+              "available": true,
+              "description": {
+                "EN": "Classic presentation included.",
+                "FR": "Présentation classique incluse."
+              },
+              "price_minor": 0,
+              "allowed_tiers": null,
+              "display_order": 10,
+              "incompatible_with": [],
+              "label_presentation": null
+            }
+          },
+          "discounts": [],
+          "tax_rate_bps": 0,
+          "volume_prices": [],
+          "discount_scope": "base",
+          "schema_version": 1,
+          "tax_description": {
+            "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+            "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+          },
+          "base_price_minor": 1000,
+          "development_only": true,
+          "stripe_test_only": true,
+          "approval_reference": null,
+          "customer_gross_prices": false,
+          "quote_lifetime_seconds": 3600,
+          "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+          "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+        },
+        "tax_breakdown": [
+          {
+            "mode": "exempt",
+            "entry_id": "c1d69171-699f-4ae0-b96b-3ee9ec32b1d8",
+            "rate_bps": 0,
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "total_minor": 2000
+          }
+        ],
+        "discount_minor": 0,
+        "discount_scope": "base",
+        "subtotal_minor": 2000,
+        "upgrades_minor": 0,
+        "volume_bracket": null,
+        "per_service_tax": false,
+        "tax_description": {
+          "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+          "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+        },
+        "development_only": true,
+        "stripe_test_only": true,
+        "order_total_minor": 2500,
+        "quote_schema_version": 2,
+        "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE"
+      }
+    },
+    "ui": {
+      "canDeclareShipment": false,
+      "nextAction": "restricted",
+      "isTracking": true,
+      "statusFR": "Paiement soumis à une restriction — contactez SELBY",
+      "statusEN": "Payment restricted — contact SELBY"
+    }
+  },
+  {
+    "name": "restriction_full",
+    "commercial": {
+      "charging_enabled": false,
+      "accepted_quote_id": "257b11f8-6083-46ed-b585-60852b57510a",
+      "financial_restrictions": [
+        "refunded"
+      ],
+      "payment_status": "restricted",
+      "verified_payment_at": "2026-11-05T23:24:20+01:00",
+      "dispatch_deadline": "2026-12-05T23:24:20+01:00",
+      "dispatch_policy": {
+        "calendar_days_after_verified_payment": 30,
+        "timezone": "UTC",
+        "automatic_forfeiture": false
+      },
+      "indicators": [
+        "awaiting_customer_dispatch"
+      ],
+      "shipment_declarations": [],
+      "parcel_receipts": [],
+      "audit": [
+        {
+          "id": "93a108e2-d19f-4b9a-bac6-1e4661da33d8",
+          "kind": "quote_accepted_awaiting_payment",
+          "data": {
+            "quote_id": "257b11f8-6083-46ed-b585-60852b57510a",
+            "amount_minor": 2500
+          },
+          "reason": null,
+          "created_at": "2026-11-05T23:24:20.264871+01:00"
+        },
+        {
+          "id": "dac0b055-7800-4f8c-bb9f-cc5870e0a7ab",
+          "kind": "provider_payment_verified",
+          "data": {
+            "quote_id": "257b11f8-6083-46ed-b585-60852b57510a",
+            "verified_at": "2026-11-05T22:24:20+00:00",
+            "dispatch_policy": {
+              "timezone": "UTC",
+              "automatic_forfeiture": false,
+              "calendar_days_after_verified_payment": 30
+            },
+            "dispatch_deadline": "2026-12-05T22:24:20+00:00"
+          },
+          "reason": null,
+          "created_at": "2026-11-05T23:24:20.288430+01:00"
+        }
+      ]
+    },
+    "item": {
+      "id": "3d68f838-f72a-462a-8c23-e6f697596e47",
+      "reference": "SP-9AFF97647D0D4808AADC084608F25CE1",
+      "status": "submitted",
+      "notes": "SYNTHETIC BATCH B 20261105T222416Z_737c0e3b",
+      "version": 1,
+      "created_at": "2026-11-05T23:24:20.259982+01:00",
+      "updated_at": "2026-11-05T23:24:20.259982+01:00",
+      "confirmed_at": "2026-11-05T23:21:20.261484+01:00",
+      "card_count": 2,
+      "library_enabled": true,
+      "entries": [
+        {
+          "id": "add27472-8461-4390-81fc-b13cd2f0bf0f",
+          "catalog_card_id": null,
+          "game": "pokemon",
+          "card_name": "SYNTHETIC BATCH B",
+          "expansion": "TEST",
+          "card_number": "TEST",
+          "language": "FR",
+          "quantity": 2,
+          "notes": "",
+          "processing_tier": "standard",
+          "upgrade_ids": [
+            "classic"
+          ],
+          "pre_shipment_photos": []
+        }
+      ]
+    },
+    "order": {
+      "grading": {
+        "lines": [
+          {
+            "entry": {
+              "game": "pokemon",
+              "notes": "",
+              "language": "FR",
+              "quantity": 2,
+              "card_name": "SYNTHETIC BATCH B",
+              "expansion": "TEST",
+              "card_number": "TEST"
+            },
+            "service": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            },
+            "entry_id": "add27472-8461-4390-81fc-b13cd2f0bf0f",
+            "quantity": 2,
+            "tax_mode": "exempt",
+            "upgrades": [
+              {
+                "id": "classic",
+                "name": {
+                  "EN": "Classic label",
+                  "FR": "Étiquette classique"
+                },
+                "unit_minor": 0,
+                "description": {
+                  "EN": "Classic presentation included.",
+                  "FR": "Présentation classique incluse."
+                },
+                "label_presentation": null
+              }
+            ],
+            "card_keys": [
+              "add27472-8461-4390-81fc-b13cd2f0bf0f:1",
+              "add27472-8461-4390-81fc-b13cd2f0bf0f:2"
+            ],
+            "card_name": "SYNTHETIC BATCH B",
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "tier_name": {
+              "EN": "Standard",
+              "FR": "Standard"
+            },
+            "base_minor": 2000,
+            "service_id": "standard",
+            "unit_minor": 1000,
+            "speed_minor": 0,
+            "total_minor": 2000,
+            "tax_rate_bps": 0,
+            "discount_minor": 0,
+            "subtotal_minor": 2000,
+            "upgrades_minor": 0,
+            "base_unit_minor": 1000,
+            "processing_tier": "standard",
+            "speed_unit_minor": 0,
+            "tier_description": {
+              "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+              "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+            },
+            "service_unit_minor": 1000,
+            "discount_basis_minor": 2000,
+            "estimated_turnaround": null,
+            "volume_base_unit_minor": 1000,
+            "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+          }
+        ],
+        "currency": "EUR",
+        "discount": null,
+        "quantity": 2,
+        "tax_mode": "exempt",
+        "net_minor": 2000,
+        "tax_minor": 0,
+        "base_minor": 2000,
+        "speed_minor": 0,
+        "total_minor": 2000,
+        "tax_rate_bps": 0,
+        "configuration": {
+          "name": "FICTIF ? STRIPE TEST",
+          "tiers": {
+            "standard": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            }
+          },
+          "groups": {
+            "label": {
+              "max_selected": 1,
+              "min_selected": 1
+            }
+          },
+          "currency": "EUR",
+          "tax_mode": "exempt",
+          "upgrades": {
+            "classic": {
+              "name": {
+                "EN": "Classic label",
+                "FR": "Étiquette classique"
+              },
+              "group": "label",
+              "available": true,
+              "description": {
+                "EN": "Classic presentation included.",
+                "FR": "Présentation classique incluse."
+              },
+              "price_minor": 0,
+              "allowed_tiers": null,
+              "display_order": 10,
+              "incompatible_with": [],
+              "label_presentation": null
+            }
+          },
+          "discounts": [],
+          "tax_rate_bps": 0,
+          "volume_prices": [],
+          "discount_scope": "base",
+          "schema_version": 1,
+          "tax_description": {
+            "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+            "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+          },
+          "base_price_minor": 1000,
+          "development_only": true,
+          "stripe_test_only": true,
+          "approval_reference": null,
+          "customer_gross_prices": false,
+          "quote_lifetime_seconds": 3600,
+          "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+          "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+        },
+        "tax_breakdown": [
+          {
+            "mode": "exempt",
+            "entry_id": "add27472-8461-4390-81fc-b13cd2f0bf0f",
+            "rate_bps": 0,
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "total_minor": 2000
+          }
+        ],
+        "discount_minor": 0,
+        "discount_scope": "base",
+        "subtotal_minor": 2000,
+        "upgrades_minor": 0,
+        "volume_bracket": null,
+        "per_service_tax": false,
+        "tax_description": {
+          "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+          "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+        },
+        "development_only": true,
+        "stripe_test_only": true,
+        "quote_schema_version": 2,
+        "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE"
+      },
+      "currency": "EUR",
+      "delivery": {
+        "parcel": {},
+        "version": 1,
+        "address_id": "7ab6ada1-8017-42d2-9560-bbb66515b92a",
+        "service_id": "test-return",
+        "declared_value_minor": 10000
+      },
+      "quantity": 2,
+      "shipping": {
+        "status": "configured",
+        "service": {
+          "name": {
+            "EN": "TEST return",
+            "FR": "Retour TEST"
+          },
+          "coverage": {
+            "EN": "Simulation",
+            "FR": "Simulation"
+          },
+          "exclusions": {
+            "EN": "No transport",
+            "FR": "Aucun transport"
+          }
+        },
+        "charge_minor": 500
+      },
+      "readiness": {
+        "ready": true,
+        "states": [
+          "ready_for_checkout"
+        ]
+      },
+      "return_address": {
+        "id": "7ab6ada1-8017-42d2-9560-bbb66515b92a",
+        "city": "TEST",
+        "line1": "TEST",
+        "line2": "",
+        "phone": "",
+        "country": "FR",
+        "version": 1,
+        "recipient": "TEST",
+        "postal_code": "75001",
+        "instructions": ""
+      },
+      "net_total_minor": 2500,
+      "tax_total_minor": 0,
+      "stripe_test_only": true,
+      "available_services": [],
+      "final_payable_minor": 2500,
+      "submission_reference": "SP-9AFF97647D0D4808AADC084608F25CE1",
+      "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+      "inbound_receiving_address": null,
+      "terms_accepted": true
+    },
+    "quote": {
+      "id": "257b11f8-6083-46ed-b585-60852b57510a",
+      "submission_id": "3d68f838-f72a-462a-8c23-e6f697596e47",
+      "pricing_revision": 1,
+      "pricing_configuration_version": "13af6a2b-823c-4026-886e-908a33a8d82c",
+      "created_at": "2026-11-05T22:21:20.263208+00:00",
+      "expires_at": "2026-11-05T23:24:20.263213+00:00",
+      "status": "accepted",
+      "accepted_at": "2026-11-05T22:22:20.264027+00:00",
+      "snapshot": {
+        "lines": [
+          {
+            "entry": {
+              "game": "pokemon",
+              "notes": "",
+              "language": "FR",
+              "quantity": 2,
+              "card_name": "SYNTHETIC BATCH B",
+              "expansion": "TEST",
+              "card_number": "TEST"
+            },
+            "service": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            },
+            "entry_id": "add27472-8461-4390-81fc-b13cd2f0bf0f",
+            "quantity": 2,
+            "tax_mode": "exempt",
+            "upgrades": [
+              {
+                "id": "classic",
+                "name": {
+                  "EN": "Classic label",
+                  "FR": "Étiquette classique"
+                },
+                "unit_minor": 0,
+                "description": {
+                  "EN": "Classic presentation included.",
+                  "FR": "Présentation classique incluse."
+                },
+                "label_presentation": null
+              }
+            ],
+            "card_keys": [
+              "add27472-8461-4390-81fc-b13cd2f0bf0f:1",
+              "add27472-8461-4390-81fc-b13cd2f0bf0f:2"
+            ],
+            "card_name": "SYNTHETIC BATCH B",
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "tier_name": {
+              "EN": "Standard",
+              "FR": "Standard"
+            },
+            "base_minor": 2000,
+            "service_id": "standard",
+            "unit_minor": 1000,
+            "speed_minor": 0,
+            "total_minor": 2000,
+            "tax_rate_bps": 0,
+            "discount_minor": 0,
+            "subtotal_minor": 2000,
+            "upgrades_minor": 0,
+            "base_unit_minor": 1000,
+            "processing_tier": "standard",
+            "speed_unit_minor": 0,
+            "tier_description": {
+              "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+              "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+            },
+            "service_unit_minor": 1000,
+            "discount_basis_minor": 2000,
+            "estimated_turnaround": null,
+            "volume_base_unit_minor": 1000,
+            "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+          }
+        ],
+        "checkout": {
+          "grading": {
+            "lines": [
+              {
+                "entry": {
+                  "game": "pokemon",
+                  "notes": "",
+                  "language": "FR",
+                  "quantity": 2,
+                  "card_name": "SYNTHETIC BATCH B",
+                  "expansion": "TEST",
+                  "card_number": "TEST"
+                },
+                "service": {
+                  "tax": null,
+                  "name": {
+                    "EN": "Standard",
+                    "FR": "Standard"
+                  },
+                  "available": true,
+                  "description": {
+                    "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                    "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+                  },
+                  "price_minor": null,
+                  "display_order": 10,
+                  "estimated_turnaround": null,
+                  "price_adjustment_minor": 0
+                },
+                "entry_id": "add27472-8461-4390-81fc-b13cd2f0bf0f",
+                "quantity": 2,
+                "tax_mode": "exempt",
+                "upgrades": [
+                  {
+                    "id": "classic",
+                    "name": {
+                      "EN": "Classic label",
+                      "FR": "Étiquette classique"
+                    },
+                    "unit_minor": 0,
+                    "description": {
+                      "EN": "Classic presentation included.",
+                      "FR": "Présentation classique incluse."
+                    },
+                    "label_presentation": null
+                  }
+                ],
+                "card_keys": [
+                  "add27472-8461-4390-81fc-b13cd2f0bf0f:1",
+                  "add27472-8461-4390-81fc-b13cd2f0bf0f:2"
+                ],
+                "card_name": "SYNTHETIC BATCH B",
+                "net_minor": 2000,
+                "tax_minor": 0,
+                "tier_name": {
+                  "EN": "Standard",
+                  "FR": "Standard"
+                },
+                "base_minor": 2000,
+                "service_id": "standard",
+                "unit_minor": 1000,
+                "speed_minor": 0,
+                "total_minor": 2000,
+                "tax_rate_bps": 0,
+                "discount_minor": 0,
+                "subtotal_minor": 2000,
+                "upgrades_minor": 0,
+                "base_unit_minor": 1000,
+                "processing_tier": "standard",
+                "speed_unit_minor": 0,
+                "tier_description": {
+                  "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                  "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+                },
+                "service_unit_minor": 1000,
+                "discount_basis_minor": 2000,
+                "estimated_turnaround": null,
+                "volume_base_unit_minor": 1000,
+                "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+              }
+            ],
+            "currency": "EUR",
+            "discount": null,
+            "quantity": 2,
+            "tax_mode": "exempt",
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "base_minor": 2000,
+            "speed_minor": 0,
+            "total_minor": 2000,
+            "tax_rate_bps": 0,
+            "configuration": {
+              "name": "FICTIF ? STRIPE TEST",
+              "tiers": {
+                "standard": {
+                  "tax": null,
+                  "name": {
+                    "EN": "Standard",
+                    "FR": "Standard"
+                  },
+                  "available": true,
+                  "description": {
+                    "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                    "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+                  },
+                  "price_minor": null,
+                  "display_order": 10,
+                  "estimated_turnaround": null,
+                  "price_adjustment_minor": 0
+                }
+              },
+              "groups": {
+                "label": {
+                  "max_selected": 1,
+                  "min_selected": 1
+                }
+              },
+              "currency": "EUR",
+              "tax_mode": "exempt",
+              "upgrades": {
+                "classic": {
+                  "name": {
+                    "EN": "Classic label",
+                    "FR": "Étiquette classique"
+                  },
+                  "group": "label",
+                  "available": true,
+                  "description": {
+                    "EN": "Classic presentation included.",
+                    "FR": "Présentation classique incluse."
+                  },
+                  "price_minor": 0,
+                  "allowed_tiers": null,
+                  "display_order": 10,
+                  "incompatible_with": [],
+                  "label_presentation": null
+                }
+              },
+              "discounts": [],
+              "tax_rate_bps": 0,
+              "volume_prices": [],
+              "discount_scope": "base",
+              "schema_version": 1,
+              "tax_description": {
+                "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+                "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+              },
+              "base_price_minor": 1000,
+              "development_only": true,
+              "stripe_test_only": true,
+              "approval_reference": null,
+              "customer_gross_prices": false,
+              "quote_lifetime_seconds": 3600,
+              "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+              "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+            },
+            "tax_breakdown": [
+              {
+                "mode": "exempt",
+                "entry_id": "add27472-8461-4390-81fc-b13cd2f0bf0f",
+                "rate_bps": 0,
+                "net_minor": 2000,
+                "tax_minor": 0,
+                "total_minor": 2000
+              }
+            ],
+            "discount_minor": 0,
+            "discount_scope": "base",
+            "subtotal_minor": 2000,
+            "upgrades_minor": 0,
+            "volume_bracket": null,
+            "per_service_tax": false,
+            "tax_description": {
+              "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+              "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+            },
+            "development_only": true,
+            "stripe_test_only": true,
+            "quote_schema_version": 2,
+            "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE"
+          },
+          "currency": "EUR",
+          "delivery": {
+            "parcel": {},
+            "version": 1,
+            "address_id": "7ab6ada1-8017-42d2-9560-bbb66515b92a",
+            "service_id": "test-return",
+            "declared_value_minor": 10000
+          },
+          "quantity": 2,
+          "shipping": {
+            "status": "configured",
+            "service": {
+              "name": {
+                "EN": "TEST return",
+                "FR": "Retour TEST"
+              },
+              "coverage": {
+                "EN": "Simulation",
+                "FR": "Simulation"
+              },
+              "exclusions": {
+                "EN": "No transport",
+                "FR": "Aucun transport"
+              }
+            },
+            "charge_minor": 500
+          },
+          "readiness": {
+            "ready": true,
+            "states": [
+              "ready_for_checkout"
+            ]
+          },
+          "return_address": {
+            "id": "7ab6ada1-8017-42d2-9560-bbb66515b92a",
+            "city": "TEST",
+            "line1": "TEST",
+            "line2": "",
+            "phone": "",
+            "country": "FR",
+            "version": 1,
+            "recipient": "TEST",
+            "postal_code": "75001",
+            "instructions": ""
+          },
+          "net_total_minor": 2500,
+          "tax_total_minor": 0,
+          "stripe_test_only": true,
+          "available_services": [],
+          "final_payable_minor": 2500,
+          "submission_reference": "SP-9AFF97647D0D4808AADC084608F25CE1",
+          "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+          "inbound_receiving_address": null
+        },
+        "currency": "EUR",
+        "discount": null,
+        "quantity": 2,
+        "tax_mode": "exempt",
+        "net_minor": 2000,
+        "tax_minor": 0,
+        "base_minor": 2000,
+        "speed_minor": 0,
+        "total_minor": 2000,
+        "tax_rate_bps": 0,
+        "configuration": {
+          "name": "FICTIF ? STRIPE TEST",
+          "tiers": {
+            "standard": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            }
+          },
+          "groups": {
+            "label": {
+              "max_selected": 1,
+              "min_selected": 1
+            }
+          },
+          "currency": "EUR",
+          "tax_mode": "exempt",
+          "upgrades": {
+            "classic": {
+              "name": {
+                "EN": "Classic label",
+                "FR": "Étiquette classique"
+              },
+              "group": "label",
+              "available": true,
+              "description": {
+                "EN": "Classic presentation included.",
+                "FR": "Présentation classique incluse."
+              },
+              "price_minor": 0,
+              "allowed_tiers": null,
+              "display_order": 10,
+              "incompatible_with": [],
+              "label_presentation": null
+            }
+          },
+          "discounts": [],
+          "tax_rate_bps": 0,
+          "volume_prices": [],
+          "discount_scope": "base",
+          "schema_version": 1,
+          "tax_description": {
+            "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+            "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+          },
+          "base_price_minor": 1000,
+          "development_only": true,
+          "stripe_test_only": true,
+          "approval_reference": null,
+          "customer_gross_prices": false,
+          "quote_lifetime_seconds": 3600,
+          "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+          "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+        },
+        "tax_breakdown": [
+          {
+            "mode": "exempt",
+            "entry_id": "add27472-8461-4390-81fc-b13cd2f0bf0f",
+            "rate_bps": 0,
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "total_minor": 2000
+          }
+        ],
+        "discount_minor": 0,
+        "discount_scope": "base",
+        "subtotal_minor": 2000,
+        "upgrades_minor": 0,
+        "volume_bracket": null,
+        "per_service_tax": false,
+        "tax_description": {
+          "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+          "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+        },
+        "development_only": true,
+        "stripe_test_only": true,
+        "order_total_minor": 2500,
+        "quote_schema_version": 2,
+        "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE"
+      }
+    },
+    "ui": {
+      "canDeclareShipment": false,
+      "nextAction": "restricted",
+      "isTracking": true,
+      "statusFR": "Paiement soumis à une restriction — contactez SELBY",
+      "statusEN": "Payment restricted — contact SELBY"
+    }
+  },
+  {
+    "name": "restriction_dispute",
+    "commercial": {
+      "charging_enabled": false,
+      "accepted_quote_id": "e917c2ba-f55a-446f-b062-e0ea36767bd7",
+      "financial_restrictions": [
+        "dispute_review"
+      ],
+      "payment_status": "restricted",
+      "verified_payment_at": "2026-11-05T23:24:20+01:00",
+      "dispatch_deadline": "2026-12-05T23:24:20+01:00",
+      "dispatch_policy": {
+        "calendar_days_after_verified_payment": 30,
+        "timezone": "UTC",
+        "automatic_forfeiture": false
+      },
+      "indicators": [
+        "awaiting_customer_dispatch"
+      ],
+      "shipment_declarations": [],
+      "parcel_receipts": [],
+      "audit": [
+        {
+          "id": "b55d7bd5-6b2e-472f-89fa-497d30a7ce4f",
+          "kind": "quote_accepted_awaiting_payment",
+          "data": {
+            "quote_id": "e917c2ba-f55a-446f-b062-e0ea36767bd7",
+            "amount_minor": 2500
+          },
+          "reason": null,
+          "created_at": "2026-11-05T23:24:20.515385+01:00"
+        },
+        {
+          "id": "1d572a79-e4b8-4096-927b-aa8086ad6ebc",
+          "kind": "provider_payment_verified",
+          "data": {
+            "quote_id": "e917c2ba-f55a-446f-b062-e0ea36767bd7",
+            "verified_at": "2026-11-05T22:24:20+00:00",
+            "dispatch_policy": {
+              "timezone": "UTC",
+              "automatic_forfeiture": false,
+              "calendar_days_after_verified_payment": 30
+            },
+            "dispatch_deadline": "2026-12-05T22:24:20+00:00"
+          },
+          "reason": null,
+          "created_at": "2026-11-05T23:24:20.536375+01:00"
+        }
+      ]
+    },
+    "item": {
+      "id": "71dc5b4e-acf6-4648-b0ce-c604a808733a",
+      "reference": "SP-DD79EAF6AA954628A517D144ABA0FEBD",
+      "status": "submitted",
+      "notes": "SYNTHETIC BATCH B 20261105T222416Z_737c0e3b",
+      "version": 1,
+      "created_at": "2026-11-05T23:24:20.510928+01:00",
+      "updated_at": "2026-11-05T23:24:20.510928+01:00",
+      "confirmed_at": "2026-11-05T23:21:20.512257+01:00",
+      "card_count": 2,
+      "library_enabled": true,
+      "entries": [
+        {
+          "id": "3eb94a75-1f2c-4180-929a-0e0892ba1c48",
+          "catalog_card_id": null,
+          "game": "pokemon",
+          "card_name": "SYNTHETIC BATCH B",
+          "expansion": "TEST",
+          "card_number": "TEST",
+          "language": "FR",
+          "quantity": 2,
+          "notes": "",
+          "processing_tier": "standard",
+          "upgrade_ids": [
+            "classic"
+          ],
+          "pre_shipment_photos": []
+        }
+      ]
+    },
+    "order": {
+      "grading": {
+        "lines": [
+          {
+            "entry": {
+              "game": "pokemon",
+              "notes": "",
+              "language": "FR",
+              "quantity": 2,
+              "card_name": "SYNTHETIC BATCH B",
+              "expansion": "TEST",
+              "card_number": "TEST"
+            },
+            "service": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            },
+            "entry_id": "3eb94a75-1f2c-4180-929a-0e0892ba1c48",
+            "quantity": 2,
+            "tax_mode": "exempt",
+            "upgrades": [
+              {
+                "id": "classic",
+                "name": {
+                  "EN": "Classic label",
+                  "FR": "Étiquette classique"
+                },
+                "unit_minor": 0,
+                "description": {
+                  "EN": "Classic presentation included.",
+                  "FR": "Présentation classique incluse."
+                },
+                "label_presentation": null
+              }
+            ],
+            "card_keys": [
+              "3eb94a75-1f2c-4180-929a-0e0892ba1c48:1",
+              "3eb94a75-1f2c-4180-929a-0e0892ba1c48:2"
+            ],
+            "card_name": "SYNTHETIC BATCH B",
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "tier_name": {
+              "EN": "Standard",
+              "FR": "Standard"
+            },
+            "base_minor": 2000,
+            "service_id": "standard",
+            "unit_minor": 1000,
+            "speed_minor": 0,
+            "total_minor": 2000,
+            "tax_rate_bps": 0,
+            "discount_minor": 0,
+            "subtotal_minor": 2000,
+            "upgrades_minor": 0,
+            "base_unit_minor": 1000,
+            "processing_tier": "standard",
+            "speed_unit_minor": 0,
+            "tier_description": {
+              "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+              "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+            },
+            "service_unit_minor": 1000,
+            "discount_basis_minor": 2000,
+            "estimated_turnaround": null,
+            "volume_base_unit_minor": 1000,
+            "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+          }
+        ],
+        "currency": "EUR",
+        "discount": null,
+        "quantity": 2,
+        "tax_mode": "exempt",
+        "net_minor": 2000,
+        "tax_minor": 0,
+        "base_minor": 2000,
+        "speed_minor": 0,
+        "total_minor": 2000,
+        "tax_rate_bps": 0,
+        "configuration": {
+          "name": "FICTIF ? STRIPE TEST",
+          "tiers": {
+            "standard": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            }
+          },
+          "groups": {
+            "label": {
+              "max_selected": 1,
+              "min_selected": 1
+            }
+          },
+          "currency": "EUR",
+          "tax_mode": "exempt",
+          "upgrades": {
+            "classic": {
+              "name": {
+                "EN": "Classic label",
+                "FR": "Étiquette classique"
+              },
+              "group": "label",
+              "available": true,
+              "description": {
+                "EN": "Classic presentation included.",
+                "FR": "Présentation classique incluse."
+              },
+              "price_minor": 0,
+              "allowed_tiers": null,
+              "display_order": 10,
+              "incompatible_with": [],
+              "label_presentation": null
+            }
+          },
+          "discounts": [],
+          "tax_rate_bps": 0,
+          "volume_prices": [],
+          "discount_scope": "base",
+          "schema_version": 1,
+          "tax_description": {
+            "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+            "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+          },
+          "base_price_minor": 1000,
+          "development_only": true,
+          "stripe_test_only": true,
+          "approval_reference": null,
+          "customer_gross_prices": false,
+          "quote_lifetime_seconds": 3600,
+          "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+          "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+        },
+        "tax_breakdown": [
+          {
+            "mode": "exempt",
+            "entry_id": "3eb94a75-1f2c-4180-929a-0e0892ba1c48",
+            "rate_bps": 0,
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "total_minor": 2000
+          }
+        ],
+        "discount_minor": 0,
+        "discount_scope": "base",
+        "subtotal_minor": 2000,
+        "upgrades_minor": 0,
+        "volume_bracket": null,
+        "per_service_tax": false,
+        "tax_description": {
+          "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+          "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+        },
+        "development_only": true,
+        "stripe_test_only": true,
+        "quote_schema_version": 2,
+        "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE"
+      },
+      "currency": "EUR",
+      "delivery": {
+        "parcel": {},
+        "version": 1,
+        "address_id": "7ae38e02-23fb-4e29-b81a-e04ac13289af",
+        "service_id": "test-return",
+        "declared_value_minor": 10000
+      },
+      "quantity": 2,
+      "shipping": {
+        "status": "configured",
+        "service": {
+          "name": {
+            "EN": "TEST return",
+            "FR": "Retour TEST"
+          },
+          "coverage": {
+            "EN": "Simulation",
+            "FR": "Simulation"
+          },
+          "exclusions": {
+            "EN": "No transport",
+            "FR": "Aucun transport"
+          }
+        },
+        "charge_minor": 500
+      },
+      "readiness": {
+        "ready": true,
+        "states": [
+          "ready_for_checkout"
+        ]
+      },
+      "return_address": {
+        "id": "7ae38e02-23fb-4e29-b81a-e04ac13289af",
+        "city": "TEST",
+        "line1": "TEST",
+        "line2": "",
+        "phone": "",
+        "country": "FR",
+        "version": 1,
+        "recipient": "TEST",
+        "postal_code": "75001",
+        "instructions": ""
+      },
+      "net_total_minor": 2500,
+      "tax_total_minor": 0,
+      "stripe_test_only": true,
+      "available_services": [],
+      "final_payable_minor": 2500,
+      "submission_reference": "SP-DD79EAF6AA954628A517D144ABA0FEBD",
+      "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+      "inbound_receiving_address": null,
+      "terms_accepted": true
+    },
+    "quote": {
+      "id": "e917c2ba-f55a-446f-b062-e0ea36767bd7",
+      "submission_id": "71dc5b4e-acf6-4648-b0ce-c604a808733a",
+      "pricing_revision": 1,
+      "pricing_configuration_version": "238e66ef-011b-46ae-b4bf-57ee823b24bd",
+      "created_at": "2026-11-05T22:21:20.513622+00:00",
+      "expires_at": "2026-11-05T23:24:20.513625+00:00",
+      "status": "accepted",
+      "accepted_at": "2026-11-05T22:22:20.514500+00:00",
+      "snapshot": {
+        "lines": [
+          {
+            "entry": {
+              "game": "pokemon",
+              "notes": "",
+              "language": "FR",
+              "quantity": 2,
+              "card_name": "SYNTHETIC BATCH B",
+              "expansion": "TEST",
+              "card_number": "TEST"
+            },
+            "service": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            },
+            "entry_id": "3eb94a75-1f2c-4180-929a-0e0892ba1c48",
+            "quantity": 2,
+            "tax_mode": "exempt",
+            "upgrades": [
+              {
+                "id": "classic",
+                "name": {
+                  "EN": "Classic label",
+                  "FR": "Étiquette classique"
+                },
+                "unit_minor": 0,
+                "description": {
+                  "EN": "Classic presentation included.",
+                  "FR": "Présentation classique incluse."
+                },
+                "label_presentation": null
+              }
+            ],
+            "card_keys": [
+              "3eb94a75-1f2c-4180-929a-0e0892ba1c48:1",
+              "3eb94a75-1f2c-4180-929a-0e0892ba1c48:2"
+            ],
+            "card_name": "SYNTHETIC BATCH B",
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "tier_name": {
+              "EN": "Standard",
+              "FR": "Standard"
+            },
+            "base_minor": 2000,
+            "service_id": "standard",
+            "unit_minor": 1000,
+            "speed_minor": 0,
+            "total_minor": 2000,
+            "tax_rate_bps": 0,
+            "discount_minor": 0,
+            "subtotal_minor": 2000,
+            "upgrades_minor": 0,
+            "base_unit_minor": 1000,
+            "processing_tier": "standard",
+            "speed_unit_minor": 0,
+            "tier_description": {
+              "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+              "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+            },
+            "service_unit_minor": 1000,
+            "discount_basis_minor": 2000,
+            "estimated_turnaround": null,
+            "volume_base_unit_minor": 1000,
+            "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+          }
+        ],
+        "checkout": {
+          "grading": {
+            "lines": [
+              {
+                "entry": {
+                  "game": "pokemon",
+                  "notes": "",
+                  "language": "FR",
+                  "quantity": 2,
+                  "card_name": "SYNTHETIC BATCH B",
+                  "expansion": "TEST",
+                  "card_number": "TEST"
+                },
+                "service": {
+                  "tax": null,
+                  "name": {
+                    "EN": "Standard",
+                    "FR": "Standard"
+                  },
+                  "available": true,
+                  "description": {
+                    "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                    "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+                  },
+                  "price_minor": null,
+                  "display_order": 10,
+                  "estimated_turnaround": null,
+                  "price_adjustment_minor": 0
+                },
+                "entry_id": "3eb94a75-1f2c-4180-929a-0e0892ba1c48",
+                "quantity": 2,
+                "tax_mode": "exempt",
+                "upgrades": [
+                  {
+                    "id": "classic",
+                    "name": {
+                      "EN": "Classic label",
+                      "FR": "Étiquette classique"
+                    },
+                    "unit_minor": 0,
+                    "description": {
+                      "EN": "Classic presentation included.",
+                      "FR": "Présentation classique incluse."
+                    },
+                    "label_presentation": null
+                  }
+                ],
+                "card_keys": [
+                  "3eb94a75-1f2c-4180-929a-0e0892ba1c48:1",
+                  "3eb94a75-1f2c-4180-929a-0e0892ba1c48:2"
+                ],
+                "card_name": "SYNTHETIC BATCH B",
+                "net_minor": 2000,
+                "tax_minor": 0,
+                "tier_name": {
+                  "EN": "Standard",
+                  "FR": "Standard"
+                },
+                "base_minor": 2000,
+                "service_id": "standard",
+                "unit_minor": 1000,
+                "speed_minor": 0,
+                "total_minor": 2000,
+                "tax_rate_bps": 0,
+                "discount_minor": 0,
+                "subtotal_minor": 2000,
+                "upgrades_minor": 0,
+                "base_unit_minor": 1000,
+                "processing_tier": "standard",
+                "speed_unit_minor": 0,
+                "tier_description": {
+                  "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                  "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+                },
+                "service_unit_minor": 1000,
+                "discount_basis_minor": 2000,
+                "estimated_turnaround": null,
+                "volume_base_unit_minor": 1000,
+                "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+              }
+            ],
+            "currency": "EUR",
+            "discount": null,
+            "quantity": 2,
+            "tax_mode": "exempt",
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "base_minor": 2000,
+            "speed_minor": 0,
+            "total_minor": 2000,
+            "tax_rate_bps": 0,
+            "configuration": {
+              "name": "FICTIF ? STRIPE TEST",
+              "tiers": {
+                "standard": {
+                  "tax": null,
+                  "name": {
+                    "EN": "Standard",
+                    "FR": "Standard"
+                  },
+                  "available": true,
+                  "description": {
+                    "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                    "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+                  },
+                  "price_minor": null,
+                  "display_order": 10,
+                  "estimated_turnaround": null,
+                  "price_adjustment_minor": 0
+                }
+              },
+              "groups": {
+                "label": {
+                  "max_selected": 1,
+                  "min_selected": 1
+                }
+              },
+              "currency": "EUR",
+              "tax_mode": "exempt",
+              "upgrades": {
+                "classic": {
+                  "name": {
+                    "EN": "Classic label",
+                    "FR": "Étiquette classique"
+                  },
+                  "group": "label",
+                  "available": true,
+                  "description": {
+                    "EN": "Classic presentation included.",
+                    "FR": "Présentation classique incluse."
+                  },
+                  "price_minor": 0,
+                  "allowed_tiers": null,
+                  "display_order": 10,
+                  "incompatible_with": [],
+                  "label_presentation": null
+                }
+              },
+              "discounts": [],
+              "tax_rate_bps": 0,
+              "volume_prices": [],
+              "discount_scope": "base",
+              "schema_version": 1,
+              "tax_description": {
+                "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+                "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+              },
+              "base_price_minor": 1000,
+              "development_only": true,
+              "stripe_test_only": true,
+              "approval_reference": null,
+              "customer_gross_prices": false,
+              "quote_lifetime_seconds": 3600,
+              "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+              "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+            },
+            "tax_breakdown": [
+              {
+                "mode": "exempt",
+                "entry_id": "3eb94a75-1f2c-4180-929a-0e0892ba1c48",
+                "rate_bps": 0,
+                "net_minor": 2000,
+                "tax_minor": 0,
+                "total_minor": 2000
+              }
+            ],
+            "discount_minor": 0,
+            "discount_scope": "base",
+            "subtotal_minor": 2000,
+            "upgrades_minor": 0,
+            "volume_bracket": null,
+            "per_service_tax": false,
+            "tax_description": {
+              "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+              "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+            },
+            "development_only": true,
+            "stripe_test_only": true,
+            "quote_schema_version": 2,
+            "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE"
+          },
+          "currency": "EUR",
+          "delivery": {
+            "parcel": {},
+            "version": 1,
+            "address_id": "7ae38e02-23fb-4e29-b81a-e04ac13289af",
+            "service_id": "test-return",
+            "declared_value_minor": 10000
+          },
+          "quantity": 2,
+          "shipping": {
+            "status": "configured",
+            "service": {
+              "name": {
+                "EN": "TEST return",
+                "FR": "Retour TEST"
+              },
+              "coverage": {
+                "EN": "Simulation",
+                "FR": "Simulation"
+              },
+              "exclusions": {
+                "EN": "No transport",
+                "FR": "Aucun transport"
+              }
+            },
+            "charge_minor": 500
+          },
+          "readiness": {
+            "ready": true,
+            "states": [
+              "ready_for_checkout"
+            ]
+          },
+          "return_address": {
+            "id": "7ae38e02-23fb-4e29-b81a-e04ac13289af",
+            "city": "TEST",
+            "line1": "TEST",
+            "line2": "",
+            "phone": "",
+            "country": "FR",
+            "version": 1,
+            "recipient": "TEST",
+            "postal_code": "75001",
+            "instructions": ""
+          },
+          "net_total_minor": 2500,
+          "tax_total_minor": 0,
+          "stripe_test_only": true,
+          "available_services": [],
+          "final_payable_minor": 2500,
+          "submission_reference": "SP-DD79EAF6AA954628A517D144ABA0FEBD",
+          "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+          "inbound_receiving_address": null
+        },
+        "currency": "EUR",
+        "discount": null,
+        "quantity": 2,
+        "tax_mode": "exempt",
+        "net_minor": 2000,
+        "tax_minor": 0,
+        "base_minor": 2000,
+        "speed_minor": 0,
+        "total_minor": 2000,
+        "tax_rate_bps": 0,
+        "configuration": {
+          "name": "FICTIF ? STRIPE TEST",
+          "tiers": {
+            "standard": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            }
+          },
+          "groups": {
+            "label": {
+              "max_selected": 1,
+              "min_selected": 1
+            }
+          },
+          "currency": "EUR",
+          "tax_mode": "exempt",
+          "upgrades": {
+            "classic": {
+              "name": {
+                "EN": "Classic label",
+                "FR": "Étiquette classique"
+              },
+              "group": "label",
+              "available": true,
+              "description": {
+                "EN": "Classic presentation included.",
+                "FR": "Présentation classique incluse."
+              },
+              "price_minor": 0,
+              "allowed_tiers": null,
+              "display_order": 10,
+              "incompatible_with": [],
+              "label_presentation": null
+            }
+          },
+          "discounts": [],
+          "tax_rate_bps": 0,
+          "volume_prices": [],
+          "discount_scope": "base",
+          "schema_version": 1,
+          "tax_description": {
+            "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+            "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+          },
+          "base_price_minor": 1000,
+          "development_only": true,
+          "stripe_test_only": true,
+          "approval_reference": null,
+          "customer_gross_prices": false,
+          "quote_lifetime_seconds": 3600,
+          "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+          "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+        },
+        "tax_breakdown": [
+          {
+            "mode": "exempt",
+            "entry_id": "3eb94a75-1f2c-4180-929a-0e0892ba1c48",
+            "rate_bps": 0,
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "total_minor": 2000
+          }
+        ],
+        "discount_minor": 0,
+        "discount_scope": "base",
+        "subtotal_minor": 2000,
+        "upgrades_minor": 0,
+        "volume_bracket": null,
+        "per_service_tax": false,
+        "tax_description": {
+          "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+          "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+        },
+        "development_only": true,
+        "stripe_test_only": true,
+        "order_total_minor": 2500,
+        "quote_schema_version": 2,
+        "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE"
+      }
+    },
+    "ui": {
+      "canDeclareShipment": false,
+      "nextAction": "restricted",
+      "isTracking": true,
+      "statusFR": "Paiement soumis à une restriction — contactez SELBY",
+      "statusEN": "Payment restricted — contact SELBY"
+    }
+  },
+  {
+    "name": "restriction_refund_failed",
+    "commercial": {
+      "charging_enabled": false,
+      "accepted_quote_id": "c8ea800a-35c3-4f69-8611-5b07a36de5a7",
+      "financial_restrictions": [
+        "financial_review"
+      ],
+      "payment_status": "restricted",
+      "verified_payment_at": "2026-11-05T23:24:20+01:00",
+      "dispatch_deadline": "2026-12-05T23:24:20+01:00",
+      "dispatch_policy": {
+        "calendar_days_after_verified_payment": 30,
+        "timezone": "UTC",
+        "automatic_forfeiture": false
+      },
+      "indicators": [
+        "awaiting_customer_dispatch"
+      ],
+      "shipment_declarations": [],
+      "parcel_receipts": [],
+      "audit": [
+        {
+          "id": "d8133a16-dd30-4d98-8b06-ed051b1ef3cc",
+          "kind": "quote_accepted_awaiting_payment",
+          "data": {
+            "quote_id": "c8ea800a-35c3-4f69-8611-5b07a36de5a7",
+            "amount_minor": 2500
+          },
+          "reason": null,
+          "created_at": "2026-11-05T23:24:20.754572+01:00"
+        },
+        {
+          "id": "e1931b42-d293-4f1c-a8e9-196b63ee2dd7",
+          "kind": "provider_payment_verified",
+          "data": {
+            "quote_id": "c8ea800a-35c3-4f69-8611-5b07a36de5a7",
+            "verified_at": "2026-11-05T22:24:20+00:00",
+            "dispatch_policy": {
+              "timezone": "UTC",
+              "automatic_forfeiture": false,
+              "calendar_days_after_verified_payment": 30
+            },
+            "dispatch_deadline": "2026-12-05T22:24:20+00:00"
+          },
+          "reason": null,
+          "created_at": "2026-11-05T23:24:20.775429+01:00"
+        }
+      ]
+    },
+    "item": {
+      "id": "084fb45c-6775-43cc-868d-fc1685268da1",
+      "reference": "SP-21C225D48D8547C0AC9FF8B7FBE93F2A",
+      "status": "submitted",
+      "notes": "SYNTHETIC BATCH B 20261105T222416Z_737c0e3b",
+      "version": 1,
+      "created_at": "2026-11-05T23:24:20.750837+01:00",
+      "updated_at": "2026-11-05T23:24:20.750837+01:00",
+      "confirmed_at": "2026-11-05T23:21:20.751940+01:00",
+      "card_count": 2,
+      "library_enabled": true,
+      "entries": [
+        {
+          "id": "8a01967c-c13f-4475-993a-413c7794617d",
+          "catalog_card_id": null,
+          "game": "pokemon",
+          "card_name": "SYNTHETIC BATCH B",
+          "expansion": "TEST",
+          "card_number": "TEST",
+          "language": "FR",
+          "quantity": 2,
+          "notes": "",
+          "processing_tier": "standard",
+          "upgrade_ids": [
+            "classic"
+          ],
+          "pre_shipment_photos": []
+        }
+      ]
+    },
+    "order": {
+      "grading": {
+        "lines": [
+          {
+            "entry": {
+              "game": "pokemon",
+              "notes": "",
+              "language": "FR",
+              "quantity": 2,
+              "card_name": "SYNTHETIC BATCH B",
+              "expansion": "TEST",
+              "card_number": "TEST"
+            },
+            "service": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            },
+            "entry_id": "8a01967c-c13f-4475-993a-413c7794617d",
+            "quantity": 2,
+            "tax_mode": "exempt",
+            "upgrades": [
+              {
+                "id": "classic",
+                "name": {
+                  "EN": "Classic label",
+                  "FR": "Étiquette classique"
+                },
+                "unit_minor": 0,
+                "description": {
+                  "EN": "Classic presentation included.",
+                  "FR": "Présentation classique incluse."
+                },
+                "label_presentation": null
+              }
+            ],
+            "card_keys": [
+              "8a01967c-c13f-4475-993a-413c7794617d:1",
+              "8a01967c-c13f-4475-993a-413c7794617d:2"
+            ],
+            "card_name": "SYNTHETIC BATCH B",
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "tier_name": {
+              "EN": "Standard",
+              "FR": "Standard"
+            },
+            "base_minor": 2000,
+            "service_id": "standard",
+            "unit_minor": 1000,
+            "speed_minor": 0,
+            "total_minor": 2000,
+            "tax_rate_bps": 0,
+            "discount_minor": 0,
+            "subtotal_minor": 2000,
+            "upgrades_minor": 0,
+            "base_unit_minor": 1000,
+            "processing_tier": "standard",
+            "speed_unit_minor": 0,
+            "tier_description": {
+              "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+              "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+            },
+            "service_unit_minor": 1000,
+            "discount_basis_minor": 2000,
+            "estimated_turnaround": null,
+            "volume_base_unit_minor": 1000,
+            "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+          }
+        ],
+        "currency": "EUR",
+        "discount": null,
+        "quantity": 2,
+        "tax_mode": "exempt",
+        "net_minor": 2000,
+        "tax_minor": 0,
+        "base_minor": 2000,
+        "speed_minor": 0,
+        "total_minor": 2000,
+        "tax_rate_bps": 0,
+        "configuration": {
+          "name": "FICTIF ? STRIPE TEST",
+          "tiers": {
+            "standard": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            }
+          },
+          "groups": {
+            "label": {
+              "max_selected": 1,
+              "min_selected": 1
+            }
+          },
+          "currency": "EUR",
+          "tax_mode": "exempt",
+          "upgrades": {
+            "classic": {
+              "name": {
+                "EN": "Classic label",
+                "FR": "Étiquette classique"
+              },
+              "group": "label",
+              "available": true,
+              "description": {
+                "EN": "Classic presentation included.",
+                "FR": "Présentation classique incluse."
+              },
+              "price_minor": 0,
+              "allowed_tiers": null,
+              "display_order": 10,
+              "incompatible_with": [],
+              "label_presentation": null
+            }
+          },
+          "discounts": [],
+          "tax_rate_bps": 0,
+          "volume_prices": [],
+          "discount_scope": "base",
+          "schema_version": 1,
+          "tax_description": {
+            "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+            "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+          },
+          "base_price_minor": 1000,
+          "development_only": true,
+          "stripe_test_only": true,
+          "approval_reference": null,
+          "customer_gross_prices": false,
+          "quote_lifetime_seconds": 3600,
+          "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+          "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+        },
+        "tax_breakdown": [
+          {
+            "mode": "exempt",
+            "entry_id": "8a01967c-c13f-4475-993a-413c7794617d",
+            "rate_bps": 0,
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "total_minor": 2000
+          }
+        ],
+        "discount_minor": 0,
+        "discount_scope": "base",
+        "subtotal_minor": 2000,
+        "upgrades_minor": 0,
+        "volume_bracket": null,
+        "per_service_tax": false,
+        "tax_description": {
+          "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+          "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+        },
+        "development_only": true,
+        "stripe_test_only": true,
+        "quote_schema_version": 2,
+        "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE"
+      },
+      "currency": "EUR",
+      "delivery": {
+        "parcel": {},
+        "version": 1,
+        "address_id": "52a29129-07d0-46c7-922d-d5a8ec7db025",
+        "service_id": "test-return",
+        "declared_value_minor": 10000
+      },
+      "quantity": 2,
+      "shipping": {
+        "status": "configured",
+        "service": {
+          "name": {
+            "EN": "TEST return",
+            "FR": "Retour TEST"
+          },
+          "coverage": {
+            "EN": "Simulation",
+            "FR": "Simulation"
+          },
+          "exclusions": {
+            "EN": "No transport",
+            "FR": "Aucun transport"
+          }
+        },
+        "charge_minor": 500
+      },
+      "readiness": {
+        "ready": true,
+        "states": [
+          "ready_for_checkout"
+        ]
+      },
+      "return_address": {
+        "id": "52a29129-07d0-46c7-922d-d5a8ec7db025",
+        "city": "TEST",
+        "line1": "TEST",
+        "line2": "",
+        "phone": "",
+        "country": "FR",
+        "version": 1,
+        "recipient": "TEST",
+        "postal_code": "75001",
+        "instructions": ""
+      },
+      "net_total_minor": 2500,
+      "tax_total_minor": 0,
+      "stripe_test_only": true,
+      "available_services": [],
+      "final_payable_minor": 2500,
+      "submission_reference": "SP-21C225D48D8547C0AC9FF8B7FBE93F2A",
+      "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+      "inbound_receiving_address": null,
+      "terms_accepted": true
+    },
+    "quote": {
+      "id": "c8ea800a-35c3-4f69-8611-5b07a36de5a7",
+      "submission_id": "084fb45c-6775-43cc-868d-fc1685268da1",
+      "pricing_revision": 1,
+      "pricing_configuration_version": "62b91e85-dd6b-482a-9df0-c0ebeee69ee8",
+      "created_at": "2026-11-05T22:21:20.753042+00:00",
+      "expires_at": "2026-11-05T23:24:20.753045+00:00",
+      "status": "accepted",
+      "accepted_at": "2026-11-05T22:22:20.753755+00:00",
+      "snapshot": {
+        "lines": [
+          {
+            "entry": {
+              "game": "pokemon",
+              "notes": "",
+              "language": "FR",
+              "quantity": 2,
+              "card_name": "SYNTHETIC BATCH B",
+              "expansion": "TEST",
+              "card_number": "TEST"
+            },
+            "service": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            },
+            "entry_id": "8a01967c-c13f-4475-993a-413c7794617d",
+            "quantity": 2,
+            "tax_mode": "exempt",
+            "upgrades": [
+              {
+                "id": "classic",
+                "name": {
+                  "EN": "Classic label",
+                  "FR": "Étiquette classique"
+                },
+                "unit_minor": 0,
+                "description": {
+                  "EN": "Classic presentation included.",
+                  "FR": "Présentation classique incluse."
+                },
+                "label_presentation": null
+              }
+            ],
+            "card_keys": [
+              "8a01967c-c13f-4475-993a-413c7794617d:1",
+              "8a01967c-c13f-4475-993a-413c7794617d:2"
+            ],
+            "card_name": "SYNTHETIC BATCH B",
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "tier_name": {
+              "EN": "Standard",
+              "FR": "Standard"
+            },
+            "base_minor": 2000,
+            "service_id": "standard",
+            "unit_minor": 1000,
+            "speed_minor": 0,
+            "total_minor": 2000,
+            "tax_rate_bps": 0,
+            "discount_minor": 0,
+            "subtotal_minor": 2000,
+            "upgrades_minor": 0,
+            "base_unit_minor": 1000,
+            "processing_tier": "standard",
+            "speed_unit_minor": 0,
+            "tier_description": {
+              "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+              "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+            },
+            "service_unit_minor": 1000,
+            "discount_basis_minor": 2000,
+            "estimated_turnaround": null,
+            "volume_base_unit_minor": 1000,
+            "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+          }
+        ],
+        "checkout": {
+          "grading": {
+            "lines": [
+              {
+                "entry": {
+                  "game": "pokemon",
+                  "notes": "",
+                  "language": "FR",
+                  "quantity": 2,
+                  "card_name": "SYNTHETIC BATCH B",
+                  "expansion": "TEST",
+                  "card_number": "TEST"
+                },
+                "service": {
+                  "tax": null,
+                  "name": {
+                    "EN": "Standard",
+                    "FR": "Standard"
+                  },
+                  "available": true,
+                  "description": {
+                    "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                    "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+                  },
+                  "price_minor": null,
+                  "display_order": 10,
+                  "estimated_turnaround": null,
+                  "price_adjustment_minor": 0
+                },
+                "entry_id": "8a01967c-c13f-4475-993a-413c7794617d",
+                "quantity": 2,
+                "tax_mode": "exempt",
+                "upgrades": [
+                  {
+                    "id": "classic",
+                    "name": {
+                      "EN": "Classic label",
+                      "FR": "Étiquette classique"
+                    },
+                    "unit_minor": 0,
+                    "description": {
+                      "EN": "Classic presentation included.",
+                      "FR": "Présentation classique incluse."
+                    },
+                    "label_presentation": null
+                  }
+                ],
+                "card_keys": [
+                  "8a01967c-c13f-4475-993a-413c7794617d:1",
+                  "8a01967c-c13f-4475-993a-413c7794617d:2"
+                ],
+                "card_name": "SYNTHETIC BATCH B",
+                "net_minor": 2000,
+                "tax_minor": 0,
+                "tier_name": {
+                  "EN": "Standard",
+                  "FR": "Standard"
+                },
+                "base_minor": 2000,
+                "service_id": "standard",
+                "unit_minor": 1000,
+                "speed_minor": 0,
+                "total_minor": 2000,
+                "tax_rate_bps": 0,
+                "discount_minor": 0,
+                "subtotal_minor": 2000,
+                "upgrades_minor": 0,
+                "base_unit_minor": 1000,
+                "processing_tier": "standard",
+                "speed_unit_minor": 0,
+                "tier_description": {
+                  "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                  "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+                },
+                "service_unit_minor": 1000,
+                "discount_basis_minor": 2000,
+                "estimated_turnaround": null,
+                "volume_base_unit_minor": 1000,
+                "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+              }
+            ],
+            "currency": "EUR",
+            "discount": null,
+            "quantity": 2,
+            "tax_mode": "exempt",
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "base_minor": 2000,
+            "speed_minor": 0,
+            "total_minor": 2000,
+            "tax_rate_bps": 0,
+            "configuration": {
+              "name": "FICTIF ? STRIPE TEST",
+              "tiers": {
+                "standard": {
+                  "tax": null,
+                  "name": {
+                    "EN": "Standard",
+                    "FR": "Standard"
+                  },
+                  "available": true,
+                  "description": {
+                    "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                    "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+                  },
+                  "price_minor": null,
+                  "display_order": 10,
+                  "estimated_turnaround": null,
+                  "price_adjustment_minor": 0
+                }
+              },
+              "groups": {
+                "label": {
+                  "max_selected": 1,
+                  "min_selected": 1
+                }
+              },
+              "currency": "EUR",
+              "tax_mode": "exempt",
+              "upgrades": {
+                "classic": {
+                  "name": {
+                    "EN": "Classic label",
+                    "FR": "Étiquette classique"
+                  },
+                  "group": "label",
+                  "available": true,
+                  "description": {
+                    "EN": "Classic presentation included.",
+                    "FR": "Présentation classique incluse."
+                  },
+                  "price_minor": 0,
+                  "allowed_tiers": null,
+                  "display_order": 10,
+                  "incompatible_with": [],
+                  "label_presentation": null
+                }
+              },
+              "discounts": [],
+              "tax_rate_bps": 0,
+              "volume_prices": [],
+              "discount_scope": "base",
+              "schema_version": 1,
+              "tax_description": {
+                "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+                "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+              },
+              "base_price_minor": 1000,
+              "development_only": true,
+              "stripe_test_only": true,
+              "approval_reference": null,
+              "customer_gross_prices": false,
+              "quote_lifetime_seconds": 3600,
+              "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+              "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+            },
+            "tax_breakdown": [
+              {
+                "mode": "exempt",
+                "entry_id": "8a01967c-c13f-4475-993a-413c7794617d",
+                "rate_bps": 0,
+                "net_minor": 2000,
+                "tax_minor": 0,
+                "total_minor": 2000
+              }
+            ],
+            "discount_minor": 0,
+            "discount_scope": "base",
+            "subtotal_minor": 2000,
+            "upgrades_minor": 0,
+            "volume_bracket": null,
+            "per_service_tax": false,
+            "tax_description": {
+              "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+              "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+            },
+            "development_only": true,
+            "stripe_test_only": true,
+            "quote_schema_version": 2,
+            "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE"
+          },
+          "currency": "EUR",
+          "delivery": {
+            "parcel": {},
+            "version": 1,
+            "address_id": "52a29129-07d0-46c7-922d-d5a8ec7db025",
+            "service_id": "test-return",
+            "declared_value_minor": 10000
+          },
+          "quantity": 2,
+          "shipping": {
+            "status": "configured",
+            "service": {
+              "name": {
+                "EN": "TEST return",
+                "FR": "Retour TEST"
+              },
+              "coverage": {
+                "EN": "Simulation",
+                "FR": "Simulation"
+              },
+              "exclusions": {
+                "EN": "No transport",
+                "FR": "Aucun transport"
+              }
+            },
+            "charge_minor": 500
+          },
+          "readiness": {
+            "ready": true,
+            "states": [
+              "ready_for_checkout"
+            ]
+          },
+          "return_address": {
+            "id": "52a29129-07d0-46c7-922d-d5a8ec7db025",
+            "city": "TEST",
+            "line1": "TEST",
+            "line2": "",
+            "phone": "",
+            "country": "FR",
+            "version": 1,
+            "recipient": "TEST",
+            "postal_code": "75001",
+            "instructions": ""
+          },
+          "net_total_minor": 2500,
+          "tax_total_minor": 0,
+          "stripe_test_only": true,
+          "available_services": [],
+          "final_payable_minor": 2500,
+          "submission_reference": "SP-21C225D48D8547C0AC9FF8B7FBE93F2A",
+          "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+          "inbound_receiving_address": null
+        },
+        "currency": "EUR",
+        "discount": null,
+        "quantity": 2,
+        "tax_mode": "exempt",
+        "net_minor": 2000,
+        "tax_minor": 0,
+        "base_minor": 2000,
+        "speed_minor": 0,
+        "total_minor": 2000,
+        "tax_rate_bps": 0,
+        "configuration": {
+          "name": "FICTIF ? STRIPE TEST",
+          "tiers": {
+            "standard": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            }
+          },
+          "groups": {
+            "label": {
+              "max_selected": 1,
+              "min_selected": 1
+            }
+          },
+          "currency": "EUR",
+          "tax_mode": "exempt",
+          "upgrades": {
+            "classic": {
+              "name": {
+                "EN": "Classic label",
+                "FR": "Étiquette classique"
+              },
+              "group": "label",
+              "available": true,
+              "description": {
+                "EN": "Classic presentation included.",
+                "FR": "Présentation classique incluse."
+              },
+              "price_minor": 0,
+              "allowed_tiers": null,
+              "display_order": 10,
+              "incompatible_with": [],
+              "label_presentation": null
+            }
+          },
+          "discounts": [],
+          "tax_rate_bps": 0,
+          "volume_prices": [],
+          "discount_scope": "base",
+          "schema_version": 1,
+          "tax_description": {
+            "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+            "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+          },
+          "base_price_minor": 1000,
+          "development_only": true,
+          "stripe_test_only": true,
+          "approval_reference": null,
+          "customer_gross_prices": false,
+          "quote_lifetime_seconds": 3600,
+          "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+          "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+        },
+        "tax_breakdown": [
+          {
+            "mode": "exempt",
+            "entry_id": "8a01967c-c13f-4475-993a-413c7794617d",
+            "rate_bps": 0,
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "total_minor": 2000
+          }
+        ],
+        "discount_minor": 0,
+        "discount_scope": "base",
+        "subtotal_minor": 2000,
+        "upgrades_minor": 0,
+        "volume_bracket": null,
+        "per_service_tax": false,
+        "tax_description": {
+          "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+          "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+        },
+        "development_only": true,
+        "stripe_test_only": true,
+        "order_total_minor": 2500,
+        "quote_schema_version": 2,
+        "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE"
+      }
+    },
+    "ui": {
+      "canDeclareShipment": false,
+      "nextAction": "restricted",
+      "isTracking": true,
+      "statusFR": "Paiement soumis à une restriction — contactez SELBY",
+      "statusEN": "Payment restricted — contact SELBY"
+    }
+  },
+  {
+    "name": "restriction_closed_dispute",
+    "commercial": {
+      "charging_enabled": false,
+      "accepted_quote_id": "10f934a6-3a90-4581-a9fd-241858febc3f",
+      "financial_restrictions": [
+        "dispute_review"
+      ],
+      "payment_status": "restricted",
+      "verified_payment_at": "2026-11-05T23:24:21+01:00",
+      "dispatch_deadline": "2026-12-05T23:24:21+01:00",
+      "dispatch_policy": {
+        "calendar_days_after_verified_payment": 30,
+        "timezone": "UTC",
+        "automatic_forfeiture": false
+      },
+      "indicators": [
+        "awaiting_customer_dispatch"
+      ],
+      "shipment_declarations": [],
+      "parcel_receipts": [],
+      "audit": [
+        {
+          "id": "3ff00b6b-0b1d-4ad1-8c72-f473654f4ca9",
+          "kind": "quote_accepted_awaiting_payment",
+          "data": {
+            "quote_id": "10f934a6-3a90-4581-a9fd-241858febc3f",
+            "amount_minor": 2500
+          },
+          "reason": null,
+          "created_at": "2026-11-05T23:24:20.997592+01:00"
+        },
+        {
+          "id": "4ab173e2-2837-41b0-857a-fa53301fef90",
+          "kind": "provider_payment_verified",
+          "data": {
+            "quote_id": "10f934a6-3a90-4581-a9fd-241858febc3f",
+            "verified_at": "2026-11-05T22:24:21+00:00",
+            "dispatch_policy": {
+              "timezone": "UTC",
+              "automatic_forfeiture": false,
+              "calendar_days_after_verified_payment": 30
+            },
+            "dispatch_deadline": "2026-12-05T22:24:21+00:00"
+          },
+          "reason": null,
+          "created_at": "2026-11-05T23:24:21.018477+01:00"
+        }
+      ]
+    },
+    "item": {
+      "id": "cbb2acea-2c9d-4235-a214-a91cdc767a9a",
+      "reference": "SP-18CE15D1815D45D181D9B1D18CED3965",
+      "status": "submitted",
+      "notes": "SYNTHETIC BATCH B 20261105T222416Z_737c0e3b",
+      "version": 1,
+      "created_at": "2026-11-05T23:24:20.993300+01:00",
+      "updated_at": "2026-11-05T23:24:20.993300+01:00",
+      "confirmed_at": "2026-11-05T23:21:20.994293+01:00",
+      "card_count": 2,
+      "library_enabled": true,
+      "entries": [
+        {
+          "id": "7f3fa43c-e005-4c59-92d8-07af353e13f7",
+          "catalog_card_id": null,
+          "game": "pokemon",
+          "card_name": "SYNTHETIC BATCH B",
+          "expansion": "TEST",
+          "card_number": "TEST",
+          "language": "FR",
+          "quantity": 2,
+          "notes": "",
+          "processing_tier": "standard",
+          "upgrade_ids": [
+            "classic"
+          ],
+          "pre_shipment_photos": []
+        }
+      ]
+    },
+    "order": {
+      "grading": {
+        "lines": [
+          {
+            "entry": {
+              "game": "pokemon",
+              "notes": "",
+              "language": "FR",
+              "quantity": 2,
+              "card_name": "SYNTHETIC BATCH B",
+              "expansion": "TEST",
+              "card_number": "TEST"
+            },
+            "service": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            },
+            "entry_id": "7f3fa43c-e005-4c59-92d8-07af353e13f7",
+            "quantity": 2,
+            "tax_mode": "exempt",
+            "upgrades": [
+              {
+                "id": "classic",
+                "name": {
+                  "EN": "Classic label",
+                  "FR": "Étiquette classique"
+                },
+                "unit_minor": 0,
+                "description": {
+                  "EN": "Classic presentation included.",
+                  "FR": "Présentation classique incluse."
+                },
+                "label_presentation": null
+              }
+            ],
+            "card_keys": [
+              "7f3fa43c-e005-4c59-92d8-07af353e13f7:1",
+              "7f3fa43c-e005-4c59-92d8-07af353e13f7:2"
+            ],
+            "card_name": "SYNTHETIC BATCH B",
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "tier_name": {
+              "EN": "Standard",
+              "FR": "Standard"
+            },
+            "base_minor": 2000,
+            "service_id": "standard",
+            "unit_minor": 1000,
+            "speed_minor": 0,
+            "total_minor": 2000,
+            "tax_rate_bps": 0,
+            "discount_minor": 0,
+            "subtotal_minor": 2000,
+            "upgrades_minor": 0,
+            "base_unit_minor": 1000,
+            "processing_tier": "standard",
+            "speed_unit_minor": 0,
+            "tier_description": {
+              "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+              "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+            },
+            "service_unit_minor": 1000,
+            "discount_basis_minor": 2000,
+            "estimated_turnaround": null,
+            "volume_base_unit_minor": 1000,
+            "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+          }
+        ],
+        "currency": "EUR",
+        "discount": null,
+        "quantity": 2,
+        "tax_mode": "exempt",
+        "net_minor": 2000,
+        "tax_minor": 0,
+        "base_minor": 2000,
+        "speed_minor": 0,
+        "total_minor": 2000,
+        "tax_rate_bps": 0,
+        "configuration": {
+          "name": "FICTIF ? STRIPE TEST",
+          "tiers": {
+            "standard": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            }
+          },
+          "groups": {
+            "label": {
+              "max_selected": 1,
+              "min_selected": 1
+            }
+          },
+          "currency": "EUR",
+          "tax_mode": "exempt",
+          "upgrades": {
+            "classic": {
+              "name": {
+                "EN": "Classic label",
+                "FR": "Étiquette classique"
+              },
+              "group": "label",
+              "available": true,
+              "description": {
+                "EN": "Classic presentation included.",
+                "FR": "Présentation classique incluse."
+              },
+              "price_minor": 0,
+              "allowed_tiers": null,
+              "display_order": 10,
+              "incompatible_with": [],
+              "label_presentation": null
+            }
+          },
+          "discounts": [],
+          "tax_rate_bps": 0,
+          "volume_prices": [],
+          "discount_scope": "base",
+          "schema_version": 1,
+          "tax_description": {
+            "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+            "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+          },
+          "base_price_minor": 1000,
+          "development_only": true,
+          "stripe_test_only": true,
+          "approval_reference": null,
+          "customer_gross_prices": false,
+          "quote_lifetime_seconds": 3600,
+          "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+          "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+        },
+        "tax_breakdown": [
+          {
+            "mode": "exempt",
+            "entry_id": "7f3fa43c-e005-4c59-92d8-07af353e13f7",
+            "rate_bps": 0,
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "total_minor": 2000
+          }
+        ],
+        "discount_minor": 0,
+        "discount_scope": "base",
+        "subtotal_minor": 2000,
+        "upgrades_minor": 0,
+        "volume_bracket": null,
+        "per_service_tax": false,
+        "tax_description": {
+          "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+          "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+        },
+        "development_only": true,
+        "stripe_test_only": true,
+        "quote_schema_version": 2,
+        "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE"
+      },
+      "currency": "EUR",
+      "delivery": {
+        "parcel": {},
+        "version": 1,
+        "address_id": "726fa154-a543-4504-bb5d-5fb895ba55f9",
+        "service_id": "test-return",
+        "declared_value_minor": 10000
+      },
+      "quantity": 2,
+      "shipping": {
+        "status": "configured",
+        "service": {
+          "name": {
+            "EN": "TEST return",
+            "FR": "Retour TEST"
+          },
+          "coverage": {
+            "EN": "Simulation",
+            "FR": "Simulation"
+          },
+          "exclusions": {
+            "EN": "No transport",
+            "FR": "Aucun transport"
+          }
+        },
+        "charge_minor": 500
+      },
+      "readiness": {
+        "ready": true,
+        "states": [
+          "ready_for_checkout"
+        ]
+      },
+      "return_address": {
+        "id": "726fa154-a543-4504-bb5d-5fb895ba55f9",
+        "city": "TEST",
+        "line1": "TEST",
+        "line2": "",
+        "phone": "",
+        "country": "FR",
+        "version": 1,
+        "recipient": "TEST",
+        "postal_code": "75001",
+        "instructions": ""
+      },
+      "net_total_minor": 2500,
+      "tax_total_minor": 0,
+      "stripe_test_only": true,
+      "available_services": [],
+      "final_payable_minor": 2500,
+      "submission_reference": "SP-18CE15D1815D45D181D9B1D18CED3965",
+      "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+      "inbound_receiving_address": null,
+      "terms_accepted": true
+    },
+    "quote": {
+      "id": "10f934a6-3a90-4581-a9fd-241858febc3f",
+      "submission_id": "cbb2acea-2c9d-4235-a214-a91cdc767a9a",
+      "pricing_revision": 1,
+      "pricing_configuration_version": "67b357e8-9e53-4612-9944-96986982d4da",
+      "created_at": "2026-11-05T22:21:20.995864+00:00",
+      "expires_at": "2026-11-05T23:24:20.995868+00:00",
+      "status": "accepted",
+      "accepted_at": "2026-11-05T22:22:20.996629+00:00",
+      "snapshot": {
+        "lines": [
+          {
+            "entry": {
+              "game": "pokemon",
+              "notes": "",
+              "language": "FR",
+              "quantity": 2,
+              "card_name": "SYNTHETIC BATCH B",
+              "expansion": "TEST",
+              "card_number": "TEST"
+            },
+            "service": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            },
+            "entry_id": "7f3fa43c-e005-4c59-92d8-07af353e13f7",
+            "quantity": 2,
+            "tax_mode": "exempt",
+            "upgrades": [
+              {
+                "id": "classic",
+                "name": {
+                  "EN": "Classic label",
+                  "FR": "Étiquette classique"
+                },
+                "unit_minor": 0,
+                "description": {
+                  "EN": "Classic presentation included.",
+                  "FR": "Présentation classique incluse."
+                },
+                "label_presentation": null
+              }
+            ],
+            "card_keys": [
+              "7f3fa43c-e005-4c59-92d8-07af353e13f7:1",
+              "7f3fa43c-e005-4c59-92d8-07af353e13f7:2"
+            ],
+            "card_name": "SYNTHETIC BATCH B",
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "tier_name": {
+              "EN": "Standard",
+              "FR": "Standard"
+            },
+            "base_minor": 2000,
+            "service_id": "standard",
+            "unit_minor": 1000,
+            "speed_minor": 0,
+            "total_minor": 2000,
+            "tax_rate_bps": 0,
+            "discount_minor": 0,
+            "subtotal_minor": 2000,
+            "upgrades_minor": 0,
+            "base_unit_minor": 1000,
+            "processing_tier": "standard",
+            "speed_unit_minor": 0,
+            "tier_description": {
+              "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+              "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+            },
+            "service_unit_minor": 1000,
+            "discount_basis_minor": 2000,
+            "estimated_turnaround": null,
+            "volume_base_unit_minor": 1000,
+            "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+          }
+        ],
+        "checkout": {
+          "grading": {
+            "lines": [
+              {
+                "entry": {
+                  "game": "pokemon",
+                  "notes": "",
+                  "language": "FR",
+                  "quantity": 2,
+                  "card_name": "SYNTHETIC BATCH B",
+                  "expansion": "TEST",
+                  "card_number": "TEST"
+                },
+                "service": {
+                  "tax": null,
+                  "name": {
+                    "EN": "Standard",
+                    "FR": "Standard"
+                  },
+                  "available": true,
+                  "description": {
+                    "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                    "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+                  },
+                  "price_minor": null,
+                  "display_order": 10,
+                  "estimated_turnaround": null,
+                  "price_adjustment_minor": 0
+                },
+                "entry_id": "7f3fa43c-e005-4c59-92d8-07af353e13f7",
+                "quantity": 2,
+                "tax_mode": "exempt",
+                "upgrades": [
+                  {
+                    "id": "classic",
+                    "name": {
+                      "EN": "Classic label",
+                      "FR": "Étiquette classique"
+                    },
+                    "unit_minor": 0,
+                    "description": {
+                      "EN": "Classic presentation included.",
+                      "FR": "Présentation classique incluse."
+                    },
+                    "label_presentation": null
+                  }
+                ],
+                "card_keys": [
+                  "7f3fa43c-e005-4c59-92d8-07af353e13f7:1",
+                  "7f3fa43c-e005-4c59-92d8-07af353e13f7:2"
+                ],
+                "card_name": "SYNTHETIC BATCH B",
+                "net_minor": 2000,
+                "tax_minor": 0,
+                "tier_name": {
+                  "EN": "Standard",
+                  "FR": "Standard"
+                },
+                "base_minor": 2000,
+                "service_id": "standard",
+                "unit_minor": 1000,
+                "speed_minor": 0,
+                "total_minor": 2000,
+                "tax_rate_bps": 0,
+                "discount_minor": 0,
+                "subtotal_minor": 2000,
+                "upgrades_minor": 0,
+                "base_unit_minor": 1000,
+                "processing_tier": "standard",
+                "speed_unit_minor": 0,
+                "tier_description": {
+                  "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                  "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+                },
+                "service_unit_minor": 1000,
+                "discount_basis_minor": 2000,
+                "estimated_turnaround": null,
+                "volume_base_unit_minor": 1000,
+                "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+              }
+            ],
+            "currency": "EUR",
+            "discount": null,
+            "quantity": 2,
+            "tax_mode": "exempt",
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "base_minor": 2000,
+            "speed_minor": 0,
+            "total_minor": 2000,
+            "tax_rate_bps": 0,
+            "configuration": {
+              "name": "FICTIF ? STRIPE TEST",
+              "tiers": {
+                "standard": {
+                  "tax": null,
+                  "name": {
+                    "EN": "Standard",
+                    "FR": "Standard"
+                  },
+                  "available": true,
+                  "description": {
+                    "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                    "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+                  },
+                  "price_minor": null,
+                  "display_order": 10,
+                  "estimated_turnaround": null,
+                  "price_adjustment_minor": 0
+                }
+              },
+              "groups": {
+                "label": {
+                  "max_selected": 1,
+                  "min_selected": 1
+                }
+              },
+              "currency": "EUR",
+              "tax_mode": "exempt",
+              "upgrades": {
+                "classic": {
+                  "name": {
+                    "EN": "Classic label",
+                    "FR": "Étiquette classique"
+                  },
+                  "group": "label",
+                  "available": true,
+                  "description": {
+                    "EN": "Classic presentation included.",
+                    "FR": "Présentation classique incluse."
+                  },
+                  "price_minor": 0,
+                  "allowed_tiers": null,
+                  "display_order": 10,
+                  "incompatible_with": [],
+                  "label_presentation": null
+                }
+              },
+              "discounts": [],
+              "tax_rate_bps": 0,
+              "volume_prices": [],
+              "discount_scope": "base",
+              "schema_version": 1,
+              "tax_description": {
+                "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+                "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+              },
+              "base_price_minor": 1000,
+              "development_only": true,
+              "stripe_test_only": true,
+              "approval_reference": null,
+              "customer_gross_prices": false,
+              "quote_lifetime_seconds": 3600,
+              "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+              "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+            },
+            "tax_breakdown": [
+              {
+                "mode": "exempt",
+                "entry_id": "7f3fa43c-e005-4c59-92d8-07af353e13f7",
+                "rate_bps": 0,
+                "net_minor": 2000,
+                "tax_minor": 0,
+                "total_minor": 2000
+              }
+            ],
+            "discount_minor": 0,
+            "discount_scope": "base",
+            "subtotal_minor": 2000,
+            "upgrades_minor": 0,
+            "volume_bracket": null,
+            "per_service_tax": false,
+            "tax_description": {
+              "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+              "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+            },
+            "development_only": true,
+            "stripe_test_only": true,
+            "quote_schema_version": 2,
+            "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE"
+          },
+          "currency": "EUR",
+          "delivery": {
+            "parcel": {},
+            "version": 1,
+            "address_id": "726fa154-a543-4504-bb5d-5fb895ba55f9",
+            "service_id": "test-return",
+            "declared_value_minor": 10000
+          },
+          "quantity": 2,
+          "shipping": {
+            "status": "configured",
+            "service": {
+              "name": {
+                "EN": "TEST return",
+                "FR": "Retour TEST"
+              },
+              "coverage": {
+                "EN": "Simulation",
+                "FR": "Simulation"
+              },
+              "exclusions": {
+                "EN": "No transport",
+                "FR": "Aucun transport"
+              }
+            },
+            "charge_minor": 500
+          },
+          "readiness": {
+            "ready": true,
+            "states": [
+              "ready_for_checkout"
+            ]
+          },
+          "return_address": {
+            "id": "726fa154-a543-4504-bb5d-5fb895ba55f9",
+            "city": "TEST",
+            "line1": "TEST",
+            "line2": "",
+            "phone": "",
+            "country": "FR",
+            "version": 1,
+            "recipient": "TEST",
+            "postal_code": "75001",
+            "instructions": ""
+          },
+          "net_total_minor": 2500,
+          "tax_total_minor": 0,
+          "stripe_test_only": true,
+          "available_services": [],
+          "final_payable_minor": 2500,
+          "submission_reference": "SP-18CE15D1815D45D181D9B1D18CED3965",
+          "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+          "inbound_receiving_address": null
+        },
+        "currency": "EUR",
+        "discount": null,
+        "quantity": 2,
+        "tax_mode": "exempt",
+        "net_minor": 2000,
+        "tax_minor": 0,
+        "base_minor": 2000,
+        "speed_minor": 0,
+        "total_minor": 2000,
+        "tax_rate_bps": 0,
+        "configuration": {
+          "name": "FICTIF ? STRIPE TEST",
+          "tiers": {
+            "standard": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            }
+          },
+          "groups": {
+            "label": {
+              "max_selected": 1,
+              "min_selected": 1
+            }
+          },
+          "currency": "EUR",
+          "tax_mode": "exempt",
+          "upgrades": {
+            "classic": {
+              "name": {
+                "EN": "Classic label",
+                "FR": "Étiquette classique"
+              },
+              "group": "label",
+              "available": true,
+              "description": {
+                "EN": "Classic presentation included.",
+                "FR": "Présentation classique incluse."
+              },
+              "price_minor": 0,
+              "allowed_tiers": null,
+              "display_order": 10,
+              "incompatible_with": [],
+              "label_presentation": null
+            }
+          },
+          "discounts": [],
+          "tax_rate_bps": 0,
+          "volume_prices": [],
+          "discount_scope": "base",
+          "schema_version": 1,
+          "tax_description": {
+            "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+            "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+          },
+          "base_price_minor": 1000,
+          "development_only": true,
+          "stripe_test_only": true,
+          "approval_reference": null,
+          "customer_gross_prices": false,
+          "quote_lifetime_seconds": 3600,
+          "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+          "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+        },
+        "tax_breakdown": [
+          {
+            "mode": "exempt",
+            "entry_id": "7f3fa43c-e005-4c59-92d8-07af353e13f7",
+            "rate_bps": 0,
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "total_minor": 2000
+          }
+        ],
+        "discount_minor": 0,
+        "discount_scope": "base",
+        "subtotal_minor": 2000,
+        "upgrades_minor": 0,
+        "volume_bracket": null,
+        "per_service_tax": false,
+        "tax_description": {
+          "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+          "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+        },
+        "development_only": true,
+        "stripe_test_only": true,
+        "order_total_minor": 2500,
+        "quote_schema_version": 2,
+        "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE"
+      }
+    },
+    "ui": {
+      "canDeclareShipment": false,
+      "nextAction": "restricted",
+      "isTracking": true,
+      "statusFR": "Paiement soumis à une restriction — contactez SELBY",
+      "statusEN": "Payment restricted — contact SELBY"
+    }
+  },
+  {
+    "name": "restriction_manual_hold",
+    "commercial": {
+      "charging_enabled": false,
+      "accepted_quote_id": "f18956fc-68b5-4e4c-a951-bff34c177380",
+      "financial_restrictions": [
+        "commercial_hold"
+      ],
+      "payment_status": "restricted",
+      "verified_payment_at": "2026-11-05T23:24:21+01:00",
+      "dispatch_deadline": "2026-12-05T23:24:21+01:00",
+      "dispatch_policy": {
+        "calendar_days_after_verified_payment": 30,
+        "timezone": "UTC",
+        "automatic_forfeiture": false
+      },
+      "indicators": [
+        "awaiting_customer_dispatch"
+      ],
+      "shipment_declarations": [],
+      "parcel_receipts": [],
+      "audit": [
+        {
+          "id": "751b2592-0811-45f2-9364-c391f62fe933",
+          "kind": "quote_accepted_awaiting_payment",
+          "data": {
+            "quote_id": "f18956fc-68b5-4e4c-a951-bff34c177380",
+            "amount_minor": 2500
+          },
+          "reason": null,
+          "created_at": "2026-11-05T23:24:21.238967+01:00"
+        },
+        {
+          "id": "c7643249-f161-4ad8-b703-c2f3f3e604b1",
+          "kind": "provider_payment_verified",
+          "data": {
+            "quote_id": "f18956fc-68b5-4e4c-a951-bff34c177380",
+            "verified_at": "2026-11-05T22:24:21+00:00",
+            "dispatch_policy": {
+              "timezone": "UTC",
+              "automatic_forfeiture": false,
+              "calendar_days_after_verified_payment": 30
+            },
+            "dispatch_deadline": "2026-12-05T22:24:21+00:00"
+          },
+          "reason": null,
+          "created_at": "2026-11-05T23:24:21.260374+01:00"
+        }
+      ]
+    },
+    "item": {
+      "id": "22ce220e-2478-4126-9518-a5b9c4c346b8",
+      "reference": "SP-72A783F4935C49DC9D02BE6F72D9471F",
+      "status": "submitted",
+      "notes": "SYNTHETIC BATCH B 20261105T222416Z_737c0e3b",
+      "version": 1,
+      "created_at": "2026-11-05T23:24:21.235057+01:00",
+      "updated_at": "2026-11-05T23:24:21.235057+01:00",
+      "confirmed_at": "2026-11-05T23:21:21.236289+01:00",
+      "card_count": 2,
+      "library_enabled": true,
+      "entries": [
+        {
+          "id": "ff18cdfa-f9ac-4762-b172-9853579ede06",
+          "catalog_card_id": null,
+          "game": "pokemon",
+          "card_name": "SYNTHETIC BATCH B",
+          "expansion": "TEST",
+          "card_number": "TEST",
+          "language": "FR",
+          "quantity": 2,
+          "notes": "",
+          "processing_tier": "standard",
+          "upgrade_ids": [
+            "classic"
+          ],
+          "pre_shipment_photos": []
+        }
+      ]
+    },
+    "order": {
+      "grading": {
+        "lines": [
+          {
+            "entry": {
+              "game": "pokemon",
+              "notes": "",
+              "language": "FR",
+              "quantity": 2,
+              "card_name": "SYNTHETIC BATCH B",
+              "expansion": "TEST",
+              "card_number": "TEST"
+            },
+            "service": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            },
+            "entry_id": "ff18cdfa-f9ac-4762-b172-9853579ede06",
+            "quantity": 2,
+            "tax_mode": "exempt",
+            "upgrades": [
+              {
+                "id": "classic",
+                "name": {
+                  "EN": "Classic label",
+                  "FR": "Étiquette classique"
+                },
+                "unit_minor": 0,
+                "description": {
+                  "EN": "Classic presentation included.",
+                  "FR": "Présentation classique incluse."
+                },
+                "label_presentation": null
+              }
+            ],
+            "card_keys": [
+              "ff18cdfa-f9ac-4762-b172-9853579ede06:1",
+              "ff18cdfa-f9ac-4762-b172-9853579ede06:2"
+            ],
+            "card_name": "SYNTHETIC BATCH B",
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "tier_name": {
+              "EN": "Standard",
+              "FR": "Standard"
+            },
+            "base_minor": 2000,
+            "service_id": "standard",
+            "unit_minor": 1000,
+            "speed_minor": 0,
+            "total_minor": 2000,
+            "tax_rate_bps": 0,
+            "discount_minor": 0,
+            "subtotal_minor": 2000,
+            "upgrades_minor": 0,
+            "base_unit_minor": 1000,
+            "processing_tier": "standard",
+            "speed_unit_minor": 0,
+            "tier_description": {
+              "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+              "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+            },
+            "service_unit_minor": 1000,
+            "discount_basis_minor": 2000,
+            "estimated_turnaround": null,
+            "volume_base_unit_minor": 1000,
+            "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+          }
+        ],
+        "currency": "EUR",
+        "discount": null,
+        "quantity": 2,
+        "tax_mode": "exempt",
+        "net_minor": 2000,
+        "tax_minor": 0,
+        "base_minor": 2000,
+        "speed_minor": 0,
+        "total_minor": 2000,
+        "tax_rate_bps": 0,
+        "configuration": {
+          "name": "FICTIF ? STRIPE TEST",
+          "tiers": {
+            "standard": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            }
+          },
+          "groups": {
+            "label": {
+              "max_selected": 1,
+              "min_selected": 1
+            }
+          },
+          "currency": "EUR",
+          "tax_mode": "exempt",
+          "upgrades": {
+            "classic": {
+              "name": {
+                "EN": "Classic label",
+                "FR": "Étiquette classique"
+              },
+              "group": "label",
+              "available": true,
+              "description": {
+                "EN": "Classic presentation included.",
+                "FR": "Présentation classique incluse."
+              },
+              "price_minor": 0,
+              "allowed_tiers": null,
+              "display_order": 10,
+              "incompatible_with": [],
+              "label_presentation": null
+            }
+          },
+          "discounts": [],
+          "tax_rate_bps": 0,
+          "volume_prices": [],
+          "discount_scope": "base",
+          "schema_version": 1,
+          "tax_description": {
+            "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+            "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+          },
+          "base_price_minor": 1000,
+          "development_only": true,
+          "stripe_test_only": true,
+          "approval_reference": null,
+          "customer_gross_prices": false,
+          "quote_lifetime_seconds": 3600,
+          "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+          "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+        },
+        "tax_breakdown": [
+          {
+            "mode": "exempt",
+            "entry_id": "ff18cdfa-f9ac-4762-b172-9853579ede06",
+            "rate_bps": 0,
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "total_minor": 2000
+          }
+        ],
+        "discount_minor": 0,
+        "discount_scope": "base",
+        "subtotal_minor": 2000,
+        "upgrades_minor": 0,
+        "volume_bracket": null,
+        "per_service_tax": false,
+        "tax_description": {
+          "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+          "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+        },
+        "development_only": true,
+        "stripe_test_only": true,
+        "quote_schema_version": 2,
+        "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE"
+      },
+      "currency": "EUR",
+      "delivery": {
+        "parcel": {},
+        "version": 1,
+        "address_id": "b6424207-a6f7-4553-9847-14685308c9c8",
+        "service_id": "test-return",
+        "declared_value_minor": 10000
+      },
+      "quantity": 2,
+      "shipping": {
+        "status": "configured",
+        "service": {
+          "name": {
+            "EN": "TEST return",
+            "FR": "Retour TEST"
+          },
+          "coverage": {
+            "EN": "Simulation",
+            "FR": "Simulation"
+          },
+          "exclusions": {
+            "EN": "No transport",
+            "FR": "Aucun transport"
+          }
+        },
+        "charge_minor": 500
+      },
+      "readiness": {
+        "ready": true,
+        "states": [
+          "ready_for_checkout"
+        ]
+      },
+      "return_address": {
+        "id": "b6424207-a6f7-4553-9847-14685308c9c8",
+        "city": "TEST",
+        "line1": "TEST",
+        "line2": "",
+        "phone": "",
+        "country": "FR",
+        "version": 1,
+        "recipient": "TEST",
+        "postal_code": "75001",
+        "instructions": ""
+      },
+      "net_total_minor": 2500,
+      "tax_total_minor": 0,
+      "stripe_test_only": true,
+      "available_services": [],
+      "final_payable_minor": 2500,
+      "submission_reference": "SP-72A783F4935C49DC9D02BE6F72D9471F",
+      "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+      "inbound_receiving_address": null,
+      "terms_accepted": true
+    },
+    "quote": {
+      "id": "f18956fc-68b5-4e4c-a951-bff34c177380",
+      "submission_id": "22ce220e-2478-4126-9518-a5b9c4c346b8",
+      "pricing_revision": 1,
+      "pricing_configuration_version": "a1070b24-605f-4182-81fd-a933b68aab40",
+      "created_at": "2026-11-05T22:21:21.237482+00:00",
+      "expires_at": "2026-11-05T23:24:21.237485+00:00",
+      "status": "accepted",
+      "accepted_at": "2026-11-05T22:22:21.238201+00:00",
+      "snapshot": {
+        "lines": [
+          {
+            "entry": {
+              "game": "pokemon",
+              "notes": "",
+              "language": "FR",
+              "quantity": 2,
+              "card_name": "SYNTHETIC BATCH B",
+              "expansion": "TEST",
+              "card_number": "TEST"
+            },
+            "service": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            },
+            "entry_id": "ff18cdfa-f9ac-4762-b172-9853579ede06",
+            "quantity": 2,
+            "tax_mode": "exempt",
+            "upgrades": [
+              {
+                "id": "classic",
+                "name": {
+                  "EN": "Classic label",
+                  "FR": "Étiquette classique"
+                },
+                "unit_minor": 0,
+                "description": {
+                  "EN": "Classic presentation included.",
+                  "FR": "Présentation classique incluse."
+                },
+                "label_presentation": null
+              }
+            ],
+            "card_keys": [
+              "ff18cdfa-f9ac-4762-b172-9853579ede06:1",
+              "ff18cdfa-f9ac-4762-b172-9853579ede06:2"
+            ],
+            "card_name": "SYNTHETIC BATCH B",
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "tier_name": {
+              "EN": "Standard",
+              "FR": "Standard"
+            },
+            "base_minor": 2000,
+            "service_id": "standard",
+            "unit_minor": 1000,
+            "speed_minor": 0,
+            "total_minor": 2000,
+            "tax_rate_bps": 0,
+            "discount_minor": 0,
+            "subtotal_minor": 2000,
+            "upgrades_minor": 0,
+            "base_unit_minor": 1000,
+            "processing_tier": "standard",
+            "speed_unit_minor": 0,
+            "tier_description": {
+              "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+              "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+            },
+            "service_unit_minor": 1000,
+            "discount_basis_minor": 2000,
+            "estimated_turnaround": null,
+            "volume_base_unit_minor": 1000,
+            "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+          }
+        ],
+        "checkout": {
+          "grading": {
+            "lines": [
+              {
+                "entry": {
+                  "game": "pokemon",
+                  "notes": "",
+                  "language": "FR",
+                  "quantity": 2,
+                  "card_name": "SYNTHETIC BATCH B",
+                  "expansion": "TEST",
+                  "card_number": "TEST"
+                },
+                "service": {
+                  "tax": null,
+                  "name": {
+                    "EN": "Standard",
+                    "FR": "Standard"
+                  },
+                  "available": true,
+                  "description": {
+                    "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                    "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+                  },
+                  "price_minor": null,
+                  "display_order": 10,
+                  "estimated_turnaround": null,
+                  "price_adjustment_minor": 0
+                },
+                "entry_id": "ff18cdfa-f9ac-4762-b172-9853579ede06",
+                "quantity": 2,
+                "tax_mode": "exempt",
+                "upgrades": [
+                  {
+                    "id": "classic",
+                    "name": {
+                      "EN": "Classic label",
+                      "FR": "Étiquette classique"
+                    },
+                    "unit_minor": 0,
+                    "description": {
+                      "EN": "Classic presentation included.",
+                      "FR": "Présentation classique incluse."
+                    },
+                    "label_presentation": null
+                  }
+                ],
+                "card_keys": [
+                  "ff18cdfa-f9ac-4762-b172-9853579ede06:1",
+                  "ff18cdfa-f9ac-4762-b172-9853579ede06:2"
+                ],
+                "card_name": "SYNTHETIC BATCH B",
+                "net_minor": 2000,
+                "tax_minor": 0,
+                "tier_name": {
+                  "EN": "Standard",
+                  "FR": "Standard"
+                },
+                "base_minor": 2000,
+                "service_id": "standard",
+                "unit_minor": 1000,
+                "speed_minor": 0,
+                "total_minor": 2000,
+                "tax_rate_bps": 0,
+                "discount_minor": 0,
+                "subtotal_minor": 2000,
+                "upgrades_minor": 0,
+                "base_unit_minor": 1000,
+                "processing_tier": "standard",
+                "speed_unit_minor": 0,
+                "tier_description": {
+                  "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                  "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+                },
+                "service_unit_minor": 1000,
+                "discount_basis_minor": 2000,
+                "estimated_turnaround": null,
+                "volume_base_unit_minor": 1000,
+                "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+              }
+            ],
+            "currency": "EUR",
+            "discount": null,
+            "quantity": 2,
+            "tax_mode": "exempt",
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "base_minor": 2000,
+            "speed_minor": 0,
+            "total_minor": 2000,
+            "tax_rate_bps": 0,
+            "configuration": {
+              "name": "FICTIF ? STRIPE TEST",
+              "tiers": {
+                "standard": {
+                  "tax": null,
+                  "name": {
+                    "EN": "Standard",
+                    "FR": "Standard"
+                  },
+                  "available": true,
+                  "description": {
+                    "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                    "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+                  },
+                  "price_minor": null,
+                  "display_order": 10,
+                  "estimated_turnaround": null,
+                  "price_adjustment_minor": 0
+                }
+              },
+              "groups": {
+                "label": {
+                  "max_selected": 1,
+                  "min_selected": 1
+                }
+              },
+              "currency": "EUR",
+              "tax_mode": "exempt",
+              "upgrades": {
+                "classic": {
+                  "name": {
+                    "EN": "Classic label",
+                    "FR": "Étiquette classique"
+                  },
+                  "group": "label",
+                  "available": true,
+                  "description": {
+                    "EN": "Classic presentation included.",
+                    "FR": "Présentation classique incluse."
+                  },
+                  "price_minor": 0,
+                  "allowed_tiers": null,
+                  "display_order": 10,
+                  "incompatible_with": [],
+                  "label_presentation": null
+                }
+              },
+              "discounts": [],
+              "tax_rate_bps": 0,
+              "volume_prices": [],
+              "discount_scope": "base",
+              "schema_version": 1,
+              "tax_description": {
+                "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+                "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+              },
+              "base_price_minor": 1000,
+              "development_only": true,
+              "stripe_test_only": true,
+              "approval_reference": null,
+              "customer_gross_prices": false,
+              "quote_lifetime_seconds": 3600,
+              "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+              "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+            },
+            "tax_breakdown": [
+              {
+                "mode": "exempt",
+                "entry_id": "ff18cdfa-f9ac-4762-b172-9853579ede06",
+                "rate_bps": 0,
+                "net_minor": 2000,
+                "tax_minor": 0,
+                "total_minor": 2000
+              }
+            ],
+            "discount_minor": 0,
+            "discount_scope": "base",
+            "subtotal_minor": 2000,
+            "upgrades_minor": 0,
+            "volume_bracket": null,
+            "per_service_tax": false,
+            "tax_description": {
+              "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+              "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+            },
+            "development_only": true,
+            "stripe_test_only": true,
+            "quote_schema_version": 2,
+            "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE"
+          },
+          "currency": "EUR",
+          "delivery": {
+            "parcel": {},
+            "version": 1,
+            "address_id": "b6424207-a6f7-4553-9847-14685308c9c8",
+            "service_id": "test-return",
+            "declared_value_minor": 10000
+          },
+          "quantity": 2,
+          "shipping": {
+            "status": "configured",
+            "service": {
+              "name": {
+                "EN": "TEST return",
+                "FR": "Retour TEST"
+              },
+              "coverage": {
+                "EN": "Simulation",
+                "FR": "Simulation"
+              },
+              "exclusions": {
+                "EN": "No transport",
+                "FR": "Aucun transport"
+              }
+            },
+            "charge_minor": 500
+          },
+          "readiness": {
+            "ready": true,
+            "states": [
+              "ready_for_checkout"
+            ]
+          },
+          "return_address": {
+            "id": "b6424207-a6f7-4553-9847-14685308c9c8",
+            "city": "TEST",
+            "line1": "TEST",
+            "line2": "",
+            "phone": "",
+            "country": "FR",
+            "version": 1,
+            "recipient": "TEST",
+            "postal_code": "75001",
+            "instructions": ""
+          },
+          "net_total_minor": 2500,
+          "tax_total_minor": 0,
+          "stripe_test_only": true,
+          "available_services": [],
+          "final_payable_minor": 2500,
+          "submission_reference": "SP-72A783F4935C49DC9D02BE6F72D9471F",
+          "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+          "inbound_receiving_address": null
+        },
+        "currency": "EUR",
+        "discount": null,
+        "quantity": 2,
+        "tax_mode": "exempt",
+        "net_minor": 2000,
+        "tax_minor": 0,
+        "base_minor": 2000,
+        "speed_minor": 0,
+        "total_minor": 2000,
+        "tax_rate_bps": 0,
+        "configuration": {
+          "name": "FICTIF ? STRIPE TEST",
+          "tiers": {
+            "standard": {
+              "tax": null,
+              "name": {
+                "EN": "Standard",
+                "FR": "Standard"
+              },
+              "available": true,
+              "description": {
+                "EN": "FICTIONAL ? STRIPE TEST: no real grading.",
+                "FR": "FICTIF ? STRIPE TEST : aucun grading r?el."
+              },
+              "price_minor": null,
+              "display_order": 10,
+              "estimated_turnaround": null,
+              "price_adjustment_minor": 0
+            }
+          },
+          "groups": {
+            "label": {
+              "max_selected": 1,
+              "min_selected": 1
+            }
+          },
+          "currency": "EUR",
+          "tax_mode": "exempt",
+          "upgrades": {
+            "classic": {
+              "name": {
+                "EN": "Classic label",
+                "FR": "Étiquette classique"
+              },
+              "group": "label",
+              "available": true,
+              "description": {
+                "EN": "Classic presentation included.",
+                "FR": "Présentation classique incluse."
+              },
+              "price_minor": 0,
+              "allowed_tiers": null,
+              "display_order": 10,
+              "incompatible_with": [],
+              "label_presentation": null
+            }
+          },
+          "discounts": [],
+          "tax_rate_bps": 0,
+          "volume_prices": [],
+          "discount_scope": "base",
+          "schema_version": 1,
+          "tax_description": {
+            "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+            "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+          },
+          "base_price_minor": 1000,
+          "development_only": true,
+          "stripe_test_only": true,
+          "approval_reference": null,
+          "customer_gross_prices": false,
+          "quote_lifetime_seconds": 3600,
+          "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE",
+          "tax_validation_reference": "SYNTHETIC-TEST-TAX-0-NOT-A-LEGAL-VALIDATION"
+        },
+        "tax_breakdown": [
+          {
+            "mode": "exempt",
+            "entry_id": "ff18cdfa-f9ac-4762-b172-9853579ede06",
+            "rate_bps": 0,
+            "net_minor": 2000,
+            "tax_minor": 0,
+            "total_minor": 2000
+          }
+        ],
+        "discount_minor": 0,
+        "discount_scope": "base",
+        "subtotal_minor": 2000,
+        "upgrades_minor": 0,
+        "volume_bracket": null,
+        "per_service_tax": false,
+        "tax_description": {
+          "EN": "Synthetic TEST tax 0%, no legal tax assertion.",
+          "FR": "Fiscalit? synth?tique TEST 0 %, sans valeur fiscale."
+        },
+        "development_only": true,
+        "stripe_test_only": true,
+        "order_total_minor": 2500,
+        "quote_schema_version": 2,
+        "commercial_terms_version": "FICTIF-STRIPE-TEST-v1-NO-REAL-SERVICE"
+      }
+    },
+    "ui": {
+      "canDeclareShipment": false,
+      "nextAction": "restricted",
+      "isTracking": true,
+      "statusFR": "Paiement soumis à une restriction — contactez SELBY",
+      "statusEN": "Payment restricted — contact SELBY"
+    }
+  }
+]

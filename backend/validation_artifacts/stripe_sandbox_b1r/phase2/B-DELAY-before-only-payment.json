@@ -1,0 +1,189 @@
+{
+  "at": "2026-11-06T11:31:22.625668+00:00",
+  "identity": {
+    "account_id": "acct_1UXDxRFq5FKSG47y",
+    "business_name": "Selby sandbox",
+    "test_key": true,
+    "database": "spectra_test",
+    "api_version": "2025-02-24.acacia"
+  },
+  "case": "B-DELAY",
+  "label": "before-only-payment",
+  "commercial": {
+    "charging_enabled": true,
+    "accepted_quote_id": "58e4c334-99a7-461c-a51c-8e5a5cc812a6",
+    "financial_restrictions": [],
+    "payment_status": "pending",
+    "verified_payment_at": null,
+    "dispatch_deadline": null,
+    "dispatch_policy": {
+      "calendar_days_after_verified_payment": 30,
+      "timezone": "UTC",
+      "automatic_forfeiture": false
+    },
+    "indicators": [
+      "awaiting_verified_payment"
+    ],
+    "shipment_declarations": [],
+    "parcel_receipts": [],
+    "audit": [
+      {
+        "id": "27d3629e-a9a5-463a-a06c-4201ed04abe6",
+        "kind": "quote_accepted_awaiting_payment",
+        "data": {
+          "quote_id": "58e4c334-99a7-461c-a51c-8e5a5cc812a6",
+          "amount_minor": 2500
+        },
+        "reason": null,
+        "created_at": "2026-11-06T11:54:52.108316+01:00"
+      }
+    ]
+  },
+  "database": {
+    "payment": null,
+    "deadlines": [],
+    "payment_audits": 0,
+    "evidence_count": 0,
+    "attempts": [
+      {
+        "id": "1e106cb5-3680-4951-b33b-92e02b6d3077",
+        "session_id": "cs_test_a1me6IZauES2ta5hgAAUVR1KN6wwFQjvPjFj2xKJsQXiZFxRSezPhhLKY0",
+        "status": "pending"
+      }
+    ],
+    "snapshot_sha256": "90a9d8648a898571da82413ad04ffe8c63177d66d73de4404d3dbc11c0a5aae8"
+  },
+  "objects": [
+    {
+      "session": {
+        "id": "cs_test_a1me6IZauES2ta5hgAAUVR1KN6wwFQjvPjFj2xKJsQXiZFxRSezPhhLKY0",
+        "object": "checkout.session",
+        "adaptive_pricing": {
+          "enabled": true
+        },
+        "after_expiration": null,
+        "allow_promotion_codes": null,
+        "allowed_payment_method_types": null,
+        "amount_subtotal": 2500,
+        "amount_total": 2500,
+        "automatic_tax": {
+          "address_collection_precision": null,
+          "enabled": false,
+          "liability": null,
+          "provider": null,
+          "status": null
+        },
+        "billing_address_collection": null,
+        "branding_settings": {
+          "background_color": "#ffffff",
+          "border_style": "rounded",
+          "button_color": "#0074d4",
+          "display_name": "Selby sandbox",
+          "font_family": "default",
+          "icon": null,
+          "logo": null
+        },
+        "cancel_url": "http://127.0.0.1:13010/account/submissions/fe30de1b-bcde-4131-9a54-a27605ea3126?stripe_return=1",
+        "client_reference_id": "1e106cb5-3680-4951-b33b-92e02b6d3077",
+        "collected_information": null,
+        "consent": null,
+        "consent_collection": null,
+        "created": 1793964656,
+        "currency": "eur",
+        "currency_conversion": null,
+        "custom_fields": [],
+        "custom_text": {
+          "after_submit": null,
+          "shipping_address": null,
+          "submit": null,
+          "terms_of_service_acceptance": null
+        },
+        "customer": null,
+        "customer_account": null,
+        "customer_creation": "if_required",
+        "customer_details": null,
+        "customer_email": null,
+        "discounts": [],
+        "expires_at": 1794051055,
+        "integration_identifier": null,
+        "invoice": null,
+        "invoice_creation": {
+          "enabled": false,
+          "invoice_data": {
+            "account_tax_ids": null,
+            "custom_fields": null,
+            "description": null,
+            "footer": null,
+            "issuer": null,
+            "metadata": {},
+            "rendering_options": null
+          }
+        },
+        "livemode": false,
+        "locale": null,
+        "managed_payments": {
+          "enabled": false
+        },
+        "marketing_attributions": null,
+        "metadata": {
+          "attempt_id": "1e106cb5-3680-4951-b33b-92e02b6d3077",
+          "customer_id": "d28313cc-be52-4f61-981a-0000574de768",
+          "obligation_id": "58e4c334-99a7-461c-a51c-8e5a5cc812a6",
+          "quote_id": "58e4c334-99a7-461c-a51c-8e5a5cc812a6",
+          "submission_id": "fe30de1b-bcde-4131-9a54-a27605ea3126"
+        },
+        "mode": "payment",
+        "origin_context": null,
+        "payment_intent": null,
+        "payment_link": null,
+        "payment_method_collection": "if_required",
+        "payment_method_configuration_details": {
+          "id": "pmc_1UXDy6Fq5FKSG47yeL59kkcp",
+          "parent": null
+        },
+        "payment_method_options": {
+          "card": {
+            "request_three_d_secure": "automatic"
+          }
+        },
+        "payment_method_types": [
+          "card",
+          "bancontact",
+          "eps",
+          "klarna",
+          "link",
+          "mb_way",
+          "amazon_pay",
+          "satispay"
+        ],
+        "payment_status": "unpaid",
+        "permissions": null,
+        "phone_number_collection": {
+          "enabled": false
+        },
+        "recovered_from": null,
+        "saved_payment_method_options": null,
+        "setup_intent": null,
+        "shipping_address_collection": null,
+        "shipping_cost": null,
+        "shipping_details": null,
+        "shipping_options": [],
+        "status": "open",
+        "submit_type": null,
+        "subscription": null,
+        "success_url": "http://127.0.0.1:13010/account/submissions/fe30de1b-bcde-4131-9a54-a27605ea3126?stripe_return=1",
+        "total_details": {
+          "amount_discount": 0,
+          "amount_shipping": 0,
+          "amount_tax": 0
+        },
+        "ui_mode": "hosted",
+        "wallet_options": null
+      },
+      "payment_intent": null,
+      "charge": null
+    }
+  ],
+  "payable_sessions": 1,
+  "B-P2_reproduced": false
+}

@@ -1,0 +1,139 @@
+{
+  "id": "evt_1UYlKRFq5FKSG47ysZiiGmaB",
+  "object": "event",
+  "api_version": "2026-10-28.endive",
+  "created": 1793964547,
+  "data": {
+    "object": {
+      "id": "cs_test_a1HLmQrotUiKh8VSAkSS9aFVpagjCBXH2CyjNRdimlgluvZPYeaVWSmWI8",
+      "object": "checkout.session",
+      "adaptive_pricing": {
+        "enabled": true
+      },
+      "after_expiration": null,
+      "allow_promotion_codes": null,
+      "allowed_payment_method_types": null,
+      "amount_subtotal": 2500,
+      "amount_total": 2500,
+      "automatic_tax": {
+        "address_collection_precision": null,
+        "enabled": false,
+        "liability": null,
+        "provider": null,
+        "status": null
+      },
+      "billing_address_collection": null,
+      "branding_settings": {
+        "background_color": "#ffffff",
+        "border_style": "rounded",
+        "button_color": "#0074d4",
+        "display_name": "Selby sandbox",
+        "font_family": "default",
+        "icon": null,
+        "logo": null
+      },
+      "cancel_url": "http://127.0.0.1:13010/account/submissions/c0c144df-9acb-417c-9b98-6755f73dfe91?stripe_return=1",
+      "client_reference_id": "44008cfc-4a28-4eb9-be97-a820b8bc7edb",
+      "collected_information": null,
+      "consent": null,
+      "consent_collection": null,
+      "created": 1793959008,
+      "currency": "eur",
+      "currency_conversion": null,
+      "custom_fields": [],
+      "custom_text": {
+        "after_submit": null,
+        "shipping_address": null,
+        "submit": null,
+        "terms_of_service_acceptance": null
+      },
+      "customer": null,
+      "customer_account": null,
+      "customer_creation": "if_required",
+      "customer_details": null,
+      "customer_email": null,
+      "discounts": [],
+      "expires_at": 1794045408,
+      "integration_identifier": null,
+      "invoice": null,
+      "invoice_creation": {
+        "enabled": false,
+        "invoice_data": {
+          "account_tax_ids": null,
+          "custom_fields": null,
+          "description": null,
+          "footer": null,
+          "issuer": null,
+          "metadata": {},
+          "rendering_options": null
+        }
+      },
+      "livemode": false,
+      "locale": null,
+      "managed_payments": {
+        "enabled": false
+      },
+      "marketing_attributions": null,
+      "metadata": {
+        "attempt_id": "44008cfc-4a28-4eb9-be97-a820b8bc7edb",
+        "customer_id": "4b46aa58-c2c5-49c7-af55-a6c44ba33eb5",
+        "obligation_id": "3b1452f1-5f64-4981-96f9-488aa368df23",
+        "quote_id": "3b1452f1-5f64-4981-96f9-488aa368df23",
+        "submission_id": "c0c144df-9acb-417c-9b98-6755f73dfe91"
+      },
+      "mode": "payment",
+      "origin_context": null,
+      "payment_intent": null,
+      "payment_link": null,
+      "payment_method_collection": "if_required",
+      "payment_method_configuration_details": {
+        "id": "pmc_1UXDy6Fq5FKSG47yeL59kkcp",
+        "parent": null
+      },
+      "payment_method_options": {
+        "card": {
+          "request_three_d_secure": "automatic"
+        }
+      },
+      "payment_method_types": [
+        "card",
+        "bancontact",
+        "eps",
+        "klarna",
+        "link",
+        "mb_way",
+        "amazon_pay",
+        "satispay"
+      ],
+      "payment_status": "unpaid",
+      "permissions": null,
+      "phone_number_collection": {
+        "enabled": false
+      },
+      "recovered_from": null,
+      "saved_payment_method_options": null,
+      "setup_intent": null,
+      "shipping_address_collection": null,
+      "shipping_cost": null,
+      "shipping_options": [],
+      "status": "expired",
+      "submit_type": null,
+      "subscription": null,
+      "success_url": "http://127.0.0.1:13010/account/submissions/c0c144df-9acb-417c-9b98-6755f73dfe91?stripe_return=1",
+      "total_details": {
+        "amount_discount": 0,
+        "amount_shipping": 0,
+        "amount_tax": 0
+      },
+      "ui_mode": "hosted_page",
+      "wallet_options": null
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 0,
+  "request": {
+    "id": "req_Dx58C5Qc7jp05Y",
+    "idempotency_key": "selby-b1r-phase2-expire-cs_test_a1HLmQrotUiKh8VSAkSS9aFVpagjCBXH2CyjNRdimlgluvZPYeaVWSmWI8"
+  },
+  "type": "checkout.session.expired"
+}

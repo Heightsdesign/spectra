@@ -1,0 +1,134 @@
+[
+  {
+    "code": "B-P1",
+    "variant": "partial",
+    "route": "POST /api/submissions/{id}/shipment-declarations",
+    "commercial_state_before": "restricted",
+    "restriction_labels": [
+      "partially_refunded"
+    ],
+    "ui_can_declare": false,
+    "checkout_http": 409,
+    "expected_shipment_http": 409,
+    "actual_shipment_http": 409,
+    "declarations_created": 0,
+    "declaration_audit_events_created": 0,
+    "financial_identity_unchanged": true,
+    "transaction_rolled_back_at_teardown": true,
+    "submission_id": "9c11be5d-efac-4732-899f-3cde2463c546",
+    "quote_id": "05923d84-66dd-4d6f-ae6b-a315fba9e96e"
+  },
+  {
+    "code": "B-P1",
+    "variant": "full",
+    "route": "POST /api/submissions/{id}/shipment-declarations",
+    "commercial_state_before": "restricted",
+    "restriction_labels": [
+      "refunded"
+    ],
+    "ui_can_declare": false,
+    "checkout_http": 409,
+    "expected_shipment_http": 409,
+    "actual_shipment_http": 409,
+    "declarations_created": 0,
+    "declaration_audit_events_created": 0,
+    "financial_identity_unchanged": true,
+    "transaction_rolled_back_at_teardown": true,
+    "submission_id": "477eb3c3-0cc4-4112-8ea0-4ca09b524dfe",
+    "quote_id": "f3e6f6ce-b16f-4be4-b6e6-141b0647c90d"
+  },
+  {
+    "code": "B-P1",
+    "variant": "dispute",
+    "route": "POST /api/submissions/{id}/shipment-declarations",
+    "commercial_state_before": "restricted",
+    "restriction_labels": [
+      "dispute_review"
+    ],
+    "ui_can_declare": false,
+    "checkout_http": 409,
+    "expected_shipment_http": 409,
+    "actual_shipment_http": 409,
+    "declarations_created": 0,
+    "declaration_audit_events_created": 0,
+    "financial_identity_unchanged": true,
+    "transaction_rolled_back_at_teardown": true,
+    "submission_id": "7d722e06-48c0-4de0-8654-3c85fd0826c7",
+    "quote_id": "a22b8152-76c7-4874-b850-412d4764f88e"
+  },
+  {
+    "code": "B-P1",
+    "variant": "refund_failed",
+    "route": "POST /api/submissions/{id}/shipment-declarations",
+    "commercial_state_before": "restricted",
+    "restriction_labels": [
+      "financial_review"
+    ],
+    "ui_can_declare": false,
+    "checkout_http": 409,
+    "expected_shipment_http": 409,
+    "actual_shipment_http": 409,
+    "declarations_created": 0,
+    "declaration_audit_events_created": 0,
+    "financial_identity_unchanged": true,
+    "transaction_rolled_back_at_teardown": true,
+    "submission_id": "3d4ebae9-b118-44c1-af5b-b6a67df499db",
+    "quote_id": "472f2748-d24e-4409-ba80-55824eaaaebd"
+  },
+  {
+    "code": "B-P1",
+    "variant": "closed_dispute",
+    "route": "POST /api/submissions/{id}/shipment-declarations",
+    "commercial_state_before": "restricted",
+    "restriction_labels": [
+      "dispute_review"
+    ],
+    "ui_can_declare": false,
+    "checkout_http": 409,
+    "expected_shipment_http": 409,
+    "actual_shipment_http": 409,
+    "declarations_created": 0,
+    "declaration_audit_events_created": 0,
+    "financial_identity_unchanged": true,
+    "transaction_rolled_back_at_teardown": true,
+    "submission_id": "d870fe72-b12a-4d15-a60b-a58a928c548a",
+    "quote_id": "455d91cb-1a9d-4289-b175-12a3f8e0d9cd"
+  },
+  {
+    "code": "B-P1",
+    "variant": "manual_hold",
+    "route": "POST /api/submissions/{id}/shipment-declarations",
+    "commercial_state_before": "restricted",
+    "restriction_labels": [
+      "commercial_hold"
+    ],
+    "ui_can_declare": false,
+    "checkout_http": 409,
+    "expected_shipment_http": 409,
+    "actual_shipment_http": 409,
+    "declarations_created": 0,
+    "declaration_audit_events_created": 0,
+    "financial_identity_unchanged": true,
+    "transaction_rolled_back_at_teardown": true,
+    "submission_id": "c5f70409-6e50-4bb9-8039-77d04f3f5ecd",
+    "quote_id": "09662a96-67dc-4163-8480-c3d016077e03"
+  },
+  {
+    "code": "B-P2",
+    "state": "Session complete/unpaid, PaymentIntent requires_action",
+    "checkout_http": 200,
+    "response": {
+      "status": "action_required",
+      "url": null
+    },
+    "ui_status": {
+      "canDeclareShipment": false,
+      "nextAction": "payment",
+      "isTracking": false,
+      "statusFR": "Action requise — reprendre Checkout",
+      "statusEN": "Action required — resume Checkout"
+    },
+    "description": "Checkout resume returns no URL and no alternative recovery action; payment remains safely uncredited",
+    "sandbox_state_not_yet_verified": true
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-06T15:07:19.971088+00:00",
+  "ports_closed": {
+    "13010": true,
+    "18010": true,
+    "19313": true,
+    "19314": true,
+    "18581": true,
+    "18582": true,
+    "18583": true
+  },
+  "next_env_restored": true,
+  "stripe_qa_listener_absent": true,
+  "listener_process_check": "Get-CimInstance Win32_Process, stripe.exe, QA webhook port 18010: empty result after shutdown"
+}

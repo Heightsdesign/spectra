@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SPECTRA S2.2c manual reference agreement v1",
+  "type": "object",
+  "required": ["schema_version", "kind", "algorithm_version", "created_at_utc", "provenance", "reference_sha256", "annotation_id", "annotation_version", "coordinate_system", "status", "automatic_acceptance", "reference_quality_flags", "hypotheses", "ranked_hypothesis_ids", "common_spans_fraction", "duplicate_inventory", "input_hashes_verified_after_analysis"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "kind": {"const": "manual_frame_reference_comparison"},
+    "algorithm_version": {"const": "0.1.0"},
+    "status": {"const": "review_required"},
+    "automatic_acceptance": {"const": false},
+    "coordinate_system": {"const": "original_image_pixels_xy_right_down_v1"},
+    "reference_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "input_hashes_verified_after_analysis": {"const": true},
+    "ranked_hypothesis_ids": {"type": "array", "items": {"type": "string"}},
+    "hypotheses": {"type": "array", "items": {"type": "object", "required": ["hypothesis_id", "candidate_ids", "geometrically_valid", "comparison_availability", "per_side", "aggregate", "rank", "exclusion_reasons"], "properties": {"comparison_availability": {"enum": ["none", "partial", "complete"]}, "rank": {"type": ["integer", "null"], "minimum": 1}, "per_side": {"type": "object", "required": ["top", "right", "bottom", "left"]}, "exclusion_reasons": {"type": "array", "items": {"type": "string"}}}}}
+  }
+}

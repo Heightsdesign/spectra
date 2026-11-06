@@ -1,0 +1,30 @@
+{
+  "phase": 2,
+  "max_new_successes": 1,
+  "amount_minor": 2500,
+  "cases": {
+    "B-EXPIRE": {
+      "name": "B-EXPIRE",
+      "customer_id": "4b46aa58-c2c5-49c7-af55-a6c44ba33eb5",
+      "submission_id": "c0c144df-9acb-417c-9b98-6755f73dfe91",
+      "quote_id": "3b1452f1-5f64-4981-96f9-488aa368df23",
+      "snapshot_sha256": "d0e07ad79e697a47502ba9cb49a4f57823b6bda1140150e5b6958885a8513a29",
+      "source": "phase1/B-ABANDON",
+      "old_session_id": "cs_test_a1HLmQrotUiKh8VSAkSS9aFVpagjCBXH2CyjNRdimlgluvZPYeaVWSmWI8"
+    },
+    "B-DELAY": {
+      "name": "B-DELAY",
+      "submission_id": "fe30de1b-bcde-4131-9a54-a27605ea3126",
+      "customer_id": "d28313cc-be52-4f61-981a-0000574de768",
+      "quote_id": "58e4c334-99a7-461c-a51c-8e5a5cc812a6",
+      "snapshot_sha256": "90a9d8648a898571da82413ad04ffe8c63177d66d73de4404d3dbc11c0a5aae8"
+    }
+  },
+  "identity": {
+    "account_id": "acct_1UXDxRFq5FKSG47y",
+    "business_name": "Selby sandbox",
+    "test_key": true,
+    "database": "spectra_test",
+    "api_version": "2025-02-24.acacia"
+  }
+}

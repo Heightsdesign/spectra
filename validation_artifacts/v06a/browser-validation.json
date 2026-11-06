@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "production_database_writes": 0,
+  "charges": 0,
+  "cases": [
+    "mixed service quoting",
+    "per-entry service save",
+    "mixed service confirmation",
+    "full quote acceptance",
+    "unpaid dispatch disabled",
+    "supplementary consent",
+    "payment actions disabled",
+    "FR/EN",
+    "mobile layout"
+  ]
+}

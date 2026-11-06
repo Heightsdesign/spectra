@@ -1,0 +1,282 @@
+Skip to content
+Services
+Standards
+The process
+Verify
+Contact
+Account
+Interface language
+Français
+English
+SP-TEST-PAID-FOUNDATION
+
+Progress saved.
+
+Reload
+
+Submitted · Created: 03/11/2026
+
+Cards : 2
+
+Cards in this order
+TEST Card A × 1
+Game
+Pokémon
+Set / expansion
+TEST
+Card number
+A
+Language
+EN
+Card notes (optional)
+—
+Customer pre-shipment photos (optional) · 0
+TEST Card B × 1
+Game
+Pokémon
+Set / expansion
+TEST
+Card number
+B
+Language
+EN
+Card notes (optional)
+—
+Customer pre-shipment photos (optional) · 0
+
+SPECTRA
+
+Services and quotes
+
+Payment is not available yet.
+
+Submission confirmation freezes the cards. It does not accept a quote or make a payment.
+
+Refresh services and quote
+TEST Card A × 1
+
+TEST priority · TEST included label
+
+TEST Card B × 1
+
+TEST express · TEST included label
+
+Order notes (optional): —
+
+Generate / recalculate quote
+Review quote
+
+Commercial terms accepted
+
+Created: 03/11/2026, 01:47:57 · Expires: 03/11/2026, 02:47:57
+
+Pricing version: bb0a8ebc-bd16-4959-92cc-7e13341fb1d3
+
+TEST Card A × 1
+
+TEST priority
+
+exempt ? 0%
+
+Base price per card
+€30.00
+Speed surcharge per card
+€0.00
+TEST included label · Upgrade per card
+€0.00
+Unit price × 1
+€30.00
+Discount
+−€0.00
+Total excluding tax
+€30.00
+Tax
+€0.00
+Grading subtotal (excluding return shipping)
+€30.00
+TEST Card B × 1
+
+TEST express
+
+exempt ? 0%
+
+Base price per card
+€25.00
+Speed surcharge per card
+€0.00
+TEST included label · Upgrade per card
+€0.00
+Unit price × 1
+€25.00
+Discount
+−€0.00
+Total excluding tax
+€25.00
+Tax
+€0.00
+Grading subtotal (excluding return shipping)
+€25.00
+
+Tax treatment pending validation · 0% · Synthetic only
+
+Physical cards
+2
+Subtotal before discount
+€55.00
+Discount
+−€0.00
+Total excluding tax
+€55.00
+Tax
+€0.00
+Grading subtotal (excluding return shipping)
+€55.00
+Order summary
+
+TEST Collector
+TEST destination
+TEST TEST City · FR
+
+
+
+Ready for future checkout
+
+TEST return · €12.34
+
+Synthetic coverage only
+
+Synthetic exclusions only
+
+Final payable amount: €67.34
+
+Terms accepted: 03/11/2026, 01:47:57
+
+Order summary
+
+Detailed label: centering, corners, edges and surface on the front, with the overall grade clearly visible. Processing speed changes neither criteria nor grades.
+
+Submission reference: SP-TEST-PAID-FOUNDATION · Physical cards: 2
+
+TEST Card A / 1 / TEST priority / TEST included label: €30.00 ? 1 = €30.00
+TEST Card B / 1 / TEST express / TEST included label: €25.00 ? 1 = €25.00
+Base grading charges
+€55.00
+Processing charges
+€0.00
+Upgrades
+€0.00
+Discount
+€0.00
+Total excluding tax
+€55.00
+Tax
+€0.00
+Grading subtotal (excluding return shipping)
+€55.00
+
+Prepare return shipping
+
+SELBY will package the cards after encapsulation. Staff will record parcel weight and dimensions.
+
+Choose an address
+Choose an address
+TEST Collector · TEST destination · TEST City · FR
+Return addresses
+Estimated total card value (EUR)
+
+Estimate the combined value of all cards in this submission, in euros. This is separate from grading charges and does not guarantee coverage or compensation.
+
+Return service
+Choose a configured service
+TEST return
+Save
+
+TEST Collector
+TEST destination
+TEST TEST City · FR
+
+
+
+Ready for future checkout
+
+Return shipping: TEST return ? €12.34
+
+Synthetic coverage only
+
+Synthetic exclusions only
+
+Tax: €0.00 ? Total excluding tax: €67.34
+
+Send the declared cards within 30 calendar days after verified payment. Accepting a quote does not start this deadline. Discrepancies will be reviewed under SELBY terms.
+
+SYNTHETIC-TERMS-06A
+
+Final payable amount: €67.34
+
+Payment unavailable
+Payment and dispatch
+
+Quote accepted · payment pending
+
+The 30 days begin after verified payment. A late dispatch does not trigger automatic cancellation, forfeiture or refund.
+
+Awaiting verified payment
+DECLARE A SHIPMENT
+Carrier (optional)
+Tracking (optional)
+Customer-declared dispatch date (optional)
+Save declaration
+
+Customer declaration only: it is not verified carrier acceptance or physical receipt.
+
+Supplementary quotes for additional cards
+
+0850eb53-16fc-48cb-9458-4d6471985b83 · valid · not_accepted
+
+PC-TEST-ADDITIONAL · TEST extra service · €10.00 × 1 · €10.00
+
+Additional return shipping: TEST additional return · €3.00
+
+Applicable taxes: €0.00
+
+Amount payable: €13.00
+
+TEST destination · TEST City · FR
+
+SYNTHETIC-TERMS-06A
+
+I accept this supplementary quote and its terms version. No payment will be taken.
+Accept supplementary quote
+Payment unavailable · disabled in V0.6a
+Refresh
+Send your cards to SPECTRA
+
+You arrange and pay for inbound shipping to SPECTRA. Package cards securely and include the submission reference. Online confirmation does not mean physical receipt. No prepaid inbound shipping label is generated.
+
+The receiving address will be published once configured. Wait for these instructions before sending cards.
+
+Refresh
+Back to account
+
+For the first pull.
+For the lifelong collection.
+
+Services
+↗
+Standards
+↗
+The process
+↗
+Certificate verification
+↗
+Contact
+↗
+
+FRANCE · INTERNATIONAL OUTLOOK
+
+Preparing for launch.
+Online submissions are coming soon.
+
+© 2026 SPECTRA
+
+Public website preview · Services not yet open

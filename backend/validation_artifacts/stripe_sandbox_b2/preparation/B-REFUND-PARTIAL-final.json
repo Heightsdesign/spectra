@@ -1,0 +1,493 @@
+{
+  "at": "2026-11-06T12:06:15.343921+00:00",
+  "identity": {
+    "account_id": "acct_1UXDxRFq5FKSG47y",
+    "business_name": "Selby sandbox",
+    "test_key": true,
+    "database": "spectra_test",
+    "api_version": "2025-02-24.acacia"
+  },
+  "case": "B-REFUND-PARTIAL",
+  "label": "final",
+  "commercial": {
+    "charging_enabled": false,
+    "accepted_quote_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+    "financial_restrictions": [],
+    "payment_status": "verified",
+    "verified_payment_at": "2026-11-06T13:02:07+01:00",
+    "dispatch_deadline": "2026-12-06T13:02:07+01:00",
+    "dispatch_policy": {
+      "calendar_days_after_verified_payment": 30,
+      "timezone": "UTC",
+      "automatic_forfeiture": false
+    },
+    "indicators": [
+      "awaiting_customer_dispatch"
+    ],
+    "shipment_declarations": [],
+    "parcel_receipts": [],
+    "audit": [
+      {
+        "id": "dba80340-2cd7-4c94-b60b-37f5b0fed282",
+        "kind": "quote_accepted_awaiting_payment",
+        "data": {
+          "quote_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+          "amount_minor": 2500
+        },
+        "reason": null,
+        "created_at": "2026-11-06T12:58:00.689620+01:00"
+      },
+      {
+        "id": "84fbb723-8def-466c-a7aa-4ff333a031f2",
+        "kind": "provider_payment_verified",
+        "data": {
+          "quote_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+          "verified_at": "2026-11-06T12:02:07+00:00",
+          "dispatch_policy": {
+            "timezone": "UTC",
+            "automatic_forfeiture": false,
+            "calendar_days_after_verified_payment": 30
+          },
+          "dispatch_deadline": "2026-12-06T12:02:07+00:00"
+        },
+        "reason": null,
+        "created_at": "2026-11-06T13:02:12.537753+01:00"
+      }
+    ]
+  },
+  "database": {
+    "payment": {
+      "quote_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+      "provider": "stripe_test",
+      "provider_event_id": "evt_3UYlqMFq5FKSG47y0Dfu0Vfc",
+      "provider_payment_id": "pi_3UYlqMFq5FKSG47y0qC0NxuR",
+      "amount_minor": 2500,
+      "currency": "EUR",
+      "verified_at": "2026-11-06 13:02:07+01:00",
+      "recorded_at": "2026-11-06 13:02:12.530817+01:00"
+    },
+    "deadlines": [
+      {
+        "submission_id": "4506971d-4a51-416c-8ef2-ffda7a5698b7",
+        "quote_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+        "verified_payment_at": "2026-11-06 13:02:07+01:00",
+        "dispatch_deadline": "2026-12-06 13:02:07+01:00",
+        "policy": {
+          "timezone": "UTC",
+          "automatic_forfeiture": false,
+          "calendar_days_after_verified_payment": 30
+        }
+      }
+    ],
+    "payment_audits": 1,
+    "evidence_count": 2,
+    "evidence": [
+      {
+        "event_id": "evt_3UYlqMFq5FKSG47y0Dfu0Vfc",
+        "quote_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+        "kind": "payment_intent.succeeded",
+        "restricted": false,
+        "data": {
+          "currency": "EUR",
+          "disputed": false,
+          "session_id": "cs_test_a1G8ABzdExA4iEevPkrFM0wALID6WddpRV1GKiJBwcaNNoL28a6pbfgICb",
+          "event_digest": "a16b5d8522544bb381349c5676102174c35b870800907cd7259016db69bda84c",
+          "provider_created": 1793966527,
+          "payment_intent_id": "pi_3UYlqMFq5FKSG47y0qC0NxuR",
+          "provider_object_id": "pi_3UYlqMFq5FKSG47y0qC0NxuR",
+          "amount_refunded_minor": 0,
+          "obligation_amount_minor": 2500
+        },
+        "created_at": "2026-11-06 13:02:09.478444+01:00"
+      },
+      {
+        "event_id": "evt_1UYlqNFq5FKSG47yIYfrr5Ub",
+        "quote_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+        "kind": "checkout.session.completed",
+        "restricted": false,
+        "data": {
+          "currency": "EUR",
+          "disputed": false,
+          "session_id": "cs_test_a1G8ABzdExA4iEevPkrFM0wALID6WddpRV1GKiJBwcaNNoL28a6pbfgICb",
+          "event_digest": "58df1d2dd2286613a0f4b44abb24d67debb9c6d4831210a7a38690fc443a26e9",
+          "provider_created": 1793966527,
+          "payment_intent_id": "pi_3UYlqMFq5FKSG47y0qC0NxuR",
+          "provider_object_id": "cs_test_a1G8ABzdExA4iEevPkrFM0wALID6WddpRV1GKiJBwcaNNoL28a6pbfgICb",
+          "amount_refunded_minor": 0,
+          "obligation_amount_minor": 2500
+        },
+        "created_at": "2026-11-06 13:02:14.576366+01:00"
+      }
+    ],
+    "attempts": [
+      {
+        "id": "15dbe960-0d44-4272-9428-749cb588accd",
+        "session_id": "cs_test_a1G8ABzdExA4iEevPkrFM0wALID6WddpRV1GKiJBwcaNNoL28a6pbfgICb",
+        "status": "verified"
+      }
+    ],
+    "snapshot_sha256": "7dd6756eff71bfb198edff7f2926d1bdeec4a71a2f6bc99161151202e9be6a09"
+  },
+  "objects": [
+    {
+      "session": {
+        "id": "cs_test_a1G8ABzdExA4iEevPkrFM0wALID6WddpRV1GKiJBwcaNNoL28a6pbfgICb",
+        "object": "checkout.session",
+        "adaptive_pricing": {
+          "enabled": true
+        },
+        "after_expiration": null,
+        "allow_promotion_codes": null,
+        "allowed_payment_method_types": null,
+        "amount_subtotal": 2500,
+        "amount_total": 2500,
+        "automatic_tax": {
+          "address_collection_precision": null,
+          "enabled": false,
+          "liability": null,
+          "provider": null,
+          "status": null
+        },
+        "billing_address_collection": null,
+        "branding_settings": {
+          "background_color": "#ffffff",
+          "border_style": "rounded",
+          "button_color": "#0074d4",
+          "display_name": "Selby sandbox",
+          "font_family": "default",
+          "icon": null,
+          "logo": null
+        },
+        "cancel_url": "http://127.0.0.1:13010/account/submissions/4506971d-4a51-416c-8ef2-ffda7a5698b7?stripe_return=1",
+        "client_reference_id": "15dbe960-0d44-4272-9428-749cb588accd",
+        "collected_information": null,
+        "consent": null,
+        "consent_collection": null,
+        "created": 1793966501,
+        "currency": "eur",
+        "currency_conversion": null,
+        "custom_fields": [],
+        "custom_text": {
+          "after_submit": null,
+          "shipping_address": null,
+          "submit": null,
+          "terms_of_service_acceptance": null
+        },
+        "customer": null,
+        "customer_account": null,
+        "customer_creation": "if_required",
+        "customer_details": {
+          "address": {
+            "city": null,
+            "country": "CH",
+            "line1": null,
+            "line2": null,
+            "postal_code": null,
+            "state": null
+          },
+          "business_name": null,
+          "email": "qa-b2-partial@example.invalid",
+          "individual_name": null,
+          "name": "QA B2 PARTIAL",
+          "phone": null,
+          "tax_exempt": "none",
+          "tax_ids": []
+        },
+        "customer_email": null,
+        "discounts": [],
+        "expires_at": 1794052901,
+        "integration_identifier": null,
+        "invoice": null,
+        "invoice_creation": {
+          "enabled": false,
+          "invoice_data": {
+            "account_tax_ids": null,
+            "custom_fields": null,
+            "description": null,
+            "footer": null,
+            "issuer": null,
+            "metadata": {},
+            "rendering_options": null
+          }
+        },
+        "livemode": false,
+        "locale": null,
+        "managed_payments": {
+          "enabled": false
+        },
+        "marketing_attributions": null,
+        "metadata": {
+          "attempt_id": "15dbe960-0d44-4272-9428-749cb588accd",
+          "customer_id": "cfd30385-69fc-405c-85e8-bc492c4e0950",
+          "obligation_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+          "quote_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+          "submission_id": "4506971d-4a51-416c-8ef2-ffda7a5698b7"
+        },
+        "mode": "payment",
+        "origin_context": null,
+        "payment_intent": "pi_3UYlqMFq5FKSG47y0qC0NxuR",
+        "payment_link": null,
+        "payment_method_collection": "if_required",
+        "payment_method_configuration_details": {
+          "id": "pmc_1UXDy6Fq5FKSG47yeL59kkcp",
+          "parent": null
+        },
+        "payment_method_options": {
+          "card": {
+            "request_three_d_secure": "automatic"
+          }
+        },
+        "payment_method_types": [
+          "card",
+          "klarna",
+          "link",
+          "amazon_pay"
+        ],
+        "payment_status": "paid",
+        "permissions": null,
+        "phone_number_collection": {
+          "enabled": false
+        },
+        "presentment_details": {
+          "presentment_amount": 2376,
+          "presentment_currency": "chf"
+        },
+        "recovered_from": null,
+        "saved_payment_method_options": null,
+        "setup_intent": null,
+        "shipping_address_collection": null,
+        "shipping_cost": null,
+        "shipping_details": null,
+        "shipping_options": [],
+        "status": "complete",
+        "submit_type": null,
+        "subscription": null,
+        "success_url": "http://127.0.0.1:13010/account/submissions/4506971d-4a51-416c-8ef2-ffda7a5698b7?stripe_return=1",
+        "total_details": {
+          "amount_discount": 0,
+          "amount_shipping": 0,
+          "amount_tax": 0
+        },
+        "ui_mode": "hosted",
+        "wallet_options": null
+      },
+      "payment_intent": {
+        "id": "pi_3UYlqMFq5FKSG47y0qC0NxuR",
+        "object": "payment_intent",
+        "allowed_payment_method_types": [
+          "card",
+          "klarna",
+          "link",
+          "amazon_pay"
+        ],
+        "amount": 2500,
+        "amount_capturable": 0,
+        "amount_details": {
+          "tip": {}
+        },
+        "amount_received": 2500,
+        "application": null,
+        "application_fee_amount": null,
+        "automatic_payment_methods": null,
+        "canceled_at": null,
+        "cancellation_reason": null,
+        "capture_method": "automatic_async",
+        "confirmation_method": "automatic",
+        "created": 1793966526,
+        "currency": "eur",
+        "customer": null,
+        "customer_account": null,
+        "description": null,
+        "excluded_payment_method_types": null,
+        "invoice": null,
+        "last_payment_error": null,
+        "latest_charge": "ch_3UYlqMFq5FKSG47y0hSlv6os",
+        "livemode": false,
+        "managed_payments": {
+          "enabled": false
+        },
+        "metadata": {
+          "attempt_id": "15dbe960-0d44-4272-9428-749cb588accd",
+          "customer_id": "cfd30385-69fc-405c-85e8-bc492c4e0950",
+          "obligation_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+          "quote_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+          "submission_id": "4506971d-4a51-416c-8ef2-ffda7a5698b7"
+        },
+        "next_action": null,
+        "on_behalf_of": null,
+        "payment_details": {
+          "customer_reference": null,
+          "order_reference": "cs_test_a1G8ABzdExA4iEevPkrFM0wALID6WddpRV1GKiJBwcaNNoL28a6pbfgICb"
+        },
+        "payment_method": "pm_1UYlqMFq5FKSG47yOGY09oGo",
+        "payment_method_configuration_details": null,
+        "payment_method_options": {
+          "amazon_pay": {
+            "express_checkout_element_session_id": null
+          },
+          "card": {
+            "installments": null,
+            "mandate_options": null,
+            "network": null,
+            "request_three_d_secure": "automatic"
+          },
+          "klarna": {
+            "preferred_locale": null
+          },
+          "link": {
+            "persistent_token": null
+          }
+        },
+        "payment_method_types": [
+          "card",
+          "klarna",
+          "link",
+          "amazon_pay"
+        ],
+        "payment_record": null,
+        "presentment_details": {
+          "presentment_amount": 2376,
+          "presentment_currency": "chf"
+        },
+        "processing": null,
+        "receipt_email": null,
+        "review": null,
+        "setup_future_usage": null,
+        "shared_payment_granted_token": null,
+        "shipping": null,
+        "source": null,
+        "statement_descriptor": null,
+        "statement_descriptor_suffix": null,
+        "status": "succeeded",
+        "transfer_data": null,
+        "transfer_group": null
+      },
+      "charge": {
+        "id": "ch_3UYlqMFq5FKSG47y0hSlv6os",
+        "object": "charge",
+        "amount": 2500,
+        "amount_captured": 2500,
+        "amount_refunded": 0,
+        "application": null,
+        "application_fee": null,
+        "application_fee_amount": null,
+        "balance_transaction": "txn_3UYlqMFq5FKSG47y0tJRg7Iz",
+        "billing_details": {
+          "address": {
+            "city": null,
+            "country": "CH",
+            "line1": null,
+            "line2": null,
+            "postal_code": null,
+            "state": null
+          },
+          "email": "qa-b2-partial@example.invalid",
+          "name": "QA B2 PARTIAL",
+          "phone": null,
+          "tax_id": null
+        },
+        "calculated_statement_descriptor": "Stripe",
+        "captured": true,
+        "created": 1793966526,
+        "currency": "eur",
+        "customer": null,
+        "description": null,
+        "destination": null,
+        "dispute": null,
+        "disputed": false,
+        "failure_balance_transaction": null,
+        "failure_code": null,
+        "failure_message": null,
+        "fraud_details": {},
+        "invoice": null,
+        "livemode": false,
+        "metadata": {
+          "attempt_id": "15dbe960-0d44-4272-9428-749cb588accd",
+          "customer_id": "cfd30385-69fc-405c-85e8-bc492c4e0950",
+          "obligation_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+          "quote_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+          "submission_id": "4506971d-4a51-416c-8ef2-ffda7a5698b7"
+        },
+        "on_behalf_of": null,
+        "order": null,
+        "outcome": {
+          "advice_code": null,
+          "network_advice_code": null,
+          "network_decline_code": null,
+          "network_status": "approved_by_network",
+          "reason": null,
+          "risk_level": "normal",
+          "risk_score": 1,
+          "seller_message": "Payment complete.",
+          "type": "authorized"
+        },
+        "paid": true,
+        "payment_intent": "pi_3UYlqMFq5FKSG47y0qC0NxuR",
+        "payment_method": "pm_1UYlqMFq5FKSG47yOGY09oGo",
+        "payment_method_details": {
+          "card": {
+            "amount_authorized": 2500,
+            "authorization_code": "396921",
+            "brand": "visa",
+            "checks": {
+              "address_line1_check": null,
+              "address_postal_code_check": null,
+              "cvc_check": "pass"
+            },
+            "country": "US",
+            "electronic_commerce_indicator": "07",
+            "exp_month": 12,
+            "exp_year": 2034,
+            "extended_authorization": {
+              "status": "disabled"
+            },
+            "fingerprint": "pVwrdvzJAqoCx8WQ",
+            "funding": "credit",
+            "incremental_authorization": {
+              "status": "unavailable"
+            },
+            "installments": null,
+            "last4": "4242",
+            "mandate": null,
+            "multicapture": {
+              "status": "unavailable"
+            },
+            "network": "visa",
+            "network_token": {
+              "used": false
+            },
+            "network_transaction_id": "112861191141001",
+            "overcapture": {
+              "maximum_amount_capturable": 2500,
+              "status": "unavailable"
+            },
+            "regulated_status": "unregulated",
+            "three_d_secure": null,
+            "transaction_link_id": null,
+            "wallet": null
+          },
+          "type": "card"
+        },
+        "presentment_details": {
+          "presentment_amount": 2376,
+          "presentment_currency": "chf"
+        },
+        "radar_options": {},
+        "receipt_email": null,
+        "receipt_number": null,
+        "refunded": false,
+        "review": null,
+        "shipping": null,
+        "source": null,
+        "source_transfer": null,
+        "statement_descriptor": null,
+        "statement_descriptor_suffix": null,
+        "status": "succeeded",
+        "transfer_data": null,
+        "transfer_group": null
+      }
+    }
+  ],
+  "payable_sessions": 0,
+  "B-P2_reproduced": false
+}

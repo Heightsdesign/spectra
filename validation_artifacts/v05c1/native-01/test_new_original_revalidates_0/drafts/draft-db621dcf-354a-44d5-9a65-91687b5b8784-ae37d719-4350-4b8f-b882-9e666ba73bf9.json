@@ -1,0 +1,150 @@
+{
+  "kind": "selby_recovery_draft",
+  "schema_version": 1,
+  "at_utc": "2026-11-02T22:08:18.189960+00:00",
+  "session": {
+    "schema_version": 1,
+    "kind": "selby_inspection_session",
+    "tool_version": "0.4.0",
+    "coordinate_system": "original_image_pixels_xy_right_down_v1",
+    "session_id": "db621dcf-354a-44d5-9a65-91687b5b8784",
+    "version_id": null,
+    "created_at_utc": "2026-11-02T22:08:18.161054+00:00",
+    "parent": null,
+    "image": {
+      "path": "C:\\Users\\plher\\Documents\\spetra\\validation_artifacts\\v05c1\\native-01\\test_new_original_revalidates_0\\source.bmp",
+      "sha256": "378460c2b25ee6edaec4739fe9805aa478b58764fff5236c98d91e8ff2db4e44",
+      "dimensions": [
+        560,
+        720
+      ],
+      "mode": "RGB"
+    },
+    "image_encoding": {
+      "format": "BMP",
+      "frames": [
+        {
+          "width": 560,
+          "height": 720,
+          "mode": "RGB",
+          "bits_per_pixel": 24,
+          "dpi_metadata": [
+            150.01231899334775,
+            150.01231899334775
+          ],
+          "icc_profile_present": false,
+          "uniform_pixel_content": false
+        }
+      ],
+      "frame_count": 1
+    },
+    "operator": "",
+    "notes": "",
+    "sources": [],
+    "prediction_exposure": false,
+    "physical": [
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      },
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      },
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      },
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      }
+    ],
+    "printed": [
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      },
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      },
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      },
+      {
+        "status": "unannotated",
+        "definition": null,
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": null,
+        "line_abc": null,
+        "notes": "",
+        "confirmed_at_utc": null,
+        "reviewed": null
+      }
+    ],
+    "review_status": "review_required",
+    "automatic_acceptance": false,
+    "human_confirmation_is_not_certified_ground_truth": true,
+    "view": {
+      "zoom": 0.6555555555555556,
+      "center": [
+        280.6779661016949,
+        360.76271186440675
+      ]
+    }
+  },
+  "saved_path": null,
+  "saved_sha": null
+}

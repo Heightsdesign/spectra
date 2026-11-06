@@ -1,0 +1,155 @@
+{
+  "id": "evt_1UYlqNFq5FKSG47yIYfrr5Ub",
+  "object": "event",
+  "api_version": "2026-10-28.endive",
+  "created": 1793966527,
+  "data": {
+    "object": {
+      "id": "cs_test_a1G8ABzdExA4iEevPkrFM0wALID6WddpRV1GKiJBwcaNNoL28a6pbfgICb",
+      "object": "checkout.session",
+      "adaptive_pricing": {
+        "enabled": true
+      },
+      "after_expiration": null,
+      "allow_promotion_codes": null,
+      "allowed_payment_method_types": null,
+      "amount_subtotal": 2500,
+      "amount_total": 2500,
+      "automatic_tax": {
+        "address_collection_precision": null,
+        "enabled": false,
+        "liability": null,
+        "provider": null,
+        "status": null
+      },
+      "billing_address_collection": null,
+      "branding_settings": {
+        "background_color": "#ffffff",
+        "border_style": "rounded",
+        "button_color": "#0074d4",
+        "display_name": "Selby sandbox",
+        "font_family": "default",
+        "icon": null,
+        "logo": null
+      },
+      "cancel_url": "http://127.0.0.1:13010/account/submissions/4506971d-4a51-416c-8ef2-ffda7a5698b7?stripe_return=1",
+      "client_reference_id": "15dbe960-0d44-4272-9428-749cb588accd",
+      "collected_information": null,
+      "consent": null,
+      "consent_collection": null,
+      "created": 1793966501,
+      "currency": "eur",
+      "currency_conversion": null,
+      "custom_fields": [],
+      "custom_text": {
+        "after_submit": null,
+        "shipping_address": null,
+        "submit": null,
+        "terms_of_service_acceptance": null
+      },
+      "customer": null,
+      "customer_account": null,
+      "customer_creation": "if_required",
+      "customer_details": {
+        "address": {
+          "city": null,
+          "country": "CH",
+          "line1": null,
+          "line2": null,
+          "postal_code": null,
+          "state": null
+        },
+        "business_name": null,
+        "email": "qa-b2-partial@example.invalid",
+        "individual_name": null,
+        "name": "QA B2 PARTIAL",
+        "phone": null,
+        "tax_exempt": "none",
+        "tax_ids": []
+      },
+      "customer_email": null,
+      "discounts": [],
+      "expires_at": 1794052901,
+      "integration_identifier": null,
+      "invoice": null,
+      "invoice_creation": {
+        "enabled": false,
+        "invoice_data": {
+          "account_tax_ids": null,
+          "custom_fields": null,
+          "description": null,
+          "footer": null,
+          "issuer": null,
+          "metadata": {},
+          "rendering_options": null
+        }
+      },
+      "livemode": false,
+      "locale": null,
+      "managed_payments": {
+        "enabled": false
+      },
+      "marketing_attributions": null,
+      "metadata": {
+        "attempt_id": "15dbe960-0d44-4272-9428-749cb588accd",
+        "quote_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+        "customer_id": "cfd30385-69fc-405c-85e8-bc492c4e0950",
+        "obligation_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+        "submission_id": "4506971d-4a51-416c-8ef2-ffda7a5698b7"
+      },
+      "mode": "payment",
+      "origin_context": null,
+      "payment_intent": "pi_3UYlqMFq5FKSG47y0qC0NxuR",
+      "payment_link": null,
+      "payment_method_collection": "if_required",
+      "payment_method_configuration_details": {
+        "id": "pmc_1UXDy6Fq5FKSG47yeL59kkcp",
+        "parent": null
+      },
+      "payment_method_options": {
+        "card": {
+          "request_three_d_secure": "automatic"
+        }
+      },
+      "payment_method_types": [
+        "card",
+        "klarna",
+        "link",
+        "amazon_pay"
+      ],
+      "payment_status": "paid",
+      "permissions": null,
+      "phone_number_collection": {
+        "enabled": false
+      },
+      "presentment_details": {
+        "presentment_amount": 2376,
+        "presentment_currency": "chf"
+      },
+      "recovered_from": null,
+      "saved_payment_method_options": null,
+      "setup_intent": null,
+      "shipping_address_collection": null,
+      "shipping_cost": null,
+      "shipping_options": [],
+      "status": "complete",
+      "submit_type": null,
+      "subscription": null,
+      "success_url": "http://127.0.0.1:13010/account/submissions/4506971d-4a51-416c-8ef2-ffda7a5698b7?stripe_return=1",
+      "total_details": {
+        "amount_discount": 0,
+        "amount_shipping": 0,
+        "amount_tax": 0
+      },
+      "ui_mode": "hosted_page",
+      "wallet_options": null
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 2,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "checkout.session.completed"
+}

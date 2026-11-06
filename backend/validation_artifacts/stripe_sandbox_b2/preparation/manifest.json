@@ -1,0 +1,30 @@
+{
+  "phase": "B2-preparation",
+  "refunds_authorized": false,
+  "max_successful_payments": 2,
+  "amount_per_payment_minor": 2500,
+  "currency": "eur",
+  "identity": {
+    "account_id": "acct_1UXDxRFq5FKSG47y",
+    "business_name": "Selby sandbox",
+    "test_key": true,
+    "database": "spectra_test",
+    "api_version": "2025-02-24.acacia"
+  },
+  "cases": {
+    "B-REFUND-PARTIAL": {
+      "name": "B-REFUND-PARTIAL",
+      "submission_id": "4506971d-4a51-416c-8ef2-ffda7a5698b7",
+      "customer_id": "cfd30385-69fc-405c-85e8-bc492c4e0950",
+      "quote_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+      "snapshot_sha256": "7dd6756eff71bfb198edff7f2926d1bdeec4a71a2f6bc99161151202e9be6a09"
+    },
+    "B-REFUND-FULL": {
+      "name": "B-REFUND-FULL",
+      "submission_id": "540416f9-569f-4bad-ac9f-88b2b08e0fdd",
+      "customer_id": "e114aba9-81aa-4fb0-a2f6-99bdbc8ec843",
+      "quote_id": "73135787-893b-4658-8a62-1837a0e4f17c",
+      "snapshot_sha256": "74db54cb2d9581fc9129e767df23c1a12aa2b975de5c683389bc41eee12bfabb"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "run_id": "20261106T092913Z_dffc0ecd",
+  "exit_code": 0,
+  "passed": 2,
+  "failed_or_error_phases": 0,
+  "skipped": 0,
+  "results": [
+    {
+      "test": "validation_tests/stripe_batch_a/test_shipment_corrections.py::test_restriction_shipment_serialization[webhook]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.414
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_shipment_corrections.py::test_restriction_shipment_serialization[webhook]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.1905
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_shipment_corrections.py::test_restriction_shipment_serialization[webhook]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0002
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_shipment_corrections.py::test_restriction_shipment_serialization[declaration]",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.0069
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_shipment_corrections.py::test_restriction_shipment_serialization[declaration]",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 0.0755
+    },
+    {
+      "test": "validation_tests/stripe_batch_a/test_shipment_corrections.py::test_restriction_shipment_serialization[declaration]",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0288
+    }
+  ]
+}

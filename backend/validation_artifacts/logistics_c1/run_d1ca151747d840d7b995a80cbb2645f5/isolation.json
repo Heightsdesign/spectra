@@ -1,0 +1,745 @@
+{
+  "test_before": {
+    "database": "spectra_test",
+    "revision": [
+      "0015"
+    ],
+    "schema_sha256": "39b4fd404a644856d112b1932667f51c42e92c86e1ad573f33b28ae35e9e209d",
+    "tables": {
+      "alembic_version": {
+        "rows": 1,
+        "sha256": "8378b4d10fea7514315e6baa4311bd320b1880277ccf544e1b1a2c82aa07688e"
+      },
+      "auth_rate_buckets": {
+        "rows": 68,
+        "sha256": "f69ea7148d59bd9e83cc172d4bec6b92bea67374474d47407bdc903b8ad7524c"
+      },
+      "card_images": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "cards": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "commercial_entitlement_assignments": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "customer_addresses": {
+        "rows": 7,
+        "sha256": "861df419259741654630929218de054f9cee8c49c813a737e5e3487ce35f0ca7"
+      },
+      "customer_auth_tokens": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "customer_card_copies": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "customer_copy_assignments": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "customer_sessions": {
+        "rows": 21,
+        "sha256": "93a0475025e95b3b988263b41286f2778a59c282699a61c484f315c6e9785534"
+      },
+      "customer_shipment_declarations": {
+        "rows": 4,
+        "sha256": "9dca44181f92d4181700e878b5687e5b6ed9ef5b79d5fe2f7466bb2692763c05"
+      },
+      "customer_submission_entries": {
+        "rows": 25,
+        "sha256": "3e5266eae571d7ab889ea3a59cbb08bf38a5b4738e8ed415fb1e046dadb6805c"
+      },
+      "customer_submission_photos": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "customer_submissions": {
+        "rows": 18,
+        "sha256": "135f7f6c42bc65994b6a76346677afa91e949975f1db2106bcc249f4af2b2f26"
+      },
+      "customers": {
+        "rows": 18,
+        "sha256": "3b414385e0c32af721bd68a894bffad410dcba385f9cd7844b6205370da164da"
+      },
+      "dispatch_expectations": {
+        "rows": 16,
+        "sha256": "f02118c9c7a861d0e47e4888d051ca0175d8716d9f58daa0dd55e7b8ce9f4f09"
+      },
+      "inspection_custody_events": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "inspection_images": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "inspections": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "intake_audit_events": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "intake_discrepancies": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "intake_parcels": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "order_commercial_events": {
+        "rows": 38,
+        "sha256": "0e6c39c5655d63998e19a0e926e88ee31f0b77eb2180bba5f332b8f8b6d51541"
+      },
+      "payment_obligations": {
+        "rows": 18,
+        "sha256": "821a5e71bfec5f6483a5a7e8c7764738bb6fd878c9c92ba886d6ff950cf0c832"
+      },
+      "physical_card_voids": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "physical_cards": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "pricing_catalogs": {
+        "rows": 12,
+        "sha256": "18c3ed930f511ab5bbe23afad3f34e7ffe35e9d7deb7472536b0f3e966bbf174"
+      },
+      "pricing_state": {
+        "rows": 1,
+        "sha256": "deb0a9fd9e7c637187faacfe517bc4c58bb9ae98302ef6f86c9b167cbf1d5636"
+      },
+      "production_cards": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "production_orders": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "quote_acceptances": {
+        "rows": 18,
+        "sha256": "fcbede6cccab22d30d7a0bcc3535991a64e85ec9c16abc5ec7fab463d1d67885"
+      },
+      "shipping_configurations": {
+        "rows": 1,
+        "sha256": "ce9a00b66f6ae176cba845d63f85540e4cfd3f394b167214567c50b34e842d34"
+      },
+      "shipping_state": {
+        "rows": 1,
+        "sha256": "cb1935c5e65d57097504a7163310070ef5f6172546e8e5e008fc1e8b8be68cea"
+      },
+      "staff_memberships": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "stripe_attempts": {
+        "rows": 18,
+        "sha256": "282b91fa9b330c4f5ab843d03ef147677d53d1065c4a7d932f0365d3e83c6ac0"
+      },
+      "stripe_evidence": {
+        "rows": 42,
+        "sha256": "585b0a612df2bc97229e2ba59f684a2afcf96b7a55d5cb31df6cc6dfeb2e2f9e"
+      },
+      "submission_deliveries": {
+        "rows": 7,
+        "sha256": "176c2e8d7efa4c50aea98400dcbca6ec3e9628a55029c02a866db6284b564c37"
+      },
+      "submission_intakes": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "submission_quotes": {
+        "rows": 18,
+        "sha256": "207e6c6ba2630845918629572b78d5162f11fbe0859754c0020ae8a051ed062f"
+      },
+      "supplementary_acceptances": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "tcg_cards": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "tcg_expansions": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "tcg_games": {
+        "rows": 4,
+        "sha256": "64954a906a9280e5267b251f1589cedd37fb380f45f98944335f47106217cf5a"
+      },
+      "verified_payments": {
+        "rows": 16,
+        "sha256": "2943a89c4e13db2a66710fff490fbbbcc6aae249ded71766456c150403c68c6d"
+      }
+    }
+  },
+  "test_after": {
+    "database": "spectra_test",
+    "revision": [
+      "0015"
+    ],
+    "schema_sha256": "39b4fd404a644856d112b1932667f51c42e92c86e1ad573f33b28ae35e9e209d",
+    "tables": {
+      "alembic_version": {
+        "rows": 1,
+        "sha256": "8378b4d10fea7514315e6baa4311bd320b1880277ccf544e1b1a2c82aa07688e"
+      },
+      "auth_rate_buckets": {
+        "rows": 68,
+        "sha256": "f69ea7148d59bd9e83cc172d4bec6b92bea67374474d47407bdc903b8ad7524c"
+      },
+      "card_images": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "cards": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "commercial_entitlement_assignments": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "customer_addresses": {
+        "rows": 7,
+        "sha256": "861df419259741654630929218de054f9cee8c49c813a737e5e3487ce35f0ca7"
+      },
+      "customer_auth_tokens": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "customer_card_copies": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "customer_copy_assignments": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "customer_sessions": {
+        "rows": 21,
+        "sha256": "93a0475025e95b3b988263b41286f2778a59c282699a61c484f315c6e9785534"
+      },
+      "customer_shipment_declarations": {
+        "rows": 4,
+        "sha256": "9dca44181f92d4181700e878b5687e5b6ed9ef5b79d5fe2f7466bb2692763c05"
+      },
+      "customer_submission_entries": {
+        "rows": 25,
+        "sha256": "3e5266eae571d7ab889ea3a59cbb08bf38a5b4738e8ed415fb1e046dadb6805c"
+      },
+      "customer_submission_photos": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "customer_submissions": {
+        "rows": 18,
+        "sha256": "135f7f6c42bc65994b6a76346677afa91e949975f1db2106bcc249f4af2b2f26"
+      },
+      "customers": {
+        "rows": 18,
+        "sha256": "3b414385e0c32af721bd68a894bffad410dcba385f9cd7844b6205370da164da"
+      },
+      "dispatch_expectations": {
+        "rows": 16,
+        "sha256": "f02118c9c7a861d0e47e4888d051ca0175d8716d9f58daa0dd55e7b8ce9f4f09"
+      },
+      "inspection_custody_events": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "inspection_images": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "inspections": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "intake_audit_events": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "intake_discrepancies": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "intake_parcels": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "order_commercial_events": {
+        "rows": 38,
+        "sha256": "0e6c39c5655d63998e19a0e926e88ee31f0b77eb2180bba5f332b8f8b6d51541"
+      },
+      "payment_obligations": {
+        "rows": 18,
+        "sha256": "821a5e71bfec5f6483a5a7e8c7764738bb6fd878c9c92ba886d6ff950cf0c832"
+      },
+      "physical_card_voids": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "physical_cards": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "pricing_catalogs": {
+        "rows": 12,
+        "sha256": "18c3ed930f511ab5bbe23afad3f34e7ffe35e9d7deb7472536b0f3e966bbf174"
+      },
+      "pricing_state": {
+        "rows": 1,
+        "sha256": "deb0a9fd9e7c637187faacfe517bc4c58bb9ae98302ef6f86c9b167cbf1d5636"
+      },
+      "production_cards": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "production_orders": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "quote_acceptances": {
+        "rows": 18,
+        "sha256": "fcbede6cccab22d30d7a0bcc3535991a64e85ec9c16abc5ec7fab463d1d67885"
+      },
+      "shipping_configurations": {
+        "rows": 1,
+        "sha256": "ce9a00b66f6ae176cba845d63f85540e4cfd3f394b167214567c50b34e842d34"
+      },
+      "shipping_state": {
+        "rows": 1,
+        "sha256": "cb1935c5e65d57097504a7163310070ef5f6172546e8e5e008fc1e8b8be68cea"
+      },
+      "staff_memberships": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "stripe_attempts": {
+        "rows": 18,
+        "sha256": "282b91fa9b330c4f5ab843d03ef147677d53d1065c4a7d932f0365d3e83c6ac0"
+      },
+      "stripe_evidence": {
+        "rows": 42,
+        "sha256": "585b0a612df2bc97229e2ba59f684a2afcf96b7a55d5cb31df6cc6dfeb2e2f9e"
+      },
+      "submission_deliveries": {
+        "rows": 7,
+        "sha256": "176c2e8d7efa4c50aea98400dcbca6ec3e9628a55029c02a866db6284b564c37"
+      },
+      "submission_intakes": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "submission_quotes": {
+        "rows": 18,
+        "sha256": "207e6c6ba2630845918629572b78d5162f11fbe0859754c0020ae8a051ed062f"
+      },
+      "supplementary_acceptances": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "tcg_cards": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "tcg_expansions": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "tcg_games": {
+        "rows": 4,
+        "sha256": "64954a906a9280e5267b251f1589cedd37fb380f45f98944335f47106217cf5a"
+      },
+      "verified_payments": {
+        "rows": 16,
+        "sha256": "2943a89c4e13db2a66710fff490fbbbcc6aae249ded71766456c150403c68c6d"
+      }
+    }
+  },
+  "development_before": {
+    "database": "spectra",
+    "revision": [
+      "0015"
+    ],
+    "schema_sha256": "a84951e51de22c595c12f06a070b66c0d0a7065e00fe2203a7474603a03e5ef0",
+    "tables": {
+      "alembic_version": {
+        "rows": 1,
+        "sha256": "8378b4d10fea7514315e6baa4311bd320b1880277ccf544e1b1a2c82aa07688e"
+      },
+      "auth_rate_buckets": {
+        "rows": 60,
+        "sha256": "850be9f666cb6beb9bf3491c83f079b7541367b21ce4135ad66718d210c0137b"
+      },
+      "card_images": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "cards": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "commercial_entitlement_assignments": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "customer_addresses": {
+        "rows": 1,
+        "sha256": "913b993346f16b9ea6a8cbf4d7bd4de9c76f68e227fed6bde5b71fe88aed52f1"
+      },
+      "customer_auth_tokens": {
+        "rows": 2,
+        "sha256": "248313e51f800e0ff3a2a592c990589a490d2ea79abac622a74793a6443e1794"
+      },
+      "customer_card_copies": {
+        "rows": 11,
+        "sha256": "2f7248d0cf1ae9e177f86e149367e69b77889d031bf7fc1a6a288caf1f42340f"
+      },
+      "customer_copy_assignments": {
+        "rows": 12,
+        "sha256": "dcdc4436dd5a8cda22706e81b8f67696aaf1368c7e49503cd5d7c93c886d3f75"
+      },
+      "customer_sessions": {
+        "rows": 33,
+        "sha256": "742d23f1510373d45ca03529a22a864c710bf955ade0d10aa14e7e50c81c6d2a"
+      },
+      "customer_shipment_declarations": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "customer_submission_entries": {
+        "rows": 17,
+        "sha256": "b6a35960bf35a238d9383124e328d6d792ec28a9740ec57063e1a0a8a1c2fc0f"
+      },
+      "customer_submission_photos": {
+        "rows": 1,
+        "sha256": "a39005a5fb1c1da3ecba7e468ae56e3fd47d67c7357b5b07a8a472c8c5674d6c"
+      },
+      "customer_submissions": {
+        "rows": 15,
+        "sha256": "c7c171f7a7ca542d665749e59583ca5ae68670db3f1066ddac38200d27f2b9a3"
+      },
+      "customers": {
+        "rows": 7,
+        "sha256": "eb70d8530c84a145a140e4870d3e79cf502e54078c4f85bec1bc5fe751ecdad6"
+      },
+      "dispatch_expectations": {
+        "rows": 2,
+        "sha256": "65527a7a5f501de3d9d511faa95fb6eabcdb331753b4bdf5580cb86e73c748e0"
+      },
+      "inspection_custody_events": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "inspection_images": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "inspections": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "intake_audit_events": {
+        "rows": 28,
+        "sha256": "60f4300eca244b393f7dd9e6181b282a84944e192da8dee10ca6d2415c2bd01c"
+      },
+      "intake_discrepancies": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "intake_parcels": {
+        "rows": 2,
+        "sha256": "7bb43770021391143625779b3d6c47c3dc05201e9faa035c28dbb66d629ff339"
+      },
+      "order_commercial_events": {
+        "rows": 4,
+        "sha256": "682eb8f95202da1b0854afdd31b0f785f8116cc91a703b918751f68509ca6303"
+      },
+      "payment_obligations": {
+        "rows": 2,
+        "sha256": "434d0c0a7942033926e1fd713f94810dbbaa821ec435cb3a5a65e4fabb9f62bb"
+      },
+      "physical_card_voids": {
+        "rows": 1,
+        "sha256": "ebc5fe48a5a97d4b6f884c9d89956f0f82ed9dce875f6a0e5b9b86be603c82a0"
+      },
+      "physical_cards": {
+        "rows": 4,
+        "sha256": "b84d434d69ea5ebb9300e82ae30773de18ec18d941a42abc3bfea091c93100bf"
+      },
+      "pricing_catalogs": {
+        "rows": 2,
+        "sha256": "35ce85541fef1badd8849cb3f59fbe05f8c9f0ea08a3876c7bf0d4899475d18d"
+      },
+      "pricing_state": {
+        "rows": 1,
+        "sha256": "1ac461bec4d5a1735d0cdbed19e0239c8b2f98877ebec948a25491efe56e7177"
+      },
+      "production_cards": {
+        "rows": 2,
+        "sha256": "f7ce1ee6bce853f5beb1476d32a59e6fdf16c8328163a293d4d0cb23912d1dd7"
+      },
+      "production_orders": {
+        "rows": 1,
+        "sha256": "b813df6f1a1e01f0d1f5e36e7f8580e6b3707da1169c9f0e1b98134a1aefa73e"
+      },
+      "quote_acceptances": {
+        "rows": 2,
+        "sha256": "d074976d6aef8923d20438868b19227724affe3144019ddf765a34c440da9f1c"
+      },
+      "shipping_configurations": {
+        "rows": 1,
+        "sha256": "7ebc681a7979c5ae409d27b9183137c7787d64cad15306c2d14e3dfa0603890c"
+      },
+      "shipping_state": {
+        "rows": 1,
+        "sha256": "9d95458d83cdc943ee2d32d743ae3a0e0617efd6a5517165b8cd8bf0bcf3467d"
+      },
+      "staff_memberships": {
+        "rows": 3,
+        "sha256": "35159d0a3fbffce68413f844acf79369a7796e96bc9e32b3210a19f6075d0d47"
+      },
+      "stripe_attempts": {
+        "rows": 2,
+        "sha256": "25617ae23d4582e535413d3b585fdbfc5ca9fc5c83ec8f1b34b8441961b95353"
+      },
+      "stripe_evidence": {
+        "rows": 4,
+        "sha256": "0a7d5505f84694d12e1f95122c5f3ed54d52e65e13db4f45f546b04fc3ca0f10"
+      },
+      "submission_deliveries": {
+        "rows": 9,
+        "sha256": "fd6f90bebc1f5a6e5be384bcddae6245b0fff737b443d9e92e25cdf3e272956f"
+      },
+      "submission_intakes": {
+        "rows": 2,
+        "sha256": "b5897e3465c9ce480cc8655b62e9522eac6a6d17a25a213d8914cde00d9fa245"
+      },
+      "submission_quotes": {
+        "rows": 11,
+        "sha256": "1e1892317d7426577ebf84ad940ba4d44f0daf2ac905ca9998341898ec3df1db"
+      },
+      "supplementary_acceptances": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "tcg_cards": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "tcg_expansions": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "tcg_games": {
+        "rows": 4,
+        "sha256": "64954a906a9280e5267b251f1589cedd37fb380f45f98944335f47106217cf5a"
+      },
+      "verified_payments": {
+        "rows": 2,
+        "sha256": "d2a4f84327a0e168375a14504c8b8055879065ce4d15f416a2f72ed3bb8310fb"
+      }
+    }
+  },
+  "development_after": {
+    "database": "spectra",
+    "revision": [
+      "0015"
+    ],
+    "schema_sha256": "a84951e51de22c595c12f06a070b66c0d0a7065e00fe2203a7474603a03e5ef0",
+    "tables": {
+      "alembic_version": {
+        "rows": 1,
+        "sha256": "8378b4d10fea7514315e6baa4311bd320b1880277ccf544e1b1a2c82aa07688e"
+      },
+      "auth_rate_buckets": {
+        "rows": 60,
+        "sha256": "850be9f666cb6beb9bf3491c83f079b7541367b21ce4135ad66718d210c0137b"
+      },
+      "card_images": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "cards": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "commercial_entitlement_assignments": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "customer_addresses": {
+        "rows": 1,
+        "sha256": "913b993346f16b9ea6a8cbf4d7bd4de9c76f68e227fed6bde5b71fe88aed52f1"
+      },
+      "customer_auth_tokens": {
+        "rows": 2,
+        "sha256": "248313e51f800e0ff3a2a592c990589a490d2ea79abac622a74793a6443e1794"
+      },
+      "customer_card_copies": {
+        "rows": 11,
+        "sha256": "2f7248d0cf1ae9e177f86e149367e69b77889d031bf7fc1a6a288caf1f42340f"
+      },
+      "customer_copy_assignments": {
+        "rows": 12,
+        "sha256": "dcdc4436dd5a8cda22706e81b8f67696aaf1368c7e49503cd5d7c93c886d3f75"
+      },
+      "customer_sessions": {
+        "rows": 33,
+        "sha256": "742d23f1510373d45ca03529a22a864c710bf955ade0d10aa14e7e50c81c6d2a"
+      },
+      "customer_shipment_declarations": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "customer_submission_entries": {
+        "rows": 17,
+        "sha256": "b6a35960bf35a238d9383124e328d6d792ec28a9740ec57063e1a0a8a1c2fc0f"
+      },
+      "customer_submission_photos": {
+        "rows": 1,
+        "sha256": "a39005a5fb1c1da3ecba7e468ae56e3fd47d67c7357b5b07a8a472c8c5674d6c"
+      },
+      "customer_submissions": {
+        "rows": 15,
+        "sha256": "c7c171f7a7ca542d665749e59583ca5ae68670db3f1066ddac38200d27f2b9a3"
+      },
+      "customers": {
+        "rows": 7,
+        "sha256": "eb70d8530c84a145a140e4870d3e79cf502e54078c4f85bec1bc5fe751ecdad6"
+      },
+      "dispatch_expectations": {
+        "rows": 2,
+        "sha256": "65527a7a5f501de3d9d511faa95fb6eabcdb331753b4bdf5580cb86e73c748e0"
+      },
+      "inspection_custody_events": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "inspection_images": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "inspections": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "intake_audit_events": {
+        "rows": 28,
+        "sha256": "60f4300eca244b393f7dd9e6181b282a84944e192da8dee10ca6d2415c2bd01c"
+      },
+      "intake_discrepancies": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "intake_parcels": {
+        "rows": 2,
+        "sha256": "7bb43770021391143625779b3d6c47c3dc05201e9faa035c28dbb66d629ff339"
+      },
+      "order_commercial_events": {
+        "rows": 4,
+        "sha256": "682eb8f95202da1b0854afdd31b0f785f8116cc91a703b918751f68509ca6303"
+      },
+      "payment_obligations": {
+        "rows": 2,
+        "sha256": "434d0c0a7942033926e1fd713f94810dbbaa821ec435cb3a5a65e4fabb9f62bb"
+      },
+      "physical_card_voids": {
+        "rows": 1,
+        "sha256": "ebc5fe48a5a97d4b6f884c9d89956f0f82ed9dce875f6a0e5b9b86be603c82a0"
+      },
+      "physical_cards": {
+        "rows": 4,
+        "sha256": "b84d434d69ea5ebb9300e82ae30773de18ec18d941a42abc3bfea091c93100bf"
+      },
+      "pricing_catalogs": {
+        "rows": 2,
+        "sha256": "35ce85541fef1badd8849cb3f59fbe05f8c9f0ea08a3876c7bf0d4899475d18d"
+      },
+      "pricing_state": {
+        "rows": 1,
+        "sha256": "1ac461bec4d5a1735d0cdbed19e0239c8b2f98877ebec948a25491efe56e7177"
+      },
+      "production_cards": {
+        "rows": 2,
+        "sha256": "f7ce1ee6bce853f5beb1476d32a59e6fdf16c8328163a293d4d0cb23912d1dd7"
+      },
+      "production_orders": {
+        "rows": 1,
+        "sha256": "b813df6f1a1e01f0d1f5e36e7f8580e6b3707da1169c9f0e1b98134a1aefa73e"
+      },
+      "quote_acceptances": {
+        "rows": 2,
+        "sha256": "d074976d6aef8923d20438868b19227724affe3144019ddf765a34c440da9f1c"
+      },
+      "shipping_configurations": {
+        "rows": 1,
+        "sha256": "7ebc681a7979c5ae409d27b9183137c7787d64cad15306c2d14e3dfa0603890c"
+      },
+      "shipping_state": {
+        "rows": 1,
+        "sha256": "9d95458d83cdc943ee2d32d743ae3a0e0617efd6a5517165b8cd8bf0bcf3467d"
+      },
+      "staff_memberships": {
+        "rows": 3,
+        "sha256": "35159d0a3fbffce68413f844acf79369a7796e96bc9e32b3210a19f6075d0d47"
+      },
+      "stripe_attempts": {
+        "rows": 2,
+        "sha256": "25617ae23d4582e535413d3b585fdbfc5ca9fc5c83ec8f1b34b8441961b95353"
+      },
+      "stripe_evidence": {
+        "rows": 4,
+        "sha256": "0a7d5505f84694d12e1f95122c5f3ed54d52e65e13db4f45f546b04fc3ca0f10"
+      },
+      "submission_deliveries": {
+        "rows": 9,
+        "sha256": "fd6f90bebc1f5a6e5be384bcddae6245b0fff737b443d9e92e25cdf3e272956f"
+      },
+      "submission_intakes": {
+        "rows": 2,
+        "sha256": "b5897e3465c9ce480cc8655b62e9522eac6a6d17a25a213d8914cde00d9fa245"
+      },
+      "submission_quotes": {
+        "rows": 11,
+        "sha256": "1e1892317d7426577ebf84ad940ba4d44f0daf2ac905ca9998341898ec3df1db"
+      },
+      "supplementary_acceptances": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "tcg_cards": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "tcg_expansions": {
+        "rows": 0,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "tcg_games": {
+        "rows": 4,
+        "sha256": "64954a906a9280e5267b251f1589cedd37fb380f45f98944335f47106217cf5a"
+      },
+      "verified_payments": {
+        "rows": 2,
+        "sha256": "d2a4f84327a0e168375a14504c8b8055879065ce4d15f416a2f72ed3bb8310fb"
+      }
+    }
+  },
+  "test_data_schema_and_revision_unchanged": true,
+  "development_unchanged": true,
+  "migration_0016_exercised_in_rolled_back_transaction": true
+}

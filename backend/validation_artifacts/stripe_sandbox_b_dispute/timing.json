@@ -1,0 +1,13 @@
+{
+  "payment_provider_created": 1793976838,
+  "dispute_provider_created": 1793976864,
+  "automatic_dispute_delay_seconds": 26,
+  "first_dispute_event_processed_at": "2026-11-06T14:54:40.928313+00:00",
+  "submission": {
+    "at": "2026-11-06T14:53:55.6466321Z",
+    "max_submissions": 1,
+    "amount_minor": 2500,
+    "currency": "eur",
+    "card_last4": "3810"
+  }
+}

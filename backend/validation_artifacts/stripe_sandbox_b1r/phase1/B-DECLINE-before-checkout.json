@@ -1,0 +1,45 @@
+{
+  "at": "2026-11-06T09:49:14.321402+00:00",
+  "identity": {
+    "account_id": "acct_1UXDxRFq5FKSG47y",
+    "business_name": "Selby sandbox",
+    "test_key": true,
+    "database": "spectra_test",
+    "api_version": "2025-02-24.acacia"
+  },
+  "case": "B-DECLINE",
+  "label": "before-checkout",
+  "commercial": {
+    "charging_enabled": true,
+    "accepted_quote_id": "fee46f77-1c01-46b2-aa62-14dd1d58b8f7",
+    "financial_restrictions": [],
+    "payment_status": "awaiting_payment",
+    "verified_payment_at": null,
+    "dispatch_deadline": null,
+    "dispatch_policy": {
+      "calendar_days_after_verified_payment": 30,
+      "timezone": "UTC",
+      "automatic_forfeiture": false
+    },
+    "indicators": [
+      "awaiting_verified_payment"
+    ],
+    "shipment_declarations": [],
+    "parcel_receipts": [],
+    "audit": [
+      {
+        "id": "fa94ef9c-9063-4f6f-96e3-d4d8e9c7dbf5",
+        "kind": "quote_accepted_awaiting_payment",
+        "data": {
+          "quote_id": "fee46f77-1c01-46b2-aa62-14dd1d58b8f7",
+          "amount_minor": 2500
+        },
+        "reason": null,
+        "created_at": "2026-11-06T10:46:34.169433+01:00"
+      }
+    ]
+  },
+  "objects": [],
+  "database_payment": null,
+  "deadlines": []
+}

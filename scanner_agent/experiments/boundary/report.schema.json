@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:spectra:s2.1:report:1",
+  "title": "SPECTRA experimental S2.1 analysis reports",
+  "oneOf": [
+    {"$ref": "#/$defs/single"},
+    {"$ref": "#/$defs/repeat"},
+    {"$ref": "#/$defs/index"}
+  ],
+  "$defs": {
+    "status": {"enum": ["success", "review_required", "failure"]},
+    "point": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2},
+    "corners": {"type": "array", "items": {"$ref": "#/$defs/point"}, "minItems": 4, "maxItems": 4},
+    "candidate_layer": {
+      "type": "object",
+      "required": ["id", "line_abc", "density_peak_offset_inward_pixels", "support_count", "coverage", "raw_evidence", "support_score", "selected", "physical_criterion_passed", "criterion_failures", "disposition"],
+      "properties": {
+        "id": {"type": "string"},
+        "line_abc": {"type": "array", "items": {"type": "number"}, "minItems": 3, "maxItems": 3},
+        "density_peak_offset_inward_pixels": {"type": "number"},
+        "fitted_midpoint_offset_inward_pixels": {"type": ["number", "null"]},
+        "support_count": {"type": "integer", "minimum": 20},
+        "coverage": {"type": "number", "minimum": 0, "maximum": 1},
+        "raw_evidence": {"type": "object"}, "support_score": {"type": "number", "minimum": 0},
+        "selected": {"type": "boolean"}, "physical_criterion_passed": {"type": "boolean"},
+        "criterion_failures": {"type": "array", "items": {"type": "string"}},
+        "disposition": {"enum": ["provisional_selected", "rejected_by_criterion", "eligible_alternative_unresolved"]}
+      }
+    },
+    "side": {
+      "type": "object",
+      "required": ["index", "line_abc", "support_count", "rms_pixels", "p95_residual_pixels", "coverage", "ambiguous_parallel_edge"],
+      "properties": {
+        "index": {"type": "integer", "minimum": 0, "maximum": 3},
+        "line_abc": {"type": "array", "items": {"type": "number"}, "minItems": 3, "maxItems": 3},
+        "support_count": {"type": "integer", "minimum": 20},
+        "rms_pixels": {"type": "number", "minimum": 0},
+        "p95_residual_pixels": {"type": "number", "minimum": 0},
+        "coverage": {"type": "number", "minimum": 0, "maximum": 1},
+        "ambiguous_parallel_edge": {"type": "boolean"},
+        "selected_layer_id": {"type": "string"},
+        "density_ambiguity_detected": {"type": "boolean"},
+        "physical_selection_resolved": {"type": "boolean"},
+        "ambiguity_reasons": {"type": "array", "items": {"type": "string"}},
+        "candidate_layers": {
+          "type": "array", "items": {"$ref": "#/$defs/candidate_layer"},
+          "contains": {"type": "object", "required": ["selected"], "properties": {"selected": {"const": true}}},
+          "minContains": 1, "maxContains": 1
+        },
+        "normal_profile": {"type": "array", "items": {"type": "object"}}
+      }
+    },
+    "geometry": {
+      "type": "object",
+      "required": ["corners_pixels", "width_pixels", "height_pixels", "center_pixels", "angle_degrees_modulo_180", "millimeters_from_reported_dpi", "validation"],
+      "properties": {
+        "corners_pixels": {"$ref": "#/$defs/corners"},
+        "center_pixels": {"$ref": "#/$defs/point"},
+        "width_pixels": {"type": "number", "exclusiveMinimum": 0},
+        "height_pixels": {"type": "number", "exclusiveMinimum": 0},
+        "angle_degrees_modulo_180": {"type": "number", "minimum": -90, "exclusiveMaximum": 90},
+        "millimeters_from_reported_dpi": {"type": ["object", "null"]},
+        "validation": {"type": "object", "additionalProperties": {"type": "boolean"}}
+      }
+    },
+    "detection": {
+      "type": "object", "required": ["status"],
+      "properties": {
+        "status": {"$ref": "#/$defs/status"},
+        "sides": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"$ref": "#/$defs/side"}},
+        "geometry": {"$ref": "#/$defs/geometry"},
+        "reason": {"type": "string"},
+        "flags_requiring_review": {"type": "array", "items": {"type": "string"}}
+      },
+      "allOf": [{"if": {"properties": {"status": {"const": "success"}}}, "then": {"required": ["sides", "geometry", "confidence"]}}]
+    },
+    "single": {
+      "type": "object",
+      "required": ["schema_version", "kind", "status", "algorithm_version", "configuration", "coordinate_system", "artifacts", "physical_scan_performed", "metrological_accuracy_validated"],
+      "properties": {
+        "schema_version": {"const": 1}, "kind": {"const": "single_image"},
+        "status": {"$ref": "#/$defs/status"},
+        "algorithm_version": {"type": "string"}, "configuration": {"type": "object"},
+        "coordinate_system": {"type": "string"}, "artifacts": {"type": "object"},
+        "source": {"type": "object", "properties": {"sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}},
+        "baseline": {"$ref": "#/$defs/detection"}, "preprocessed": {"$ref": "#/$defs/detection"},
+        "physical_scan_performed": {"const": false}, "metrological_accuracy_validated": {"const": false}
+      }
+    },
+    "repeat": {
+      "type": "object", "required": ["schema_version", "kind", "status", "analyses"],
+      "properties": {
+        "schema_version": {"const": 1}, "kind": {"const": "repeatability"},
+        "status": {"$ref": "#/$defs/status"},
+        "analyses": {"type": "array", "minItems": 3, "items": {"type": "string"}},
+        "sample_count": {"type": "integer", "minimum": 3},
+        "raw_image_coordinates": {"type": "object"}, "shape_only_rigid_registered": {"type": "object"},
+        "accuracy_calibration": {"const": false}
+      }
+    },
+    "index": {
+      "type": "object", "required": ["schema_version", "kind", "status", "analysis"],
+      "properties": {"schema_version": {"const": 1}, "kind": {"const": "analysis_index"}, "status": {"$ref": "#/$defs/status"}, "analysis": {"type": "string"}}
+    }
+  }
+}

@@ -22,7 +22,7 @@ EXAMPLE = Path(__file__).resolve().parents[1] / "pricing" / "development-example
 
 
 def document(**changes):
-    return {**json.loads(EXAMPLE.read_text(encoding="utf-8")), "tax_validation_reference": "TEST ONLY tax validation", **changes}
+    return {**json.loads(EXAMPLE.read_text(encoding="utf-8")), "tax_validation_reference": "TEST ONLY tax validation", "commercial_terms_version": "TEST-ONLY-TERMS-V06A", **changes}
 
 
 def card(quantity=1, tier="standard", upgrades=None):

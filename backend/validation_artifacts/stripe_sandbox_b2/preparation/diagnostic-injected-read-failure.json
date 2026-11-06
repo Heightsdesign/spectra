@@ -1,0 +1,8 @@
+{
+  "at": "2026-11-06T12:03:46.794Z",
+  "synthetic": true,
+  "method": "GET",
+  "path": "/api/submissions/540416f9-569f-4bad-ac9f-88b2b08e0fdd/commercial-state",
+  "error": "Failed",
+  "financial_mutation": false
+}

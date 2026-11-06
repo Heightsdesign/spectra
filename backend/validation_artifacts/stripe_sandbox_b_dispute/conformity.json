@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "replayed": [
+    "evt_1UYoWgFq5FKSG47yowBzHwLo",
+    "evt_1UYoX8Fq5FKSG47yDmtUA5LG",
+    "evt_1UYoX8Fq5FKSG47yW1Z7QiSL",
+    "evt_3UYoWfFq5FKSG47y183HAmWj"
+  ],
+  "expired_not_resigned": [],
+  "database_unchanged": true,
+  "checkout_http": 409,
+  "shipment_http": 409,
+  "branch": "1/1",
+  "dispute": {
+    "id": "du_1UYoX6Fq5FKSG47ygalOLrMe",
+    "charge": "ch_3UYoWfFq5FKSG47y1XxsdRzZ",
+    "payment_intent": "pi_3UYoWfFq5FKSG47y1oRIu6yn",
+    "amount": 2500,
+    "currency": "eur",
+    "status": "needs_response",
+    "reason": "fraudulent",
+    "created": 1793976864
+  }
+}

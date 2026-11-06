@@ -1,0 +1,2 @@
+pytwain==2.3.0; sys_platform == "win32"
+Pillow==12.3.0

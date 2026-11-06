@@ -1,0 +1,288 @@
+{
+  "$defs": {
+    "Localized": {
+      "additionalProperties": false,
+      "properties": {
+        "FR": {
+          "maxLength": 2000,
+          "pattern": "^[^\\x00-\\x08\\x0b\\x0c\\x0e-\\x1f\\x7f]*$",
+          "title": "Fr",
+          "type": "string"
+        },
+        "EN": {
+          "maxLength": 2000,
+          "pattern": "^[^\\x00-\\x08\\x0b\\x0c\\x0e-\\x1f\\x7f]*$",
+          "title": "En",
+          "type": "string"
+        }
+      },
+      "required": [
+        "FR",
+        "EN"
+      ],
+      "title": "Localized",
+      "type": "object"
+    },
+    "ShippingService": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "$ref": "#/$defs/Localized"
+        },
+        "available": {
+          "title": "Available",
+          "type": "boolean"
+        },
+        "countries": {
+          "items": {
+            "pattern": "^[A-Z]{2}$",
+            "type": "string"
+          },
+          "maxItems": 249,
+          "minItems": 1,
+          "title": "Countries",
+          "type": "array"
+        },
+        "charge_minor": {
+          "maximum": 100000000,
+          "minimum": 0,
+          "title": "Charge Minor",
+          "type": "integer"
+        },
+        "tracked": {
+          "title": "Tracked",
+          "type": "boolean"
+        },
+        "trading_cards_coverage_verified": {
+          "title": "Trading Cards Coverage Verified",
+          "type": "boolean"
+        },
+        "coverage_reference": {
+          "anyOf": [
+            {
+              "maxLength": 64,
+              "minLength": 1,
+              "pattern": "^[^\\x00-\\x1f\\x7f]+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Coverage Reference"
+        },
+        "coverage_minor": {
+          "maximum": 100000000,
+          "minimum": 0,
+          "title": "Coverage Minor",
+          "type": "integer"
+        },
+        "coverage": {
+          "$ref": "#/$defs/Localized"
+        },
+        "exclusions": {
+          "$ref": "#/$defs/Localized"
+        },
+        "phone_required": {
+          "title": "Phone Required",
+          "type": "boolean"
+        },
+        "max_weight_g": {
+          "anyOf": [
+            {
+              "maximum": 100000,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Weight G"
+        },
+        "max_length_mm": {
+          "anyOf": [
+            {
+              "maximum": 5000,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Length Mm"
+        },
+        "max_width_mm": {
+          "anyOf": [
+            {
+              "maximum": 5000,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Width Mm"
+        },
+        "max_height_mm": {
+          "anyOf": [
+            {
+              "maximum": 5000,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Height Mm"
+        },
+        "tax_mode": {
+          "enum": [
+            "inclusive",
+            "exclusive",
+            "exempt"
+          ],
+          "title": "Tax Mode",
+          "type": "string"
+        },
+        "tax_rate_bps": {
+          "maximum": 10000,
+          "minimum": 0,
+          "title": "Tax Rate Bps",
+          "type": "integer"
+        },
+        "tax_validation_reference": {
+          "maxLength": 64,
+          "minLength": 1,
+          "pattern": "^[^\\x00-\\x1f\\x7f]+$",
+          "title": "Tax Validation Reference",
+          "type": "string"
+        },
+        "zone": {
+          "anyOf": [
+            {
+              "maxLength": 64,
+              "minLength": 1,
+              "pattern": "^[^\\x00-\\x1f\\x7f]+$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Zone"
+        },
+        "min_cards": {
+          "default": 1,
+          "maximum": 10000,
+          "minimum": 1,
+          "title": "Min Cards",
+          "type": "integer"
+        },
+        "max_cards": {
+          "anyOf": [
+            {
+              "maximum": 10000,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Cards"
+        },
+        "additional_card_charge_minor": {
+          "anyOf": [
+            {
+              "maximum": 100000000,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Additional Card Charge Minor"
+        }
+      },
+      "required": [
+        "name",
+        "available",
+        "countries",
+        "charge_minor",
+        "tracked",
+        "trading_cards_coverage_verified",
+        "coverage_minor",
+        "coverage",
+        "exclusions",
+        "phone_required",
+        "tax_mode",
+        "tax_rate_bps",
+        "tax_validation_reference"
+      ],
+      "title": "ShippingService",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "stripe_test_only": {
+      "default": false,
+      "title": "Stripe Test Only",
+      "type": "boolean"
+    },
+    "currency": {
+      "const": "EUR",
+      "default": "EUR",
+      "title": "Currency",
+      "type": "string"
+    },
+    "supported_destinations": {
+      "items": {
+        "pattern": "^[A-Z]{2}$",
+        "type": "string"
+      },
+      "maxItems": 249,
+      "title": "Supported Destinations",
+      "type": "array"
+    },
+    "receiving_address": {
+      "anyOf": [
+        {
+          "maxLength": 200,
+          "pattern": "^[^\\x00-\\x1f\\x7f]*$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Receiving Address"
+    },
+    "services": {
+      "maxProperties": 64,
+      "patternProperties": {
+        "^[a-z][a-z0-9-]{0,63}$": {
+          "$ref": "#/$defs/ShippingService"
+        }
+      },
+      "title": "Services",
+      "type": "object"
+    }
+  },
+  "title": "ShippingCatalog",
+  "type": "object"
+}

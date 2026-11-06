@@ -1,0 +1,35 @@
+{
+  "phase": "B-DISPUTE",
+  "refunds_authorized": false,
+  "max_successful_payments": 1,
+  "amount_per_payment_minor": 2500,
+  "currency": "eur",
+  "identity": {
+    "account_id": "acct_1UXDxRFq5FKSG47y",
+    "business_name": "Selby sandbox",
+    "test_key": true,
+    "database": "spectra_test",
+    "api_version": "2025-02-24.acacia"
+  },
+  "cases": {
+    "B-DISPUTE": {
+      "name": "B-DISPUTE",
+      "submission_id": "3063e697-2332-4b5b-b39f-8c962f069d6c",
+      "customer_id": "d88729fc-26a9-4d38-8be7-d0eeea748d4b",
+      "quote_id": "1bd0a3e9-a4f1-4930-ba42-575c665c5452",
+      "snapshot_sha256": "abea9a531852af78965fac79caeb1240ace749a1e68943f00391b952ba099a19",
+      "session_id": "cs_test_a1M50uAEV1IU0fN46SRXhXsGxBYOtJNFvmj3RYKGpXbbwD8ZHAKfu5CGSz",
+      "payment_intent_id": "pi_3UYoWfFq5FKSG47y1oRIu6yn",
+      "charge_id": "ch_3UYoWfFq5FKSG47y1XxsdRzZ",
+      "attempt_id": "ac850523-042b-42b9-80af-1e9fd09a24e8",
+      "dispute_id": "du_1UYoX6Fq5FKSG47ygalOLrMe",
+      "paid_minor": 2500,
+      "disputed_minor": 2500,
+      "dispute_status": "needs_response",
+      "currency": "eur",
+      "stripe_customer_id": null
+    }
+  },
+  "automatic_dispute_authorized": true,
+  "card_last4": "3810"
+}

@@ -1,0 +1,30 @@
+{
+  "controlled_injection": {
+    "at": "2026-11-06T12:03:46.794Z",
+    "synthetic": true,
+    "method": "GET",
+    "path": "/api/submissions/540416f9-569f-4bad-ac9f-88b2b08e0fdd/commercial-state",
+    "error": "Failed",
+    "financial_mutation": false
+  },
+  "successful_browser_reads_after_failure": [
+    {
+      "at": "2026-11-06T12:03:49.481Z",
+      "path": "/api/submissions/540416f9-569f-4bad-ac9f-88b2b08e0fdd/commercial-state",
+      "http": 200,
+      "payment_status": "verified"
+    },
+    {
+      "at": "2026-11-06T12:04:20.211Z",
+      "path": "/api/submissions/540416f9-569f-4bad-ac9f-88b2b08e0fdd/commercial-state",
+      "http": 200,
+      "payment_status": "verified"
+    }
+  ],
+  "observed_alert_persisted_after_success": true,
+  "manual_refresh_cleared_alert": true,
+  "payment_status_remained_verified": true,
+  "no_financial_mutation": true,
+  "B1R_original_cause_proven": false,
+  "frontend_modified": false
+}

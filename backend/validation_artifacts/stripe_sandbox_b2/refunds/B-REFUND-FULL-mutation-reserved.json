@@ -1,0 +1,21 @@
+{
+  "case": "B-REFUND-FULL",
+  "charge_id": "ch_3UYlrMFq5FKSG47y0Hu4sdnL",
+  "payment_intent_id": "pi_3UYlrMFq5FKSG47y0PEDXeRN",
+  "amount_minor": 2500,
+  "idempotency_key": "selby-b2-b-refund-full-2500-ch_3UYlrMFq5FKSG47y0Hu4sdnL",
+  "request": {
+    "charge": "ch_3UYlrMFq5FKSG47y0Hu4sdnL",
+    "amount": "2500",
+    "metadata[qa_case]": "B-REFUND-FULL",
+    "metadata[submission_id]": "540416f9-569f-4bad-ac9f-88b2b08e0fdd",
+    "metadata[quote_id]": "73135787-893b-4658-8a62-1837a0e4f17c"
+  },
+  "identity": {
+    "account_id": "acct_1UXDxRFq5FKSG47y",
+    "business_name": "Selby sandbox",
+    "test_key": true,
+    "database": "spectra_test",
+    "api_version": "2025-02-24.acacia"
+  }
+}

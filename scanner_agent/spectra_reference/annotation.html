@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src data:; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; base-uri 'none'">
+<title>SPECTRA S2.2c - interactive printed-frame reference</title>
+<style>
+body{font:15px system-ui;margin:20px;background:#171717;color:#eee}
+button,input,select,textarea{font:inherit;padding:7px;margin:4px;max-width:95%}
+button{cursor:pointer}button:disabled{cursor:default;opacity:.5}label{display:inline-block}
+fieldset{margin:10px 0;border:1px solid #777}input[type=number]{width:100px}
+textarea{width:80%;height:55px}pre{white-space:pre-wrap;overflow-wrap:anywhere}
+canvas{display:block;width:100%;max-width:1100px;height:auto;background:#111;border:1px solid white;touch-action:none;cursor:crosshair}
+.warning,#error{color:#ffd76e}#workflow{font-weight:bold}.legend{line-height:1.7}
+details{margin:12px 0}button:focus-visible,canvas:focus-visible{outline:3px solid #fff}
+</style>
+<h1>SPECTRA S2.2c - interactive reference annotation</h1>
+<p class="warning">Experimental. Annotate the intended outer PRINTED FRAME, not physical edges, artwork, text boxes or shadows. Neither saving nor confirming a reference establishes independent validation or calibrated accuracy.</p>
+<p>1. Select a side. 2. Zoom into the printed border. 3. Drag the green line or its handles. 4. Verify alignment along the side. 5. Explicitly confirm the reviewed side. 6. Export the reference.</p>
+<label>Annotation identifier <input id="annotationId" maxlength="200" placeholder="operator / session / card"></label>
+<label>Layout <select id="layout"><option value="ambiguous">Ambiguous / undecided</option><option value="supported">Intended frame can be annotated</option><option value="unsupported">Unsupported layout</option><option value="absent">Printed frame absent (operator assessment)</option></select></label>
+<label>Operator notes <textarea id="notes"></textarea></label>
+<fieldset><legend>Visual editor</legend>
+<label>Side <select id="side"><option>top</option><option>right</option><option>bottom</option><option>left</option></select></label>
+<label>Zoom <input id="zoom" type="range" min="0.25" max="16" step="0.25" value="1"><output id="zoomValue"></output></label>
+<button id="start">Endpoint 1</button><button id="middle">Middle</button><button id="end">Endpoint 2</button>
+<label><input id="fine" type="checkbox">Fine adjustment (0.1x drag; 0.1 px nudge)</label>
+<label><input id="panMode" type="checkbox">Pan tool</label>
+<label><input id="showCandidates" type="checkbox">Show automatic candidates (hidden for independent annotation)</label>
+<label><input id="showReference" type="checkbox" checked>Show reference</label>
+<p>Click a green line or orange endpoint to select it. Drag to edit; release to commit. Drag empty space, use the Pan tool, or hold Space to pan. Mouse wheel/trackpad zooms at the pointer. Hold Shift before dragging for fine motion. Arrow keys nudge the selection by 1 original px (Shift/fine: 0.1 px); Escape deselects or cancels. Ctrl+Z / Ctrl+Y undo/redo.</p>
+<canvas id="view" width="1100" height="650" tabindex="0" aria-label="Interactive original-pixel reference lines. Select line or endpoint and drag; arrows nudge; Space drag pans."></canvas>
+<p id="pointer">Pointer coordinates appear here.</p>
+<p class="legend">Cyan: physical boundary. Magenta: automatic candidates. Green: reference (dashed until confirmed). White halo: active side. Orange handles: independent endpoints; white-filled handle is selected. White dashed: drag/numeric preview.</p>
+<button id="place">Place manual line (two clicks)</button><button id="undo">Undo</button><button id="redo">Redo</button><button id="reset">Reset initial candidate</button>
+<p id="workflow" role="status"></p><p id="error" role="alert"></p>
+</fieldset>
+<fieldset><legend>Side review</legend>
+<label>Candidate <select id="candidate"><option value="">No candidate selected</option></select></label>
+<label>Side status <select id="status"><option value="unannotated">Unannotated / unconfirmed</option><option value="annotated" disabled>Explicitly confirmed</option><option value="ambiguous">Ambiguous / uncertain</option><option value="unannotatable">Unannotatable / absent</option></select></label>
+<label>Side notes <input id="sideNotes" size="55"></label>
+<button id="confirm">Confirm reviewed side</button><button id="clear">Clear side line</button>
+<p>Candidate selection and all geometry edits remain unconfirmed. Confirm only after reviewing the intended border along the whole usable span. Showing or selecting a detector candidate can bias the reference; confirmation is not proof of independent validation.</p>
+<details id="advanced"><summary>Advanced numerical offsets and evaluation span</summary>
+<label>Span start fraction <input id="span0" type="number" min="0" max="1" step="0.01"></label>
+<label>Span end fraction <input id="span1" type="number" min="0" max="1" step="0.01"></label>
+<label>Start inward offset (px) <input id="d0" type="number" step="0.1"></label>
+<label>End inward offset (px) <input id="d1" type="number" step="0.1"></label>
+<button id="apply">Apply numerical controls (unconfirmed)</button><button id="discardDraft">Discard numerical draft</button>
+<p>Offsets are measured at the evaluation-span endpoints, which can differ from freely dragged handle positions. Changing only the span preserves the line. Values are never rounded before export. Invalid drafts remain available when switching sides and block export.</p>
+</details>
+<pre id="coordinates"></pre><pre id="applied"></pre>
+</fieldset>
+<button id="download">Download NEW reference JSON version</button>
+<p>Unconfirmed and ambiguous sides may be exported, but cannot be ranked as a complete reference. Use the existing Python save/compare commands. Previously prepared HTML files are immutable snapshots: regenerate an interface to use this editor.</p>
+<details><summary>Input provenance</summary><pre id="provenance"></pre></details>
+<script id="data" type="application/json">__SPECTRA_DATA__</script>
+<script>__SPECTRA_EDITOR_CORE__</script>
+<script>__SPECTRA_EDITOR_CONTROLLER__</script>
+</html>

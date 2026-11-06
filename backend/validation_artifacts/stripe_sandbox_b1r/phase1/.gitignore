@@ -1,0 +1,3 @@
+# Local QA sessions and browser profile contain authentication material.
+private-*
+browser-command.json

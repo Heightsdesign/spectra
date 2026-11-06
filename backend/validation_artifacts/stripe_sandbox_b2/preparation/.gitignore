@@ -1,0 +1,3 @@
+# Private QA cookies and browser profile must remain local.
+private-*
+browser-command.json

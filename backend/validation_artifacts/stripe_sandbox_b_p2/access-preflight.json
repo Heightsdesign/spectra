@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-06T15:30:15.227853+00:00",
+  "method": "GET",
+  "endpoint": "https://api.stripe.com/v1/account",
+  "stripe_version": "2025-02-24.acacia",
+  "test_key_guard": true,
+  "mutations": 0,
+  "error_type": "URLError",
+  "error": "<urlopen error [WinError 10013] Une tentative d\u2019acc\u00e8s \u00e0 un socket de mani\u00e8re interdite par ses autorisations d\u2019acc\u00e8s a \u00e9t\u00e9 tent\u00e9e>"
+}

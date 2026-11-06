@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "milestone": "S1",
+  "observation_kind": "actual_read_only_workstation_probe",
+  "environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+    "python_bits": 64,
+    "python_machine": "AMD64",
+    "pytwain": "2.3.0",
+    "Pillow": "12.3.0"
+  },
+  "enumeration": {
+    "observed_at_utc": "2026-10-17T16:03:07.564326+00:00",
+    "status": "devices_listed",
+    "dsm": "C:\\Windows\\System32\\TWAINDSM.dll",
+    "devices": [
+      {
+        "name": "EPSON Perfection V39II",
+        "matches_epson_v39ii": true
+      }
+    ]
+  },
+  "source_open_attempt": {
+    "observed_at_utc": "2026-10-17T15:58:36.151247+00:00",
+    "status": "device_absent",
+    "error_type": "CheckDeviceOnlineError",
+    "meaning": "Driver reported source unavailable/offline in this session; cause not independently established."
+  },
+  "installed_driver_binaries": [
+    {
+      "FullName": "C:\\Windows\\twain_64\\escndv2\\es0283.ds",
+      "FileVersion": "6.7.92.42160"
+    },
+    {
+      "FullName": "C:\\Windows\\twain_32\\escndv2\\es0283.ds",
+      "FileVersion": "6.7.92.42160"
+    }
+  ],
+  "live_capabilities": null,
+  "live_capabilities_status": "unavailable_source_could_not_be_opened",
+  "physical_scan_performed": false,
+  "image_transfer_performed": false,
+  "calibration_verified": false,
+  "wia_support": "not_probed_or_assumed",
+  "remaining_hardware_tests": [
+    "Open source with device available",
+    "Query live capabilities",
+    "Negotiate and re-read 1200 DPI 24-bit RGB and exposed enhancement/crop options",
+    "Acquire one lossless original and verify dimensions, actual bit depth, DPI evidence and SHA-256",
+    "Exercise actual busy/cancel/USB-disconnect behavior",
+    "Validate real Epson Scan 2 TIFF/PNG folder export"
+  ]
+}

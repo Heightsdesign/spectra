@@ -1,0 +1,54 @@
+{
+  "at": "2026-11-06T12:01:38.174343+00:00",
+  "identity": {
+    "account_id": "acct_1UXDxRFq5FKSG47y",
+    "business_name": "Selby sandbox",
+    "test_key": true,
+    "database": "spectra_test",
+    "api_version": "2025-02-24.acacia"
+  },
+  "case": "B-REFUND-PARTIAL",
+  "label": "before-checkout",
+  "commercial": {
+    "charging_enabled": true,
+    "accepted_quote_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+    "financial_restrictions": [],
+    "payment_status": "awaiting_payment",
+    "verified_payment_at": null,
+    "dispatch_deadline": null,
+    "dispatch_policy": {
+      "calendar_days_after_verified_payment": 30,
+      "timezone": "UTC",
+      "automatic_forfeiture": false
+    },
+    "indicators": [
+      "awaiting_verified_payment"
+    ],
+    "shipment_declarations": [],
+    "parcel_receipts": [],
+    "audit": [
+      {
+        "id": "dba80340-2cd7-4c94-b60b-37f5b0fed282",
+        "kind": "quote_accepted_awaiting_payment",
+        "data": {
+          "quote_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+          "amount_minor": 2500
+        },
+        "reason": null,
+        "created_at": "2026-11-06T12:58:00.689620+01:00"
+      }
+    ]
+  },
+  "database": {
+    "payment": null,
+    "deadlines": [],
+    "payment_audits": 0,
+    "evidence_count": 0,
+    "evidence": [],
+    "attempts": [],
+    "snapshot_sha256": "7dd6756eff71bfb198edff7f2926d1bdeec4a71a2f6bc99161151202e9be6a09"
+  },
+  "objects": [],
+  "payable_sessions": 0,
+  "B-P2_reproduced": false
+}

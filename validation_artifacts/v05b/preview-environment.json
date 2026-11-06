@@ -1,0 +1,6 @@
+{
+  "platform": "windows",
+  "qt": "6.12.0",
+  "physical_jobs_submitted": 0,
+  "fixture": "Synthetic order and two distinct physical cards; mocked authenticated client"
+}

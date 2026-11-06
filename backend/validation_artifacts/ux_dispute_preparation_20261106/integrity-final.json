@@ -1,0 +1,16 @@
+{
+  "documentary_only": true,
+  "application_frontend_and_env_unchanged": true,
+  "files_checked": 144,
+  "documents": [
+    "backend/SELBY_V1_PERSISTENT_ALERT_DIAGNOSTIC.md",
+    "backend/STRIPE_SANDBOX_B_DISPUTE_PROTOCOL.md"
+  ],
+  "broken_local_links": [],
+  "stripe_account_api_calls": 0,
+  "database_connections": 0,
+  "QA_services_started": 0,
+  "new_clients_orders_checkouts_payments_disputes_refunds": 0,
+  "frontend_correction_applied": false,
+  "B-P2_open": true
+}

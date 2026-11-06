@@ -1,0 +1,469 @@
+{
+  "at": "2026-11-06T11:32:57.085338+00:00",
+  "identity": {
+    "account_id": "acct_1UXDxRFq5FKSG47y",
+    "business_name": "Selby sandbox",
+    "test_key": true,
+    "database": "spectra_test",
+    "api_version": "2025-02-24.acacia"
+  },
+  "case": "B-DELAY",
+  "label": "post-delivery-auto",
+  "commercial": {
+    "charging_enabled": false,
+    "accepted_quote_id": "58e4c334-99a7-461c-a51c-8e5a5cc812a6",
+    "financial_restrictions": [],
+    "payment_status": "verified",
+    "verified_payment_at": "2026-11-06T12:31:25+01:00",
+    "dispatch_deadline": "2026-12-06T12:31:25+01:00",
+    "dispatch_policy": {
+      "calendar_days_after_verified_payment": 30,
+      "timezone": "UTC",
+      "automatic_forfeiture": false
+    },
+    "indicators": [
+      "awaiting_customer_dispatch"
+    ],
+    "shipment_declarations": [],
+    "parcel_receipts": [],
+    "audit": [
+      {
+        "id": "27d3629e-a9a5-463a-a06c-4201ed04abe6",
+        "kind": "quote_accepted_awaiting_payment",
+        "data": {
+          "quote_id": "58e4c334-99a7-461c-a51c-8e5a5cc812a6",
+          "amount_minor": 2500
+        },
+        "reason": null,
+        "created_at": "2026-11-06T11:54:52.108316+01:00"
+      },
+      {
+        "id": "5638ef4b-757e-4759-b353-d61cd419e799",
+        "kind": "provider_payment_verified",
+        "data": {
+          "quote_id": "58e4c334-99a7-461c-a51c-8e5a5cc812a6",
+          "verified_at": "2026-11-06T11:31:25+00:00",
+          "dispatch_policy": {
+            "timezone": "UTC",
+            "automatic_forfeiture": false,
+            "calendar_days_after_verified_payment": 30
+          },
+          "dispatch_deadline": "2026-12-06T11:31:25+00:00"
+        },
+        "reason": null,
+        "created_at": "2026-11-06T12:32:43.010252+01:00"
+      }
+    ]
+  },
+  "database": {
+    "payment": {
+      "quote_id": "58e4c334-99a7-461c-a51c-8e5a5cc812a6",
+      "provider": "stripe_test",
+      "provider_event_id": "evt_3UYlMeFq5FKSG47y18lFnzWP",
+      "provider_payment_id": "pi_3UYlMeFq5FKSG47y1m7m1dm2",
+      "amount_minor": 2500,
+      "currency": "EUR",
+      "verified_at": "2026-11-06 12:31:25+01:00",
+      "recorded_at": "2026-11-06 12:32:43.008374+01:00"
+    },
+    "deadlines": [
+      {
+        "submission_id": "fe30de1b-bcde-4131-9a54-a27605ea3126",
+        "quote_id": "58e4c334-99a7-461c-a51c-8e5a5cc812a6",
+        "verified_payment_at": "2026-11-06 12:31:25+01:00",
+        "dispatch_deadline": "2026-12-06 12:31:25+01:00",
+        "policy": {
+          "timezone": "UTC",
+          "automatic_forfeiture": false,
+          "calendar_days_after_verified_payment": 30
+        }
+      }
+    ],
+    "payment_audits": 1,
+    "evidence_count": 2,
+    "attempts": [
+      {
+        "id": "1e106cb5-3680-4951-b33b-92e02b6d3077",
+        "session_id": "cs_test_a1me6IZauES2ta5hgAAUVR1KN6wwFQjvPjFj2xKJsQXiZFxRSezPhhLKY0",
+        "status": "verified"
+      }
+    ],
+    "snapshot_sha256": "90a9d8648a898571da82413ad04ffe8c63177d66d73de4404d3dbc11c0a5aae8"
+  },
+  "objects": [
+    {
+      "session": {
+        "id": "cs_test_a1me6IZauES2ta5hgAAUVR1KN6wwFQjvPjFj2xKJsQXiZFxRSezPhhLKY0",
+        "object": "checkout.session",
+        "adaptive_pricing": {
+          "enabled": true
+        },
+        "after_expiration": null,
+        "allow_promotion_codes": null,
+        "allowed_payment_method_types": null,
+        "amount_subtotal": 2500,
+        "amount_total": 2500,
+        "automatic_tax": {
+          "address_collection_precision": null,
+          "enabled": false,
+          "liability": null,
+          "provider": null,
+          "status": null
+        },
+        "billing_address_collection": null,
+        "branding_settings": {
+          "background_color": "#ffffff",
+          "border_style": "rounded",
+          "button_color": "#0074d4",
+          "display_name": "Selby sandbox",
+          "font_family": "default",
+          "icon": null,
+          "logo": null
+        },
+        "cancel_url": "http://127.0.0.1:13010/account/submissions/fe30de1b-bcde-4131-9a54-a27605ea3126?stripe_return=1",
+        "client_reference_id": "1e106cb5-3680-4951-b33b-92e02b6d3077",
+        "collected_information": null,
+        "consent": null,
+        "consent_collection": null,
+        "created": 1793964656,
+        "currency": "eur",
+        "currency_conversion": null,
+        "custom_fields": [],
+        "custom_text": {
+          "after_submit": null,
+          "shipping_address": null,
+          "submit": null,
+          "terms_of_service_acceptance": null
+        },
+        "customer": null,
+        "customer_account": null,
+        "customer_creation": "if_required",
+        "customer_details": {
+          "address": {
+            "city": null,
+            "country": "FR",
+            "line1": null,
+            "line2": null,
+            "postal_code": null,
+            "state": null
+          },
+          "business_name": null,
+          "email": "qa-delay@example.invalid",
+          "individual_name": null,
+          "name": "QA B DELAY",
+          "phone": null,
+          "tax_exempt": "none",
+          "tax_ids": []
+        },
+        "customer_email": null,
+        "discounts": [],
+        "expires_at": 1794051055,
+        "integration_identifier": null,
+        "invoice": null,
+        "invoice_creation": {
+          "enabled": false,
+          "invoice_data": {
+            "account_tax_ids": null,
+            "custom_fields": null,
+            "description": null,
+            "footer": null,
+            "issuer": null,
+            "metadata": {},
+            "rendering_options": null
+          }
+        },
+        "livemode": false,
+        "locale": null,
+        "managed_payments": {
+          "enabled": false
+        },
+        "marketing_attributions": null,
+        "metadata": {
+          "attempt_id": "1e106cb5-3680-4951-b33b-92e02b6d3077",
+          "customer_id": "d28313cc-be52-4f61-981a-0000574de768",
+          "obligation_id": "58e4c334-99a7-461c-a51c-8e5a5cc812a6",
+          "quote_id": "58e4c334-99a7-461c-a51c-8e5a5cc812a6",
+          "submission_id": "fe30de1b-bcde-4131-9a54-a27605ea3126"
+        },
+        "mode": "payment",
+        "origin_context": null,
+        "payment_intent": "pi_3UYlMeFq5FKSG47y1m7m1dm2",
+        "payment_link": null,
+        "payment_method_collection": "if_required",
+        "payment_method_configuration_details": {
+          "id": "pmc_1UXDy6Fq5FKSG47yeL59kkcp",
+          "parent": null
+        },
+        "payment_method_options": {
+          "card": {
+            "request_three_d_secure": "automatic"
+          }
+        },
+        "payment_method_types": [
+          "card",
+          "bancontact",
+          "eps",
+          "klarna",
+          "link",
+          "mb_way",
+          "amazon_pay",
+          "satispay"
+        ],
+        "payment_status": "paid",
+        "permissions": null,
+        "phone_number_collection": {
+          "enabled": false
+        },
+        "recovered_from": null,
+        "saved_payment_method_options": null,
+        "setup_intent": null,
+        "shipping_address_collection": null,
+        "shipping_cost": null,
+        "shipping_details": null,
+        "shipping_options": [],
+        "status": "complete",
+        "submit_type": null,
+        "subscription": null,
+        "success_url": "http://127.0.0.1:13010/account/submissions/fe30de1b-bcde-4131-9a54-a27605ea3126?stripe_return=1",
+        "total_details": {
+          "amount_discount": 0,
+          "amount_shipping": 0,
+          "amount_tax": 0
+        },
+        "ui_mode": "hosted",
+        "wallet_options": null
+      },
+      "payment_intent": {
+        "id": "pi_3UYlMeFq5FKSG47y1m7m1dm2",
+        "object": "payment_intent",
+        "allowed_payment_method_types": [
+          "card",
+          "bancontact",
+          "eps",
+          "klarna",
+          "link",
+          "mb_way",
+          "amazon_pay",
+          "satispay"
+        ],
+        "amount": 2500,
+        "amount_capturable": 0,
+        "amount_details": {
+          "shipping": {
+            "amount": 0,
+            "from_postal_code": null,
+            "to_postal_code": null
+          },
+          "tax": {
+            "total_tax_amount": 0
+          },
+          "tip": {}
+        },
+        "amount_received": 2500,
+        "application": null,
+        "application_fee_amount": null,
+        "automatic_payment_methods": null,
+        "canceled_at": null,
+        "cancellation_reason": null,
+        "capture_method": "automatic_async",
+        "confirmation_method": "automatic",
+        "created": 1793964684,
+        "currency": "eur",
+        "customer": null,
+        "customer_account": null,
+        "description": null,
+        "excluded_payment_method_types": null,
+        "invoice": null,
+        "last_payment_error": null,
+        "latest_charge": "ch_3UYlMeFq5FKSG47y1aQHEX5s",
+        "livemode": false,
+        "managed_payments": {
+          "enabled": false
+        },
+        "metadata": {
+          "attempt_id": "1e106cb5-3680-4951-b33b-92e02b6d3077",
+          "customer_id": "d28313cc-be52-4f61-981a-0000574de768",
+          "obligation_id": "58e4c334-99a7-461c-a51c-8e5a5cc812a6",
+          "quote_id": "58e4c334-99a7-461c-a51c-8e5a5cc812a6",
+          "submission_id": "fe30de1b-bcde-4131-9a54-a27605ea3126"
+        },
+        "next_action": null,
+        "on_behalf_of": null,
+        "payment_details": {
+          "customer_reference": null,
+          "order_reference": "cs_test_a1me6IZauES2ta5hgAAUVR1KN6wwFQjvPjFj2xKJsQXiZFxRSezPhhLKY0"
+        },
+        "payment_method": "pm_1UYlMeFq5FKSG47yJGWCH28S",
+        "payment_method_configuration_details": null,
+        "payment_method_options": {
+          "amazon_pay": {
+            "express_checkout_element_session_id": null
+          },
+          "bancontact": {
+            "preferred_language": "en"
+          },
+          "card": {
+            "installments": null,
+            "mandate_options": null,
+            "network": null,
+            "request_three_d_secure": "automatic"
+          },
+          "eps": {},
+          "klarna": {
+            "preferred_locale": null
+          },
+          "link": {
+            "persistent_token": null
+          },
+          "mb_way": {},
+          "satispay": {}
+        },
+        "payment_method_types": [
+          "card",
+          "bancontact",
+          "eps",
+          "klarna",
+          "link",
+          "mb_way",
+          "amazon_pay",
+          "satispay"
+        ],
+        "payment_record": null,
+        "processing": null,
+        "receipt_email": null,
+        "review": null,
+        "setup_future_usage": null,
+        "shared_payment_granted_token": null,
+        "shipping": null,
+        "source": null,
+        "statement_descriptor": null,
+        "statement_descriptor_suffix": null,
+        "status": "succeeded",
+        "transfer_data": null,
+        "transfer_group": null
+      },
+      "charge": {
+        "id": "ch_3UYlMeFq5FKSG47y1aQHEX5s",
+        "object": "charge",
+        "amount": 2500,
+        "amount_captured": 2500,
+        "amount_refunded": 0,
+        "application": null,
+        "application_fee": null,
+        "application_fee_amount": null,
+        "balance_transaction": "txn_3UYlMeFq5FKSG47y11jJM3NP",
+        "billing_details": {
+          "address": {
+            "city": null,
+            "country": "FR",
+            "line1": null,
+            "line2": null,
+            "postal_code": null,
+            "state": null
+          },
+          "email": "qa-delay@example.invalid",
+          "name": "QA B DELAY",
+          "phone": null,
+          "tax_id": null
+        },
+        "calculated_statement_descriptor": "Stripe",
+        "captured": true,
+        "created": 1793964685,
+        "currency": "eur",
+        "customer": null,
+        "description": null,
+        "destination": null,
+        "dispute": null,
+        "disputed": false,
+        "failure_balance_transaction": null,
+        "failure_code": null,
+        "failure_message": null,
+        "fraud_details": {},
+        "invoice": null,
+        "livemode": false,
+        "metadata": {
+          "attempt_id": "1e106cb5-3680-4951-b33b-92e02b6d3077",
+          "customer_id": "d28313cc-be52-4f61-981a-0000574de768",
+          "obligation_id": "58e4c334-99a7-461c-a51c-8e5a5cc812a6",
+          "quote_id": "58e4c334-99a7-461c-a51c-8e5a5cc812a6",
+          "submission_id": "fe30de1b-bcde-4131-9a54-a27605ea3126"
+        },
+        "on_behalf_of": null,
+        "order": null,
+        "outcome": {
+          "advice_code": null,
+          "network_advice_code": null,
+          "network_decline_code": null,
+          "network_status": "approved_by_network",
+          "reason": null,
+          "risk_level": "normal",
+          "risk_score": 4,
+          "seller_message": "Payment complete.",
+          "type": "authorized"
+        },
+        "paid": true,
+        "payment_intent": "pi_3UYlMeFq5FKSG47y1m7m1dm2",
+        "payment_method": "pm_1UYlMeFq5FKSG47yJGWCH28S",
+        "payment_method_details": {
+          "card": {
+            "amount_authorized": 2500,
+            "authorization_code": "354136",
+            "brand": "visa",
+            "checks": {
+              "address_line1_check": null,
+              "address_postal_code_check": null,
+              "cvc_check": "pass"
+            },
+            "country": "US",
+            "electronic_commerce_indicator": "07",
+            "exp_month": 12,
+            "exp_year": 2034,
+            "extended_authorization": {
+              "status": "disabled"
+            },
+            "fingerprint": "pVwrdvzJAqoCx8WQ",
+            "funding": "credit",
+            "incremental_authorization": {
+              "status": "unavailable"
+            },
+            "installments": null,
+            "last4": "4242",
+            "mandate": null,
+            "multicapture": {
+              "status": "unavailable"
+            },
+            "network": "visa",
+            "network_token": {
+              "used": false
+            },
+            "network_transaction_id": "112861191141001",
+            "overcapture": {
+              "maximum_amount_capturable": 2500,
+              "status": "unavailable"
+            },
+            "regulated_status": "unregulated",
+            "three_d_secure": null,
+            "transaction_link_id": null,
+            "wallet": null
+          },
+          "type": "card"
+        },
+        "radar_options": {},
+        "receipt_email": null,
+        "receipt_number": null,
+        "refunded": false,
+        "review": null,
+        "shipping": null,
+        "source": null,
+        "source_transfer": null,
+        "statement_descriptor": null,
+        "statement_descriptor_suffix": null,
+        "status": "succeeded",
+        "transfer_data": null,
+        "transfer_group": null
+      }
+    }
+  ],
+  "payable_sessions": 0,
+  "B-P2_reproduced": false
+}

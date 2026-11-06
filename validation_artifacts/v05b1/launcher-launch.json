@@ -1,0 +1,16 @@
+﻿[
+    {
+        "process_id":  17016,
+        "parent_id":  19024,
+        "command":  "\"C:\\Users\\plher\\Documents\\spetra\\scanner_agent\\.venv-analysis\\Scripts\\pythonw.exe\"  -B \"C:\\Users\\plher\\Documents\\spetra\\scanner_agent\\selby_desktop.pyw\"",
+        "window_title":  "",
+        "window_handle":  0
+    },
+    {
+        "process_id":  32264,
+        "parent_id":  17016,
+        "command":  "\"C:\\Users\\plher\\Documents\\spetra\\scanner_agent\\.venv-analysis\\Scripts\\pythonw.exe\"  -B \"C:\\Users\\plher\\Documents\\spetra\\scanner_agent\\selby_desktop.pyw\"",
+        "window_title":  "SELBY · Workstation V0.5b.1",
+        "window_handle":  2687098
+    }
+]

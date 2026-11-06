@@ -1,0 +1,142 @@
+{
+  "id": "evt_3UYlrMFq5FKSG47y0LCvuXtD",
+  "object": "event",
+  "api_version": "2026-10-28.endive",
+  "created": 1793969248,
+  "data": {
+    "object": {
+      "id": "ch_3UYlrMFq5FKSG47y0Hu4sdnL",
+      "object": "charge",
+      "amount": 2500,
+      "amount_captured": 2500,
+      "amount_refunded": 2500,
+      "application": null,
+      "application_fee": null,
+      "application_fee_amount": null,
+      "balance_transaction": "txn_3UYlrMFq5FKSG47y0uuwNldZ",
+      "billing_details": {
+        "address": {
+          "city": null,
+          "country": "CH",
+          "line1": null,
+          "line2": null,
+          "postal_code": null,
+          "state": null
+        },
+        "email": "qa-b2-full@example.invalid",
+        "name": "QA B2 FULL",
+        "phone": null,
+        "tax_id": null
+      },
+      "calculated_statement_descriptor": "Stripe",
+      "captured": true,
+      "created": 1793966589,
+      "currency": "eur",
+      "customer": null,
+      "description": null,
+      "destination": null,
+      "dispute": null,
+      "disputed": false,
+      "failure_balance_transaction": null,
+      "failure_code": null,
+      "failure_message": null,
+      "fraud_details": {},
+      "livemode": false,
+      "metadata": {
+        "attempt_id": "0b6cc5b6-3aac-458e-b0c2-2aa6437d6b17",
+        "customer_id": "e114aba9-81aa-4fb0-a2f6-99bdbc8ec843",
+        "obligation_id": "73135787-893b-4658-8a62-1837a0e4f17c",
+        "quote_id": "73135787-893b-4658-8a62-1837a0e4f17c",
+        "submission_id": "540416f9-569f-4bad-ac9f-88b2b08e0fdd"
+      },
+      "on_behalf_of": null,
+      "order": null,
+      "outcome": {
+        "advice_code": null,
+        "network_advice_code": null,
+        "network_decline_code": null,
+        "network_status": "approved_by_network",
+        "reason": null,
+        "risk_level": "normal",
+        "risk_score": 53,
+        "seller_message": "Payment complete.",
+        "type": "authorized"
+      },
+      "paid": true,
+      "payment_intent": "pi_3UYlrMFq5FKSG47y0PEDXeRN",
+      "payment_method": "pm_1UYlrMFq5FKSG47yxndgKe00",
+      "payment_method_details": {
+        "card": {
+          "amount_authorized": 2500,
+          "authorization_code": "111957",
+          "brand": "visa",
+          "checks": {
+            "address_line1_check": null,
+            "address_postal_code_check": null,
+            "cvc_check": "pass"
+          },
+          "country": "US",
+          "electronic_commerce_indicator": "07",
+          "exp_month": 12,
+          "exp_year": 2034,
+          "extended_authorization": {
+            "status": "disabled"
+          },
+          "fingerprint": "pVwrdvzJAqoCx8WQ",
+          "funding": "credit",
+          "incremental_authorization": {
+            "status": "unavailable"
+          },
+          "installments": null,
+          "last4": "4242",
+          "mandate": null,
+          "multicapture": {
+            "status": "unavailable"
+          },
+          "network": "visa",
+          "network_token": {
+            "used": false
+          },
+          "network_transaction_id": "112861191141001",
+          "overcapture": {
+            "maximum_amount_capturable": 2500,
+            "status": "unavailable"
+          },
+          "regulated_status": "unregulated",
+          "three_d_secure": null,
+          "transaction_link_id": null,
+          "wallet": null
+        },
+        "type": "card"
+      },
+      "presentment_details": {
+        "presentment_amount": 2376,
+        "presentment_currency": "chf"
+      },
+      "radar_options": {},
+      "receipt_email": null,
+      "receipt_number": null,
+      "refunded": true,
+      "review": null,
+      "shipping": null,
+      "source": null,
+      "source_transfer": null,
+      "statement_descriptor": null,
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    },
+    "previous_attributes": {
+      "amount_refunded": 0,
+      "refunded": false
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 0,
+  "request": {
+    "id": "req_yCdUihyCebAUsb",
+    "idempotency_key": "selby-b2-b-refund-full-2500-ch_3UYlrMFq5FKSG47y0Hu4sdnL"
+  },
+  "type": "charge.refunded"
+}

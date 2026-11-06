@@ -1,0 +1,16 @@
+{
+  "mode": "traditional_frame",
+  "search_min_fraction": 0.008,
+  "search_max_fraction": 0.12,
+  "corner_exclusion_fraction": 0.18,
+  "profile_count": 120,
+  "minimum_color_transition": 12,
+  "minimum_support_fraction": 0.8,
+  "maximum_fit_rms_pixels": 1.5,
+  "maximum_angle_difference_degrees": 3,
+  "maximum_outer_band_color_deviation": 22,
+  "maximum_cross_side_border_color_difference": 35,
+  "candidate_separation_pixels": 5,
+  "maximum_candidates_per_side": 12,
+  "margin_sample_count": 21
+}

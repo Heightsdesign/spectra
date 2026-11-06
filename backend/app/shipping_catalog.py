@@ -11,8 +11,10 @@ from app.checkout_schemas import ShippingCatalog
 from app.database import get_engine
 
 
-def publish(db, document):
+def publish(db, document, settings=None):
     config = ShippingCatalog.model_validate(document)
+    from app.fictitious_checkout import require_scope
+    require_scope(config.model_dump(), settings)
     state = db.scalar(select(ShippingState).where(ShippingState.id == 1).with_for_update())
     if state is None:
         raise ValueError("Apply migration 0005 first")

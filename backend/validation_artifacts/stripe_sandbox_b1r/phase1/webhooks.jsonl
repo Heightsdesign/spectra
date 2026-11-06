@@ -1,0 +1,7 @@
+{"event_id": "evt_3UYjo3Fq5FKSG47y02yuoRI2", "type": "payment_intent.payment_failed", "http": 200}
+{"event_id": "evt_3UYjo3Fq5FKSG47y0zz7IyWY", "type": "payment_intent.succeeded", "http": 200}
+{"event_id": "evt_1UYjpBFq5FKSG47yMd92z60e", "type": "checkout.session.completed", "http": 200}
+{"event_id": "evt_3UYjqGFq5FKSG47y1dsLmPzD", "type": "payment_intent.requires_action", "http": 200}
+{"event_id": "evt_3UYjqGFq5FKSG47y1MDVVHiu", "type": "payment_intent.requires_action", "http": 200}
+{"event_id": "evt_3UYjqGFq5FKSG47y14Qf1Wbs", "type": "payment_intent.succeeded", "http": 200}
+{"event_id": "evt_1UYjsUFq5FKSG47yRnGSGf1Y", "type": "checkout.session.completed", "http": 200}

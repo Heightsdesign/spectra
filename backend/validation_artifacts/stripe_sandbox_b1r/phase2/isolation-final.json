@@ -1,0 +1,68 @@
+{
+  "identity": {
+    "account_id": "acct_1UXDxRFq5FKSG47y",
+    "business_name": "Selby sandbox",
+    "test_key": true,
+    "database": "spectra_test",
+    "api_version": "2025-02-24.acacia"
+  },
+  "development_unchanged": true,
+  "test_schema_unchanged": true,
+  "sources_and_env_unchanged": true,
+  "phase1_paid_cases_unchanged": {
+    "B-DECLINE": true,
+    "B-3DS": true
+  },
+  "revision": [
+    "0015"
+  ],
+  "new_test_payments": 1,
+  "amount_minor": 2500,
+  "provider_paid_at": "2026-11-06T11:31:25+00:00",
+  "recorded_at": "2026-11-06T12:32:43.008374+01:00",
+  "lag_seconds": 78.008374,
+  "dispatch_deadline": "2026-12-06 12:31:25+01:00",
+  "signature_and_raw_hashes_match": true,
+  "retained_events": 2,
+  "delivery_attempts": 4,
+  "B-EXPIRE": {
+    "case": "B-EXPIRE",
+    "label": "final",
+    "SELBY": "pending",
+    "payment_count": 0,
+    "deadline_count": 0,
+    "payable_sessions": 1,
+    "objects": [
+      {
+        "id": "cs_test_a12tAC8rzDcWB5dof2HcoHEjtiKmbABlF9hubzAkUmCjZ2YOM76wrjozAb",
+        "status": "open",
+        "payment_status": "unpaid",
+        "pi_status": null
+      },
+      {
+        "id": "cs_test_a1HLmQrotUiKh8VSAkSS9aFVpagjCBXH2CyjNRdimlgluvZPYeaVWSmWI8",
+        "status": "expired",
+        "payment_status": "unpaid",
+        "pi_status": null
+      }
+    ],
+    "B-P2": false
+  },
+  "B-DELAY": {
+    "case": "B-DELAY",
+    "label": "final",
+    "SELBY": "verified",
+    "payment_count": 1,
+    "deadline_count": 1,
+    "payable_sessions": 0,
+    "objects": [
+      {
+        "id": "cs_test_a1me6IZauES2ta5hgAAUVR1KN6wwFQjvPjFj2xKJsQXiZFxRSezPhhLKY0",
+        "status": "complete",
+        "payment_status": "paid",
+        "pi_status": "succeeded"
+      }
+    ],
+    "B-P2": false
+  }
+}

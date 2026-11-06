@@ -1,0 +1,14 @@
+﻿# SELBY V0.5c — Operator scanner instructions
+
+1. Launch the updated SELBY Workstation. In Settings choose the original orders registry and backend connection. Sign in through Incoming orders. An alternate registry with overlapping ORD/SLB-C numbers is not interchangeable.
+2. Connect TD-W6 in its documented USB keyboard mode, or pair it in Bluetooth HID keyboard mode. Confirm the Windows keyboard layout matches the scanner. Do not select COM3 merely because it exists. This version does not implement serial scanner input.
+3. From Orders, Labels or any other module choose **Scan card**, or press **Ctrl+Shift+S**. Keep the QR field focused. “Keyboard input ready” confirms application readiness; it does not prove scanner connection.
+4. Configure the scanner to append Enter/Return, and select that suffix in the dialog. With a scanner configured without a suffix, select **No suffix** and click **Identify** after each full scan. The selection is saved. Manual paste is available for troubleshooting.
+5. First scan the existing diagnostic label. Expect **Diagnostic recognized: CALIBRATION-V1 / TEST / NOT VALID**. Inspection/grading must not open. Report the actual payload/result and USB/Bluetooth mode for hardware acceptance. Do not print another label automatically.
+6. Scan a physical-card QR. Confirm the displayed card name and ORD, SP, PC and SLB-C identities against the physical copy. Identical card names may represent different PCs. Never substitute a visually similar card.
+7. A blocked result lists backend reasons, such as unverified payment. Resolve them through established operations; a scan cannot grant clearance. Offline or conflicting mapping results require reconnecting or restoring/reviewing the original registry.
+8. An eligible linked card opens the existing inspection after normal unsaved-work confirmation. With no linked session, choose **Open original scan for identified card…**; eligibility is checked again, then the normal file picker opens. Save the grading dossier and use the existing explicit association action in Orders. Check the selected SLB-C before associating.
+9. Order QR performs order lookup only. Diagnostic QR never identifies a customer card. Wait for each backend result before scanning the next card. Immediate duplicates are ignored; wait two seconds to intentionally refresh the same card.
+10. Close Scan card to return to ordinary typing. Input into an unrelated text field is ordinary keyboard input and will not be interpreted as a scan. Open Scan card before scanning while Orders or Labels is displayed.
+
+Hardware acceptance is pending a human-operated TD-W6 scan of the existing diagnostic and a valid synthetic card label. Software-injected payloads and screenshots are not proof of physical scanner performance. Do not change payment, custody, production mappings or development orders to make a test pass.

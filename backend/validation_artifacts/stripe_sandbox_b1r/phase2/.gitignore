@@ -1,0 +1,3 @@
+# Authentication, browser profile, original signed envelopes and return URLs stay local.
+private-*
+browser-command.json

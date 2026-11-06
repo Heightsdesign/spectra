@@ -1,0 +1,105 @@
+{
+  "id": "evt_3UYlqMFq5FKSG47y0Dfu0Vfc",
+  "object": "event",
+  "api_version": "2026-10-28.endive",
+  "created": 1793966527,
+  "data": {
+    "object": {
+      "id": "pi_3UYlqMFq5FKSG47y0qC0NxuR",
+      "object": "payment_intent",
+      "allowed_payment_method_types": [
+        "card",
+        "klarna",
+        "link",
+        "amazon_pay"
+      ],
+      "amount": 2500,
+      "amount_capturable": 0,
+      "amount_details": {
+        "tip": {}
+      },
+      "amount_received": 2500,
+      "application": null,
+      "application_fee_amount": null,
+      "automatic_payment_methods": null,
+      "canceled_at": null,
+      "cancellation_reason": null,
+      "capture_method": "automatic_async",
+      "confirmation_method": "automatic",
+      "created": 1793966526,
+      "currency": "eur",
+      "customer": null,
+      "customer_account": null,
+      "description": null,
+      "excluded_payment_method_types": null,
+      "last_payment_error": null,
+      "latest_charge": "ch_3UYlqMFq5FKSG47y0hSlv6os",
+      "livemode": false,
+      "managed_payments": {
+        "enabled": false
+      },
+      "metadata": {
+        "attempt_id": "15dbe960-0d44-4272-9428-749cb588accd",
+        "customer_id": "cfd30385-69fc-405c-85e8-bc492c4e0950",
+        "obligation_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+        "quote_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+        "submission_id": "4506971d-4a51-416c-8ef2-ffda7a5698b7"
+      },
+      "next_action": null,
+      "on_behalf_of": null,
+      "payment_details": {
+        "customer_reference": null,
+        "order_reference": "cs_test_a1G8ABzdExA4iEevPkrFM0wALID6WddpRV1GKiJBwcaNNoL28a6pbfgICb"
+      },
+      "payment_method": "pm_1UYlqMFq5FKSG47yOGY09oGo",
+      "payment_method_configuration_details": null,
+      "payment_method_options": {
+        "amazon_pay": {
+          "express_checkout_element_session_id": null
+        },
+        "card": {
+          "installments": null,
+          "mandate_options": null,
+          "network": null,
+          "request_three_d_secure": "automatic"
+        },
+        "klarna": {
+          "preferred_locale": null
+        },
+        "link": {
+          "persistent_token": null
+        }
+      },
+      "payment_method_types": [
+        "card",
+        "klarna",
+        "link",
+        "amazon_pay"
+      ],
+      "payment_record": null,
+      "presentment_details": {
+        "presentment_amount": 2376,
+        "presentment_currency": "chf"
+      },
+      "processing": null,
+      "receipt_email": null,
+      "review": null,
+      "setup_future_usage": null,
+      "shared_payment_granted_token": null,
+      "shipping": null,
+      "source": null,
+      "statement_descriptor": null,
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 0,
+  "request": {
+    "id": null,
+    "idempotency_key": "0900f72e-cc5b-406c-9da6-11468d6b9389"
+  },
+  "type": "payment_intent.succeeded"
+}

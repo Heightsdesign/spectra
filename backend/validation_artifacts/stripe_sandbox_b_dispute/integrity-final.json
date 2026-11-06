@@ -1,0 +1,17 @@
+{
+  "development_unchanged": true,
+  "all_preexisting_test_rows_unchanged": true,
+  "test_columns_unchanged": true,
+  "constraints_indexes_triggers_unchanged": true,
+  "application_frontend_env_unchanged": true,
+  "revision": [
+    "0015"
+  ],
+  "identity": {
+    "account_id": "acct_1UXDxRFq5FKSG47y",
+    "business_name": "Selby sandbox",
+    "test_key": true,
+    "database": "spectra_test",
+    "api_version": "2025-02-24.acacia"
+  }
+}

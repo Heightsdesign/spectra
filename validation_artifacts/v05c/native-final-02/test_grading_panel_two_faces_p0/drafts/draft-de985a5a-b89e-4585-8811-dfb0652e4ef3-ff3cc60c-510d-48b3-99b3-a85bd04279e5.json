@@ -1,0 +1,4452 @@
+{
+  "kind": "selby_recovery_draft",
+  "schema_version": 1,
+  "at_utc": "2026-11-02T21:21:31.545535+00:00",
+  "session": {
+    "schema_version": 1,
+    "kind": "selby_inspection_session",
+    "tool_version": "0.4.0",
+    "coordinate_system": "original_image_pixels_xy_right_down_v1",
+    "session_id": "de985a5a-b89e-4585-8811-dfb0652e4ef3",
+    "version_id": "1531fa37-e63a-465c-9705-717606efbabc",
+    "created_at_utc": "2026-11-02T21:21:31.344625+00:00",
+    "parent": null,
+    "image": {
+      "path": "C:\\Users\\plher\\Documents\\spetra\\validation_artifacts\\v05c\\native-final-02\\test_grading_panel_two_faces_p0\\grading-front\\source.bmp",
+      "sha256": "378460c2b25ee6edaec4739fe9805aa478b58764fff5236c98d91e8ff2db4e44",
+      "dimensions": [
+        560,
+        720
+      ],
+      "mode": "RGB"
+    },
+    "image_encoding": {
+      "format": "BMP",
+      "frames": [
+        {
+          "width": 560,
+          "height": 720,
+          "mode": "RGB",
+          "bits_per_pixel": 24,
+          "dpi_metadata": [
+            150.01231899334775,
+            150.01231899334775
+          ],
+          "icc_profile_present": false,
+          "uniform_pixel_content": false
+        }
+      ],
+      "frame_count": 1
+    },
+    "operator": "Test reviewer",
+    "notes": "",
+    "sources": [
+      {
+        "path": "C:\\Users\\plher\\Documents\\spetra\\validation_artifacts\\v05c\\native-final-02\\test_grading_panel_two_faces_p0\\grading-front\\boundary.json",
+        "sha256": "48df71e443463bbeeaec44a6b5ce47ce034fb70a4abc00e33eaded2129dc1251",
+        "kind": "single_image",
+        "algorithm_version": "0.2.0",
+        "status": "review_required",
+        "baseline_status": "review_required",
+        "flags": []
+      }
+    ],
+    "prediction_exposure": true,
+    "physical": [
+      {
+        "status": "annotated",
+        "definition": "manual",
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": [
+          [
+            164.4,
+            90.0
+          ],
+          [
+            387.6,
+            90.0
+          ]
+        ],
+        "line_abc": [
+          0.0,
+          1.0,
+          -90.0
+        ],
+        "notes": "",
+        "confirmed_at_utc": "2026-11-02T21:21:31.349114+00:00",
+        "reviewed": {
+          "status": "annotated",
+          "definition": "manual",
+          "candidate_id": null,
+          "basis": null,
+          "endpoints": [
+            [
+              164.4,
+              90.0
+            ],
+            [
+              387.6,
+              90.0
+            ]
+          ],
+          "line_abc": [
+            0.0,
+            1.0,
+            -90.0
+          ],
+          "notes": ""
+        }
+      },
+      {
+        "status": "annotated",
+        "definition": "manual",
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": [
+          [
+            462.0,
+            194.0
+          ],
+          [
+            462.0,
+            506.0
+          ]
+        ],
+        "line_abc": [
+          1.0,
+          -0.0,
+          -462.0
+        ],
+        "notes": "",
+        "confirmed_at_utc": "2026-11-02T21:21:31.349417+00:00",
+        "reviewed": {
+          "status": "annotated",
+          "definition": "manual",
+          "candidate_id": null,
+          "basis": null,
+          "endpoints": [
+            [
+              462.0,
+              194.0
+            ],
+            [
+              462.0,
+              506.0
+            ]
+          ],
+          "line_abc": [
+            1.0,
+            -0.0,
+            -462.0
+          ],
+          "notes": ""
+        }
+      },
+      {
+        "status": "annotated",
+        "definition": "manual",
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": [
+          [
+            387.6,
+            610.0
+          ],
+          [
+            164.39999999999998,
+            610.0
+          ]
+        ],
+        "line_abc": [
+          -0.0,
+          1.0,
+          -609.9999999999999
+        ],
+        "notes": "",
+        "confirmed_at_utc": "2026-11-02T21:21:31.349628+00:00",
+        "reviewed": {
+          "status": "annotated",
+          "definition": "manual",
+          "candidate_id": null,
+          "basis": null,
+          "endpoints": [
+            [
+              387.6,
+              610.0
+            ],
+            [
+              164.39999999999998,
+              610.0
+            ]
+          ],
+          "line_abc": [
+            -0.0,
+            1.0,
+            -609.9999999999999
+          ],
+          "notes": ""
+        }
+      },
+      {
+        "status": "annotated",
+        "definition": "manual",
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": [
+          [
+            90.0,
+            506.0
+          ],
+          [
+            90.0,
+            194.0
+          ]
+        ],
+        "line_abc": [
+          1.0,
+          0.0,
+          -90.0
+        ],
+        "notes": "",
+        "confirmed_at_utc": "2026-11-02T21:21:31.349832+00:00",
+        "reviewed": {
+          "status": "annotated",
+          "definition": "manual",
+          "candidate_id": null,
+          "basis": null,
+          "endpoints": [
+            [
+              90.0,
+              506.0
+            ],
+            [
+              90.0,
+              194.0
+            ]
+          ],
+          "line_abc": [
+            1.0,
+            0.0,
+            -90.0
+          ],
+          "notes": ""
+        }
+      }
+    ],
+    "printed": [
+      {
+        "status": "annotated",
+        "definition": "manual",
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": [
+          [
+            110.0,
+            110.0
+          ],
+          [
+            442.0,
+            110.0
+          ]
+        ],
+        "line_abc": [
+          0.0,
+          1.0,
+          -110.0
+        ],
+        "notes": "",
+        "confirmed_at_utc": "2026-11-02T21:21:31.350888+00:00",
+        "reviewed": {
+          "status": "annotated",
+          "definition": "manual",
+          "candidate_id": null,
+          "basis": null,
+          "endpoints": [
+            [
+              110.0,
+              110.0
+            ],
+            [
+              442.0,
+              110.0
+            ]
+          ],
+          "line_abc": [
+            0.0,
+            1.0,
+            -110.0
+          ],
+          "notes": ""
+        }
+      },
+      {
+        "status": "annotated",
+        "definition": "manual",
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": [
+          [
+            442.0,
+            110.0
+          ],
+          [
+            442.0,
+            590.0
+          ]
+        ],
+        "line_abc": [
+          1.0,
+          -0.0,
+          -442.0
+        ],
+        "notes": "",
+        "confirmed_at_utc": "2026-11-02T21:21:31.351062+00:00",
+        "reviewed": {
+          "status": "annotated",
+          "definition": "manual",
+          "candidate_id": null,
+          "basis": null,
+          "endpoints": [
+            [
+              442.0,
+              110.0
+            ],
+            [
+              442.0,
+              590.0
+            ]
+          ],
+          "line_abc": [
+            1.0,
+            -0.0,
+            -442.0
+          ],
+          "notes": ""
+        }
+      },
+      {
+        "status": "annotated",
+        "definition": "manual",
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": [
+          [
+            442.0,
+            590.0
+          ],
+          [
+            110.0,
+            590.0
+          ]
+        ],
+        "line_abc": [
+          -0.0,
+          1.0,
+          -590.0
+        ],
+        "notes": "",
+        "confirmed_at_utc": "2026-11-02T21:21:31.351236+00:00",
+        "reviewed": {
+          "status": "annotated",
+          "definition": "manual",
+          "candidate_id": null,
+          "basis": null,
+          "endpoints": [
+            [
+              442.0,
+              590.0
+            ],
+            [
+              110.0,
+              590.0
+            ]
+          ],
+          "line_abc": [
+            -0.0,
+            1.0,
+            -590.0
+          ],
+          "notes": ""
+        }
+      },
+      {
+        "status": "annotated",
+        "definition": "manual",
+        "candidate_id": null,
+        "basis": null,
+        "endpoints": [
+          [
+            110.0,
+            590.0
+          ],
+          [
+            110.0,
+            110.0
+          ]
+        ],
+        "line_abc": [
+          1.0,
+          0.0,
+          -110.0
+        ],
+        "notes": "",
+        "confirmed_at_utc": "2026-11-02T21:21:31.351411+00:00",
+        "reviewed": {
+          "status": "annotated",
+          "definition": "manual",
+          "candidate_id": null,
+          "basis": null,
+          "endpoints": [
+            [
+              110.0,
+              590.0
+            ],
+            [
+              110.0,
+              110.0
+            ]
+          ],
+          "line_abc": [
+            1.0,
+            0.0,
+            -110.0
+          ],
+          "notes": ""
+        }
+      }
+    ],
+    "review_status": "review_required",
+    "automatic_acceptance": false,
+    "human_confirmation_is_not_certified_ground_truth": true,
+    "view": {
+      "zoom": 1.0,
+      "center": [
+        280.0,
+        360.5
+      ]
+    },
+    "inspection_face": "front",
+    "boundary_validation": {
+      "physical": {
+        "sides": [
+          {
+            "status": "annotated",
+            "definition": "manual",
+            "candidate_id": null,
+            "basis": null,
+            "endpoints": [
+              [
+                164.4,
+                90.0
+              ],
+              [
+                387.6,
+                90.0
+              ]
+            ],
+            "line_abc": [
+              0.0,
+              1.0,
+              -90.0
+            ],
+            "notes": "",
+            "confirmed_at_utc": "2026-11-02T21:21:31.349114+00:00",
+            "reviewed": {
+              "status": "annotated",
+              "definition": "manual",
+              "candidate_id": null,
+              "basis": null,
+              "endpoints": [
+                [
+                  164.4,
+                  90.0
+                ],
+                [
+                  387.6,
+                  90.0
+                ]
+              ],
+              "line_abc": [
+                0.0,
+                1.0,
+                -90.0
+              ],
+              "notes": ""
+            }
+          },
+          {
+            "status": "annotated",
+            "definition": "manual",
+            "candidate_id": null,
+            "basis": null,
+            "endpoints": [
+              [
+                462.0,
+                194.0
+              ],
+              [
+                462.0,
+                506.0
+              ]
+            ],
+            "line_abc": [
+              1.0,
+              -0.0,
+              -462.0
+            ],
+            "notes": "",
+            "confirmed_at_utc": "2026-11-02T21:21:31.349417+00:00",
+            "reviewed": {
+              "status": "annotated",
+              "definition": "manual",
+              "candidate_id": null,
+              "basis": null,
+              "endpoints": [
+                [
+                  462.0,
+                  194.0
+                ],
+                [
+                  462.0,
+                  506.0
+                ]
+              ],
+              "line_abc": [
+                1.0,
+                -0.0,
+                -462.0
+              ],
+              "notes": ""
+            }
+          },
+          {
+            "status": "annotated",
+            "definition": "manual",
+            "candidate_id": null,
+            "basis": null,
+            "endpoints": [
+              [
+                387.6,
+                610.0
+              ],
+              [
+                164.39999999999998,
+                610.0
+              ]
+            ],
+            "line_abc": [
+              -0.0,
+              1.0,
+              -609.9999999999999
+            ],
+            "notes": "",
+            "confirmed_at_utc": "2026-11-02T21:21:31.349628+00:00",
+            "reviewed": {
+              "status": "annotated",
+              "definition": "manual",
+              "candidate_id": null,
+              "basis": null,
+              "endpoints": [
+                [
+                  387.6,
+                  610.0
+                ],
+                [
+                  164.39999999999998,
+                  610.0
+                ]
+              ],
+              "line_abc": [
+                -0.0,
+                1.0,
+                -609.9999999999999
+              ],
+              "notes": ""
+            }
+          },
+          {
+            "status": "annotated",
+            "definition": "manual",
+            "candidate_id": null,
+            "basis": null,
+            "endpoints": [
+              [
+                90.0,
+                506.0
+              ],
+              [
+                90.0,
+                194.0
+              ]
+            ],
+            "line_abc": [
+              1.0,
+              0.0,
+              -90.0
+            ],
+            "notes": "",
+            "confirmed_at_utc": "2026-11-02T21:21:31.349832+00:00",
+            "reviewed": {
+              "status": "annotated",
+              "definition": "manual",
+              "candidate_id": null,
+              "basis": null,
+              "endpoints": [
+                [
+                  90.0,
+                  506.0
+                ],
+                [
+                  90.0,
+                  194.0
+                ]
+              ],
+              "line_abc": [
+                1.0,
+                0.0,
+                -90.0
+              ],
+              "notes": ""
+            }
+          }
+        ],
+        "operator": "Test reviewer",
+        "at_utc": "2026-11-02T21:21:31.353824+00:00"
+      },
+      "printed": {
+        "sides": [
+          {
+            "status": "annotated",
+            "definition": "manual",
+            "candidate_id": null,
+            "basis": null,
+            "endpoints": [
+              [
+                110.0,
+                110.0
+              ],
+              [
+                442.0,
+                110.0
+              ]
+            ],
+            "line_abc": [
+              0.0,
+              1.0,
+              -110.0
+            ],
+            "notes": "",
+            "confirmed_at_utc": "2026-11-02T21:21:31.350888+00:00",
+            "reviewed": {
+              "status": "annotated",
+              "definition": "manual",
+              "candidate_id": null,
+              "basis": null,
+              "endpoints": [
+                [
+                  110.0,
+                  110.0
+                ],
+                [
+                  442.0,
+                  110.0
+                ]
+              ],
+              "line_abc": [
+                0.0,
+                1.0,
+                -110.0
+              ],
+              "notes": ""
+            }
+          },
+          {
+            "status": "annotated",
+            "definition": "manual",
+            "candidate_id": null,
+            "basis": null,
+            "endpoints": [
+              [
+                442.0,
+                110.0
+              ],
+              [
+                442.0,
+                590.0
+              ]
+            ],
+            "line_abc": [
+              1.0,
+              -0.0,
+              -442.0
+            ],
+            "notes": "",
+            "confirmed_at_utc": "2026-11-02T21:21:31.351062+00:00",
+            "reviewed": {
+              "status": "annotated",
+              "definition": "manual",
+              "candidate_id": null,
+              "basis": null,
+              "endpoints": [
+                [
+                  442.0,
+                  110.0
+                ],
+                [
+                  442.0,
+                  590.0
+                ]
+              ],
+              "line_abc": [
+                1.0,
+                -0.0,
+                -442.0
+              ],
+              "notes": ""
+            }
+          },
+          {
+            "status": "annotated",
+            "definition": "manual",
+            "candidate_id": null,
+            "basis": null,
+            "endpoints": [
+              [
+                442.0,
+                590.0
+              ],
+              [
+                110.0,
+                590.0
+              ]
+            ],
+            "line_abc": [
+              -0.0,
+              1.0,
+              -590.0
+            ],
+            "notes": "",
+            "confirmed_at_utc": "2026-11-02T21:21:31.351236+00:00",
+            "reviewed": {
+              "status": "annotated",
+              "definition": "manual",
+              "candidate_id": null,
+              "basis": null,
+              "endpoints": [
+                [
+                  442.0,
+                  590.0
+                ],
+                [
+                  110.0,
+                  590.0
+                ]
+              ],
+              "line_abc": [
+                -0.0,
+                1.0,
+                -590.0
+              ],
+              "notes": ""
+            }
+          },
+          {
+            "status": "annotated",
+            "definition": "manual",
+            "candidate_id": null,
+            "basis": null,
+            "endpoints": [
+              [
+                110.0,
+                590.0
+              ],
+              [
+                110.0,
+                110.0
+              ]
+            ],
+            "line_abc": [
+              1.0,
+              0.0,
+              -110.0
+            ],
+            "notes": "",
+            "confirmed_at_utc": "2026-11-02T21:21:31.351411+00:00",
+            "reviewed": {
+              "status": "annotated",
+              "definition": "manual",
+              "candidate_id": null,
+              "basis": null,
+              "endpoints": [
+                [
+                  110.0,
+                  590.0
+                ],
+                [
+                  110.0,
+                  110.0
+                ]
+              ],
+              "line_abc": [
+                1.0,
+                0.0,
+                -110.0
+              ],
+              "notes": ""
+            }
+          }
+        ],
+        "operator": "Test reviewer",
+        "at_utc": "2026-11-02T21:21:31.354341+00:00"
+      }
+    },
+    "condition": {
+      "schema_version": 1,
+      "runs": [],
+      "findings": [
+        {
+          "id": "a1247b07-b4f7-4805-aa41-3d387fbf7a8e",
+          "category": "edges",
+          "region": "manual",
+          "origin": "manual",
+          "run_id": null,
+          "type": "wear",
+          "polygon_original": [
+            [
+              120.0,
+              140.0
+            ],
+            [
+              125.0,
+              140.0
+            ],
+            [
+              125.0,
+              145.0
+            ],
+            [
+              120.0,
+              145.0
+            ]
+          ],
+          "evidence": {
+            "description": "Synthetic grading GUI wear"
+          },
+          "decision": "confirmed",
+          "notes": "Synthetic grading GUI wear",
+          "operator": "Test reviewer",
+          "reviewed_at_utc": "2026-11-02T21:21:31.409763+00:00",
+          "history": []
+        }
+      ],
+      "reviews": {
+        "corners": {
+          "findings": [],
+          "operator": "Test reviewer",
+          "at_utc": "2026-11-02T21:21:31.354765+00:00",
+          "notes": "Synthetic full-category visual review",
+          "physical_validation": {
+            "sides": [
+              {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    164.4,
+                    90.0
+                  ],
+                  [
+                    387.6,
+                    90.0
+                  ]
+                ],
+                "line_abc": [
+                  0.0,
+                  1.0,
+                  -90.0
+                ],
+                "notes": "",
+                "confirmed_at_utc": "2026-11-02T21:21:31.349114+00:00",
+                "reviewed": {
+                  "status": "annotated",
+                  "definition": "manual",
+                  "candidate_id": null,
+                  "basis": null,
+                  "endpoints": [
+                    [
+                      164.4,
+                      90.0
+                    ],
+                    [
+                      387.6,
+                      90.0
+                    ]
+                  ],
+                  "line_abc": [
+                    0.0,
+                    1.0,
+                    -90.0
+                  ],
+                  "notes": ""
+                }
+              },
+              {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    462.0,
+                    194.0
+                  ],
+                  [
+                    462.0,
+                    506.0
+                  ]
+                ],
+                "line_abc": [
+                  1.0,
+                  -0.0,
+                  -462.0
+                ],
+                "notes": "",
+                "confirmed_at_utc": "2026-11-02T21:21:31.349417+00:00",
+                "reviewed": {
+                  "status": "annotated",
+                  "definition": "manual",
+                  "candidate_id": null,
+                  "basis": null,
+                  "endpoints": [
+                    [
+                      462.0,
+                      194.0
+                    ],
+                    [
+                      462.0,
+                      506.0
+                    ]
+                  ],
+                  "line_abc": [
+                    1.0,
+                    -0.0,
+                    -462.0
+                  ],
+                  "notes": ""
+                }
+              },
+              {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    387.6,
+                    610.0
+                  ],
+                  [
+                    164.39999999999998,
+                    610.0
+                  ]
+                ],
+                "line_abc": [
+                  -0.0,
+                  1.0,
+                  -609.9999999999999
+                ],
+                "notes": "",
+                "confirmed_at_utc": "2026-11-02T21:21:31.349628+00:00",
+                "reviewed": {
+                  "status": "annotated",
+                  "definition": "manual",
+                  "candidate_id": null,
+                  "basis": null,
+                  "endpoints": [
+                    [
+                      387.6,
+                      610.0
+                    ],
+                    [
+                      164.39999999999998,
+                      610.0
+                    ]
+                  ],
+                  "line_abc": [
+                    -0.0,
+                    1.0,
+                    -609.9999999999999
+                  ],
+                  "notes": ""
+                }
+              },
+              {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    90.0,
+                    506.0
+                  ],
+                  [
+                    90.0,
+                    194.0
+                  ]
+                ],
+                "line_abc": [
+                  1.0,
+                  0.0,
+                  -90.0
+                ],
+                "notes": "",
+                "confirmed_at_utc": "2026-11-02T21:21:31.349832+00:00",
+                "reviewed": {
+                  "status": "annotated",
+                  "definition": "manual",
+                  "candidate_id": null,
+                  "basis": null,
+                  "endpoints": [
+                    [
+                      90.0,
+                      506.0
+                    ],
+                    [
+                      90.0,
+                      194.0
+                    ]
+                  ],
+                  "line_abc": [
+                    1.0,
+                    0.0,
+                    -90.0
+                  ],
+                  "notes": ""
+                }
+              }
+            ],
+            "operator": "Test reviewer",
+            "at_utc": "2026-11-02T21:21:31.353824+00:00"
+          }
+        },
+        "surface": {
+          "findings": [],
+          "operator": "Test reviewer",
+          "at_utc": "2026-11-02T21:21:31.355803+00:00",
+          "notes": "Synthetic full-category visual review",
+          "physical_validation": {
+            "sides": [
+              {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    164.4,
+                    90.0
+                  ],
+                  [
+                    387.6,
+                    90.0
+                  ]
+                ],
+                "line_abc": [
+                  0.0,
+                  1.0,
+                  -90.0
+                ],
+                "notes": "",
+                "confirmed_at_utc": "2026-11-02T21:21:31.349114+00:00",
+                "reviewed": {
+                  "status": "annotated",
+                  "definition": "manual",
+                  "candidate_id": null,
+                  "basis": null,
+                  "endpoints": [
+                    [
+                      164.4,
+                      90.0
+                    ],
+                    [
+                      387.6,
+                      90.0
+                    ]
+                  ],
+                  "line_abc": [
+                    0.0,
+                    1.0,
+                    -90.0
+                  ],
+                  "notes": ""
+                }
+              },
+              {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    462.0,
+                    194.0
+                  ],
+                  [
+                    462.0,
+                    506.0
+                  ]
+                ],
+                "line_abc": [
+                  1.0,
+                  -0.0,
+                  -462.0
+                ],
+                "notes": "",
+                "confirmed_at_utc": "2026-11-02T21:21:31.349417+00:00",
+                "reviewed": {
+                  "status": "annotated",
+                  "definition": "manual",
+                  "candidate_id": null,
+                  "basis": null,
+                  "endpoints": [
+                    [
+                      462.0,
+                      194.0
+                    ],
+                    [
+                      462.0,
+                      506.0
+                    ]
+                  ],
+                  "line_abc": [
+                    1.0,
+                    -0.0,
+                    -462.0
+                  ],
+                  "notes": ""
+                }
+              },
+              {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    387.6,
+                    610.0
+                  ],
+                  [
+                    164.39999999999998,
+                    610.0
+                  ]
+                ],
+                "line_abc": [
+                  -0.0,
+                  1.0,
+                  -609.9999999999999
+                ],
+                "notes": "",
+                "confirmed_at_utc": "2026-11-02T21:21:31.349628+00:00",
+                "reviewed": {
+                  "status": "annotated",
+                  "definition": "manual",
+                  "candidate_id": null,
+                  "basis": null,
+                  "endpoints": [
+                    [
+                      387.6,
+                      610.0
+                    ],
+                    [
+                      164.39999999999998,
+                      610.0
+                    ]
+                  ],
+                  "line_abc": [
+                    -0.0,
+                    1.0,
+                    -609.9999999999999
+                  ],
+                  "notes": ""
+                }
+              },
+              {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    90.0,
+                    506.0
+                  ],
+                  [
+                    90.0,
+                    194.0
+                  ]
+                ],
+                "line_abc": [
+                  1.0,
+                  0.0,
+                  -90.0
+                ],
+                "notes": "",
+                "confirmed_at_utc": "2026-11-02T21:21:31.349832+00:00",
+                "reviewed": {
+                  "status": "annotated",
+                  "definition": "manual",
+                  "candidate_id": null,
+                  "basis": null,
+                  "endpoints": [
+                    [
+                      90.0,
+                      506.0
+                    ],
+                    [
+                      90.0,
+                      194.0
+                    ]
+                  ],
+                  "line_abc": [
+                    1.0,
+                    0.0,
+                    -90.0
+                  ],
+                  "notes": ""
+                }
+              }
+            ],
+            "operator": "Test reviewer",
+            "at_utc": "2026-11-02T21:21:31.353824+00:00"
+          }
+        },
+        "edges": {
+          "findings": [
+            {
+              "id": "a1247b07-b4f7-4805-aa41-3d387fbf7a8e",
+              "category": "edges",
+              "region": "manual",
+              "origin": "manual",
+              "run_id": null,
+              "type": "wear",
+              "polygon_original": [
+                [
+                  120.0,
+                  140.0
+                ],
+                [
+                  125.0,
+                  140.0
+                ],
+                [
+                  125.0,
+                  145.0
+                ],
+                [
+                  120.0,
+                  145.0
+                ]
+              ],
+              "evidence": {
+                "description": "Synthetic grading GUI wear"
+              },
+              "decision": "confirmed",
+              "notes": "Synthetic grading GUI wear",
+              "operator": "Test reviewer",
+              "reviewed_at_utc": "2026-11-02T21:21:31.409763+00:00",
+              "history": []
+            }
+          ],
+          "operator": "Test reviewer",
+          "at_utc": "2026-11-02T21:21:31.410386+00:00",
+          "notes": "Reviewed synthetic edge wear",
+          "physical_validation": {
+            "sides": [
+              {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    164.4,
+                    90.0
+                  ],
+                  [
+                    387.6,
+                    90.0
+                  ]
+                ],
+                "line_abc": [
+                  0.0,
+                  1.0,
+                  -90.0
+                ],
+                "notes": "",
+                "confirmed_at_utc": "2026-11-02T21:21:31.349114+00:00",
+                "reviewed": {
+                  "status": "annotated",
+                  "definition": "manual",
+                  "candidate_id": null,
+                  "basis": null,
+                  "endpoints": [
+                    [
+                      164.4,
+                      90.0
+                    ],
+                    [
+                      387.6,
+                      90.0
+                    ]
+                  ],
+                  "line_abc": [
+                    0.0,
+                    1.0,
+                    -90.0
+                  ],
+                  "notes": ""
+                }
+              },
+              {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    462.0,
+                    194.0
+                  ],
+                  [
+                    462.0,
+                    506.0
+                  ]
+                ],
+                "line_abc": [
+                  1.0,
+                  -0.0,
+                  -462.0
+                ],
+                "notes": "",
+                "confirmed_at_utc": "2026-11-02T21:21:31.349417+00:00",
+                "reviewed": {
+                  "status": "annotated",
+                  "definition": "manual",
+                  "candidate_id": null,
+                  "basis": null,
+                  "endpoints": [
+                    [
+                      462.0,
+                      194.0
+                    ],
+                    [
+                      462.0,
+                      506.0
+                    ]
+                  ],
+                  "line_abc": [
+                    1.0,
+                    -0.0,
+                    -462.0
+                  ],
+                  "notes": ""
+                }
+              },
+              {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    387.6,
+                    610.0
+                  ],
+                  [
+                    164.39999999999998,
+                    610.0
+                  ]
+                ],
+                "line_abc": [
+                  -0.0,
+                  1.0,
+                  -609.9999999999999
+                ],
+                "notes": "",
+                "confirmed_at_utc": "2026-11-02T21:21:31.349628+00:00",
+                "reviewed": {
+                  "status": "annotated",
+                  "definition": "manual",
+                  "candidate_id": null,
+                  "basis": null,
+                  "endpoints": [
+                    [
+                      387.6,
+                      610.0
+                    ],
+                    [
+                      164.39999999999998,
+                      610.0
+                    ]
+                  ],
+                  "line_abc": [
+                    -0.0,
+                    1.0,
+                    -609.9999999999999
+                  ],
+                  "notes": ""
+                }
+              },
+              {
+                "status": "annotated",
+                "definition": "manual",
+                "candidate_id": null,
+                "basis": null,
+                "endpoints": [
+                  [
+                    90.0,
+                    506.0
+                  ],
+                  [
+                    90.0,
+                    194.0
+                  ]
+                ],
+                "line_abc": [
+                  1.0,
+                  0.0,
+                  -90.0
+                ],
+                "notes": "",
+                "confirmed_at_utc": "2026-11-02T21:21:31.349832+00:00",
+                "reviewed": {
+                  "status": "annotated",
+                  "definition": "manual",
+                  "candidate_id": null,
+                  "basis": null,
+                  "endpoints": [
+                    [
+                      90.0,
+                      506.0
+                    ],
+                    [
+                      90.0,
+                      194.0
+                    ]
+                  ],
+                  "line_abc": [
+                    1.0,
+                    0.0,
+                    -90.0
+                  ],
+                  "notes": ""
+                }
+              }
+            ],
+            "operator": "Test reviewer",
+            "at_utc": "2026-11-02T21:21:31.353824+00:00"
+          }
+        }
+      }
+    },
+    "saved_at_utc": "2026-11-02T21:21:31.416382+00:00",
+    "geometry_warnings": [],
+    "grading": {
+      "schema_version": 1,
+      "policy": {
+        "id": "selby-human-supervised-draft",
+        "version": "0.4.0",
+        "draft": true,
+        "front_centering_thresholds": [
+          [
+            10,
+            55
+          ],
+          [
+            9.5,
+            57
+          ],
+          [
+            9,
+            60
+          ],
+          [
+            8.5,
+            62
+          ],
+          [
+            8,
+            65
+          ],
+          [
+            7,
+            70
+          ],
+          [
+            6,
+            75
+          ],
+          [
+            5,
+            80
+          ]
+        ],
+        "back_centering_thresholds": null,
+        "centering_consolidation": "minimum",
+        "condition_consolidation": "sum_penalties_across_faces",
+        "condition_baseline": 10,
+        "weakest_plus": 1,
+        "structural_caps": {
+          "severely_crushed_corner": 6,
+          "minor_localized_crease": 6,
+          "pronounced_crease": 4,
+          "tear": 3,
+          "significant_delamination": 3,
+          "severe_overall_alteration": 2
+        }
+      },
+      "policy_sha256": "5f1324be9ace2c6f343528979d35512177c000ccff8b55dc40995f3c9d7a3eb8",
+      "working": {
+        "card_id": "SYNTHETIC-GUI-CARD",
+        "faces": {
+          "front": {
+            "inspection": {
+              "session_id": "de985a5a-b89e-4585-8811-dfb0652e4ef3",
+              "coordinate_system": "original_image_pixels_xy_right_down_v1",
+              "image": {
+                "path": "C:\\Users\\plher\\Documents\\spetra\\validation_artifacts\\v05c\\native-final-02\\test_grading_panel_two_faces_p0\\grading-front\\source.bmp",
+                "sha256": "378460c2b25ee6edaec4739fe9805aa478b58764fff5236c98d91e8ff2db4e44",
+                "dimensions": [
+                  560,
+                  720
+                ],
+                "mode": "RGB"
+              },
+              "image_encoding": {
+                "format": "BMP",
+                "frames": [
+                  {
+                    "width": 560,
+                    "height": 720,
+                    "mode": "RGB",
+                    "bits_per_pixel": 24,
+                    "dpi_metadata": [
+                      150.01231899334775,
+                      150.01231899334775
+                    ],
+                    "icc_profile_present": false,
+                    "uniform_pixel_content": false
+                  }
+                ],
+                "frame_count": 1
+              },
+              "sources": [
+                {
+                  "path": "C:\\Users\\plher\\Documents\\spetra\\validation_artifacts\\v05c\\native-final-02\\test_grading_panel_two_faces_p0\\grading-front\\boundary.json",
+                  "sha256": "48df71e443463bbeeaec44a6b5ce47ce034fb70a4abc00e33eaded2129dc1251",
+                  "kind": "single_image",
+                  "algorithm_version": "0.2.0",
+                  "status": "review_required",
+                  "baseline_status": "review_required",
+                  "flags": []
+                }
+              ],
+              "prediction_exposure": true,
+              "operator": "Test reviewer",
+              "inspection_face": "front",
+              "physical": [
+                {
+                  "status": "annotated",
+                  "definition": "manual",
+                  "candidate_id": null,
+                  "basis": null,
+                  "endpoints": [
+                    [
+                      164.4,
+                      90.0
+                    ],
+                    [
+                      387.6,
+                      90.0
+                    ]
+                  ],
+                  "line_abc": [
+                    0.0,
+                    1.0,
+                    -90.0
+                  ],
+                  "notes": "",
+                  "confirmed_at_utc": "2026-11-02T21:21:31.349114+00:00",
+                  "reviewed": {
+                    "status": "annotated",
+                    "definition": "manual",
+                    "candidate_id": null,
+                    "basis": null,
+                    "endpoints": [
+                      [
+                        164.4,
+                        90.0
+                      ],
+                      [
+                        387.6,
+                        90.0
+                      ]
+                    ],
+                    "line_abc": [
+                      0.0,
+                      1.0,
+                      -90.0
+                    ],
+                    "notes": ""
+                  }
+                },
+                {
+                  "status": "annotated",
+                  "definition": "manual",
+                  "candidate_id": null,
+                  "basis": null,
+                  "endpoints": [
+                    [
+                      462.0,
+                      194.0
+                    ],
+                    [
+                      462.0,
+                      506.0
+                    ]
+                  ],
+                  "line_abc": [
+                    1.0,
+                    -0.0,
+                    -462.0
+                  ],
+                  "notes": "",
+                  "confirmed_at_utc": "2026-11-02T21:21:31.349417+00:00",
+                  "reviewed": {
+                    "status": "annotated",
+                    "definition": "manual",
+                    "candidate_id": null,
+                    "basis": null,
+                    "endpoints": [
+                      [
+                        462.0,
+                        194.0
+                      ],
+                      [
+                        462.0,
+                        506.0
+                      ]
+                    ],
+                    "line_abc": [
+                      1.0,
+                      -0.0,
+                      -462.0
+                    ],
+                    "notes": ""
+                  }
+                },
+                {
+                  "status": "annotated",
+                  "definition": "manual",
+                  "candidate_id": null,
+                  "basis": null,
+                  "endpoints": [
+                    [
+                      387.6,
+                      610.0
+                    ],
+                    [
+                      164.39999999999998,
+                      610.0
+                    ]
+                  ],
+                  "line_abc": [
+                    -0.0,
+                    1.0,
+                    -609.9999999999999
+                  ],
+                  "notes": "",
+                  "confirmed_at_utc": "2026-11-02T21:21:31.349628+00:00",
+                  "reviewed": {
+                    "status": "annotated",
+                    "definition": "manual",
+                    "candidate_id": null,
+                    "basis": null,
+                    "endpoints": [
+                      [
+                        387.6,
+                        610.0
+                      ],
+                      [
+                        164.39999999999998,
+                        610.0
+                      ]
+                    ],
+                    "line_abc": [
+                      -0.0,
+                      1.0,
+                      -609.9999999999999
+                    ],
+                    "notes": ""
+                  }
+                },
+                {
+                  "status": "annotated",
+                  "definition": "manual",
+                  "candidate_id": null,
+                  "basis": null,
+                  "endpoints": [
+                    [
+                      90.0,
+                      506.0
+                    ],
+                    [
+                      90.0,
+                      194.0
+                    ]
+                  ],
+                  "line_abc": [
+                    1.0,
+                    0.0,
+                    -90.0
+                  ],
+                  "notes": "",
+                  "confirmed_at_utc": "2026-11-02T21:21:31.349832+00:00",
+                  "reviewed": {
+                    "status": "annotated",
+                    "definition": "manual",
+                    "candidate_id": null,
+                    "basis": null,
+                    "endpoints": [
+                      [
+                        90.0,
+                        506.0
+                      ],
+                      [
+                        90.0,
+                        194.0
+                      ]
+                    ],
+                    "line_abc": [
+                      1.0,
+                      0.0,
+                      -90.0
+                    ],
+                    "notes": ""
+                  }
+                }
+              ],
+              "printed": [
+                {
+                  "status": "annotated",
+                  "definition": "manual",
+                  "candidate_id": null,
+                  "basis": null,
+                  "endpoints": [
+                    [
+                      110.0,
+                      110.0
+                    ],
+                    [
+                      442.0,
+                      110.0
+                    ]
+                  ],
+                  "line_abc": [
+                    0.0,
+                    1.0,
+                    -110.0
+                  ],
+                  "notes": "",
+                  "confirmed_at_utc": "2026-11-02T21:21:31.350888+00:00",
+                  "reviewed": {
+                    "status": "annotated",
+                    "definition": "manual",
+                    "candidate_id": null,
+                    "basis": null,
+                    "endpoints": [
+                      [
+                        110.0,
+                        110.0
+                      ],
+                      [
+                        442.0,
+                        110.0
+                      ]
+                    ],
+                    "line_abc": [
+                      0.0,
+                      1.0,
+                      -110.0
+                    ],
+                    "notes": ""
+                  }
+                },
+                {
+                  "status": "annotated",
+                  "definition": "manual",
+                  "candidate_id": null,
+                  "basis": null,
+                  "endpoints": [
+                    [
+                      442.0,
+                      110.0
+                    ],
+                    [
+                      442.0,
+                      590.0
+                    ]
+                  ],
+                  "line_abc": [
+                    1.0,
+                    -0.0,
+                    -442.0
+                  ],
+                  "notes": "",
+                  "confirmed_at_utc": "2026-11-02T21:21:31.351062+00:00",
+                  "reviewed": {
+                    "status": "annotated",
+                    "definition": "manual",
+                    "candidate_id": null,
+                    "basis": null,
+                    "endpoints": [
+                      [
+                        442.0,
+                        110.0
+                      ],
+                      [
+                        442.0,
+                        590.0
+                      ]
+                    ],
+                    "line_abc": [
+                      1.0,
+                      -0.0,
+                      -442.0
+                    ],
+                    "notes": ""
+                  }
+                },
+                {
+                  "status": "annotated",
+                  "definition": "manual",
+                  "candidate_id": null,
+                  "basis": null,
+                  "endpoints": [
+                    [
+                      442.0,
+                      590.0
+                    ],
+                    [
+                      110.0,
+                      590.0
+                    ]
+                  ],
+                  "line_abc": [
+                    -0.0,
+                    1.0,
+                    -590.0
+                  ],
+                  "notes": "",
+                  "confirmed_at_utc": "2026-11-02T21:21:31.351236+00:00",
+                  "reviewed": {
+                    "status": "annotated",
+                    "definition": "manual",
+                    "candidate_id": null,
+                    "basis": null,
+                    "endpoints": [
+                      [
+                        442.0,
+                        590.0
+                      ],
+                      [
+                        110.0,
+                        590.0
+                      ]
+                    ],
+                    "line_abc": [
+                      -0.0,
+                      1.0,
+                      -590.0
+                    ],
+                    "notes": ""
+                  }
+                },
+                {
+                  "status": "annotated",
+                  "definition": "manual",
+                  "candidate_id": null,
+                  "basis": null,
+                  "endpoints": [
+                    [
+                      110.0,
+                      590.0
+                    ],
+                    [
+                      110.0,
+                      110.0
+                    ]
+                  ],
+                  "line_abc": [
+                    1.0,
+                    0.0,
+                    -110.0
+                  ],
+                  "notes": "",
+                  "confirmed_at_utc": "2026-11-02T21:21:31.351411+00:00",
+                  "reviewed": {
+                    "status": "annotated",
+                    "definition": "manual",
+                    "candidate_id": null,
+                    "basis": null,
+                    "endpoints": [
+                      [
+                        110.0,
+                        590.0
+                      ],
+                      [
+                        110.0,
+                        110.0
+                      ]
+                    ],
+                    "line_abc": [
+                      1.0,
+                      0.0,
+                      -110.0
+                    ],
+                    "notes": ""
+                  }
+                }
+              ],
+              "boundary_validation": {
+                "physical": {
+                  "sides": [
+                    {
+                      "status": "annotated",
+                      "definition": "manual",
+                      "candidate_id": null,
+                      "basis": null,
+                      "endpoints": [
+                        [
+                          164.4,
+                          90.0
+                        ],
+                        [
+                          387.6,
+                          90.0
+                        ]
+                      ],
+                      "line_abc": [
+                        0.0,
+                        1.0,
+                        -90.0
+                      ],
+                      "notes": "",
+                      "confirmed_at_utc": "2026-11-02T21:21:31.349114+00:00",
+                      "reviewed": {
+                        "status": "annotated",
+                        "definition": "manual",
+                        "candidate_id": null,
+                        "basis": null,
+                        "endpoints": [
+                          [
+                            164.4,
+                            90.0
+                          ],
+                          [
+                            387.6,
+                            90.0
+                          ]
+                        ],
+                        "line_abc": [
+                          0.0,
+                          1.0,
+                          -90.0
+                        ],
+                        "notes": ""
+                      }
+                    },
+                    {
+                      "status": "annotated",
+                      "definition": "manual",
+                      "candidate_id": null,
+                      "basis": null,
+                      "endpoints": [
+                        [
+                          462.0,
+                          194.0
+                        ],
+                        [
+                          462.0,
+                          506.0
+                        ]
+                      ],
+                      "line_abc": [
+                        1.0,
+                        -0.0,
+                        -462.0
+                      ],
+                      "notes": "",
+                      "confirmed_at_utc": "2026-11-02T21:21:31.349417+00:00",
+                      "reviewed": {
+                        "status": "annotated",
+                        "definition": "manual",
+                        "candidate_id": null,
+                        "basis": null,
+                        "endpoints": [
+                          [
+                            462.0,
+                            194.0
+                          ],
+                          [
+                            462.0,
+                            506.0
+                          ]
+                        ],
+                        "line_abc": [
+                          1.0,
+                          -0.0,
+                          -462.0
+                        ],
+                        "notes": ""
+                      }
+                    },
+                    {
+                      "status": "annotated",
+                      "definition": "manual",
+                      "candidate_id": null,
+                      "basis": null,
+                      "endpoints": [
+                        [
+                          387.6,
+                          610.0
+                        ],
+                        [
+                          164.39999999999998,
+                          610.0
+                        ]
+                      ],
+                      "line_abc": [
+                        -0.0,
+                        1.0,
+                        -609.9999999999999
+                      ],
+                      "notes": "",
+                      "confirmed_at_utc": "2026-11-02T21:21:31.349628+00:00",
+                      "reviewed": {
+                        "status": "annotated",
+                        "definition": "manual",
+                        "candidate_id": null,
+                        "basis": null,
+                        "endpoints": [
+                          [
+                            387.6,
+                            610.0
+                          ],
+                          [
+                            164.39999999999998,
+                            610.0
+                          ]
+                        ],
+                        "line_abc": [
+                          -0.0,
+                          1.0,
+                          -609.9999999999999
+                        ],
+                        "notes": ""
+                      }
+                    },
+                    {
+                      "status": "annotated",
+                      "definition": "manual",
+                      "candidate_id": null,
+                      "basis": null,
+                      "endpoints": [
+                        [
+                          90.0,
+                          506.0
+                        ],
+                        [
+                          90.0,
+                          194.0
+                        ]
+                      ],
+                      "line_abc": [
+                        1.0,
+                        0.0,
+                        -90.0
+                      ],
+                      "notes": "",
+                      "confirmed_at_utc": "2026-11-02T21:21:31.349832+00:00",
+                      "reviewed": {
+                        "status": "annotated",
+                        "definition": "manual",
+                        "candidate_id": null,
+                        "basis": null,
+                        "endpoints": [
+                          [
+                            90.0,
+                            506.0
+                          ],
+                          [
+                            90.0,
+                            194.0
+                          ]
+                        ],
+                        "line_abc": [
+                          1.0,
+                          0.0,
+                          -90.0
+                        ],
+                        "notes": ""
+                      }
+                    }
+                  ],
+                  "operator": "Test reviewer",
+                  "at_utc": "2026-11-02T21:21:31.353824+00:00"
+                },
+                "printed": {
+                  "sides": [
+                    {
+                      "status": "annotated",
+                      "definition": "manual",
+                      "candidate_id": null,
+                      "basis": null,
+                      "endpoints": [
+                        [
+                          110.0,
+                          110.0
+                        ],
+                        [
+                          442.0,
+                          110.0
+                        ]
+                      ],
+                      "line_abc": [
+                        0.0,
+                        1.0,
+                        -110.0
+                      ],
+                      "notes": "",
+                      "confirmed_at_utc": "2026-11-02T21:21:31.350888+00:00",
+                      "reviewed": {
+                        "status": "annotated",
+                        "definition": "manual",
+                        "candidate_id": null,
+                        "basis": null,
+                        "endpoints": [
+                          [
+                            110.0,
+                            110.0
+                          ],
+                          [
+                            442.0,
+                            110.0
+                          ]
+                        ],
+                        "line_abc": [
+                          0.0,
+                          1.0,
+                          -110.0
+                        ],
+                        "notes": ""
+                      }
+                    },
+                    {
+                      "status": "annotated",
+                      "definition": "manual",
+                      "candidate_id": null,
+                      "basis": null,
+                      "endpoints": [
+                        [
+                          442.0,
+                          110.0
+                        ],
+                        [
+                          442.0,
+                          590.0
+                        ]
+                      ],
+                      "line_abc": [
+                        1.0,
+                        -0.0,
+                        -442.0
+                      ],
+                      "notes": "",
+                      "confirmed_at_utc": "2026-11-02T21:21:31.351062+00:00",
+                      "reviewed": {
+                        "status": "annotated",
+                        "definition": "manual",
+                        "candidate_id": null,
+                        "basis": null,
+                        "endpoints": [
+                          [
+                            442.0,
+                            110.0
+                          ],
+                          [
+                            442.0,
+                            590.0
+                          ]
+                        ],
+                        "line_abc": [
+                          1.0,
+                          -0.0,
+                          -442.0
+                        ],
+                        "notes": ""
+                      }
+                    },
+                    {
+                      "status": "annotated",
+                      "definition": "manual",
+                      "candidate_id": null,
+                      "basis": null,
+                      "endpoints": [
+                        [
+                          442.0,
+                          590.0
+                        ],
+                        [
+                          110.0,
+                          590.0
+                        ]
+                      ],
+                      "line_abc": [
+                        -0.0,
+                        1.0,
+                        -590.0
+                      ],
+                      "notes": "",
+                      "confirmed_at_utc": "2026-11-02T21:21:31.351236+00:00",
+                      "reviewed": {
+                        "status": "annotated",
+                        "definition": "manual",
+                        "candidate_id": null,
+                        "basis": null,
+                        "endpoints": [
+                          [
+                            442.0,
+                            590.0
+                          ],
+                          [
+                            110.0,
+                            590.0
+                          ]
+                        ],
+                        "line_abc": [
+                          -0.0,
+                          1.0,
+                          -590.0
+                        ],
+                        "notes": ""
+                      }
+                    },
+                    {
+                      "status": "annotated",
+                      "definition": "manual",
+                      "candidate_id": null,
+                      "basis": null,
+                      "endpoints": [
+                        [
+                          110.0,
+                          590.0
+                        ],
+                        [
+                          110.0,
+                          110.0
+                        ]
+                      ],
+                      "line_abc": [
+                        1.0,
+                        0.0,
+                        -110.0
+                      ],
+                      "notes": "",
+                      "confirmed_at_utc": "2026-11-02T21:21:31.351411+00:00",
+                      "reviewed": {
+                        "status": "annotated",
+                        "definition": "manual",
+                        "candidate_id": null,
+                        "basis": null,
+                        "endpoints": [
+                          [
+                            110.0,
+                            590.0
+                          ],
+                          [
+                            110.0,
+                            110.0
+                          ]
+                        ],
+                        "line_abc": [
+                          1.0,
+                          0.0,
+                          -110.0
+                        ],
+                        "notes": ""
+                      }
+                    }
+                  ],
+                  "operator": "Test reviewer",
+                  "at_utc": "2026-11-02T21:21:31.354341+00:00"
+                }
+              },
+              "condition": {
+                "schema_version": 1,
+                "runs": [],
+                "findings": [
+                  {
+                    "id": "a1247b07-b4f7-4805-aa41-3d387fbf7a8e",
+                    "category": "edges",
+                    "region": "manual",
+                    "origin": "manual",
+                    "run_id": null,
+                    "type": "wear",
+                    "polygon_original": [
+                      [
+                        120.0,
+                        140.0
+                      ],
+                      [
+                        125.0,
+                        140.0
+                      ],
+                      [
+                        125.0,
+                        145.0
+                      ],
+                      [
+                        120.0,
+                        145.0
+                      ]
+                    ],
+                    "evidence": {
+                      "description": "Synthetic grading GUI wear"
+                    },
+                    "decision": "confirmed",
+                    "notes": "Synthetic grading GUI wear",
+                    "operator": "Test reviewer",
+                    "reviewed_at_utc": "2026-11-02T21:21:31.409763+00:00",
+                    "history": []
+                  }
+                ],
+                "reviews": {
+                  "corners": {
+                    "findings": [],
+                    "operator": "Test reviewer",
+                    "at_utc": "2026-11-02T21:21:31.354765+00:00",
+                    "notes": "Synthetic full-category visual review",
+                    "physical_validation": {
+                      "sides": [
+                        {
+                          "status": "annotated",
+                          "definition": "manual",
+                          "candidate_id": null,
+                          "basis": null,
+                          "endpoints": [
+                            [
+                              164.4,
+                              90.0
+                            ],
+                            [
+                              387.6,
+                              90.0
+                            ]
+                          ],
+                          "line_abc": [
+                            0.0,
+                            1.0,
+                            -90.0
+                          ],
+                          "notes": "",
+                          "confirmed_at_utc": "2026-11-02T21:21:31.349114+00:00",
+                          "reviewed": {
+                            "status": "annotated",
+                            "definition": "manual",
+                            "candidate_id": null,
+                            "basis": null,
+                            "endpoints": [
+                              [
+                                164.4,
+                                90.0
+                              ],
+                              [
+                                387.6,
+                                90.0
+                              ]
+                            ],
+                            "line_abc": [
+                              0.0,
+                              1.0,
+                              -90.0
+                            ],
+                            "notes": ""
+                          }
+                        },
+                        {
+                          "status": "annotated",
+                          "definition": "manual",
+                          "candidate_id": null,
+                          "basis": null,
+                          "endpoints": [
+                            [
+                              462.0,
+                              194.0
+                            ],
+                            [
+                              462.0,
+                              506.0
+                            ]
+                          ],
+                          "line_abc": [
+                            1.0,
+                            -0.0,
+                            -462.0
+                          ],
+                          "notes": "",
+                          "confirmed_at_utc": "2026-11-02T21:21:31.349417+00:00",
+                          "reviewed": {
+                            "status": "annotated",
+                            "definition": "manual",
+                            "candidate_id": null,
+                            "basis": null,
+                            "endpoints": [
+                              [
+                                462.0,
+                                194.0
+                              ],
+                              [
+                                462.0,
+                                506.0
+                              ]
+                            ],
+                            "line_abc": [
+                              1.0,
+                              -0.0,
+                              -462.0
+                            ],
+                            "notes": ""
+                          }
+                        },
+                        {
+                          "status": "annotated",
+                          "definition": "manual",
+                          "candidate_id": null,
+                          "basis": null,
+                          "endpoints": [
+                            [
+                              387.6,
+                              610.0
+                            ],
+                            [
+                              164.39999999999998,
+                              610.0
+                            ]
+                          ],
+                          "line_abc": [
+                            -0.0,
+                            1.0,
+                            -609.9999999999999
+                          ],
+                          "notes": "",
+                          "confirmed_at_utc": "2026-11-02T21:21:31.349628+00:00",
+                          "reviewed": {
+                            "status": "annotated",
+                            "definition": "manual",
+                            "candidate_id": null,
+                            "basis": null,
+                            "endpoints": [
+                              [
+                                387.6,
+                                610.0
+                              ],
+                              [
+                                164.39999999999998,
+                                610.0
+                              ]
+                            ],
+                            "line_abc": [
+                              -0.0,
+                              1.0,
+                              -609.9999999999999
+                            ],
+                            "notes": ""
+                          }
+                        },
+                        {
+                          "status": "annotated",
+                          "definition": "manual",
+                          "candidate_id": null,
+                          "basis": null,
+                          "endpoints": [
+                            [
+                              90.0,
+                              506.0
+                            ],
+                            [
+                              90.0,
+                              194.0
+                            ]
+                          ],
+                          "line_abc": [
+                            1.0,
+                            0.0,
+                            -90.0
+                          ],
+                          "notes": "",
+                          "confirmed_at_utc": "2026-11-02T21:21:31.349832+00:00",
+                          "reviewed": {
+                            "status": "annotated",
+                            "definition": "manual",
+                            "candidate_id": null,
+                            "basis": null,
+                            "endpoints": [
+                              [
+                                90.0,
+                                506.0
+                              ],
+                              [
+                                90.0,
+                                194.0
+                              ]
+                            ],
+                            "line_abc": [
+                              1.0,
+                              0.0,
+                              -90.0
+                            ],
+                            "notes": ""
+                          }
+                        }
+                      ],
+                      "operator": "Test reviewer",
+                      "at_utc": "2026-11-02T21:21:31.353824+00:00"
+                    }
+                  },
+                  "surface": {
+                    "findings": [],
+                    "operator": "Test reviewer",
+                    "at_utc": "2026-11-02T21:21:31.355803+00:00",
+                    "notes": "Synthetic full-category visual review",
+                    "physical_validation": {
+                      "sides": [
+                        {
+                          "status": "annotated",
+                          "definition": "manual",
+                          "candidate_id": null,
+                          "basis": null,
+                          "endpoints": [
+                            [
+                              164.4,
+                              90.0
+                            ],
+                            [
+                              387.6,
+                              90.0
+                            ]
+                          ],
+                          "line_abc": [
+                            0.0,
+                            1.0,
+                            -90.0
+                          ],
+                          "notes": "",
+                          "confirmed_at_utc": "2026-11-02T21:21:31.349114+00:00",
+                          "reviewed": {
+                            "status": "annotated",
+                            "definition": "manual",
+                            "candidate_id": null,
+                            "basis": null,
+                            "endpoints": [
+                              [
+                                164.4,
+                                90.0
+                              ],
+                              [
+                                387.6,
+                                90.0
+                              ]
+                            ],
+                            "line_abc": [
+                              0.0,
+                              1.0,
+                              -90.0
+                            ],
+                            "notes": ""
+                          }
+                        },
+                        {
+                          "status": "annotated",
+                          "definition": "manual",
+                          "candidate_id": null,
+                          "basis": null,
+                          "endpoints": [
+                            [
+                              462.0,
+                              194.0
+                            ],
+                            [
+                              462.0,
+                              506.0
+                            ]
+                          ],
+                          "line_abc": [
+                            1.0,
+                            -0.0,
+                            -462.0
+                          ],
+                          "notes": "",
+                          "confirmed_at_utc": "2026-11-02T21:21:31.349417+00:00",
+                          "reviewed": {
+                            "status": "annotated",
+                            "definition": "manual",
+                            "candidate_id": null,
+                            "basis": null,
+                            "endpoints": [
+                              [
+                                462.0,
+                                194.0
+                              ],
+                              [
+                                462.0,
+                                506.0
+                              ]
+                            ],
+                            "line_abc": [
+                              1.0,
+                              -0.0,
+                              -462.0
+                            ],
+                            "notes": ""
+                          }
+                        },
+                        {
+                          "status": "annotated",
+                          "definition": "manual",
+                          "candidate_id": null,
+                          "basis": null,
+                          "endpoints": [
+                            [
+                              387.6,
+                              610.0
+                            ],
+                            [
+                              164.39999999999998,
+                              610.0
+                            ]
+                          ],
+                          "line_abc": [
+                            -0.0,
+                            1.0,
+                            -609.9999999999999
+                          ],
+                          "notes": "",
+                          "confirmed_at_utc": "2026-11-02T21:21:31.349628+00:00",
+                          "reviewed": {
+                            "status": "annotated",
+                            "definition": "manual",
+                            "candidate_id": null,
+                            "basis": null,
+                            "endpoints": [
+                              [
+                                387.6,
+                                610.0
+                              ],
+                              [
+                                164.39999999999998,
+                                610.0
+                              ]
+                            ],
+                            "line_abc": [
+                              -0.0,
+                              1.0,
+                              -609.9999999999999
+                            ],
+                            "notes": ""
+                          }
+                        },
+                        {
+                          "status": "annotated",
+                          "definition": "manual",
+                          "candidate_id": null,
+                          "basis": null,
+                          "endpoints": [
+                            [
+                              90.0,
+                              506.0
+                            ],
+                            [
+                              90.0,
+                              194.0
+                            ]
+                          ],
+                          "line_abc": [
+                            1.0,
+                            0.0,
+                            -90.0
+                          ],
+                          "notes": "",
+                          "confirmed_at_utc": "2026-11-02T21:21:31.349832+00:00",
+                          "reviewed": {
+                            "status": "annotated",
+                            "definition": "manual",
+                            "candidate_id": null,
+                            "basis": null,
+                            "endpoints": [
+                              [
+                                90.0,
+                                506.0
+                              ],
+                              [
+                                90.0,
+                                194.0
+                              ]
+                            ],
+                            "line_abc": [
+                              1.0,
+                              0.0,
+                              -90.0
+                            ],
+                            "notes": ""
+                          }
+                        }
+                      ],
+                      "operator": "Test reviewer",
+                      "at_utc": "2026-11-02T21:21:31.353824+00:00"
+                    }
+                  },
+                  "edges": {
+                    "findings": [
+                      {
+                        "id": "a1247b07-b4f7-4805-aa41-3d387fbf7a8e",
+                        "category": "edges",
+                        "region": "manual",
+                        "origin": "manual",
+                        "run_id": null,
+                        "type": "wear",
+                        "polygon_original": [
+                          [
+                            120.0,
+                            140.0
+                          ],
+                          [
+                            125.0,
+                            140.0
+                          ],
+                          [
+                            125.0,
+                            145.0
+                          ],
+                          [
+                            120.0,
+                            145.0
+                          ]
+                        ],
+                        "evidence": {
+                          "description": "Synthetic grading GUI wear"
+                        },
+                        "decision": "confirmed",
+                        "notes": "Synthetic grading GUI wear",
+                        "operator": "Test reviewer",
+                        "reviewed_at_utc": "2026-11-02T21:21:31.409763+00:00",
+                        "history": []
+                      }
+                    ],
+                    "operator": "Test reviewer",
+                    "at_utc": "2026-11-02T21:21:31.410386+00:00",
+                    "notes": "Reviewed synthetic edge wear",
+                    "physical_validation": {
+                      "sides": [
+                        {
+                          "status": "annotated",
+                          "definition": "manual",
+                          "candidate_id": null,
+                          "basis": null,
+                          "endpoints": [
+                            [
+                              164.4,
+                              90.0
+                            ],
+                            [
+                              387.6,
+                              90.0
+                            ]
+                          ],
+                          "line_abc": [
+                            0.0,
+                            1.0,
+                            -90.0
+                          ],
+                          "notes": "",
+                          "confirmed_at_utc": "2026-11-02T21:21:31.349114+00:00",
+                          "reviewed": {
+                            "status": "annotated",
+                            "definition": "manual",
+                            "candidate_id": null,
+                            "basis": null,
+                            "endpoints": [
+                              [
+                                164.4,
+                                90.0
+                              ],
+                              [
+                                387.6,
+                                90.0
+                              ]
+                            ],
+                            "line_abc": [
+                              0.0,
+                              1.0,
+                              -90.0
+                            ],
+                            "notes": ""
+                          }
+                        },
+                        {
+                          "status": "annotated",
+                          "definition": "manual",
+                          "candidate_id": null,
+                          "basis": null,
+                          "endpoints": [
+                            [
+                              462.0,
+                              194.0
+                            ],
+                            [
+                              462.0,
+                              506.0
+                            ]
+                          ],
+                          "line_abc": [
+                            1.0,
+                            -0.0,
+                            -462.0
+                          ],
+                          "notes": "",
+                          "confirmed_at_utc": "2026-11-02T21:21:31.349417+00:00",
+                          "reviewed": {
+                            "status": "annotated",
+                            "definition": "manual",
+                            "candidate_id": null,
+                            "basis": null,
+                            "endpoints": [
+                              [
+                                462.0,
+                                194.0
+                              ],
+                              [
+                                462.0,
+                                506.0
+                              ]
+                            ],
+                            "line_abc": [
+                              1.0,
+                              -0.0,
+                              -462.0
+                            ],
+                            "notes": ""
+                          }
+                        },
+                        {
+                          "status": "annotated",
+                          "definition": "manual",
+                          "candidate_id": null,
+                          "basis": null,
+                          "endpoints": [
+                            [
+                              387.6,
+                              610.0
+                            ],
+                            [
+                              164.39999999999998,
+                              610.0
+                            ]
+                          ],
+                          "line_abc": [
+                            -0.0,
+                            1.0,
+                            -609.9999999999999
+                          ],
+                          "notes": "",
+                          "confirmed_at_utc": "2026-11-02T21:21:31.349628+00:00",
+                          "reviewed": {
+                            "status": "annotated",
+                            "definition": "manual",
+                            "candidate_id": null,
+                            "basis": null,
+                            "endpoints": [
+                              [
+                                387.6,
+                                610.0
+                              ],
+                              [
+                                164.39999999999998,
+                                610.0
+                              ]
+                            ],
+                            "line_abc": [
+                              -0.0,
+                              1.0,
+                              -609.9999999999999
+                            ],
+                            "notes": ""
+                          }
+                        },
+                        {
+                          "status": "annotated",
+                          "definition": "manual",
+                          "candidate_id": null,
+                          "basis": null,
+                          "endpoints": [
+                            [
+                              90.0,
+                              506.0
+                            ],
+                            [
+                              90.0,
+                              194.0
+                            ]
+                          ],
+                          "line_abc": [
+                            1.0,
+                            0.0,
+                            -90.0
+                          ],
+                          "notes": "",
+                          "confirmed_at_utc": "2026-11-02T21:21:31.349832+00:00",
+                          "reviewed": {
+                            "status": "annotated",
+                            "definition": "manual",
+                            "candidate_id": null,
+                            "basis": null,
+                            "endpoints": [
+                              [
+                                90.0,
+                                506.0
+                              ],
+                              [
+                                90.0,
+                                194.0
+                              ]
+                            ],
+                            "line_abc": [
+                              1.0,
+                              0.0,
+                              -90.0
+                            ],
+                            "notes": ""
+                          }
+                        }
+                      ],
+                      "operator": "Test reviewer",
+                      "at_utc": "2026-11-02T21:21:31.353824+00:00"
+                    }
+                  }
+                }
+              },
+              "review_status": "review_required",
+              "automatic_acceptance": false
+            },
+            "inspection_sha256": "089f296cf1be4c78089b50f99faa4a30536cdd43e2192b8eac01eb027ed526a0",
+            "saved_path": "C:\\Users\\plher\\Documents\\spetra\\validation_artifacts\\v05c\\native-final-02\\test_grading_panel_two_faces_p0\\input-sessions\\inspection-de985a5a-b89e-4585-8811-dfb0652e4ef3-1531fa37-e63a-465c-9705-717606efbabc.json",
+            "saved_sha256": "f96338b529328cc4d2e5dd33c75edca206e3a933288d51111a2594d1668654e3"
+          }
+        },
+        "penalties": {},
+        "centering_reviews": {}
+      },
+      "events": [
+        {
+          "id": "50682c6b-b78f-4d0d-a7c2-c9e4d1972302",
+          "action": "initialize",
+          "notes": "SYNTHETIC-GUI-CARD",
+          "operator": "Test reviewer",
+          "at_utc": "2026-11-02T21:21:31.516806+00:00",
+          "policy_version": "0.4.0",
+          "working": {
+            "card_id": "SYNTHETIC-GUI-CARD",
+            "faces": {},
+            "penalties": {},
+            "centering_reviews": {}
+          },
+          "overrides": [],
+          "decisions": [],
+          "previous": null,
+          "sha256": "971ce6b1eccaca4e2be6ebe23debda42d625dd5be131796f185e5dcd88fb829a"
+        },
+        {
+          "id": "ede19a63-149c-4505-bad4-acb36c827e74",
+          "action": "attach_front",
+          "notes": "Same-card front inspection attached",
+          "operator": "Test reviewer",
+          "at_utc": "2026-11-02T21:21:31.539135+00:00",
+          "policy_version": "0.4.0",
+          "working": {
+            "card_id": "SYNTHETIC-GUI-CARD",
+            "faces": {
+              "front": {
+                "inspection": {
+                  "session_id": "de985a5a-b89e-4585-8811-dfb0652e4ef3",
+                  "coordinate_system": "original_image_pixels_xy_right_down_v1",
+                  "image": {
+                    "path": "C:\\Users\\plher\\Documents\\spetra\\validation_artifacts\\v05c\\native-final-02\\test_grading_panel_two_faces_p0\\grading-front\\source.bmp",
+                    "sha256": "378460c2b25ee6edaec4739fe9805aa478b58764fff5236c98d91e8ff2db4e44",
+                    "dimensions": [
+                      560,
+                      720
+                    ],
+                    "mode": "RGB"
+                  },
+                  "image_encoding": {
+                    "format": "BMP",
+                    "frames": [
+                      {
+                        "width": 560,
+                        "height": 720,
+                        "mode": "RGB",
+                        "bits_per_pixel": 24,
+                        "dpi_metadata": [
+                          150.01231899334775,
+                          150.01231899334775
+                        ],
+                        "icc_profile_present": false,
+                        "uniform_pixel_content": false
+                      }
+                    ],
+                    "frame_count": 1
+                  },
+                  "sources": [
+                    {
+                      "path": "C:\\Users\\plher\\Documents\\spetra\\validation_artifacts\\v05c\\native-final-02\\test_grading_panel_two_faces_p0\\grading-front\\boundary.json",
+                      "sha256": "48df71e443463bbeeaec44a6b5ce47ce034fb70a4abc00e33eaded2129dc1251",
+                      "kind": "single_image",
+                      "algorithm_version": "0.2.0",
+                      "status": "review_required",
+                      "baseline_status": "review_required",
+                      "flags": []
+                    }
+                  ],
+                  "prediction_exposure": true,
+                  "operator": "Test reviewer",
+                  "inspection_face": "front",
+                  "physical": [
+                    {
+                      "status": "annotated",
+                      "definition": "manual",
+                      "candidate_id": null,
+                      "basis": null,
+                      "endpoints": [
+                        [
+                          164.4,
+                          90.0
+                        ],
+                        [
+                          387.6,
+                          90.0
+                        ]
+                      ],
+                      "line_abc": [
+                        0.0,
+                        1.0,
+                        -90.0
+                      ],
+                      "notes": "",
+                      "confirmed_at_utc": "2026-11-02T21:21:31.349114+00:00",
+                      "reviewed": {
+                        "status": "annotated",
+                        "definition": "manual",
+                        "candidate_id": null,
+                        "basis": null,
+                        "endpoints": [
+                          [
+                            164.4,
+                            90.0
+                          ],
+                          [
+                            387.6,
+                            90.0
+                          ]
+                        ],
+                        "line_abc": [
+                          0.0,
+                          1.0,
+                          -90.0
+                        ],
+                        "notes": ""
+                      }
+                    },
+                    {
+                      "status": "annotated",
+                      "definition": "manual",
+                      "candidate_id": null,
+                      "basis": null,
+                      "endpoints": [
+                        [
+                          462.0,
+                          194.0
+                        ],
+                        [
+                          462.0,
+                          506.0
+                        ]
+                      ],
+                      "line_abc": [
+                        1.0,
+                        -0.0,
+                        -462.0
+                      ],
+                      "notes": "",
+                      "confirmed_at_utc": "2026-11-02T21:21:31.349417+00:00",
+                      "reviewed": {
+                        "status": "annotated",
+                        "definition": "manual",
+                        "candidate_id": null,
+                        "basis": null,
+                        "endpoints": [
+                          [
+                            462.0,
+                            194.0
+                          ],
+                          [
+                            462.0,
+                            506.0
+                          ]
+                        ],
+                        "line_abc": [
+                          1.0,
+                          -0.0,
+                          -462.0
+                        ],
+                        "notes": ""
+                      }
+                    },
+                    {
+                      "status": "annotated",
+                      "definition": "manual",
+                      "candidate_id": null,
+                      "basis": null,
+                      "endpoints": [
+                        [
+                          387.6,
+                          610.0
+                        ],
+                        [
+                          164.39999999999998,
+                          610.0
+                        ]
+                      ],
+                      "line_abc": [
+                        -0.0,
+                        1.0,
+                        -609.9999999999999
+                      ],
+                      "notes": "",
+                      "confirmed_at_utc": "2026-11-02T21:21:31.349628+00:00",
+                      "reviewed": {
+                        "status": "annotated",
+                        "definition": "manual",
+                        "candidate_id": null,
+                        "basis": null,
+                        "endpoints": [
+                          [
+                            387.6,
+                            610.0
+                          ],
+                          [
+                            164.39999999999998,
+                            610.0
+                          ]
+                        ],
+                        "line_abc": [
+                          -0.0,
+                          1.0,
+                          -609.9999999999999
+                        ],
+                        "notes": ""
+                      }
+                    },
+                    {
+                      "status": "annotated",
+                      "definition": "manual",
+                      "candidate_id": null,
+                      "basis": null,
+                      "endpoints": [
+                        [
+                          90.0,
+                          506.0
+                        ],
+                        [
+                          90.0,
+                          194.0
+                        ]
+                      ],
+                      "line_abc": [
+                        1.0,
+                        0.0,
+                        -90.0
+                      ],
+                      "notes": "",
+                      "confirmed_at_utc": "2026-11-02T21:21:31.349832+00:00",
+                      "reviewed": {
+                        "status": "annotated",
+                        "definition": "manual",
+                        "candidate_id": null,
+                        "basis": null,
+                        "endpoints": [
+                          [
+                            90.0,
+                            506.0
+                          ],
+                          [
+                            90.0,
+                            194.0
+                          ]
+                        ],
+                        "line_abc": [
+                          1.0,
+                          0.0,
+                          -90.0
+                        ],
+                        "notes": ""
+                      }
+                    }
+                  ],
+                  "printed": [
+                    {
+                      "status": "annotated",
+                      "definition": "manual",
+                      "candidate_id": null,
+                      "basis": null,
+                      "endpoints": [
+                        [
+                          110.0,
+                          110.0
+                        ],
+                        [
+                          442.0,
+                          110.0
+                        ]
+                      ],
+                      "line_abc": [
+                        0.0,
+                        1.0,
+                        -110.0
+                      ],
+                      "notes": "",
+                      "confirmed_at_utc": "2026-11-02T21:21:31.350888+00:00",
+                      "reviewed": {
+                        "status": "annotated",
+                        "definition": "manual",
+                        "candidate_id": null,
+                        "basis": null,
+                        "endpoints": [
+                          [
+                            110.0,
+                            110.0
+                          ],
+                          [
+                            442.0,
+                            110.0
+                          ]
+                        ],
+                        "line_abc": [
+                          0.0,
+                          1.0,
+                          -110.0
+                        ],
+                        "notes": ""
+                      }
+                    },
+                    {
+                      "status": "annotated",
+                      "definition": "manual",
+                      "candidate_id": null,
+                      "basis": null,
+                      "endpoints": [
+                        [
+                          442.0,
+                          110.0
+                        ],
+                        [
+                          442.0,
+                          590.0
+                        ]
+                      ],
+                      "line_abc": [
+                        1.0,
+                        -0.0,
+                        -442.0
+                      ],
+                      "notes": "",
+                      "confirmed_at_utc": "2026-11-02T21:21:31.351062+00:00",
+                      "reviewed": {
+                        "status": "annotated",
+                        "definition": "manual",
+                        "candidate_id": null,
+                        "basis": null,
+                        "endpoints": [
+                          [
+                            442.0,
+                            110.0
+                          ],
+                          [
+                            442.0,
+                            590.0
+                          ]
+                        ],
+                        "line_abc": [
+                          1.0,
+                          -0.0,
+                          -442.0
+                        ],
+                        "notes": ""
+                      }
+                    },
+                    {
+                      "status": "annotated",
+                      "definition": "manual",
+                      "candidate_id": null,
+                      "basis": null,
+                      "endpoints": [
+                        [
+                          442.0,
+                          590.0
+                        ],
+                        [
+                          110.0,
+                          590.0
+                        ]
+                      ],
+                      "line_abc": [
+                        -0.0,
+                        1.0,
+                        -590.0
+                      ],
+                      "notes": "",
+                      "confirmed_at_utc": "2026-11-02T21:21:31.351236+00:00",
+                      "reviewed": {
+                        "status": "annotated",
+                        "definition": "manual",
+                        "candidate_id": null,
+                        "basis": null,
+                        "endpoints": [
+                          [
+                            442.0,
+                            590.0
+                          ],
+                          [
+                            110.0,
+                            590.0
+                          ]
+                        ],
+                        "line_abc": [
+                          -0.0,
+                          1.0,
+                          -590.0
+                        ],
+                        "notes": ""
+                      }
+                    },
+                    {
+                      "status": "annotated",
+                      "definition": "manual",
+                      "candidate_id": null,
+                      "basis": null,
+                      "endpoints": [
+                        [
+                          110.0,
+                          590.0
+                        ],
+                        [
+                          110.0,
+                          110.0
+                        ]
+                      ],
+                      "line_abc": [
+                        1.0,
+                        0.0,
+                        -110.0
+                      ],
+                      "notes": "",
+                      "confirmed_at_utc": "2026-11-02T21:21:31.351411+00:00",
+                      "reviewed": {
+                        "status": "annotated",
+                        "definition": "manual",
+                        "candidate_id": null,
+                        "basis": null,
+                        "endpoints": [
+                          [
+                            110.0,
+                            590.0
+                          ],
+                          [
+                            110.0,
+                            110.0
+                          ]
+                        ],
+                        "line_abc": [
+                          1.0,
+                          0.0,
+                          -110.0
+                        ],
+                        "notes": ""
+                      }
+                    }
+                  ],
+                  "boundary_validation": {
+                    "physical": {
+                      "sides": [
+                        {
+                          "status": "annotated",
+                          "definition": "manual",
+                          "candidate_id": null,
+                          "basis": null,
+                          "endpoints": [
+                            [
+                              164.4,
+                              90.0
+                            ],
+                            [
+                              387.6,
+                              90.0
+                            ]
+                          ],
+                          "line_abc": [
+                            0.0,
+                            1.0,
+                            -90.0
+                          ],
+                          "notes": "",
+                          "confirmed_at_utc": "2026-11-02T21:21:31.349114+00:00",
+                          "reviewed": {
+                            "status": "annotated",
+                            "definition": "manual",
+                            "candidate_id": null,
+                            "basis": null,
+                            "endpoints": [
+                              [
+                                164.4,
+                                90.0
+                              ],
+                              [
+                                387.6,
+                                90.0
+                              ]
+                            ],
+                            "line_abc": [
+                              0.0,
+                              1.0,
+                              -90.0
+                            ],
+                            "notes": ""
+                          }
+                        },
+                        {
+                          "status": "annotated",
+                          "definition": "manual",
+                          "candidate_id": null,
+                          "basis": null,
+                          "endpoints": [
+                            [
+                              462.0,
+                              194.0
+                            ],
+                            [
+                              462.0,
+                              506.0
+                            ]
+                          ],
+                          "line_abc": [
+                            1.0,
+                            -0.0,
+                            -462.0
+                          ],
+                          "notes": "",
+                          "confirmed_at_utc": "2026-11-02T21:21:31.349417+00:00",
+                          "reviewed": {
+                            "status": "annotated",
+                            "definition": "manual",
+                            "candidate_id": null,
+                            "basis": null,
+                            "endpoints": [
+                              [
+                                462.0,
+                                194.0
+                              ],
+                              [
+                                462.0,
+                                506.0
+                              ]
+                            ],
+                            "line_abc": [
+                              1.0,
+                              -0.0,
+                              -462.0
+                            ],
+                            "notes": ""
+                          }
+                        },
+                        {
+                          "status": "annotated",
+                          "definition": "manual",
+                          "candidate_id": null,
+                          "basis": null,
+                          "endpoints": [
+                            [
+                              387.6,
+                              610.0
+                            ],
+                            [
+                              164.39999999999998,
+                              610.0
+                            ]
+                          ],
+                          "line_abc": [
+                            -0.0,
+                            1.0,
+                            -609.9999999999999
+                          ],
+                          "notes": "",
+                          "confirmed_at_utc": "2026-11-02T21:21:31.349628+00:00",
+                          "reviewed": {
+                            "status": "annotated",
+                            "definition": "manual",
+                            "candidate_id": null,
+                            "basis": null,
+                            "endpoints": [
+                              [
+                                387.6,
+                                610.0
+                              ],
+                              [
+                                164.39999999999998,
+                                610.0
+                              ]
+                            ],
+                            "line_abc": [
+                              -0.0,
+                              1.0,
+                              -609.9999999999999
+                            ],
+                            "notes": ""
+                          }
+                        },
+                        {
+                          "status": "annotated",
+                          "definition": "manual",
+                          "candidate_id": null,
+                          "basis": null,
+                          "endpoints": [
+                            [
+                              90.0,
+                              506.0
+                            ],
+                            [
+                              90.0,
+                              194.0
+                            ]
+                          ],
+                          "line_abc": [
+                            1.0,
+                            0.0,
+                            -90.0
+                          ],
+                          "notes": "",
+                          "confirmed_at_utc": "2026-11-02T21:21:31.349832+00:00",
+                          "reviewed": {
+                            "status": "annotated",
+                            "definition": "manual",
+                            "candidate_id": null,
+                            "basis": null,
+                            "endpoints": [
+                              [
+                                90.0,
+                                506.0
+                              ],
+                              [
+                                90.0,
+                                194.0
+                              ]
+                            ],
+                            "line_abc": [
+                              1.0,
+                              0.0,
+                              -90.0
+                            ],
+                            "notes": ""
+                          }
+                        }
+                      ],
+                      "operator": "Test reviewer",
+                      "at_utc": "2026-11-02T21:21:31.353824+00:00"
+                    },
+                    "printed": {
+                      "sides": [
+                        {
+                          "status": "annotated",
+                          "definition": "manual",
+                          "candidate_id": null,
+                          "basis": null,
+                          "endpoints": [
+                            [
+                              110.0,
+                              110.0
+                            ],
+                            [
+                              442.0,
+                              110.0
+                            ]
+                          ],
+                          "line_abc": [
+                            0.0,
+                            1.0,
+                            -110.0
+                          ],
+                          "notes": "",
+                          "confirmed_at_utc": "2026-11-02T21:21:31.350888+00:00",
+                          "reviewed": {
+                            "status": "annotated",
+                            "definition": "manual",
+                            "candidate_id": null,
+                            "basis": null,
+                            "endpoints": [
+                              [
+                                110.0,
+                                110.0
+                              ],
+                              [
+                                442.0,
+                                110.0
+                              ]
+                            ],
+                            "line_abc": [
+                              0.0,
+                              1.0,
+                              -110.0
+                            ],
+                            "notes": ""
+                          }
+                        },
+                        {
+                          "status": "annotated",
+                          "definition": "manual",
+                          "candidate_id": null,
+                          "basis": null,
+                          "endpoints": [
+                            [
+                              442.0,
+                              110.0
+                            ],
+                            [
+                              442.0,
+                              590.0
+                            ]
+                          ],
+                          "line_abc": [
+                            1.0,
+                            -0.0,
+                            -442.0
+                          ],
+                          "notes": "",
+                          "confirmed_at_utc": "2026-11-02T21:21:31.351062+00:00",
+                          "reviewed": {
+                            "status": "annotated",
+                            "definition": "manual",
+                            "candidate_id": null,
+                            "basis": null,
+                            "endpoints": [
+                              [
+                                442.0,
+                                110.0
+                              ],
+                              [
+                                442.0,
+                                590.0
+                              ]
+                            ],
+                            "line_abc": [
+                              1.0,
+                              -0.0,
+                              -442.0
+                            ],
+                            "notes": ""
+                          }
+                        },
+                        {
+                          "status": "annotated",
+                          "definition": "manual",
+                          "candidate_id": null,
+                          "basis": null,
+                          "endpoints": [
+                            [
+                              442.0,
+                              590.0
+                            ],
+                            [
+                              110.0,
+                              590.0
+                            ]
+                          ],
+                          "line_abc": [
+                            -0.0,
+                            1.0,
+                            -590.0
+                          ],
+                          "notes": "",
+                          "confirmed_at_utc": "2026-11-02T21:21:31.351236+00:00",
+                          "reviewed": {
+                            "status": "annotated",
+                            "definition": "manual",
+                            "candidate_id": null,
+                            "basis": null,
+                            "endpoints": [
+                              [
+                                442.0,
+                                590.0
+                              ],
+                              [
+                                110.0,
+                                590.0
+                              ]
+                            ],
+                            "line_abc": [
+                              -0.0,
+                              1.0,
+                              -590.0
+                            ],
+                            "notes": ""
+                          }
+                        },
+                        {
+                          "status": "annotated",
+                          "definition": "manual",
+                          "candidate_id": null,
+                          "basis": null,
+                          "endpoints": [
+                            [
+                              110.0,
+                              590.0
+                            ],
+                            [
+                              110.0,
+                              110.0
+                            ]
+                          ],
+                          "line_abc": [
+                            1.0,
+                            0.0,
+                            -110.0
+                          ],
+                          "notes": "",
+                          "confirmed_at_utc": "2026-11-02T21:21:31.351411+00:00",
+                          "reviewed": {
+                            "status": "annotated",
+                            "definition": "manual",
+                            "candidate_id": null,
+                            "basis": null,
+                            "endpoints": [
+                              [
+                                110.0,
+                                590.0
+                              ],
+                              [
+                                110.0,
+                                110.0
+                              ]
+                            ],
+                            "line_abc": [
+                              1.0,
+                              0.0,
+                              -110.0
+                            ],
+                            "notes": ""
+                          }
+                        }
+                      ],
+                      "operator": "Test reviewer",
+                      "at_utc": "2026-11-02T21:21:31.354341+00:00"
+                    }
+                  },
+                  "condition": {
+                    "schema_version": 1,
+                    "runs": [],
+                    "findings": [
+                      {
+                        "id": "a1247b07-b4f7-4805-aa41-3d387fbf7a8e",
+                        "category": "edges",
+                        "region": "manual",
+                        "origin": "manual",
+                        "run_id": null,
+                        "type": "wear",
+                        "polygon_original": [
+                          [
+                            120.0,
+                            140.0
+                          ],
+                          [
+                            125.0,
+                            140.0
+                          ],
+                          [
+                            125.0,
+                            145.0
+                          ],
+                          [
+                            120.0,
+                            145.0
+                          ]
+                        ],
+                        "evidence": {
+                          "description": "Synthetic grading GUI wear"
+                        },
+                        "decision": "confirmed",
+                        "notes": "Synthetic grading GUI wear",
+                        "operator": "Test reviewer",
+                        "reviewed_at_utc": "2026-11-02T21:21:31.409763+00:00",
+                        "history": []
+                      }
+                    ],
+                    "reviews": {
+                      "corners": {
+                        "findings": [],
+                        "operator": "Test reviewer",
+                        "at_utc": "2026-11-02T21:21:31.354765+00:00",
+                        "notes": "Synthetic full-category visual review",
+                        "physical_validation": {
+                          "sides": [
+                            {
+                              "status": "annotated",
+                              "definition": "manual",
+                              "candidate_id": null,
+                              "basis": null,
+                              "endpoints": [
+                                [
+                                  164.4,
+                                  90.0
+                                ],
+                                [
+                                  387.6,
+                                  90.0
+                                ]
+                              ],
+                              "line_abc": [
+                                0.0,
+                                1.0,
+                                -90.0
+                              ],
+                              "notes": "",
+                              "confirmed_at_utc": "2026-11-02T21:21:31.349114+00:00",
+                              "reviewed": {
+                                "status": "annotated",
+                                "definition": "manual",
+                                "candidate_id": null,
+                                "basis": null,
+                                "endpoints": [
+                                  [
+                                    164.4,
+                                    90.0
+                                  ],
+                                  [
+                                    387.6,
+                                    90.0
+                                  ]
+                                ],
+                                "line_abc": [
+                                  0.0,
+                                  1.0,
+                                  -90.0
+                                ],
+                                "notes": ""
+                              }
+                            },
+                            {
+                              "status": "annotated",
+                              "definition": "manual",
+                              "candidate_id": null,
+                              "basis": null,
+                              "endpoints": [
+                                [
+                                  462.0,
+                                  194.0
+                                ],
+                                [
+                                  462.0,
+                                  506.0
+                                ]
+                              ],
+                              "line_abc": [
+                                1.0,
+                                -0.0,
+                                -462.0
+                              ],
+                              "notes": "",
+                              "confirmed_at_utc": "2026-11-02T21:21:31.349417+00:00",
+                              "reviewed": {
+                                "status": "annotated",
+                                "definition": "manual",
+                                "candidate_id": null,
+                                "basis": null,
+                                "endpoints": [
+                                  [
+                                    462.0,
+                                    194.0
+                                  ],
+                                  [
+                                    462.0,
+                                    506.0
+                                  ]
+                                ],
+                                "line_abc": [
+                                  1.0,
+                                  -0.0,
+                                  -462.0
+                                ],
+                                "notes": ""
+                              }
+                            },
+                            {
+                              "status": "annotated",
+                              "definition": "manual",
+                              "candidate_id": null,
+                              "basis": null,
+                              "endpoints": [
+                                [
+                                  387.6,
+                                  610.0
+                                ],
+                                [
+                                  164.39999999999998,
+                                  610.0
+                                ]
+                              ],
+                              "line_abc": [
+                                -0.0,
+                                1.0,
+                                -609.9999999999999
+                              ],
+                              "notes": "",
+                              "confirmed_at_utc": "2026-11-02T21:21:31.349628+00:00",
+                              "reviewed": {
+                                "status": "annotated",
+                                "definition": "manual",
+                                "candidate_id": null,
+                                "basis": null,
+                                "endpoints": [
+                                  [
+                                    387.6,
+                                    610.0
+                                  ],
+                                  [
+                                    164.39999999999998,
+                                    610.0
+                                  ]
+                                ],
+                                "line_abc": [
+                                  -0.0,
+                                  1.0,
+                                  -609.9999999999999
+                                ],
+                                "notes": ""
+                              }
+                            },
+                            {
+                              "status": "annotated",
+                              "definition": "manual",
+                              "candidate_id": null,
+                              "basis": null,
+                              "endpoints": [
+                                [
+                                  90.0,
+                                  506.0
+                                ],
+                                [
+                                  90.0,
+                                  194.0
+                                ]
+                              ],
+                              "line_abc": [
+                                1.0,
+                                0.0,
+                                -90.0
+                              ],
+                              "notes": "",
+                              "confirmed_at_utc": "2026-11-02T21:21:31.349832+00:00",
+                              "reviewed": {
+                                "status": "annotated",
+                                "definition": "manual",
+                                "candidate_id": null,
+                                "basis": null,
+                                "endpoints": [
+                                  [
+                                    90.0,
+                                    506.0
+                                  ],
+                                  [
+                                    90.0,
+                                    194.0
+                                  ]
+                                ],
+                                "line_abc": [
+                                  1.0,
+                                  0.0,
+                                  -90.0
+                                ],
+                                "notes": ""
+                              }
+                            }
+                          ],
+                          "operator": "Test reviewer",
+                          "at_utc": "2026-11-02T21:21:31.353824+00:00"
+                        }
+                      },
+                      "surface": {
+                        "findings": [],
+                        "operator": "Test reviewer",
+                        "at_utc": "2026-11-02T21:21:31.355803+00:00",
+                        "notes": "Synthetic full-category visual review",
+                        "physical_validation": {
+                          "sides": [
+                            {
+                              "status": "annotated",
+                              "definition": "manual",
+                              "candidate_id": null,
+                              "basis": null,
+                              "endpoints": [
+                                [
+                                  164.4,
+                                  90.0
+                                ],
+                                [
+                                  387.6,
+                                  90.0
+                                ]
+                              ],
+                              "line_abc": [
+                                0.0,
+                                1.0,
+                                -90.0
+                              ],
+                              "notes": "",
+                              "confirmed_at_utc": "2026-11-02T21:21:31.349114+00:00",
+                              "reviewed": {
+                                "status": "annotated",
+                                "definition": "manual",
+                                "candidate_id": null,
+                                "basis": null,
+                                "endpoints": [
+                                  [
+                                    164.4,
+                                    90.0
+                                  ],
+                                  [
+                                    387.6,
+                                    90.0
+                                  ]
+                                ],
+                                "line_abc": [
+                                  0.0,
+                                  1.0,
+                                  -90.0
+                                ],
+                                "notes": ""
+                              }
+                            },
+                            {
+                              "status": "annotated",
+                              "definition": "manual",
+                              "candidate_id": null,
+                              "basis": null,
+                              "endpoints": [
+                                [
+                                  462.0,
+                                  194.0
+                                ],
+                                [
+                                  462.0,
+                                  506.0
+                                ]
+                              ],
+                              "line_abc": [
+                                1.0,
+                                -0.0,
+                                -462.0
+                              ],
+                              "notes": "",
+                              "confirmed_at_utc": "2026-11-02T21:21:31.349417+00:00",
+                              "reviewed": {
+                                "status": "annotated",
+                                "definition": "manual",
+                                "candidate_id": null,
+                                "basis": null,
+                                "endpoints": [
+                                  [
+                                    462.0,
+                                    194.0
+                                  ],
+                                  [
+                                    462.0,
+                                    506.0
+                                  ]
+                                ],
+                                "line_abc": [
+                                  1.0,
+                                  -0.0,
+                                  -462.0
+                                ],
+                                "notes": ""
+                              }
+                            },
+                            {
+                              "status": "annotated",
+                              "definition": "manual",
+                              "candidate_id": null,
+                              "basis": null,
+                              "endpoints": [
+                                [
+                                  387.6,
+                                  610.0
+                                ],
+                                [
+                                  164.39999999999998,
+                                  610.0
+                                ]
+                              ],
+                              "line_abc": [
+                                -0.0,
+                                1.0,
+                                -609.9999999999999
+                              ],
+                              "notes": "",
+                              "confirmed_at_utc": "2026-11-02T21:21:31.349628+00:00",
+                              "reviewed": {
+                                "status": "annotated",
+                                "definition": "manual",
+                                "candidate_id": null,
+                                "basis": null,
+                                "endpoints": [
+                                  [
+                                    387.6,
+                                    610.0
+                                  ],
+                                  [
+                                    164.39999999999998,
+                                    610.0
+                                  ]
+                                ],
+                                "line_abc": [
+                                  -0.0,
+                                  1.0,
+                                  -609.9999999999999
+                                ],
+                                "notes": ""
+                              }
+                            },
+                            {
+                              "status": "annotated",
+                              "definition": "manual",
+                              "candidate_id": null,
+                              "basis": null,
+                              "endpoints": [
+                                [
+                                  90.0,
+                                  506.0
+                                ],
+                                [
+                                  90.0,
+                                  194.0
+                                ]
+                              ],
+                              "line_abc": [
+                                1.0,
+                                0.0,
+                                -90.0
+                              ],
+                              "notes": "",
+                              "confirmed_at_utc": "2026-11-02T21:21:31.349832+00:00",
+                              "reviewed": {
+                                "status": "annotated",
+                                "definition": "manual",
+                                "candidate_id": null,
+                                "basis": null,
+                                "endpoints": [
+                                  [
+                                    90.0,
+                                    506.0
+                                  ],
+                                  [
+                                    90.0,
+                                    194.0
+                                  ]
+                                ],
+                                "line_abc": [
+                                  1.0,
+                                  0.0,
+                                  -90.0
+                                ],
+                                "notes": ""
+                              }
+                            }
+                          ],
+                          "operator": "Test reviewer",
+                          "at_utc": "2026-11-02T21:21:31.353824+00:00"
+                        }
+                      },
+                      "edges": {
+                        "findings": [
+                          {
+                            "id": "a1247b07-b4f7-4805-aa41-3d387fbf7a8e",
+                            "category": "edges",
+                            "region": "manual",
+                            "origin": "manual",
+                            "run_id": null,
+                            "type": "wear",
+                            "polygon_original": [
+                              [
+                                120.0,
+                                140.0
+                              ],
+                              [
+                                125.0,
+                                140.0
+                              ],
+                              [
+                                125.0,
+                                145.0
+                              ],
+                              [
+                                120.0,
+                                145.0
+                              ]
+                            ],
+                            "evidence": {
+                              "description": "Synthetic grading GUI wear"
+                            },
+                            "decision": "confirmed",
+                            "notes": "Synthetic grading GUI wear",
+                            "operator": "Test reviewer",
+                            "reviewed_at_utc": "2026-11-02T21:21:31.409763+00:00",
+                            "history": []
+                          }
+                        ],
+                        "operator": "Test reviewer",
+                        "at_utc": "2026-11-02T21:21:31.410386+00:00",
+                        "notes": "Reviewed synthetic edge wear",
+                        "physical_validation": {
+                          "sides": [
+                            {
+                              "status": "annotated",
+                              "definition": "manual",
+                              "candidate_id": null,
+                              "basis": null,
+                              "endpoints": [
+                                [
+                                  164.4,
+                                  90.0
+                                ],
+                                [
+                                  387.6,
+                                  90.0
+                                ]
+                              ],
+                              "line_abc": [
+                                0.0,
+                                1.0,
+                                -90.0
+                              ],
+                              "notes": "",
+                              "confirmed_at_utc": "2026-11-02T21:21:31.349114+00:00",
+                              "reviewed": {
+                                "status": "annotated",
+                                "definition": "manual",
+                                "candidate_id": null,
+                                "basis": null,
+                                "endpoints": [
+                                  [
+                                    164.4,
+                                    90.0
+                                  ],
+                                  [
+                                    387.6,
+                                    90.0
+                                  ]
+                                ],
+                                "line_abc": [
+                                  0.0,
+                                  1.0,
+                                  -90.0
+                                ],
+                                "notes": ""
+                              }
+                            },
+                            {
+                              "status": "annotated",
+                              "definition": "manual",
+                              "candidate_id": null,
+                              "basis": null,
+                              "endpoints": [
+                                [
+                                  462.0,
+                                  194.0
+                                ],
+                                [
+                                  462.0,
+                                  506.0
+                                ]
+                              ],
+                              "line_abc": [
+                                1.0,
+                                -0.0,
+                                -462.0
+                              ],
+                              "notes": "",
+                              "confirmed_at_utc": "2026-11-02T21:21:31.349417+00:00",
+                              "reviewed": {
+                                "status": "annotated",
+                                "definition": "manual",
+                                "candidate_id": null,
+                                "basis": null,
+                                "endpoints": [
+                                  [
+                                    462.0,
+                                    194.0
+                                  ],
+                                  [
+                                    462.0,
+                                    506.0
+                                  ]
+                                ],
+                                "line_abc": [
+                                  1.0,
+                                  -0.0,
+                                  -462.0
+                                ],
+                                "notes": ""
+                              }
+                            },
+                            {
+                              "status": "annotated",
+                              "definition": "manual",
+                              "candidate_id": null,
+                              "basis": null,
+                              "endpoints": [
+                                [
+                                  387.6,
+                                  610.0
+                                ],
+                                [
+                                  164.39999999999998,
+                                  610.0
+                                ]
+                              ],
+                              "line_abc": [
+                                -0.0,
+                                1.0,
+                                -609.9999999999999
+                              ],
+                              "notes": "",
+                              "confirmed_at_utc": "2026-11-02T21:21:31.349628+00:00",
+                              "reviewed": {
+                                "status": "annotated",
+                                "definition": "manual",
+                                "candidate_id": null,
+                                "basis": null,
+                                "endpoints": [
+                                  [
+                                    387.6,
+                                    610.0
+                                  ],
+                                  [
+                                    164.39999999999998,
+                                    610.0
+                                  ]
+                                ],
+                                "line_abc": [
+                                  -0.0,
+                                  1.0,
+                                  -609.9999999999999
+                                ],
+                                "notes": ""
+                              }
+                            },
+                            {
+                              "status": "annotated",
+                              "definition": "manual",
+                              "candidate_id": null,
+                              "basis": null,
+                              "endpoints": [
+                                [
+                                  90.0,
+                                  506.0
+                                ],
+                                [
+                                  90.0,
+                                  194.0
+                                ]
+                              ],
+                              "line_abc": [
+                                1.0,
+                                0.0,
+                                -90.0
+                              ],
+                              "notes": "",
+                              "confirmed_at_utc": "2026-11-02T21:21:31.349832+00:00",
+                              "reviewed": {
+                                "status": "annotated",
+                                "definition": "manual",
+                                "candidate_id": null,
+                                "basis": null,
+                                "endpoints": [
+                                  [
+                                    90.0,
+                                    506.0
+                                  ],
+                                  [
+                                    90.0,
+                                    194.0
+                                  ]
+                                ],
+                                "line_abc": [
+                                  1.0,
+                                  0.0,
+                                  -90.0
+                                ],
+                                "notes": ""
+                              }
+                            }
+                          ],
+                          "operator": "Test reviewer",
+                          "at_utc": "2026-11-02T21:21:31.353824+00:00"
+                        }
+                      }
+                    }
+                  },
+                  "review_status": "review_required",
+                  "automatic_acceptance": false
+                },
+                "inspection_sha256": "089f296cf1be4c78089b50f99faa4a30536cdd43e2192b8eac01eb027ed526a0",
+                "saved_path": "C:\\Users\\plher\\Documents\\spetra\\validation_artifacts\\v05c\\native-final-02\\test_grading_panel_two_faces_p0\\input-sessions\\inspection-de985a5a-b89e-4585-8811-dfb0652e4ef3-1531fa37-e63a-465c-9705-717606efbabc.json",
+                "saved_sha256": "f96338b529328cc4d2e5dd33c75edca206e3a933288d51111a2594d1668654e3"
+              }
+            },
+            "penalties": {},
+            "centering_reviews": {}
+          },
+          "overrides": [],
+          "decisions": [],
+          "previous": "971ce6b1eccaca4e2be6ebe23debda42d625dd5be131796f185e5dcd88fb829a",
+          "sha256": "b005fa59553ad05ee32e7453ab66043ebf8c65875b0ad3b5e541d38bc8038a0b"
+        }
+      ],
+      "overrides": [],
+      "decisions": []
+    }
+  },
+  "saved_path": "C:\\Users\\plher\\Documents\\spetra\\validation_artifacts\\v05c\\native-final-02\\test_grading_panel_two_faces_p0\\input-sessions\\inspection-de985a5a-b89e-4585-8811-dfb0652e4ef3-1531fa37-e63a-465c-9705-717606efbabc.json",
+  "saved_sha": "f96338b529328cc4d2e5dd33c75edca206e3a933288d51111a2594d1668654e3"
+}

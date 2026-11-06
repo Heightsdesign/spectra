@@ -5,6 +5,7 @@ import { intakeCopy, intakeStates, intakeErrors, intakeEvents, intakeRequest, ty
 import { customerProfileHref } from '@/lib/customer-operations';
 import { useAdminLanguage } from './admin-language';
 import { CardLabelActions, PhysicalLabelsPanel } from './physical-labels';
+import { ReturnParcelPanel } from './return-parcel-panel';
 
 export function IntakeWorkspace({ initialLanguage, role, initialSubmissionId }: { initialLanguage: 'FR' | 'EN'; role: string; initialSubmissionId?: string }) {
   const [lang, setLang] = useAdminLanguage(initialLanguage);
@@ -109,6 +110,7 @@ export function IntakeWorkspace({ initialLanguage, role, initialSubmissionId }: 
         {reconciling && form(t.record,path+'/discrepancies',<><label>{t.kind}<select name="kind">{['missing','unexpected','mismatch','damaged','unresolved'].map(k=><option key={k} value={k}>{label(k)}</option>)}</select></label><label>{t.entry}<select name="entry_id">{entries}</select></label><label>{t.cards}<select name="card_id"><option value="">—</option>{item.cards.map(c=><option key={c.id} value={c.id}>{c.reference}</option>)}</select></label><label>{t.quantity}<input name="quantity" type="number" min="1" max="10000" defaultValue="1" required /></label>{input('notes',t.notes,true)}</>,v=>({...v,card_id:v.card_id||null,entry_id:v.entry_id||null,quantity:Number(v.quantity)}))}
         <div className="intake-record-grid">{item.discrepancies.map(d=><article className="intake-record" key={d.id}><h3>{label(d.kind)} × {d.quantity}</h3><span className="intake-badge">{label(d.status)}</span><p>{item.cards.find(c=>c.id===d.card_id)?.reference} {item.entries.find(e=>e.id===d.entry_id)?.card_name}</p><p>{d.notes}</p><p>{d.resolution}</p>{reconciling && d.status==='open' && form(t.resolve,`${path}/discrepancies/${d.id}/resolve`,<><label>{t.status}<select name="status"><option value="resolved">{t.resolve}</option><option value="acknowledged">{t.acknowledge}</option></select></label>{input('reason',t.reason,true)}</>)}</article>)}</div>{!item.discrepancies.length && <p className="intake-empty">{t.empty}</p>}
       </section>
+      <ReturnParcelPanel key={item.id} submissionId={item.id} lang={lang} disabled={busy}/>
       <section className="intake-section" id="intake-audit" aria-labelledby="audit-title">
         <h2 id="audit-title">{t.audit} <span className="intake-count">{item.events.length}</span></h2>
         <div className="intake-audit-list">{item.events.map(e=><details key={e.id}><summary><time dateTime={e.created_at}>{new Date(e.created_at).toLocaleString(lang.toLowerCase())}</time><span>{intakeEvents[lang][e.action as keyof typeof intakeEvents.EN] ?? e.action}</span></summary><p>{e.actor_id} · {e.entity_id}</p><p>{e.reason}</p><pre aria-label={t.auditDetails}>{JSON.stringify(e.data,null,2)}</pre></details>)}</div>{!item.events.length && <p className="intake-empty">{t.empty}</p>}

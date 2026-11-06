@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SPECTRA S2.2c manual outer printed-frame reference v1",
+  "type": "object",
+  "required": ["schema_version", "kind", "tool_version", "coordinate_system", "provenance", "annotation_id", "annotation_version", "annotated_at_utc", "previous_annotation_sha256", "layout_status", "manual_reference_not_certified_ground_truth", "sides"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "kind": {"const": "outer_printed_frame_reference"},
+    "tool_version": {"const": "0.1.0"},
+    "coordinate_system": {"const": "original_image_pixels_xy_right_down_v1"},
+    "annotation_id": {"type": "string", "minLength": 1, "maxLength": 200},
+    "annotation_version": {"type": "string", "minLength": 1},
+    "annotated_at_utc": {"type": "string", "format": "date-time"},
+    "previous_annotation_sha256": {"oneOf": [{"type": "null"}, {"$ref": "#/$defs/hash"}]},
+    "layout_status": {"enum": ["supported", "ambiguous", "unsupported", "absent"]},
+    "manual_reference_not_certified_ground_truth": {"const": true},
+    "operator_notes": {"type": "string"},
+    "provenance": {"type": "object", "required": ["image_sha256", "acquisition_id", "image_dimensions", "dpi", "s2_1", "s2_2b"], "properties": {"image_sha256": {"$ref": "#/$defs/hash"}, "image_dimensions": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "integer", "minimum": 1}}, "s2_1": {"$ref": "#/$defs/report"}, "s2_2b": {"$ref": "#/$defs/report"}}},
+    "sides": {"type": "array", "minItems": 4, "maxItems": 4, "items": {"type": "object", "required": ["index", "name", "status", "definition", "candidate_id", "line_abc", "valid_span_fraction"], "properties": {"index": {"type": "integer", "minimum": 0, "maximum": 3}, "name": {"enum": ["top", "right", "bottom", "left"]}, "status": {"enum": ["annotated", "ambiguous", "unannotatable", "unannotated"]}, "definition": {"enum": ["candidate", "manual", null]}, "candidate_id": {"type": ["string", "null"]}, "line_abc": {"oneOf": [{"type": "null"}, {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "number"}}]}, "valid_span_fraction": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number", "minimum": 0, "maximum": 1}}}, "allOf": [{"if": {"properties": {"status": {"const": "annotated"}}}, "then": {"properties": {"line_abc": {"type": "array"}, "definition": {"enum": ["candidate", "manual"]}}}}]}}
+  },
+  "$defs": {
+    "hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "report": {"type": "object", "required": ["path", "sha256", "report_id", "algorithm_version"], "properties": {"sha256": {"$ref": "#/$defs/hash"}}}
+  }
+}

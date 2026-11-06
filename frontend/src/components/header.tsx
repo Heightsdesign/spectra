@@ -16,7 +16,7 @@ export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   return <header className="site-header"><Container className="header-inner">
-    <Link className="brand-home" href="/" aria-label="SPECTRA home" onClick={() => setOpen(false)}><BrandLogo /></Link>
+    <Link className="brand-home" href="/" aria-label={pathname.startsWith("/account") ? "SELBY" : "SPECTRA home"} onClick={() => setOpen(false)}>{pathname.startsWith("/account") ? <span className="selby-wordmark">SELBY</span> : <BrandLogo />}</Link>
     <button type="button" className="menu-toggle" aria-expanded={open} aria-controls="primary-navigation" onClick={() => setOpen(!open)}>{open ? "Close −" : "Menu +"}</button>
     <nav id="primary-navigation" aria-label="Main navigation" className={open ? "primary-nav is-open" : "primary-nav"}>
       {links.map(([href, label]) => <Link key={href} href={href} aria-current={pathname === href ? "page" : undefined} onClick={() => setOpen(false)}>{label}</Link>)}

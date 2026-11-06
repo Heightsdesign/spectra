@@ -1,0 +1,8 @@
+{
+  "unique_events": 4,
+  "original_deliveries": 4,
+  "original_signed_replays": 4,
+  "http200": 8,
+  "body_and_signature_hashes_identical_on_replay": true,
+  "reports_links_resolve": true
+}

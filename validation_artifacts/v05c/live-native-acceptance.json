@@ -1,0 +1,16 @@
+{
+  "physical_scans": 0,
+  "prints": 0,
+  "business_posts": 0,
+  "input": "manual software payload injection",
+  "entrypoint": "selby_desktop.pyw",
+  "qt_platform": "windows",
+  "diagnostic": "Diagnostic recognized: CALIBRATION-V1 \u00b7 TEST / NOT VALID \u00b7 grading not opened.",
+  "card_result": "Rafflesia EX\nORD-000001 \u00b7 SP-BB8D2B9652094E5DA785C08723BF042E\nPC-2577D23CF15C43C9A350149B3755ED77 \u00b7 SLB-C-000001\nBLOCKED: quote_not_accepted; payment_unverified; commercial_restriction",
+  "duplicate_suppressed": true,
+  "orders_and_labels": true,
+  "grading_session_created": false,
+  "registry_unchanged": true,
+  "backend_snapshot_unchanged": true,
+  "temporary_session_revoked": true
+}

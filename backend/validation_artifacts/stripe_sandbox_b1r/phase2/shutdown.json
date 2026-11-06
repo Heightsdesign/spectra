@@ -1,0 +1,14 @@
+{
+  "all_QA_ports_closed": true,
+  "ports_closed": {
+    "13010": true,
+    "18010": true,
+    "18011": true,
+    "19313": true,
+    "19314": true
+  },
+  "generated_next_env_unchanged": true,
+  "final_charge_paid_captured": true,
+  "final_charge_refunded_minor": 0,
+  "final_charge_disputed": false
+}

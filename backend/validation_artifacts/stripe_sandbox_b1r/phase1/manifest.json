@@ -1,0 +1,36 @@
+{
+  "run": "B1-R-phase1-20261106",
+  "identity": {
+    "account_id": "acct_1UXDxRFq5FKSG47y",
+    "business_name": "Selby sandbox",
+    "test_key": true,
+    "database": "spectra_test",
+    "api_version": "2025-02-24.acacia"
+  },
+  "max_successes": 2,
+  "amount_minor": 2500,
+  "currency": "eur",
+  "cases": {
+    "B-DECLINE": {
+      "name": "B-DECLINE",
+      "customer_id": "03fccd81-ecd2-4391-a8d7-896a144366ff",
+      "submission_id": "72b147f5-3105-49a3-97f9-a3cccb246508",
+      "quote_id": "fee46f77-1c01-46b2-aa62-14dd1d58b8f7",
+      "snapshot_sha256": "b3c9abde5a71c24367b4518cae0f61246aed1f03554caea455674d887066adcd"
+    },
+    "B-3DS": {
+      "name": "B-3DS",
+      "customer_id": "ead7a273-9fea-4258-8374-3732810d80dc",
+      "submission_id": "f4e12894-7f53-422f-8a8b-631f4dbdc937",
+      "quote_id": "5719f71f-1d15-4e12-ab73-f4f4c0a2f45a",
+      "snapshot_sha256": "12e85a8b19d87f881df146d065f71dc686e2667b842a0aa61e7171448e905a87"
+    },
+    "B-ABANDON": {
+      "name": "B-ABANDON",
+      "customer_id": "4b46aa58-c2c5-49c7-af55-a6c44ba33eb5",
+      "submission_id": "c0c144df-9acb-417c-9b98-6755f73dfe91",
+      "quote_id": "3b1452f1-5f64-4981-96f9-488aa368df23",
+      "snapshot_sha256": "d0e07ad79e697a47502ba9cb49a4f57823b6bda1140150e5b6958885a8513a29"
+    }
+  }
+}

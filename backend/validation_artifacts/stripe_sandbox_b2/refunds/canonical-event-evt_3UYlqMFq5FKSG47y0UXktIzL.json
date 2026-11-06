@@ -1,0 +1,59 @@
+{
+  "id": "evt_3UYlqMFq5FKSG47y0UXktIzL",
+  "object": "event",
+  "api_version": "2026-10-28.endive",
+  "created": 1793969112,
+  "data": {
+    "object": {
+      "id": "re_3UYlqMFq5FKSG47y04wJRJAg",
+      "object": "refund",
+      "amount": 500,
+      "balance_transaction": "txn_3UYlqMFq5FKSG47y0gMoSZ26",
+      "charge": "ch_3UYlqMFq5FKSG47y0hSlv6os",
+      "created": 1793969111,
+      "currency": "eur",
+      "customer": null,
+      "customer_account": null,
+      "destination_details": {
+        "card": {
+          "reference": "2343683739584753",
+          "reference_status": "available",
+          "reference_type": "acquirer_reference_number",
+          "type": "refund"
+        },
+        "type": "card"
+      },
+      "metadata": {
+        "qa_case": "B-REFUND-PARTIAL",
+        "quote_id": "b1d71d00-e100-4465-9c21-f9c6cd3a81e0",
+        "submission_id": "4506971d-4a51-416c-8ef2-ffda7a5698b7"
+      },
+      "payment_intent": "pi_3UYlqMFq5FKSG47y0qC0NxuR",
+      "payment_method": "pm_1UYlqMFq5FKSG47yOGY09oGo",
+      "presentment_details": {
+        "presentment_amount": 475,
+        "presentment_currency": "chf"
+      },
+      "reason": null,
+      "receipt_number": null,
+      "source_transfer_reversal": null,
+      "status": "succeeded",
+      "transfer_reversal": null
+    },
+    "previous_attributes": {
+      "destination_details": {
+        "card": {
+          "reference": null,
+          "reference_status": "pending"
+        }
+      }
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 0,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "refund.updated"
+}

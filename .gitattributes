@@ -1,0 +1,2 @@
+# Defense in depth if someone force-adds the local-only file later.
+SELBY_LOCAL_TEST_CREDENTIALS.md export-ignore

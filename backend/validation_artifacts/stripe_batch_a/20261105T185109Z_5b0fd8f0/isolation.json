@@ -1,0 +1,143 @@
+{
+  "development_before": {
+    "database": "spectra",
+    "read_only": "on",
+    "revision": [
+      "0015"
+    ],
+    "schema_sha256": "a84951e51de22c595c12f06a070b66c0d0a7065e00fe2203a7474603a03e5ef0",
+    "tables": {
+      "customer_submissions": {
+        "rows": 15,
+        "sha256": "c7c171f7a7ca542d665749e59583ca5ae68670db3f1066ddac38200d27f2b9a3"
+      },
+      "customer_submission_entries": {
+        "rows": 17,
+        "sha256": "b6a35960bf35a238d9383124e328d6d792ec28a9740ec57063e1a0a8a1c2fc0f"
+      },
+      "submission_quotes": {
+        "rows": 11,
+        "sha256": "1e1892317d7426577ebf84ad940ba4d44f0daf2ac905ca9998341898ec3df1db"
+      },
+      "quote_acceptances": {
+        "rows": 2,
+        "sha256": "d074976d6aef8923d20438868b19227724affe3144019ddf765a34c440da9f1c"
+      },
+      "payment_obligations": {
+        "rows": 2,
+        "sha256": "434d0c0a7942033926e1fd713f94810dbbaa821ec435cb3a5a65e4fabb9f62bb"
+      },
+      "verified_payments": {
+        "rows": 2,
+        "sha256": "d2a4f84327a0e168375a14504c8b8055879065ce4d15f416a2f72ed3bb8310fb"
+      },
+      "stripe_attempts": {
+        "rows": 2,
+        "sha256": "25617ae23d4582e535413d3b585fdbfc5ca9fc5c83ec8f1b34b8441961b95353"
+      },
+      "stripe_evidence": {
+        "rows": 4,
+        "sha256": "0a7d5505f84694d12e1f95122c5f3ed54d52e65e13db4f45f546b04fc3ca0f10"
+      },
+      "dispatch_expectations": {
+        "rows": 2,
+        "sha256": "65527a7a5f501de3d9d511faa95fb6eabcdb331753b4bdf5580cb86e73c748e0"
+      },
+      "order_commercial_events": {
+        "rows": 4,
+        "sha256": "682eb8f95202da1b0854afdd31b0f785f8116cc91a703b918751f68509ca6303"
+      },
+      "customer_addresses": {
+        "rows": 1,
+        "sha256": "913b993346f16b9ea6a8cbf4d7bd4de9c76f68e227fed6bde5b71fe88aed52f1"
+      },
+      "submission_deliveries": {
+        "rows": 9,
+        "sha256": "fd6f90bebc1f5a6e5be384bcddae6245b0fff737b443d9e92e25cdf3e272956f"
+      }
+    }
+  },
+  "development_after": {
+    "database": "spectra",
+    "read_only": "on",
+    "revision": [
+      "0015"
+    ],
+    "schema_sha256": "a84951e51de22c595c12f06a070b66c0d0a7065e00fe2203a7474603a03e5ef0",
+    "tables": {
+      "customer_submissions": {
+        "rows": 15,
+        "sha256": "c7c171f7a7ca542d665749e59583ca5ae68670db3f1066ddac38200d27f2b9a3"
+      },
+      "customer_submission_entries": {
+        "rows": 17,
+        "sha256": "b6a35960bf35a238d9383124e328d6d792ec28a9740ec57063e1a0a8a1c2fc0f"
+      },
+      "submission_quotes": {
+        "rows": 11,
+        "sha256": "1e1892317d7426577ebf84ad940ba4d44f0daf2ac905ca9998341898ec3df1db"
+      },
+      "quote_acceptances": {
+        "rows": 2,
+        "sha256": "d074976d6aef8923d20438868b19227724affe3144019ddf765a34c440da9f1c"
+      },
+      "payment_obligations": {
+        "rows": 2,
+        "sha256": "434d0c0a7942033926e1fd713f94810dbbaa821ec435cb3a5a65e4fabb9f62bb"
+      },
+      "verified_payments": {
+        "rows": 2,
+        "sha256": "d2a4f84327a0e168375a14504c8b8055879065ce4d15f416a2f72ed3bb8310fb"
+      },
+      "stripe_attempts": {
+        "rows": 2,
+        "sha256": "25617ae23d4582e535413d3b585fdbfc5ca9fc5c83ec8f1b34b8441961b95353"
+      },
+      "stripe_evidence": {
+        "rows": 4,
+        "sha256": "0a7d5505f84694d12e1f95122c5f3ed54d52e65e13db4f45f546b04fc3ca0f10"
+      },
+      "dispatch_expectations": {
+        "rows": 2,
+        "sha256": "65527a7a5f501de3d9d511faa95fb6eabcdb331753b4bdf5580cb86e73c748e0"
+      },
+      "order_commercial_events": {
+        "rows": 4,
+        "sha256": "682eb8f95202da1b0854afdd31b0f785f8116cc91a703b918751f68509ca6303"
+      },
+      "customer_addresses": {
+        "rows": 1,
+        "sha256": "913b993346f16b9ea6a8cbf4d7bd4de9c76f68e227fed6bde5b71fe88aed52f1"
+      },
+      "submission_deliveries": {
+        "rows": 9,
+        "sha256": "fd6f90bebc1f5a6e5be384bcddae6245b0fff737b443d9e92e25cdf3e272956f"
+      }
+    }
+  },
+  "development_unchanged": true,
+  "test_database": "spectra_test",
+  "test_schema_before": "39b4fd404a644856d112b1932667f51c42e92c86e1ad573f33b28ae35e9e209d",
+  "test_schema_after": "39b4fd404a644856d112b1932667f51c42e92c86e1ad573f33b28ae35e9e209d",
+  "test_schema_unchanged": true,
+  "test_revision": [
+    "0015"
+  ],
+  "forbidden_sql_or_migration_attempts": [],
+  "real_http_attempts": 0,
+  "retained_synthetic_concurrency_fixtures": [
+    {
+      "submission_id": "142e1af8-b3ab-4327-80e4-073a92ff84bb",
+      "quote_id": "29194357-dab2-4d12-beda-477342d21527",
+      "reason": "Independent PostgreSQL commits required for concurrency; immutable synthetic evidence retained in test database only"
+    }
+  ],
+  "test_financial_counts_after": {
+    "payment_obligations": 1,
+    "verified_payments": 0,
+    "stripe_attempts": 0,
+    "stripe_evidence": 0,
+    "dispatch_expectations": 0,
+    "order_commercial_events": 1
+  }
+}
